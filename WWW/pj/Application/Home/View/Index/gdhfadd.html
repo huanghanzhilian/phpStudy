@@ -1,0 +1,29 @@
+<foreach name='arrg2' item='vv'>
+                <div class="duifanxx kl " >
+                    <p>{$vv.gdhf_name}{$vv.gdhf_time}</p>
+                    <p>
+                        <if condition="strtoupper($vv['gdhf_content']) eq ''">
+                           <span class="cjusr"><a href="__PUBLIC__/{$vv.img}"><img src="__PUBLIC__/{$vv.img}" width=50 height=50 /></a></span>
+                        <elseif condition="strtoupper($vv['img'] eq '')"/>
+                           <span class="cjusr">{$vv.gdhf_content}</span>
+                        <else/>
+                          <!-- {$arr.ddh} -->
+                        </if>
+                    </p>
+                </div>
+            </foreach>
+            
+            <foreach name='arrg3' item='oo'>
+                <div class="duifanxx kr " >
+                    <p>{$oo.gdhf_name}{$oo.gdhf_time}</p>
+                    <p>
+                        <if condition="strtoupper($oo['gdhf_content']) eq ''">
+                           <span class="cjusr color_pd"><a href="__PUBLIC__/{$oo.img}"><img src="__PUBLIC__/{$oo.img}" width=50 height=50 /></a></span>
+                        <elseif condition="strtoupper($oo['img'] eq '')"/>
+                           <span class="cjusr color_pd">{$oo.gdhf_content}</span>
+                        <else/>
+                          <!-- {$arr.ddh} -->
+                        </if>
+                    </p>
+                </div>
+            </foreach>

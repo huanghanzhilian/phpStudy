@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<center>{$my}</center>
+    <a href="__CONTROLLER__/index">返回</a><br /><br />
+    <a href="__CONTROLLER__/xindingdan">新订单</a><br /><br />
+	<a href="__CONTROLLER__/daiwancheng">待完成</a><br /><br />
+	<a href="__CONTROLLER__/yiwancheng">已完成</a><br /><br />
+<table border=1>
+    <th>订单编号:</th>
+	<th>机型问题:</th>
+	<th>服务方式:</th>
+	<th>手机号:</th>
+	<th>状态</th>
+<foreach name='arr' item='vv'>
+<tr>
+	<td>{$vv.u_number}</td>
+	<td>{$vv.model_name}:{$vv.question_name}</td>
+	<td>{$vv.ways_name}</td>
+	<td>{$vv.u_phone}</td>
+	<td><a href="__CONTROLLER__/shifuxiangqing/id/{$vv.id}">详情</a></td>	
+</tr>
+</foreach>	
+</table>
+</body>
+</html>

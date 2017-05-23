@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>js 获取视频 demo</title>
+
+    </head>
+
+    <body>
+    <input id="btnClick" type="button" value="Click Here" />
+    <input type="file" accept="image/*"/>
+    <input type="file" capture="camera" accept="image/*"/>
+    
+     <video id="video"   autoplay></video>
+<button id="snap">Snap Photo</button>
+<canvas id="canvas"  ></canvas>
+    </body>
+    <script type="text/javascript">
+        // Put event listeners into place
+		var snsp=document.getElementById('snap');
+snap.addEventListener("click", function() {
+	// Grab elements, create settings, etc.
+	var canvas = document.getElementById("canvas"),
+		context = canvas.getContext("2d"),
+		video = document.getElementById("video"),
+		videoObj = { "video": true },
+		errBack = function(error) {
+			console.log("Video capture error: ", error.code); 
+		};
+
+	// Put video listeners into place
+	if(navigator.getUserMedia) { // Standard
+		navigator.getUserMedia(videoObj, function(stream) {
+			video.src = stream;
+			video.play();
+		}, errBack);
+	} else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
+		navigator.webkitGetUserMedia(videoObj, function(stream){
+			video.src = window.webkitURL.createObjectURL(stream);
+			video.play();
+		}, errBack);
+	}
+	else if(navigator.mozGetUserMedia) { // Firefox-prefixed
+		navigator.mozGetUserMedia(videoObj, function(stream){
+			video.src = window.URL.createObjectURL(stream);
+			video.play();
+		}, errBack);
+	}
+}, false);
+
+    var btnClick = document.getElementById('btnClick');
+        btnClick.addEventListener('click', function(e) {
+            console.log(this.id);
+			console.log(this);
+			console.log(e);
+			console.log(e.type);
+			console.log(e.id);
+        }, false);
+
+    </script>
+
+</html>

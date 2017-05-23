@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+
+<form method="post" action="__CONTROLLER__/padd">
+		选择方案:<select name="plan_id">
+		<foreach name='arr6' item='j'>
+			<option value="{$j.plan_id}">
+				{$j.plan_name} {$j.money}
+			</option>
+		</foreach>
+		</select><br /><br />
+		描述:<select name="instructions_id">
+		<foreach name='arr5' item='j'>
+			<option value="{$j.instructions_id}">
+				{$j.instructions_name}
+			</option>
+		</foreach>
+		</select><br /><br />
+		<input type="hidden" name="model_id" value='{$model_id}'>
+		<input type="hidden" name="brand_id" value='{$brand_id}'>
+	
+		<input type="submit" value='确定'>
+		<input type="button" value="取消" onclick="add(1)">
+	</form>  
+	 
+
+	
+</body>
+</html>

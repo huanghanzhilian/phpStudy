@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<title>维百士_人员管理_已离职员工</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/Admin_modify.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<style type="text/css">
+
+</style>
+</head>
+<body class="body1_color">
+<div class="header public_width">
+    <h1 class="header_h1">人员管理 &gt; 已离职员工</h1>
+    
+</div>
+
+<div class="container public_width">
+    <!--公共返回-->
+    <div class="Return">
+        <span class="Return_button cursor" onClick="window.history.back()">返回</span>
+        <!--<a class="Return_button" href="__CONTROLLER__/shifugl">返回</a>-->
+    </div>
+    <!--公共返回-->
+    
+    
+    <div class="container_modify" id="xgpinpan">
+        <ul class="zhuti_rom">
+            <foreach name='arr' item='vv'>
+                <li class="lmbhu" id="{$vv.user_id}">
+                   <div class="box_list_pa">
+                       <div class="zhuti_rom_list_r fr zhuti_rom_list_ncon">
+                           <a class="Return_button_a1 tuainm4" href="javascript:void(0)">恢复</a>
+                       </div>
+                       <img class="img_ionm ced_wid" src="__PUBLIC__/{$vv.img}">
+                       <span class="ced_wid ced_widd">{$vv.user_username}</span>
+                       <form style="display:inline-block;" method="post" action="__CONTROLLER__/fananxiugaiadd">
+                           <input readonly="true" class="" type="text" name="ways_id" value='{$vv.user_name}'>
+                       </form>
+                       
+                       
+                   </div>
+                   <ul class="box_list_ul clearfix box_list_ul_po">
+                       <li class="box_list_list fl box_list_list_1">
+                           <div class="">
+                               余额:  ¥ {$vv.yuemoney}.00
+                           </div>
+                           <div class="">
+                               <span class="Return_button_a1 pcdef_ghu tuainm2">奖金</span><span class="Return_button_a1 pcdef_ghu tuainm3">罚款</span>
+                           </div>
+                       </li>
+                       <li class="box_list_list fl box_list_list_2">
+                           <div class="">
+                               额度:  ¥ {$vv.xyed}.00    欠款:  ¥ {$vv.yixiaofei}.00
+                           </div>
+                           <div class="">
+                               <span class="Return_button_a1 tuainm">调整额度</span>
+                           </div>
+                       </li>
+                       <li class="box_list_list fl box_list_list_3">
+                           <span class="Return_button_a1 tuainm4">离职</span>
+                       </li>
+                   </ul>
+                </li>
+            </foreach>
+        </ul>
+    </div>
+    
+    
+    
+</div>
+
+<!--员工离职-->
+<div class="erdu erdu4">
+    <i class="guanb_op cursor"></i>
+    <h3 class="guanb_op_h3">员工离职</h3>
+    <form method="post" action="__CONTROLLER__/yuangonghuifu">
+        <ul class="guanb_op_ul">
+            <li class="guanb_op_ul_li guanb_op_ul_li_c">
+               坎坎坷坷
+            </li>
+           
+            <li class="guanb_op_ul_li">
+                <input class="cursor" type="submit" value="确定"/>
+            </li>
+            
+        </ul>
+        <input type="hidden" name="user_id" value="">
+   </form>
+</div>
+<!--员工离职-->
+
+
+<script>
+$(function(){
+	$(".erdu").each(function(q,w){
+		//console.log()
+	    $(this).css({'margin-top':-($(this).height()/2+40)})
+    });
+	
+	//员工离职恢复
+	$(".tuainm4").on('click',function(){
+		var user_id=$(this).parents(".lmbhu").attr('id');
+		var sduo=$(this).parents(".lmbhu").find('.ced_widd').text();
+		$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+		$('.zdvjio').show();
+		$('.erdu4').find('.guanb_op_ul_li_c').text('确定将员工 '+sduo+' 恢复？');
+		$('.erdu4').show();
+		$('.erdu4').find("input[name='user_id']").val(user_id)
+		
+		$(".guanb_op").on('click',function(){
+			$('.zdvjio').hide();
+		    $('.erdu4').hide();
+			$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+		})
+	});
+	//员工离职恢复
+})
+</script>
+
+
+
+
+
+</body>
+</html>

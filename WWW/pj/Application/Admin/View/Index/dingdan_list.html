@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+
+
+<!--内容-->
+<foreach name='arr' item='vv'>
+    <a class="shifu_aclc" href="__MODULE__/Ddguanli/xiangqing/id/{$vv.id}">
+        <div class="rnmbur">
+            <ul>
+                <li>
+                     <span class="chuangmbr">
+                          {$vv.ddh}
+                     </span>
+                </li>
+
+                <li>
+                     问题：<span class="chuangmbr">{$vv.question_name}</span>
+                </li>
+                <li>
+                     姓名：<span class="chuangmbr">{$vv.u_name}</span>
+                </li>
+                <li>
+                     电话：<span class="chuangmbr">{$vv.u_phone}</span>
+
+                </li>
+
+				<li>
+					<if condition="strtoupper($vv['stau']) eq  0">
+		                                    未接单
+			             <elseif condition="strtoupper($vv['stau']) eq  1"/>
+									待接单
+						 <elseif condition="strtoupper($vv['stau']) eq  2"/>
+									以接单
+						 <elseif condition="strtoupper($vv['stau']) eq  3"/>
+									维修中
+						 <elseif condition="strtoupper($vv['stau']) eq  4"/>
+									待付款
+						 <elseif condition="strtoupper($vv['stau']) eq 5"/>
+									已付款
+						 <elseif condition="strtoupper($vv['stau']) eq  6"/>
+								 已评价
+						<elseif condition="strtoupper($vv['stau']) eq  10"/>
+								已取消
+			                <else/>
+
+		             </if>
+	             </li>
+				<li class="cubugrt" data="{$vv.shouhoua}">
+
+				</li>
+            </ul>
+        </div>
+    </a>
+</foreach>
+<!--内容-->
+<script>
+	
+</script>
+</body>
+</html>

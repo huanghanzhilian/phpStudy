@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<title>维百士-已取消的订单</title>
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ioc"><!--图标-->
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png"><!--图标-->
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+<style>
+
+</style>
+</head>
+<body style="background:#f5f5f5">
+
+<div class="header header1">
+    <span class="shuaxin"><a href="__CONTROLLER__/jixiu/ways_id/3 ">返回</a></span>
+    <h1>已取消的订单</h1>
+  <!--<em class="lsycrd"><a href="__CONTROLLER__/history_a">历史订单</a></em>-->
+</div><!--头-->
+
+
+<div class="content">
+    <div class="content_con">
+        <!--tab头-->
+        <div class="shifudu_top">
+            <ul class="pubcvt shifudu_top_ul shifudu_top_ul_gd">
+                
+                <li class="pubcvt_v shifudu_top_li shifudu_top_li_1">
+                    <a href="__CONTROLLER__/quxiaole">接单后取消</a>
+                </li>
+                <li class="pubcvt_v shifudu_top_li">
+                    <a href="__CONTROLLER__/jdhquxiao">接单前取消</a>
+                </li>
+            </ul>
+        </div>
+        <!--tab头-->
+        <!--内容-->
+        <div class="ceomer_com">
+            <foreach name='arr' item='vv'>
+                <div style="position:relative;">
+                <a class="shifu_aclc" href="__CONTROLLER__/xiangqing/id/{$vv.id}/hh/3">
+                    <div class="rnmbur">
+                        <ul>
+                            <li>
+                                 <span class="chuangmbr bimnb">
+                                      {$vv.ddh}
+                                 </span>
+                            </li>
+                            <li>
+                                师傅：<span class="chuangmbr">{$vv.user_username}</span>
+                            </li>
+                            <li>
+                                 机型：<span class="chuangmbr">{$vv.model_name}</span>
+                            </li>
+                            
+                            <li>
+                                 姓名：<span class="chuangmbr">{$vv.u_name}</span>
+                            </li>
+                            <li>
+                                 电话：<span class="chuangmbr">{$vv.u_phone}
+								  
+								 
+								 </span>
+                            </li>
+                            <li>
+                                 取消原因：<span class="chuangmbr">{$vv.quxiaocontent}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                    <if condition="strtoupper (($vv['u_phone']) eq  17301205932) || (($vv['u_phone']) eq  15811207510) || (($vv['u_phone']) eq  18231321037)">
+                      <a style=" position:absolute; top:14px; right:12px; color:red" href="__CONTROLLER__/shanchuu/id/{$vv.id}/ways_id/{$vv.ways_id}" onclick="if(confirm('确定删除?')==false)return false;">删除</a>
+                    <else/>
+                    </if>
+                </div>
+                
+            </foreach>
+        </div>
+        <!--内容-->
+        
+        <div class="clopokc">
+        {$page}
+        
+        </div>
+        <div class="clopokc">
+        <form style="display:inline-block;" method="post" action="" onSubmit="return Checked();">
+            <input id="hhb" class="hhbn" type="text" value=""/>
+            <input class="hhbnc" type="submit" value='GO'>
+        </form>
+        </div>
+        
+        
+
+    </div>
+</div>
+<script>
+
+function Checked(){
+	var hhb=document.getElementById("hhb");
+	
+	var ppo=hhb.value;
+	hhb.parentNode.setAttribute('action','__CONTROLLER__/quxiaole/p/'+ppo)
+	if(ppo==''){
+		alert('请填写页数')
+		return false;
+	}
+	return true;
+}
+</script>
+
+</body>
+</html>

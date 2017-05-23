@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<style type="text/css">
+	/* .table thead tr{
+		position: fixed;
+		width: 100%;
+	} */
+	/* html,body{
+		height: 100%;
+		background: #ccc;
+		overflow: hidden;
+	} */
+	</style>
+</head>
+<body>
+	<table class="table " cellspacing="0" cellpadding="0">
+		<thead>
+			<tr>
+				<th>货品名称</th>
+				<th>颜色</th>
+				<th>客户姓名</th>
+				<th>客户电话</th>
+				<th>订单编号</th>
+			</tr>
+		</thead>	
+		
+		<tbody class="">
+			<foreach name='arr' item='kk'>
+				<tr>
+					<td width="25%">{$kk.goods_name}</td>
+					<td>{$kk.goods_color}</td>
+					<td>{$kk.username}</td>
+					<td>{$kk.phone}</td>
+					<td>{$kk.order_number}</td>
+				</tr>
+				<tr>	
+					<td colspan="5">
+						<div class="anniu-center">
+							<div class="anniu fl">
+								<span onclick="resize({$kk.p_id},this)">匹配SKU</span>
+								<span onclick="buzuo({$kk.p_id},this)">暂不做</span>
+								<span onclick="buffuhe({$kk.p_id},this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo({$kk.p_id},this)">订单详情</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</foreach>
+		</tbody>
+		
+	</table>
+	<div id="toastId2" class="toasttj2" style="display: none; opacity: 0;"></div>
+</body>
+</html>
+
+
+
+<script src="__PUBLIC__/new/script/toast.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+
+	//对话框形状自动调整
+	function resize(datas,_this) {
+		// var overlay= document.getElementById("attr-overlay");
+		var overlay= $("#attr-overlay",parent.document);
+		var content= $("#attr-content",parent.document);
+		var widget_title= $("#widget-title",parent.document);
+		var windows=$("body",parent.document);
+		//关闭按钮
+		var closed=$("#closed",parent.document);
+
+		widget_title.text("匹配sku")
+		overlay.show();
+		content.show();
+		$("#content_sd",parent.document).empty();
+
+		$("#content_sd",parent.document).append('<ul data="' + datas + '" class="Breadcrumbs clearfix"></ul>\
+												<div class="ChoiceComponent" id="a1">\
+													<h1>服务类目</h1>\
+													<ul class="FlowButtons-list clearfix">\
+													</ul>\
+												</div>\
+												<div class="ChoiceComponent" id="a2" style="display: none;">\
+													<h1>服务品牌</h1>\
+													<ul class="FlowButtons-list clearfix">\
+													</ul>\
+												</div>\
+												<div class="ChoiceComponent" id="a3" style="display: none;">\
+													<h1>服务机型</h1>\
+													<ul class="FlowButtons-list clearfix">\
+													</ul>\
+												</div>\
+												<div class="ChoiceComponent" id="a4" style="display: none;">\
+													<h1>服务内容</h1>\
+													<ul class="FlowButtons-list clearfix">\
+													</ul>\
+												</div>');
+
+		var sel=(windows.width()-content.width())/2;
+		var set=(windows.height()-content.height())/2;
+
+		content.offset({ top: set, left: sel });
+
+		$.ajax({
+			url: "http://m.weibaishi.com/admin/aingdan/type_list",
+			// data:{'p_id':datas},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				var navHtml='';
+				$(data).each(function(i, v) {
+					navHtml += '<li class="FlowBut" onclick="shugts(this)" content="' + v.type_name + '" num="' + v.type_id + '" >' + v.type_name + '</li>';
+				})
+				$("#a1 .FlowButtons-list",parent.document).html(navHtml);
+				/*$("#a1 li",parent.document).on("click",function(){
+					alert(1)
+				})*/
+
+				/*var sdfr=null;
+				$("#content_sd",parent.document).append('<ul class="attr-content-con"></ul>');
+				$.each(data,function(i,n){
+					$(".attr-content-con",parent.document).append('<li data="'+n["sku_id"]+'"><div class="left">'+n["sku_name"]+'</div><div class="reft">'+n["sku_money"]+'<span></span></div></li>');
+				});
+				$("#content_sd",parent.document).append('<button class="attr-content-button">匹配</button>');
+				$(".attr-content-con li",parent.document).on("click",function(){
+					sdfr=$(this).attr("data");
+					$(this).find("span").css("background-color","#5076e6");
+					$(this).siblings().find("span").css("background-color","#fff");
+				});
+				$(".attr-content-button",parent.document).on("click",function(){
+					if(sdfr){
+						tijiao(_this,datas,sdfr)
+					}
+				})*/
+			}
+		});
+		/*$.ajax({
+			url: "http://m.weibaishi.com/Admin/Aingdan/skui",
+			data:{'p_id':datas},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				var sdfr=null;
+				$("#content_sd",parent.document).append('<ul class="attr-content-con"></ul>');
+				$.each(data,function(i,n){
+					$(".attr-content-con",parent.document).append('<li data="'+n["sku_id"]+'"><div class="left">'+n["sku_name"]+'</div><div class="reft">'+n["sku_money"]+'<span></span></div></li>');
+				});
+				$("#content_sd",parent.document).append('<button class="attr-content-button">匹配</button>');
+				$(".attr-content-con li",parent.document).on("click",function(){
+					sdfr=$(this).attr("data");
+					$(this).find("span").css("background-color","#5076e6");
+					$(this).siblings().find("span").css("background-color","#fff");
+				});
+				$(".attr-content-button",parent.document).on("click",function(){
+					if(sdfr){
+						tijiao(_this,datas,sdfr)
+					}
+				})
+			}
+		});*/
+
+		closed.on("click",function(){
+			overlay.hide();
+			content.hide();
+		});
+	}
+
+
+
+	//提交匹配sku
+	function tijiao(_this,pid,datas){
+		var overlay= $("#attr-overlay",parent.document);
+		var content= $("#attr-content",parent.document);
+		$.ajax({
+			url: "http://m.weibaishi.com/Admin/Aingdan/pipei",
+			data:{'p_id':pid,'sku_id':datas},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				console.log(data)
+				if(data=="1"){
+					$(_this).parents("tr").prev("tr").remove();
+					$(_this).parents("tr").remove();
+
+					overlay.hide();
+					content.hide();
+					setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作成功</div>');
+				}else if(data=="8"){
+					$(_this).parents("tr").prev("tr").remove();
+					$(_this).parents("tr").remove();
+
+					overlay.hide();
+					content.hide();
+					setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">此订单已被处理</div>');
+				}
+
+			}
+		});
+	}
+
+	//暂时不做
+	function buzuo(datas,_this){
+		$.ajax({
+			url: "http://m.weibaishi.com/Admin/Aingdan/zhanbuzuo",
+			data:{'p_id':datas},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				if(data=="1"){
+					$(_this).parents("tr").prev("tr").remove();
+					$(_this).parents("tr").remove();
+					setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作成功</div>');
+				}else if(data=="8"){
+					$(_this).parents("tr").prev("tr").remove();
+					$(_this).parents("tr").remove();
+					setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">此订单已被处理</div>');
+				}
+			}
+		});
+	}
+
+	//不符合
+	function buffuhe(datas,_this){
+		$.ajax({
+			url: "http://m.weibaishi.com/Admin/Aingdan/bufuhe",
+			data:{'p_id':datas},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				if(data=="1"){
+					$(_this).parents("tr").prev("tr").remove();
+					$(_this).parents("tr").remove();
+					setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作成功</div>');
+				}else if(data=="8"){
+					$(_this).parents("tr").prev("tr").remove();
+					$(_this).parents("tr").remove();
+					setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">此订单已被处理</div>');
+				}
+				// console.log(data)
+			}
+		});
+	}
+
+	//详情
+	function xiangqo(p_id,_this){
+
+		var overlay= $("#attr-overlay",parent.document);
+		var content= $("#attr-content",parent.document);
+		var widget_title= $("#widget-title",parent.document);
+		var windows=$("body",parent.document);
+		//关闭按钮
+		var closed=$("#closed",parent.document);
+
+		widget_title.text("详情")
+		overlay.show();
+		content.show();
+		$("#content_sd",parent.document).empty();
+
+		var sel=(windows.width()-content.width())/2;
+		var set=(windows.height()-content.height())/2;
+
+		content.offset({ top: set, left: sel });
+		closed.on("click",function(){
+			overlay.hide();
+			content.hide();
+		});
+
+		$.ajax({
+			url: "http://m.weibaishi.com/Admin/Aingdan/xiangqing",
+			data:{'p_id':p_id},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				data=data[0];
+
+				$("#content_sd",parent.document).append('<ul class="attr-content-con">\
+					<li class="xghujg">订单序号：'+data.p_id+'</li>\
+					<li class="xghujg">下单时间：'+data.order_time+'</li>\
+					<li class="xghujg">订单编号：'+data.order_number+'</li>\
+					<li class="xghujg">订单状态：'+data.order_state+'</li>\
+					<li class="xghujg">服务项目：'+data.goods_content+'</li>\
+					<li class="xghujg">服务地址：'+data.address+'</li>\
+					<li class="xghujg">客户姓名：'+data.username+'</li>\
+					<li class="xghujg">客户电话：'+data.phone+'</li>\
+					<li class="xghujg">商品 ID：'+data.goods_card+'</li>\
+					<li class="xghujg">卖家名称：'+data.goods_name+'</li>\
+					<li class="xghujg">货品名称：'+data.goods_number+'</li>\
+					<li class="xghujg">颜色分类：'+data.goods_color+'</li>\
+					</ul>');
+
+			}
+		});
+	}
+</script>

@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	<style type="text/css">
+		.flex-wrap {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+		}
+		.flex-con {
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			flex: 1;
+		}
+		.flex-vertical {
+			-webkit-box-orient: vertical;
+			-webkit-flex-flow: column;
+			flex-flow: column;
+		}
+		.Breadcrumbs {
+		    display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    margin: 0;
+		    -webkit-box-flex: 1;
+		    -ms-flex-positive: 1;
+		    flex-grow: 1;
+		    text-align: left;
+		    background-color: #fcfcfc;
+		    -webkit-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		}
+		.Breadcrumbs-item {
+		    list-style: none;
+		    float: left;
+		    margin: 15px;
+		}
+		.Breadcrumbs-link {
+		    text-decoration: none;
+		    display: block;
+		    line-height: 20px;
+		    color: #5B6675;
+		    font-size: 20px;
+		    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+		}
+		.FlowButtons-list{
+			/*background: red;*/
+			padding: 20px;
+		}
+		.FlowButtons-itemContainer{
+			
+			margin: 0 12px;
+			line-height: 40px;
+			position: relative;
+		}
+		.FlowButtons-itemContainer a{
+			color: #5b6675;
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+		}
+		.ChoiceComponent h1{
+			font-weight: normal;
+			padding-top: 20px;
+			text-align: center;
+			font-size: 24px;
+		}
+
+		#a2{
+			display: none;
+		}
+
+		.demo{
+			color: #fff;
+			display: -webkit-flex;
+			text-align: center;
+		}
+		.demo-align-content {
+		    /*width: 400px;*/
+		    flex-wrap: wrap;
+		    /*height: 200px;*/
+		    /*border: 1px dashed #B6B6B6;*/
+		}
+		.FlowButtons-itemContainersd{
+			/*padding: 0 20px;*/
+			margin:12px 30px;
+		}
+		.xiubuttce{
+			border:solid 1px #ccc;
+			box-sizing: border-box;
+			padding: 0 70px 0 0px;
+    		width: 100%;
+    		height: 100%;
+    		text-align: center;
+    		height: 40px;
+		}
+		.xiubuttceas{
+			width: 49%;
+		}
+		.xiubuttce.on{
+			border: 1px solid #3e7edb;
+		}
+		.maxiou{
+			width: 15px;
+			height: 15px;
+			display: inline-block;
+			position: absolute;
+			top: 12px;
+			cursor: pointer;
+		}
+		.modifys{
+			background: url(__PUBLIC__/new/image/editmdpi.png) center center no-repeat;
+			right: 34px;
+		}
+		.closes{
+			background: url(__PUBLIC__/new/image/deletemdpi.png) center center no-repeat;
+			right: 12px;
+		}
+		.huifyh{
+			background: url(__PUBLIC__/new/image/redomdpi.png) center center no-repeat;
+			right: 12px;
+		}
+		.sddfsaq{
+			position: relative;
+			line-height: 40px;
+		}
+		.newjisa{
+			background: url(__PUBLIC__/new/image/addmdpi.png) center center no-repeat;
+			/*background: url(__PUBLIC__/img/search-icons.png) center center no-repeat;*/
+			right: 12px;
+		}
+		.slkjawc{
+			position: relative;
+		}
+		.bntsert{
+			position: absolute;
+			top: 20px;
+			left: 60px;
+			cursor: pointer;
+			color: red;
+		}
+		.bntsert2{
+			left: 300px;
+		}
+		#content_sd{
+			padding: 20px 40px;
+		}
+		.sdaaaw{
+			border: solid 1px #3e7edb;
+			width: 260px;
+			height: 40px;
+			margin: 12px 0;
+			box-sizing: border-box;
+			padding: 0 12px;
+		}
+		.shxgtys{
+			border-bottom: solid 1px #ccc;
+			line-height: 34px;
+		}
+		.aqwer{
+
+		}
+		.aqwer li{
+			float: left;
+			line-height: 40px;
+		    padding: 0 12px;
+		    color: #4d4d4d;
+		    cursor: pointer;
+		}
+		.aqwer li.on{
+			color: #3e7edb;
+		}
+		.sddfersd{
+			padding: 12px 0;
+			position: relative;
+		}
+		.sddfersd input{
+			border: solid 1px #3e7edb;
+		    padding: 0 70px 0 0px;
+		    width: 100%;
+		    height: 100%;
+		    text-align: center;
+		    height: 40px;
+		    box-sizing: border-box;
+		}
+		.maxisssa {
+			top: 22px;
+		}
+		.sdlopx{
+		    height: 384px;
+			overflow: auto;
+		}
+		.sdlopx li{
+			line-height: 44px;
+			border-bottom: solid 1px #ccc;
+		}
+		.sjshay{
+			float:right;
+			color: #3e7edb;
+			cursor: pointer;
+		}
+		.FlowButtons-listcc {
+		    /* background: red; */
+		    padding: 20px;
+		}
+		.spanawed{
+			background: red;
+		    position: absolute;
+		    width: 70px;
+		    height: 40px;
+		    top: 0;
+		    left: 0;
+		    cursor: move;
+		}
+		.dash {
+		    position: static;
+		    width: 294px;
+		    height: 40px;
+		    margin: 12px 30px;
+		}
+		/*动画*/
+		.publish-loading {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			padding-top: 350px;
+			background-color: rgba(255, 255, 255, 0.8);
+			text-align: center;
+			z-index: 1500;
+		}
+		.writer-splash {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			/*background: #e4e4e4;*/
+			z-index: 1050;
+		}
+		.writer-splash img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 85px;
+			margin-left: -43px;
+			opacity: 0.9;
+			filter: alpha(opacity=90);
+		}
+		img {
+			max-width: 100%;
+			width: auto\9;
+			height: auto;
+			vertical-align: middle;
+			border: 0;
+			-ms-interpolation-mode: bicubic;
+		}
+		/*动画*/
+	</style>
+</head>
+<body>
+	<div class="tithuax">
+		<ul class="Breadcrumbs">
+			<!-- <li class="Breadcrumbs-item">
+				<a href="javascript:;" class="Breadcrumbs-link">iPhone</a>
+			</li>
+			<li class="Breadcrumbs-item">
+				<a href="javascript:;" class="Breadcrumbs-link">iPhone</a>
+			</li> -->
+		</ul>
+	</div>
+	<div class="RepairAppContainer-bodyContainer">
+		<div class="RepairAppContainer-body">
+			<div class="ChoiceComponent" id="a1">
+				<h1>服务类目</h1>
+				<ul id="sda1" class="FlowButtons-list demo demo-align-content">
+					<!-- <li class="FlowButtons-itemContainer flex-con" onclick="selectPhone(this,'1','手机')">
+						<a href="javascript:;" class="">手机</a>
+						<input class="xiubuttce" type="text" value="">
+					</li>
+					<li class="FlowButtons-itemContainer flex-con" onclick="selectPhone(this,'2','平板')">
+						<a href="javascript:;" class="">平板</a>
+					</li>
+					<li class="FlowButtons-itemContainer flex-con" onclick="selectPhone(this,'3','电脑')">
+						<a href="javascript:;" class="">电脑</a>
+					</li> -->
+				</ul>
+			</div>
+			<div class="ChoiceComponent" id="a2" style="display: none;">
+				<h1>服务品牌</h1>
+				<ul id="sda2" class="FlowButtons-list demo demo-align-content">
+				</ul>
+			</div>
+			<div class="ChoiceComponent" id="a3" style="display: none;">
+				<h1>服务机型</h1>
+				<ul id="sda3" class="FlowButtons-list demo demo-align-content">
+				</ul>
+			</div>
+			<div class="ChoiceComponent" id="a4" style="display: none;">
+				<!-- <div class="cjhu_list">
+					<div class="shubhgfs">添加新服务</div>
+				</div> -->
+				<h1 class="slkjawc">
+					<div id="swrtxxs" onclick="addcopi(this)" class="bntsert">添加新的服务类目</div>
+					<div onclick="setcopi(this)" class="bntsert bntsert2">服务类目管理</div>
+				服务内容</h1>
+				<ul id="sda4" class="FlowButtons-list demo demo-align-content">
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="attr-overlay" id="attr-overlay"></div>
+	<div class="attr-content" id="attr-content">
+        <div class="widget-close" id="closed">
+            关闭
+        </div>
+        <div id="widget-title" class="widget-title"></div>
+        <div id="content_sd">
+        	
+        </div>
+    </div>
+    <div class="publish-loading writer-splash" style=" display:none">
+    	<img src="__PUBLIC__/new/image/writer_loadi.gif">
+    </div>
+</body>
+<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/new/script/Sortable.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ajaxSend(function(){
+	$(".publish-loading").show();
+})
+$(document).ajaxStop(function(){
+	setTimeout(function(){
+		$(".publish-loading").hide();
+	},500)
+})
+
+var bar = document.getElementById("sda1");
+	Sortable.create(document.getElementById('sda1'), {
+		onSort: function(evt) { //发生排序发生该事件
+			var newge=$("#sda1 li").eq(evt.newIndex);
+			//console.log(newge);//新位置
+			var ibge;
+			if(evt.newIndex>evt.oldIndex){
+				ibge=newge.prev();
+			}else{
+				ibge=newge.next();
+			}
+			//console.log(ibge);//新位置上一个
+			var s1=$(newge).attr("nucc");
+			var s2=$(ibge).attr("nucc");
+			$.ajax({
+				url: "http://d.weibaishi.com/admin/aingdan/type_pai",
+				data: {
+					'type_pai1': s1,
+					'type_pai2': s2
+				},
+				dataType: "json",
+				type: 'post',
+				success: function(data) {
+					// console.log(data)
+					if(data=="1"){
+						ingsrew()
+					}else{
+						alert("失败")
+						ingsrew()
+					}
+				}
+			});
+		},
+	})
+
+
+var bar = document.getElementById("sda2");
+	Sortable.create(document.getElementById('sda2'), {
+		onSort: function(evt) { //发生排序发生该事件
+			var newge=$("#sda2 li").eq(evt.newIndex);
+			//console.log(newge);//新位置
+			var ibge;
+			if(evt.newIndex>evt.oldIndex){
+				ibge=newge.prev();
+			}else{
+				ibge=newge.next();
+			}
+			//console.log(ibge);//新位置上一个
+			var s1=$(newge).attr("nucc");
+			var s2=$(ibge).attr("nucc");
+			$.ajax({
+				url: "http://d.weibaishi.com/admin/aingdan/brand_pai",
+				data: {
+					'brand_pai1': s1,
+					'brand_pai2': s2
+				},
+				dataType: "json",
+				type: 'post',
+				success: function(data) {
+					// console.log(data)
+					if(data=="1"){
+						selectPhone(serdtw)
+					}else{
+						alert("失败")
+						selectPhone(serdtw)
+					}
+				}
+			});
+		},
+	})
+
+var bar2 = document.getElementById("sda3");
+	Sortable.create(document.getElementById('sda3'), {
+		onSort: function(evt) { //发生排序发生该事件
+			var newge=$("#sda3 li").eq(evt.newIndex);
+			//console.log(newge);//新位置
+			var ibge;
+			if(evt.newIndex>evt.oldIndex){
+				ibge=newge.prev();
+			}else{
+				ibge=newge.next();
+			}
+			//console.log(ibge);//新位置上一个
+			var s1=$(newge).attr("nucc");
+			var s2=$(ibge).attr("nucc");
+			$.ajax({
+				url: "http://d.weibaishi.com/admin/aingdan/model_pai",
+				data: {
+					'model_pai1': s1,
+					'model_pai2': s2
+				},
+				dataType: "json",
+				type: 'post',
+				success: function(data) {
+					if(data=="1"){
+						jixinglop(serdtwaq)
+					}else{
+						alert("失败")
+						jixinglop(serdtwaq)
+					}
+				}
+			});
+		},
+	})
+
+
+var bar2 = document.getElementById("sda4");
+	Sortable.create(document.getElementById('sda4'), {
+		onSort: function(evt) { //发生排序发生该事件
+			var newge=$("#sda4 li").eq(evt.newIndex);
+			//console.log(newge);//新位置
+			var ibge;
+			if(evt.newIndex>evt.oldIndex){
+				ibge=newge.prev();
+			}else{
+				ibge=newge.next();
+			}
+			//console.log(ibge);//新位置上一个
+			var s1=$(newge).attr("nucc");
+			var s2=$(ibge).attr("nucc");
+			$.ajax({
+				url: "http://d.weibaishi.com/admin/aingdan/cpk_pai",
+				data: {
+					'sku_pai1': s1,
+					'sku_pai2': s2
+				},
+				dataType: "json",
+				type: 'post',
+				success: function(data) {
+					if(data=="1"){
+						addColor(sretfds)
+					}else{
+						alert("失败")
+						addColor(sretfds)
+					}
+				}
+			});
+		},
+	})
+
+
+
+
+
+var serdtw;//存a1
+var serdtwaq;//存a2
+var sretfds;//存a3
+ingsrew();
+function ingsrew() {
+	$.ajax({
+		type: "GET",
+		// async: false,
+		dataType: 'json',
+		url: 'http://d.weibaishi.com/admin/aingdan/type_list',
+		success: function(data) {
+			// var navHtml
+			var navHtml = '<div class="sddfsaq FlowButtons-itemContainersd"  >\
+							<input class="xiubuttce input1" type="text" placeholder="新机型名称" value="">\
+							<span onclick="newjisa(this)" class="maxiou newjisa newjisaas"></span>\
+						</div>';
+			var navHtml2='';
+			$(data).each(function(i, v) {
+				if (v.type_zt == "1") {
+					navHtml2 += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd " num="' + v.type_id + '" >\
+							<input readonly="readonly" class="xiubuttce" type="text" value="' + v.type_name + '">\
+							<span onclick="huifyh(this)" class="maxiou huifyh huifyha"></span>\
+						</li>';
+				} else {
+					navHtml += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd " nucc="'+v.type_pai+'" content="'+v.type_name+'" num="' + v.type_id + '" onclick="selectPhone(this)">\
+							<input readonly="readonly" class="xiubuttce" type="text" value="' + v.type_name + '">\
+							<span onclick="modifys(this)" class="maxiou modifys modifysa"></span>\
+							<span onclick="hugsfa(this)" class="maxiou closes modifysa"></span>\
+						</li>';
+				}
+
+				// console.log(v)
+			})
+			$("#a1 .FlowButtons-list").html(navHtml);
+			$("#a1 .FlowButtons-listcc").remove();
+			$("#a1").append('<ul class="FlowButtons-listcc demo demo-align-content">'+navHtml2+'</ul>')
+		}
+	});
+}
+
+
+$(document).click(function() {
+	$(".FlowButtons-itemContainer").find("input").attr("readonly", "true").removeClass('on').unbind();
+})
+
+
+//后添加显示
+function addcopi(el){
+	var num=$(el).attr("num");
+	var overlay= $("#attr-overlay");
+	var content= $("#attr-content");
+	var widget_title= $("#widget-title");
+	var windows=$("body");
+	//关闭按钮
+	var closed=$("#closed");
+	closed.on("click",function(){
+		overlay.hide();
+		content.hide();
+	});
+
+	widget_title.text("添加新的服务内容")
+	overlay.show();
+	content.show();
+	$("#content_sd").empty();
+	var sel=(windows.width()-content.width())/2;
+	var set=(windows.height()-content.height())/2;
+
+	content.offset({ top: set, left: sel });
+
+	$.ajax({
+		url: "http://d.weibaishi.com/admin/aingdan/chanpinname_list",
+		// data:{'p_id':datas},
+		dataType: "json",
+		type: 'post',
+		success: function(data) {
+			var navHtml = '<div class="top_ingfs flex-wrap">\
+				<div class="lehusgt flex-con">\
+					<p>服务内容</p>\
+					<input id="sdaaawa" class="sdaaaw" type="text" placeholder="" value="">\
+				</div>\
+				<div class="lehusgt flex-con">\
+					<p>服务价格</p>\
+					<input id="sscfrt" class="sdaaaw" type="text" placeholder="" value="">\
+				</div>\
+			</div>\
+			<div class="shxgtys">已有服务内容,点击可添加</div>\
+			<ul class="aqwer clearfix">';
+			$(data).each(function(i, v) {
+				navHtml += '<li class="FlowBut" content="' + v.chanpin_name + '" num="' + v.chanpin_id + '" >' + v.chanpin_name + '</li>';
+			});
+			navHtml +='</ul>';
+			$("#content_sd").html(navHtml);
+			$("#content_sd").append('<button class="attr-content-button">匹配</button>');
+			$(".aqwer li").on("click", function() {
+				sxbacq = $(this).attr('num');
+				$(this).addClass("on").siblings().removeClass("on");
+				$("#sdaaawa").val($(this).attr('content'));
+			})
+			$(".attr-content-button").on("click", function() {
+				var data1=$("#sdaaawa").val();
+				var data2=$("#sscfrt").val();
+
+				if (data1!=""&&data2!="") {
+					newcp('http://d.weibaishi.com/admin/aingdan/chanpin_add',num, data1,data2);
+					overlay.hide();
+					content.hide();
+				}
+			})
+		}
+	});
+}
+//快速选中
+function sernwers(el){
+
+}
+
+
+function setcopi(el){
+	var overlay= $("#attr-overlay");
+	var content= $("#attr-content");
+	var widget_title= $("#widget-title");
+	var windows=$("body");
+	//关闭按钮
+	var closed=$("#closed");
+	closed.on("click",function(){
+		overlay.hide();
+		content.hide();
+	});
+
+	widget_title.text("添加新的服务内容")
+	overlay.show();
+	content.show();
+	$("#content_sd").empty();
+	var sel=(windows.width()-content.width())/2;
+	var set=(windows.height()-content.height())/2;
+
+	content.offset({ top: set, left: sel });
+
+	$.ajax({
+		url: "http://d.weibaishi.com/admin/aingdan/chanpinname_list",
+		// data:{'p_id':datas},
+		dataType: "json",
+		type: 'post',
+		success: function(data) {
+			var navHtml = '<div class="sddfersd"  >\
+							<input class="sdaaut1" type="text" placeholder="" value="">\
+							<span class="maxiou newjisa newasd maxisssa"></span>\
+						</div><ul class="sdlopx clearfix">';
+			$(data).each(function(i, v) {
+				navHtml += '<li class="FlowBut" onclick="shugts(this)" content="' + v.chanpin_name + '" num="' + v.chanpin_id + '" >' + v.chanpin_name + '<div class="sjshay" num="' + v.chanpin_id + '">删除</div></li>';
+			})
+			navHtml +='</ul>';
+			$("#content_sd").html(navHtml);
+
+			$(".maxisssa").on("click", function() {
+				var value = $(".sdaaut1").val();
+				if(value!=""){
+					newwejisa(value);
+				}
+			})
+			$(".sjshay").on("click", function() {
+				var numa = $(this).attr("num");
+				var _this=$(this).parent();
+				$.ajax({
+					url: "http://d.weibaishi.com/admin/aingdan/chanpinname_delete",
+					data: {
+						'chanpin_id': numa
+					},
+					dataType: "json",
+					type: 'post',
+					success: function(data) {
+						if(data=="1"){
+							_this.remove();
+						}
+					}
+				});
+			})
+
+		}
+	});
+}
+
+
+function newwejisa(data){
+	$.ajax({
+		url: "http://d.weibaishi.com/admin/aingdan/chanpinname_add",
+		data: {
+			'chanpin_name': data
+		},
+		dataType: "json",
+		type: 'post',
+		success: function(data) {
+			console.log(data)
+			if(data=="1"){
+				$.ajax({
+					url: "http://d.weibaishi.com/admin/aingdan/chanpinname_list",
+					// data:{'p_id':datas},
+					dataType: "json",
+					type: 'post',
+					success: function(data) {
+						var navHtml = '<div class="sddfersd"  >\
+							<input class="sdaaut1" type="text" placeholder="" value="">\
+							<span class="maxiou newjisa newasd maxisssa"></span>\
+						</div><ul class="sdlopx clearfix">';
+						$(data).each(function(i, v) {
+							navHtml += '<li class="FlowBut" onclick="shugts(this)" content="' + v.chanpin_name + '" num="' + v.chanpin_id + '" >' + v.chanpin_name + '<div class="sjshay" num="' + v.chanpin_id + '">删除</div></li>';
+						})
+						navHtml += '</ul>';
+						$("#content_sd").html(navHtml);
+
+						$(".maxisssa").on("click", function() {
+							var value = $(".sdaaut1").val();
+							if (value != "") {
+								newwejisa(value);
+							}
+						})
+						$(".sjshay").on("click", function() {
+							var numa = $(this).attr("num");
+							var _this = $(this).parent();
+							$.ajax({
+								url: "http://d.weibaishi.com/admin/aingdan/chanpinname_delete",
+								data: {
+									'chanpin_id': numa
+								},
+								dataType: "json",
+								type: 'post',
+								success: function(data) {
+									if (data == "1") {
+										_this.remove();
+									}
+								}
+							});
+						})
+
+					}
+				});
+			}
+		}
+	});
+}
+
+
+
+
+
+//添加
+function newjisa(el,type_id){
+	var num=$(el).parents('div').attr('num');
+	var content=$(el).parents('div').find(".input1").val();
+	var content2=$(el).parents('div').find(".input2").val();
+	// console.log(content)
+	if(content==""){
+		alert("不能为空");
+		return;
+	}else{
+		if ($(el).hasClass('newjisaas')) {
+			newleuy('http://d.weibaishi.com/admin/aingdan/type_add', content);
+		}else if($(el).hasClass('newasd')){
+			newasd('http://d.weibaishi.com/admin/aingdan/brand_add',type_id, content);
+		}else if($(el).hasClass('newjixing')){
+			newjixing('http://d.weibaishi.com/admin/aingdan/model_add',type_id, content);
+		}else if($(el).hasClass('newcp')){
+			newcp('http://d.weibaishi.com/admin/aingdan/chanpin_add',type_id, content,content2);
+		}
+	}
+}
+//类型添加
+function newleuy(url,content){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'type_name':content
+		},
+		success: function(data) {
+			if(data=="1"){
+				ingsrew()
+			}else if(data=="2"){
+				alert("出现错误")
+			}
+		}
+	});
+}
+//品牌添加
+function newasd(url,type_id,content){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'brand_name':content,
+			'type_id':type_id
+		},
+		success: function(data) {
+			if(data=="1"){
+				selectPhone(serdtw)
+			}else if(data=="2"){
+				alert("出现错误")
+			}
+		}
+	});
+}
+//机型添加
+function newjixing(url,type_id,content){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'model_name':content,
+			'brand_id':type_id
+		},
+		success: function(data) {
+			if(data=="1"){
+				jixinglop(serdtwaq)
+			}else if(data=="2"){
+				alert("出现错误")
+			}
+		}
+	});
+}
+//产品添加
+function newcp(url,type_id,content,content2){
+	/*console.log(type_id)
+	console.log(content)
+	console.log(content2)*/
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'sku_name':content,
+			'model_id':type_id,
+			'sku_money':content2
+		},
+		success: function(data) {
+			if(data=="1"){
+				addColor(sretfds)
+			}else if(data=="2"){
+				alert("出现错误")
+			}
+		}
+	});
+}
+
+//修改
+function modifys(el){
+	// window.event.stopPropagation ? window.event.stopPropagation() : window.event.cancelBubble = true;
+	var num=$(el).parents('li').attr('num');
+	$(el).prev().unbind();
+	//$(".FlowButtons-itemContainer").find("input").attr("readonly", "true").removeClass('on')
+	$(el).parents('li').find("input").removeAttr("readonly").addClass('on');
+	// $(el).prev().removeAttr("readonly").addClass('on');
+	// console.log($(el).parents('li').find("input"))
+
+	$(el).parents('li').find("input").on('click',function(event){
+		event.stopPropagation();
+	})
+	$(el).parents('li').siblings('li').find("input").attr("readonly", "true").removeClass('on');
+	$(el).parents('li').find("input").change(function() {
+		var content=$(el).parents('li').find("input").val();
+		if ($(el).hasClass('modifysa')) {
+			modifyse('http://d.weibaishi.com/admin/aingdan/type_save', num,content);
+		}else if($(el).hasClass('brand_save')){
+			modifyseas('http://d.weibaishi.com/admin/aingdan/brand_save', num,content);
+		}else if($(el).hasClass('model_save')){
+			modifyseasaa('http://d.weibaishi.com/admin/aingdan/model_save', num,content);
+		}else if($(el).hasClass('cpk')){
+			var content=$(el).parents('li').find(".input1").val();
+			var content1=$(el).parents('li').find(".input2").val();
+			modifyseasaabb('http://d.weibaishi.com/admin/aingdan/chanpinku_save', num,content,content1);
+		}
+	})
+	event.stopPropagation();
+}
+//修改ajax
+function modifyse(url,num,content){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'type_id': num,
+			'type_name':content
+		},
+		success: function(data) {
+			// console.log(data)
+		}
+	});
+}
+
+//品牌修改ajax
+function modifyseas(url,num,content){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'brand_id': num,
+			'brand_name':content
+		},
+		success: function(data) {
+			console.log(data)
+		}
+	});
+}
+//机型修改ajax
+function modifyseasaa(url,num,content){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'model_id': num,
+			'model_name':content
+		},
+		success: function(data) {
+			console.log(data)
+		}
+	});
+}
+//产品修改ajax
+function modifyseasaabb(url,num,content,content1){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'sku_id': num,
+			'sku_name':content,
+			'sku_money':content1
+		},
+		success: function(data) {
+			console.log(data)
+		}
+	});
+}
+
+//删除
+function hugsfa(el){
+	var num=$(el).parents('li').attr('num');
+	if ($(el).hasClass('modifysa')) {
+		hugsfas('http://d.weibaishi.com/admin/aingdan/type_delete', num);
+	}else if($(el).hasClass('brand_save')){
+		hugsfasae('http://d.weibaishi.com/admin/aingdan/brand_delete', num);
+	}else if($(el).hasClass('model_save')){
+		hugsfasaeaa('http://d.weibaishi.com/admin/aingdan/model_delete', num);
+	}else if($(el).hasClass('cpk')){
+		hugsfasaeaabb('http://d.weibaishi.com/admin/aingdan/chanpinku_delete', num);
+	}
+	event.stopPropagation();
+}
+//删除ajax
+function hugsfas(url,num){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'type_id': num,
+		},
+		success: function(data) {
+			ingsrew()
+			console.log(data)
+		}
+	});
+}
+//品牌删除ajax
+function hugsfasae(url,num){
+	/*console.log(el)
+	el=$(el).parents('li')[0]
+	console.log(el)*/
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'brand_id': num,
+		},
+		success: function(data) {
+			// ingsrew()
+			selectPhone(serdtw)
+		}
+	});
+}
+//机型删除ajax
+function hugsfasaeaa(url,num){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'model_id': num,
+		},
+		success: function(data) {
+			if(data=="1"){
+				jixinglop(serdtwaq)
+			}else if(data=="2"){
+				alert("出现错误")
+			}
+		}
+	});
+}
+//产品删除ajax
+function hugsfasaeaabb(url,num){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'sku_id': num,
+		},
+		success: function(data) {
+			if(data=="1"){
+				addColor(sretfds)
+			}else if(data=="2"){
+				alert("出现错误")
+			}
+		}
+	});
+}
+
+//恢复
+function huifyh(el){
+	var num=$(el).parents('li').attr('num');
+	if ($(el).hasClass('huifyha')) {
+		huifyhs('http://d.weibaishi.com/admin/aingdan/type_huifu', num);
+	}else if($(el).hasClass('huifyhaaw')){
+		huifyhsae('http://d.weibaishi.com/admin/aingdan/brand_huifu', num);
+	}else if($(el).hasClass('model_save')){
+		huifyhsaeaa('http://d.weibaishi.com/admin/aingdan/model_huifu', num);
+	}else if($(el).hasClass('cpk')){
+		huifyhsaeaabb('http://d.weibaishi.com/admin/aingdan/chanpinku_huifu', num);
+	}
+	event.stopPropagation();
+}
+//恢复ajax
+function huifyhs(url,num){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'type_id': num,
+		},
+		success: function(data) {
+			ingsrew()
+			console.log(data)
+		}
+	});
+}
+//品牌恢复ajax
+function huifyhsae(url,num){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'brand_id': num,
+		},
+		success: function(data) {
+			if(data=="1"){
+				selectPhone(serdtw)
+			}else if(data=="2"){
+				alert("出现错误")
+			}
+		}
+	});
+}
+//机型恢复ajax
+function huifyhsaeaa(url,num){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'model_id': num,
+		},
+		success: function(data) {
+			if(data=="1"){
+				jixinglop(serdtwaq)
+			}else if(data=="2"){
+				alert("出现错误")
+			}
+		}
+	});
+}
+//产品恢复ajax
+function huifyhsaeaabb(url,num){
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data: {
+			'sku_id': num,
+		},
+		success: function(data) {
+			if(data=="1"){
+				addColor(sretfds)
+			}else if(data=="2"){
+				alert("出现错误")
+			}
+		}
+	});
+}
+
+
+//iphone选择
+function selectPhone(el, mod, name) {
+	var num=$(el).attr('num');
+	if(!serdtw){
+		addHtml(el);
+	}
+	$('#a1').css('display', 'none');
+	$.ajax({
+		type: "POST",
+		async: false,
+		url: "http://d.weibaishi.com/admin/aingdan/brand_list",
+		dataType: 'json',
+		data:{'type_id':num},
+		success: function(data) {
+			$('#a2').css('display', 'block');
+			var navHtml = '<div class="sddfsaq FlowButtons-itemContainersd">\
+							<input class="xiubuttce input1" type="text" placeholder="新品牌名称" value="">\
+							<span onclick="newjisa(this,' + num + ')" class="maxiou newjisa newasd"></span>\
+						</div>';
+			var navHtml2='';
+			$(data).each(function(i, v) {
+				if (v.brand_zt == "1") {
+					navHtml2 += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd model" content="' + v.brand_name + '" num="' + v.brand_id + '">\
+							<input readonly="readonly" class="xiubuttce" type="text" value="' + v.brand_name + '">\
+							<span onclick="huifyh(this)" class="maxiou huifyh huifyhaaw"></span>\
+						</li>';
+				} else {
+					navHtml += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd model" nucc="'+v.brand_pai+'" content="' + v.brand_name + '" num="' + v.brand_id + '" onclick="jixinglop(this)">\
+							<input readonly="readonly" class="xiubuttce" type="text" value="' + v.brand_name + '">\
+							<span onclick="modifys(this)" class="maxiou modifys brand_save"></span>\
+							<span onclick="hugsfa(this)" class="maxiou closes brand_save"></span>\
+						</li>';
+				}
+				// console.log(v)
+			})
+			$("#a2 .FlowButtons-list").html(navHtml);
+			$("#a2 .FlowButtons-listcc").remove();
+			$("#a2").append('<ul class="FlowButtons-listcc demo demo-align-content">'+navHtml2+'</ul>');
+		}
+	});
+	serdtw=el
+}
+
+
+
+//选择机型添加到目录栏
+function addHtml(el){
+	//保存品牌名称
+	var mdId=$(el).attr("content")?$(el).attr("content"):null;
+	//console.log(mdId)
+	/*console.log(serdtwaq)
+	console.log(sretfds)*/
+	$('<li class="Breadcrumbs-item" data-id='+$(el).parent().parent().attr('id')+' onclick="step(this)">\
+        <a href="javascript:;" class="Breadcrumbs-link">' + mdId + '</a>\
+    </li>').appendTo('.Breadcrumbs');
+	/*if(!serdtwaq){
+		$('<li class="Breadcrumbs-item" data-id='+$(el).parent().parent().attr('id')+' onclick="step(this)">\
+	        <a href="javascript:;" class="Breadcrumbs-link">' + mdId + '</a>\
+	    </li>').appendTo('.Breadcrumbs');
+	}else if(serdtwaq&&!sretfds){
+		$('<li class="Breadcrumbs-item" data-id='+$(el).parent().parent().attr('id')+' onclick="step(this)">\
+	        <a href="javascript:;" class="Breadcrumbs-link">' + mdId + '</a>\
+	    </li>').appendTo('.Breadcrumbs');
+	}*/
+    var num=$(el).attr('num');
+    //判断是手机走这一步请求
+    /*if($(el).hasClass('model')){
+    	serdtwaq=el;
+        //fault(interface_url+'repair/hitch/'+num,num);
+        fault('http://d.weibaishi.com/admin/aingdan/model_list',num);
+        //ipad走这一步请求
+    }else if($(el).hasClass('ipad')){
+        fault(interface_url+'repair/hitch/'+num,num);
+    }*/
+}
+
+
+//机型显示
+function jixinglop(el){
+	//console.log(serdtwaq)
+	if(!serdtwaq){
+		addHtml(el);
+	}
+	$('.RepairAppContainer-body>div').css('display','none');
+	var num=$(el).attr('num');
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: 'http://d.weibaishi.com/admin/aingdan/model_list',
+		dataType: 'json',
+		data:{'brand_id':num},
+		success: function(data) {
+			$('#a3').css('display', 'block');
+			var navHtml = '<div class="sddfsaq FlowButtons-itemContainersd">\
+							<input class="xiubuttce input1" type="text" placeholder="新机型名称" value="">\
+							<span onclick="newjisa(this,' + num + ')" class="maxiou newjisa newjixing"></span>\
+						</div>';
+			var navHtml2='';
+			$(data).each(function(i, v) {
+				/*navHtml += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd " num="' + v.model_id + '" onclick="addColor(this)">\
+							<a href="javascript:;" class="">' + v.model_name + '</a>\
+						</li>';*/
+				// console.log(v)
+
+				if (v.model_zt == "1") {
+					navHtml2 += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd" content="' + v.model_name + '" num="' + v.model_id + '">\
+							<input readonly="readonly" class="xiubuttce" type="text" value="' + v.model_name + '">\
+							<span onclick="huifyh(this)" class="maxiou huifyh model_save"></span>\
+						</li>';
+				} else {
+					navHtml += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd" nucc="'+v.model_pai+'" content="' + v.model_name + '" num="' + v.model_id + '" onclick="addColor(this)">\
+							<input readonly="readonly" class="xiubuttce" type="text" value="' + v.model_name + '">\
+							<span onclick="modifys(this)" class="maxiou modifys model_save"></span>\
+							<span onclick="hugsfa(this)" class="maxiou closes model_save"></span>\
+						</li>';
+				}
+			})
+			$("#a3 .FlowButtons-list").html(navHtml)
+			$("#a3 .FlowButtons-listcc").remove();
+			$("#a3").append('<ul class="FlowButtons-listcc demo demo-align-content">'+navHtml2+'</ul>')
+		}
+	});
+	serdtwaq=el;
+}
+
+//加载
+function fault(url,num){
+	$('.RepairAppContainer-body>div').css('display','none');
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: url,
+		dataType: 'json',
+		data:{'brand_id':num},
+		success: function(data) {
+			$('#a3').css('display', 'block');
+			var navHtml = '<div class="sddfsaq FlowButtons-itemContainersd">\
+							<input class="xiubuttce input1" type="text" placeholder="新机型名称" value="">\
+							<span onclick="newjisa(this,' + num + ')" class="maxiou newjisa newjixing"></span>\
+						</div>';
+			$(data).each(function(i, v) {
+				/*navHtml += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd " num="' + v.model_id + '" onclick="addColor(this)">\
+							<a href="javascript:;" class="">' + v.model_name + '</a>\
+						</li>';*/
+				// console.log(v)
+
+				if (v.model_zt == "1") {
+					navHtml += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd" content="' + v.model_name + '" num="' + v.model_id + '">\
+							<input readonly="readonly" class="xiubuttce" type="text" value="' + v.model_name + '">\
+							<span onclick="huifyh(this)" class="maxiou huifyh model_save"></span>\
+						</li>';
+				} else {
+					navHtml += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd" content="' + v.model_name + '" num="' + v.model_id + '" onclick="addColor(this)">\
+							<input readonly="readonly" class="xiubuttce" type="text" value="' + v.model_name + '">\
+							<span onclick="modifys(this)" class="maxiou modifys model_save"></span>\
+							<span onclick="hugsfa(this)" class="maxiou closes model_save"></span>\
+						</li>';
+				}
+			})
+			$("#a3 .FlowButtons-list").html(navHtml)
+		}
+	});
+}
+
+//产品显示
+function addColor(el){
+	//serdtwaq=null;
+	//console.log(sretfds)
+	if(!sretfds){
+		addHtml(el);
+	}
+	$('.RepairAppContainer-body>div').css('display','none');
+	var num=$(el).attr('num');
+	$.ajax({
+		type: "POST",
+		// async: false,
+		url: 'http://d.weibaishi.com/admin/aingdan/chanpin_list',
+		dataType: 'json',
+		data:{'model_id':num},
+		success: function(data) {
+			$("#swrtxxs").attr("num",num);
+			$('#a4').css('display', 'block');
+			/*var navHtml = '<div class="sddfsaq FlowButtons-itemContainersd">\
+							<input class="xiubuttce xiubuttceas input1" type="text" placeholder="新产品名称" value="">\
+							<input class="xiubuttce xiubuttceas input2" type="text" placeholder="新产品价格" value="">\
+							<span onclick="newjisa(this,' + num + ')" class="maxiou newjisa newcp"></span>\
+						</div>';*/
+			var navHtml = '<div class="sddfsaq FlowButtons-itemContainersd">\
+							<input class="xiubuttce xiubuttceas input1" type="text" placeholder="新产品名称" value="">\
+							<input class="xiubuttce xiubuttceas input2" type="text" placeholder="新产品价格" value="">\
+							<span onclick="newjisa(this,' + num + ')" class="maxiou newjisa newcp"></span>\
+						</div>';
+			var navHtml2='';
+			$(data).each(function(i, v) {
+				/*navHtml += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd " num="' + v.cpk_id + '" >\
+							<a href="javascript:;" class="">' + v.cpk_name + '</a>\
+						</li>';*/
+
+				// console.log(v)
+				if (v.sku_zt == "1") {
+					navHtml2 += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd" content="' + v.sku_name + '" num="' + v.sku_id + '">\
+							<input readonly="readonly" class="xiubuttce xiubuttceas input1" type="text" value="' + v.sku_name + '">\
+							<input readonly="readonly" class="xiubuttce xiubuttceas input2" type="text" value="' + v.sku_money + '">\
+							<span onclick="huifyh(this)" class="maxiou huifyh cpk"></span>\
+						</li>';
+				} else {
+					navHtml += '<li class="FlowButtons-itemContainer FlowButtons-itemContainersd" nucc="'+v.sku_pai+'" content="' + v.sku_name + '" num="' + v.sku_id + '">\
+							<input readonly="readonly" class="xiubuttce xiubuttceas input1" type="text" value="' + v.sku_name + '">\
+							<input readonly="readonly" class="xiubuttce xiubuttceas input2" type="text" value="' + v.sku_money + '">\
+							<span onclick="modifys(this)" class="maxiou modifys cpk"></span>\
+							<span onclick="hugsfa(this)" class="maxiou closes cpk"></span>\
+						</li>';
+				}
+			})
+			$("#a4 .FlowButtons-list").html(navHtml)
+			$("#a4 .FlowButtons-listcc").remove();
+			$("#a4").append('<ul class="FlowButtons-listcc demo demo-align-content">'+navHtml2+'</ul>')
+		}
+	});
+	sretfds=el;
+}
+
+
+//点击上面目录栏，返回到相应那一步
+function step(el){
+	
+	if($(el).attr("data-id")=="a1"){
+		serdtw=null;
+		serdtwaq=null;
+		sretfds=null;
+	}else if($(el).attr("data-id")=="a2"){
+		serdtwaq=null;
+		sretfds=null;
+	}else if($(el).attr("data-id")=="a3"){
+		sretfds=null;
+	}
+	/*console.log('serdtw'+serdtw)
+	console.log('serdtwaq'+serdtwaq)
+	console.log('sretfds'+sretfds)*/
+	/*serdtw=null;
+	serdtwaq=null;
+	sretfds=null;*/
+	var id=$(el).attr('data-id');
+	$('.RepairAppContainer-body>div').css('display','none');
+	$(el).nextAll().remove();
+	$(el).remove();
+	$( '#'+id).css('display','block');
+    /*var id=$(el).attr('data-id');
+    $('.RepairAppContainer-body>div').css('display','none');
+    var shuliang=($(el).nextAll().length+1);
+    $(el).nextAll().remove();
+    $(el).remove();
+    width-=8*shuliang;
+    $('.addwidth').css('width',width+"%");
+    $( '#'+id).css('display','block');
+    if($(el).attr('data-id')<=8){
+        $('.Breadcrumbs').empty();
+    }*/
+}
+</script>
+</html>

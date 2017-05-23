@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<a href="__CONTROLLER__/index">返回</a><br /><br /><br />
+<a href='javascript:void(0)'onclick='tx(1)'>未审核</a>  <a href='javascript:void(0)'onclick='tx(2)'>已通过</a><br /><br /><br />
+	<div id='list'>
+	<foreach name='arr' item='k'>
+			单号:{$k.ddh} <br />
+			提现金额:{$k.amt}<br />		
+			账号:{$k.kahao}<br />
+			姓名:{$k.user_username}<br />
+			申请时间:{$k.txsq_time}<br />
+			<if condition="strtoupper($k['zta']) eq  1">
+					待审核<br /><br />
+					<a href="__CONTROLLER__/tongguo/id/{$k.tixianshenqing_id}">确认通过</a><br /><br />
+					<a href="__CONTROLLER__/jujue/id/{$k.tixianshenqing_id}">拒绝</a>
+					<elseif condition="strtoupper($k['zta']) eq 2"/ > 
+					已通过
+				
+			</if> <br />
+			
+			<br /><br /><br />
+					
+			
+	</foreach>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+		function tx(zta){
+		//	alert(zta)
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/tixianajax/zta/"+zta,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('list').innerHTML=ajax.responseText
+				}
+}
+	}
+
+</script>

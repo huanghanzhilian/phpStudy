@@ -1,0 +1,25 @@
+[ 2016-10-24T17:09:42+08:00 ] ::1 /pj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: UPDATE `goods` SET `pingjiazt`='1',`stau`='6' WHERE (  (fk_time < '2016-10-09 17'1'9:42') and (stau='5') ) [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `pingjia` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pingjia` INNER JOIN goods on pingjia.goods_id=goods.id INNER JOIN m_user on pingjia.user_id=m_user.user_id INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id  ORDER BY pingjia_id desc LIMIT 3   [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

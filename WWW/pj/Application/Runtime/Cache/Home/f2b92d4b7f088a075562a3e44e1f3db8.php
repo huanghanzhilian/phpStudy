@@ -1,0 +1,23 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+ <?php if(strtoupper($t) == 0): ?><form method="post" action="/Home/Gouwuche/yuequfukuan">
+	可用余额:<?php echo ($yuemoney); ?> <br /><br />
+	商品价格:<?php echo ($arr["amount"]); ?>
+	<input type="hidden" name="id" value='<?php echo ($arr["id"]); ?>'><br /><br />
+	<input type="submit" value='确定付款'>
+</form>
+<?php elseif(strtoupper($t) == 1): ?> 
+	<form method="post" action="/Home/Gouwuche/maichuyuequfukuan">
+	可用余额:<?php echo ($yuemoney); ?> <br /><br />
+	商品价格:<?php echo ($arr["amount"]); ?>
+	<input type="hidden" name="id" value='<?php echo ($arr["id"]); ?>'><br /><br />
+	<input type="submit" value='确定付款'>
+</form>
+  <?php else: endif; ?>
+</body>
+</html>

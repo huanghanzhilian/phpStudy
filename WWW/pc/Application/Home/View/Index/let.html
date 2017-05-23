@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>维百士—手机配件上门安装</title>
+	<style type="text/css">
+		html,body{
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Microsoft YaHei","Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+		}
+		body{
+			background: url(__PUBLIC__/new/image/wjimg/bg.png) center center no-repeat;
+			background-size: cover;
+		}
+		body {
+		    display: table;
+		    text-align: center;
+		    table-layout: fixed;
+		    border-collapse: collapse;
+		    width: 100%;
+		    position: relative;
+		    
+		}
+		.wrapper {
+		    margin: auto;
+		    width: 100%;
+		    height: 100%;
+		    position: relative;
+		    overflow: hidden;
+		    display: table-cell;
+		    vertical-align: middle;
+		}
+		#slogan {
+		    position: relative;
+		    top: -5.5em;
+		    width: 320px;
+		    height: 192px;
+		    margin: 0 auto;
+		    background: url(__PUBLIC__/new/image/wjimg/fdtsrg.png) no-repeat center center;
+		    -webkit-background-size: contain;
+		    background-size: contain;
+		}
+		#btnContainer {
+		    width: 205px;
+		    height: 125px;
+		    display: block;
+		    margin: 0 auto;
+		    position: relative;
+		    background: transparent;
+		    background: url(__PUBLIC__/new/image/wjimg/asdssad.png) no-repeat;
+		    background-size: contain;
+		    /* background-size: 205px 125px; */
+		     margin-top: -165px; 
+		}
+		/* #btnA {
+		    height: 145px;
+		    width: 142px;
+		    border-radius: 1em;
+		    display: block;
+		    background: url(__PUBLIC__/new/image/wjimg/asdssad.png) no-repeat;
+		     -webkit-background-size: 229px 172px;
+		    background-size: 145px 130px; 
+		    text-decoration: none;
+		    position: relative;
+		    z-index: 2;
+		} */
+		#btnSpan2, #btnSpan3 {
+		    font-size: .8em;
+		    color: #A7A7A7;
+		    position: absolute;
+		    top: 20px;
+		    left: 68px;
+		}
+		#btnSpan3 {
+		    top: 44px;
+		}
+		.pwoeu{
+			position: absolute;
+			bottom: 64px;
+			left: 50%;
+			margin-left: -150px;
+			width: 300px;
+			height: 80px;
+			 background: url(__PUBLIC__/new/image/wjimg/asa.png) center center no-repeat;
+		    background-size: 280px;
+		}
+		#slwo{
+			position: absolute;
+			right: 12px;
+			bottom: 12px;
+			background-color: rgba(0,0,0,.4);
+			border-radius: 3px;
+			min-width: 9px;
+			padding: 6px;
+			line-height: 15px;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<span id="slwo">5秒后自动跳转</span>
+	<div class="wrapper">
+		
+		<h1 id="slogan"></h1>
+		<div id="btnContainer">
+            <!-- <a id="btnA" href="http://7y4ry4.com1.z0.glb.clouddn.com/d21686b562b38b7a9de11a5c34ec9e27_d">
+                <span id="btnSpan2">v1.0.4</span>
+                <span id="btnSpan3">6.82M</span>
+            </a> -->
+        </div>
+        <a href="{$shou_url}" class="pwoeu"></a>
+	</div>
+</body>
+<script type="text/javascript">
+	window.onload = function() {
+		var u = navigator.userAgent;
+		//console.log(u)
+		if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) { //安卓手机
+			console.log("安卓手机");
+			//window.location.replace( "http://weibaishi.com/home/Index/let/let_id/{$let_id}" );
+			// window.location.href = "mobile/index.html";
+		} else if (u.indexOf('iPhone') > -1) { //苹果手机
+			console.log("苹果手机")
+			//window.location.replace( "http://weibaishi.com/home/Index/let/let_id/{$let_id}" );
+			// window.location.href = "mobile/index.html";
+			//alert("抱歉目前不支持IOS");
+		} else if (u.indexOf('Windows Phone') > -1) { //winphone手机
+			console.log("winphone手机")
+			//window.location.replace( "http://weibaishi.com/home/Index/let/let_id/{$let_id}" );
+			//alert("抱歉目前不支持winphone");
+			// window.location.href = "mobile/index.html";
+		}else if(u.indexOf('Windows') > -1){
+			console.log("pc")
+			window.location.replace( "http://weibaishi.com/home/Index/letc/let_id/{$let_id}" );
+		}
+	}
+	var timse;
+	var n = 5;
+	//获取显示秒数的元素，通过定时器来更改秒数。
+	function count() {
+		n--;
+		document.getElementById("slwo").innerHTML = n+'秒后自动跳转';
+		if (n == 0) {
+			clearInterval(timse);
+			window.location.replace( "{$shou_url}" );
+			//location.assign("www.imooc.com");
+		}
+
+	}
+	timse=setInterval("count()", 1000);
+</script>
+</html>

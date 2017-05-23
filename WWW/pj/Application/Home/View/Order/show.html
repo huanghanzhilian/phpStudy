@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>简陋测试页面</title>
+	<script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+	<style type="text/css">
+	#form1{width: 300px;}
+	#form1 input{float: left;}
+	</style>
+</head>
+<body>
+	<!-- <table>
+		<form name="form1" onsubmit="return false;" id="form2">
+			标题：<input type="text" name="first" />
+			关键字1： <input type="text" name="keyword1" />
+			关键字2： <input type="text" name="keyword2" />
+			关键字3： <input type="text" name="keyword3" />
+			标记： <input type="text" name="remark" />
+			发送用户 <select name="userlist">
+						<volist name="userlist" id="vo">
+						<option value="{$vo.openid}">{$vo.username}</option>
+						</volist>
+					</select>
+			<button type="button" value="发送" id="send">发送消息</button>
+		</form>
+	</table> -->
+<!-- 
+<script type="text/javascript">
+	$("#send").click(function(){
+		$.ajax({
+			url:"{:U('order/send')}",
+			type:'POST',
+			data: $("input[type=\'text\'],select[name=\'userlist\']"),
+			dataType: 'json',
+			success:function(json){
+				if(json.code==1){
+					alert(json.msg);
+				}else{
+					alert(json.msg);
+				}
+			}
+		});
+	});
+</script> -->
+<form method="post" action="__CONTROLLER__/send">
+	姓名:<input type="text" name="name">
+	<input type="hidden" name="nihao"  value='你好'>
+	<input type="submit" value='提交订单'>
+</form>
+</body>
+</html>

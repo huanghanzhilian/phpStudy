@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>维百士_配件管理</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/Admin_modify.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<style type="text/css">
+
+</style>
+</head>
+<body class="body1_color">
+<div class="header public_width">
+    <h1 class="header_h1">配件管理
+        <!--<a class="youb_mk" href="__CONTROLLER__/lz">已离职</a>-->
+    </h1>
+    
+</div>
+
+<div class="container public_width">
+    <!--公共返回-->
+    <div class="Return">
+        <!--<span class="Return_button cursor" onClick="window.history.back()">返回</span>-->
+        <a class="Return_button" href="__MODULE__/Index/index">返回</a>
+    </div>
+    <!--公共返回-->
+    
+    <!--上部tab-->
+    <div class="tab_quehu">
+        <ul class="tab_quehu_ul clearfix">
+            <li class="tab_quehu_li fl"><a class="on" href="__CONTROLLER__/index">配件订单</a></li>
+            <li class="tab_quehu_li fl"><a href="__CONTROLLER__/shifutuihuo">配件退货</a></li>
+            <li class="tab_quehu_li fl"><a href="__CONTROLLER__/huishou_a">回收管理</a></li>
+        </ul>
+    </div>
+    <!--上部tab-->
+    
+    <div class="container_modify" id="xgpinpan">
+        <ul class="zhuti_rom" style=" padding:0 110px; ">
+            <li class="lmbhu lmbhuopd" style="border-bottom:none;">
+                <a class="aubtgh on" href="javascript:;" onclick='shenhee(1)'>待审核</a>
+                <a class="aubtgh" href="javascript:;" onclick='shenhe(2)'>已完成</a>
+            </li>
+        </ul>
+        <ul class="zhuti_rom" id="mubn">
+            
+            <foreach name='arr' key='aa' item='kk'>
+            <li class="lmbhu lmbhuopd" >
+               
+               <div class="listy_box">
+                   <div class="listy_pk">订单号：{$aa}</div>
+                   <div class="listy_pk" style="line-height:30px;">
+                       <span class="fl">商品：</span>
+                       <foreach name='kk' item='cc'>
+                       <span class="mlobh">{$cc.cpk_name}<span class="fr">{$cc.cpk_price}元 </span></span>
+                       </foreach>
+                   </div>
+                   <div class="listy_pk">用户：{$cc.user_username}   {$cc.user_name}<span class="fr">总价({$cc.amount})</span></div>
+               </div>
+               <div class="listy_kr">
+                   <span class="listy_con">
+                       <a class="didb llvcer" href="__CONTROLLER__/shenhetongguo/id/{$cc.id}" onclick="if(confirm('是否确定通过?')==false)return false;">确认</a>
+                       <a class="didb" href="__CONTROLLER__/shenhebutongguo/id/{$cc.id}" onclick="if(confirm('是否不通过?')==false)return false;">取消</a>
+                   </span>
+               </div>
+            </li>
+            </foreach>
+        </ul>
+    </div>
+   
+   
+   <!--<foreach name='arr' key='aa' item='kk'>
+			订单号:{$aa} <br />
+		商品:<br />
+		<foreach name='kk' item='cc'>
+		{$cc.cpk_name}&nbsp;&nbsp;&nbsp;{$cc.cpk_price}元 <br />
+		</foreach>{$cc.user_username}<br />
+		{$cc.user_name}&nbsp;&nbsp;&nbsp;&nbsp;总价({$cc.amount}) <br /><br />
+		已付款  <br /><br />
+		<a href="__CONTROLLER__/shenhetongguo/id/{$cc.id}">审核通过</a><br /><br />
+		<a href="__CONTROLLER__/shenhebutongguo/id/{$cc.id}">审核不通过</a><br /><br />
+	</foreach>-->
+    
+</div>
+
+
+
+
+
+
+   <!-- <a href="__MODULE__/Index/index">返回</a><br /><br />
+	<a href="__CONTROLLER__/shifudingdan">师傅配件订单</a><br /><br />
+	<a href="__CONTROLLER__/shifutuihuo">师傅退货</a><br /><br />
+	<a href="__CONTROLLER__/tixianguanli">提现管理</a><br /><br />
+	<a href="__CONTROLLER__/shifugl">师傅管理</a>
+    -->
+    
+<script>  
+$(function(){
+	$(".aubtgh").click(function(){
+		if($(this).hasClass('on')){
+			//$(this).removeClass('on')
+		}else{
+		    $(this).addClass('on').siblings().removeClass('on');
+		};
+	})
+})
+</script>
+<script type="text/javascript">
+function shenhe(fkzt){
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/shenhea/fkzt/"+fkzt,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('mubn').innerHTML=ajax.responseText
+				}
+			}
+	}
+
+function shenhee(fkzt){
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/shenheaa/fkzt/"+fkzt,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('mubn').innerHTML=ajax.responseText
+				}
+			}
+	}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

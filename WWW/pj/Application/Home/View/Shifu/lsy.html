@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+    <label for="fileToUpload">上传视频</label><br />
+    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelecteds(this);"/>
+    <div class="t_fjfont" style="color:red;font-size:12px;font-weight:bold">文件上限2MB</div>
+    <input readonly="readonly" type="button" id="shangc" value="Upload" />
+    
+    
+<form id="form1" enctype="multipart/form-data" method="post" action="Upload.aspx">    
+   <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <input class="sd" type="checkbox" value="1"><br/>
+    <input class="sd" type="checkbox" value="2"><br/>
+    <input class="sd" type="checkbox" value="3"><br/>
+    <input class="sd" type="checkbox" value="4"><br/>
+     <input disabled="disabled" type="button" id="shangc" value="Upload" />
+     <div class="ll" data="ss">1</div>
+     <div class="ll" data="ss1">1</div>
+     <div class="ll" data="ss2">1</div>
+</form>
+</body>
+<script>
+function fileSelecteds(sd){
+	var huwem= sd.files[0].name;//获取文件名称
+	var huwems=huwem.substring(huwem.lastIndexOf(".")+1).toLowerCase(); //获取格式
+	var hudx=huwem= sd.files[0].size/1024; //获取大小
+	
+	if(hudx>20000){
+		alert("附件不能大于20M");
+		sd.value="";
+		return
+    }
+	if(huwems!="mp4" && huwems!="mov"){
+		alert("请选择视频格式文件上传！");
+		sd.value="";
+		return
+    }
+	console.log(sd.files[0])
+}
+var shangc=document.getElementById("shangc");
+shangc.onclick=function(){
+	$.ajax({
+		url:"http://api.letvcloud.com/open.php",
+		//data: {'key':this.key,'tableid':this.tableid,'data':datssa},
+		//data: {'user_unique':'873167','api':'ww'},
+		contentType:"application/x-www-form-urlencoded",
+		type: "post",
+		dataType: "jsonp",
+		success: function (data) {
+			console.log(data)
+		}
+	});
+}
+
+
+$("input[type='checkbox']").click(function(){
+	var uuioc=$("input.sd[type='checkbox']:checked").length;
+	if(uuioc>=1){
+		$("input[type='button']").attr("disabled",false);
+	}else{
+		$("input[type='button']").attr("disabled",true);
+	}
+});
+var jjk=[];
+$(".ll").each(function(i,e){
+	//console.log($(e).attr("data"))
+	jjk.push($(e).attr("data"))
+});
+console.log(jjk)
+//console.log($(".ll").attr("data"))
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+

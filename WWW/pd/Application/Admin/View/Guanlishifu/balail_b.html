@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>维百士-工程师-信用明细</title>
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ioc"><!--图标-->
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png"><!--图标-->
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+<style>
+/*320px布局*/
+html{font-size: 100px;}
+body{ font-size: 0.12rem;/*实际相当于12px*/ }
+
+/* iphone 6 */
+@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
+    html{font-size: 117.1875px;}
+}
+/* iphone6 plus */
+@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
+    html{font-size: 129.375px;}
+}
+
+
+
+
+</style>
+</head>
+
+<body style=" background:#f5f5f5;">
+<div class="header">
+     <span onclick="window.history.back()"></span>
+    <h1>信用明细</h1>
+</div><!--头-->
+
+<div class="content">
+    <div class="content_con">
+        
+        
+        <div class="peijian_m">
+            <div class="peijian_m_box">
+                <ul class="yu_coner">
+				<foreach name='arr' item='kk'>
+                    <li class="mingxu_ty">
+                        <div class="mkloop_r">
+                           {$kk.jy_money}
+                        </div>
+                        <div class="mkloop_l">
+                            <span class="comlk">{$kk.xinyong_type}&nbsp;&nbsp;&nbsp;{$kk.ddh}</span>
+                            <span class="comlb">{$kk.jy_time}</span>
+                        </div> 
+                    </li>
+                  </foreach>
+                </ul>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

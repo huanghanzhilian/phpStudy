@@ -1,0 +1,21 @@
+<foreach name='arr' key='aa' item='kk'>
+            <li class="lmbhu lmbhuopd" >
+               
+               <div class="listy_box">
+                   <div class="listy_pk">订单号：{$aa}</div>
+                   <div class="listy_pk" style="line-height:30px;">
+                       <span class="fl">商品：</span>
+                       <foreach name='kk' item='cc'>
+                       <span class="mlobh">{$cc.cpk_name}<span class="fr">{$cc.cpk_price}元 </span></span>
+                       </foreach>
+                   </div>
+                   <div class="listy_pk">用户：{$cc.user_username}   {$cc.user_name}<span class="fr">总价({$cc.amount})</span></div>
+               </div>
+               <div class="listy_kr">
+                   <span class="listy_con">
+                       <a class="didb llvcer" href="__CONTROLLER__/shenhetongguo/id/{$cc.id}" onclick="if(confirm('是否确定通过?')==false)return false;">确认</a>
+                       <a class="didb" href="__CONTROLLER__/shenhebutongguo/id/{$cc.id}" onclick="if(confirm('是否不通过?')==false)return false;">取消</a>
+                   </span>
+               </div>
+            </li>
+            </foreach>

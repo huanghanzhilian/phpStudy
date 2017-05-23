@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<select name="qu" id='qu'>
+						<option value="区">
+							区
+						</option>
+						<foreach name='arr' item='ll' >
+							<option value="{$ll.region_id}">
+								{$ll.region_name}
+							</option>
+						</foreach>
+					</select>
+</body>
+</html>

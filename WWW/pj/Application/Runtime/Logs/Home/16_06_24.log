@@ -1,0 +1,475 @@
+[ 2016-06-24T16:40:57+08:00 ] 127.0.0.1 /ceshi/www/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020187s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000276s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000426s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002937s ]
+
+[ 2016-06-24T16:41:00+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/index_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-06-24T16:41:03+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/index_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-06-24T16:41:37+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/index_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'weibaihsi'
+
+[ 2016-06-24T16:41:52+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/index_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_brand` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `maintenance_brand`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( brand_id='1' )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5,6) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5,6) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5) )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,7,8,9,10) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5,6) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(11,12) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(11,12) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5,6) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5,6) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002542s ]
+
+[ 2016-06-24T16:41:55+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/wenti/model_id/1/color_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id='3' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `maintenance_questiontype` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `maintenance_questiontype` WHERE ( questiontype_id in(1,2,3,4,5,6,7,8,9,11,12) )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(1) and model_id='1' )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(2) and model_id='1' )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(3) and model_id='1' )  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(4) and model_id='1' )  [ RunTime:0.0034s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(5) and model_id='1' )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(6) and model_id='1' )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(7) and model_id='1' )  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(8) and model_id='1' )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(9) and model_id='1' )  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(11) and model_id='1' )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(12) and model_id='1' )  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2016-06-24T16:41:58+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/mbr?question_id=1&color_id=3&model_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id='3' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in (1) and model_id='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (2) )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\www\Application\Home\Controller\IndexController.class.php 第 846 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-06-24T16:42:01+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/chuangjian/question_id/1/model_name/%E8%8B%B9%E6%9E%9C%20iPhone6S/color_name/%E9%93%B6%E8%89%B2/model_id/1/plan_id/2/color_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+NOTIC: [8] Undefined index: ways F:\web\apache\htdocs\ceshi\www\Application\Home\Controller\IndexController.class.php 第 875 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(1) )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (2) )  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `maintenance_plan` WHERE ( plan_id in (2) ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\www\Application\Home\Controller\IndexController.class.php 第 899 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2016-06-24T16:42:01+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/shangmen/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0363s ]
+SQL: SELECT * FROM `city` WHERE ( parent_id=1 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0021s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ways_id' in 'where clause'
+
+[ 2016-06-24T16:42:03+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/sheng_1/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2016-06-24T16:42:04+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/sheng_1/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2016-06-24T16:42:05+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/sheng_1/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2016-06-24T16:42:06+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/sheng_1/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2016-06-24T16:42:06+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/daodian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0019s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ways_id' in 'where clause'
+
+[ 2016-06-24T16:42:07+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/sheng_1/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-06-24T16:42:21+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/sheng_1/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-06-24T17:50:01+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/sheng_1/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2016-06-24T17:50:01+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/daodian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0022s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ways_id' in 'where clause'
+
+[ 2016-06-24T17:50:02+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/sheng_1/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2016-06-24T17:50:03+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/daodian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0028s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ways_id' in 'where clause'
+
+[ 2016-06-24T17:50:04+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/daodian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0021s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ways_id' in 'where clause'
+
+[ 2016-06-24T17:50:04+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/daodian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0019s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ways_id' in 'where clause'
+
+[ 2016-06-24T17:50:06+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/daodian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0020s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ways_id' in 'where clause'
+
+[ 2016-06-24T17:50:07+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/sheng_1/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2016-06-24T17:50:08+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/daodian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0019s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ways_id' in 'where clause'
+
+[ 2016-06-24T17:50:09+08:00 ] 127.0.0.1 /ceshi/www/index.php/Home/Index/daodian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0019s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ways_id' in 'where clause'
+

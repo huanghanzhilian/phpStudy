@@ -1,0 +1,104 @@
+*{
+	font-size:13px;
+	font-weight: normal;
+}
+body{
+	height:100%;
+	margin:0px;
+	overflow: auto;
+	scrollbar-face-color: #F5F5F5;
+	scrollbar-3dlight-color: #D0D5DF;
+	scrollbar-darkshadow-color: #F3F3F3;
+	scrollbar-base-color: #fff;
+}
+
+table{
+	color:#1f5172;
+	border-collapse:collapse;
+	border-spacing: 0px;
+	border-cellpadding:0px;
+}
+.divcenter,#divcenter{
+	padding-left:20%;
+	padding-top:50px;
+	width:60%;
+}
+.divright,#divcenter{
+	float:right;
+}
+.queryTable ,#queryTable{
+	background-color:#f3f4f9;
+	width:100%;
+	font-size:13px;
+	margin-top: -5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#d7dbe7;
+}
+.queryTable th,#queryTable th {
+	
+}
+
+.queryTable td, #queryTable td{
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:3px;
+}
+.queryTable td button, #queryTable td button{
+	margin-top:-2px; 
+}
+.listTable,#listTable{
+	/*table-layout: fixed;/* 锟斤拷锟狡憋癫换岜伙拷锟斤拷谋锟斤拷趴锟�*/
+	word-wrap:break-word;
+	width:100%;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	color:#55545a;
+}
+.listTable tr,#listTable tr{
+	color:#000;
+	color:#55545a;
+	height: 25px;
+}
+.listTable th, #listTable th{
+	color:#55545a;
+	background-color:#DFE9F7;
+	font-size:13px;
+	font-weight:normal;
+	height:27px;
+	color:#55545a;
+	background-image: url("/application/images/list/specialbj.jpg");
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #d7dbe7;
+	border-left-color: #d7dbe7;
+	border-right-color: #d7dbe7;
+	border-bottom-color: #d7dbe7;
+}
+.listTable td, #listTable td{
+	font-size:13px;
+	height:23px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: dotted;
+	border-left-style: solid;
+	border-top-color: #d7dbe7;
+	border-bottom-color: #d7dbe7;
+	border-left-color: #d7dbe7;
+}
+div {
+	color: #55545a;
+}

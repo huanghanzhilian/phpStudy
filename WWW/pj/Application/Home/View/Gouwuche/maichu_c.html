@@ -1,0 +1,57 @@
+<div class="ceomer_com">
+        <foreach name='arr' item='kk'>
+        
+        
+    <h1 class="da_con_ce">订单编号：{$kk.ddh}
+        <span class="shifu_qx">
+             <if condition="strtoupper($kk['zt']) eq  0">
+                                    <a href="__CONTROLLER__/quxiaomaichu/id/{$kk.id}/cangku_id/{$kk.cangku_id}" onclick="if(confirm('确定取消?')==false)return false;">取消订单</a>
+             <elseif condition="strtoupper($kk['zt']) eq  1"/> 
+                    已付款
+                <else/>
+        
+             </if>
+        </span>
+    </h1>
+    
+    
+    <div class="rnmbur rnmbur_c">
+        <ul>
+            <li>
+                 买方：<span class="chuangmbr">
+                         {$kk.maifang}
+                      </span>
+                      <span class="bimnb fr"></span>
+            </li>
+            <li>
+                金额：<span class="chuangmbr">{$kk.amount}元</span>
+            </li>
+            <li>
+                 <span class="chuangmbr">
+                        {$kk.cpk_name}
+                      </span>
+            </li>
+            <li>
+                <span class="desc">
+                  
+                </span>
+            </li>
+            
+            <li>
+                金额：<span class="chuangmbr">{$kk.cangku_name}</span><span class="bimnb fr">成本:{$kk.cpk_price}元</span>
+            </li>
+        </ul>
+		  <if condition="strtoupper($kk['zt']) eq  0">
+			 <div class="fukk_lan">
+               <a href="__MODULE__/Payy/maichu/ddh/{$kk.ddh}"> 付款</a>
+			</div>
+          <elseif condition="strtoupper($kk['zt']) eq  1"/> 
+               <div class="fukk_lan fukk_lan_c">
+              <a href="javascript:void(0)">已付款</a>
+		    	</div>
+             <else/>
+       
+          </if>
+    </div>
+        </foreach>
+</div>

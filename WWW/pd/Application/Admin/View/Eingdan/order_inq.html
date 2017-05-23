@@ -1,0 +1,280 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+<style type="text/css">
+	.anniu a {
+	    display: inline-block;
+	    border: solid 1px #517ed6;
+	    padding: 0 12px;
+	    margin: 0 12px;
+	    color: #517ed6;
+	    cursor: pointer;
+	}
+	/*物流单号*/
+	.danhao{
+		width: 100%;
+		height: 42px;
+		border: solid 1px #fff;
+		background: #7a8399;
+		padding: 0 8px;
+		color: #fff;
+		box-sizing: border-box;
+	}
+	.sfgers{
+		width: 100%;
+		background: #7a8399;
+		height: 38px;
+		border: none;
+		cursor: pointer;
+		margin-top: 8px;
+		color: #fff;
+	}
+</style>
+<table class="table" cellspacing="0" cellpadding="0">
+	<thead>
+		<tr>
+			<th>下单时间</th>
+			<th>SKU</th>
+			<th>送货地址</th>
+			<th>客户姓名</th>
+			<th>客户电话</th>
+			<th>订单编号</th>
+			<th>商品ID</th>
+		</tr>
+	</thead>	
+	<foreach name='arr' item='kk'>
+	<tbody>
+		<tr>
+			<td width="10%">{$kk.revise_time}</td>
+			<td>{$kk.goods_content}</td>
+			<td width="16%">{$kk.address}</td>
+			<td width="19%">{$kk.username}</td>
+			<td>{$kk.phone}</td>
+			<td>{$kk.order_number}</td>
+			<td>{$kk.goods_card}</td>
+		</tr>
+	
+	</tbody>
+	
+	</foreach>
+</table>
+
+<script type="text/javascript">
+
+
+	$('body').on("click",function(){
+		$(".tanbuks").hide();
+	})
+	//初始化循环笔记按钮是否有内容
+	/*$(".bijichu").each(function(i,n){
+		if($(n).find("textarea").val()!=""){
+			$(n).addClass("bijichuav");
+		}
+	})*/
+
+	//取消订单
+	function resize(datas,_this) {
+		// var overlay= document.getElementById("attr-overlay");
+		var overlay= $("#attr-overlay",parent.document);
+		var content= $("#attr-content",parent.document);
+		var widget_title= $("#widget-title",parent.document);
+		var windows=$("body",parent.document);
+		//关闭按钮
+		var closed=$("#closed",parent.document);
+
+		widget_title.text("选择取消原因")
+		overlay.show();
+		content.show();
+		$("#content_sd",parent.document).empty();
+
+		var sel=(windows.width()-content.width())/2;
+		var set=(windows.height()-content.height())/2;
+
+		content.offset({ top: set, left: sel });
+
+		$.ajax({
+			url: "http://d.weibaishi.com/Admin/Aingdan/quxiaolist",
+			// data:{'p_id':datas},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				var sdfr=null;
+				$("#content_sd",parent.document).append('<ul class="attr-content-con"></ul>');
+				$.each(data,function(i,n){
+					$(".attr-content-con",parent.document).append('<li data="'+n["quxiaole_id"]+'"><div class="left">'+n["quxiaole_name"]+'</div><div class="reft"><span></span></div></li>');
+				});
+				$("#content_sd",parent.document).append('<button class="attr-content-button">确定</button>');
+				$(".attr-content-con li",parent.document).on("click",function(){
+					sdfr=$(this).attr("data");
+					$(this).find("span").css("background-color","#5076e6");
+					$(this).siblings().find("span").css("background-color","#fff");
+				});
+				$(".attr-content-button",parent.document).on("click",function(){
+					if(sdfr){
+						tijiao(_this,datas,sdfr)
+					}
+				})
+			}
+		});
+
+		closed.on("click",function(){
+			overlay.hide();
+			content.hide();
+		});
+	}
+
+	//确认取消
+	function tijiao(_this,pid,datas){
+		var overlay= $("#attr-overlay",parent.document);
+		var content= $("#attr-content",parent.document);
+		$.ajax({
+			url: "http://d.weibaishi.com/Admin/Aingdan/qxadd",
+			data:{'id':pid,'quxiaole_id':datas},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				if(data=="1"){
+					$(_this).parents("tr").prev("tr").remove();
+					$(_this).parents("tr").remove();
+
+					overlay.hide();
+					content.hide();
+				}else if(data=="2"){
+					alert("操作错误")
+				}
+
+			}
+		});
+	}
+
+	//下单安装
+	function xiagungg(datas,_this){
+		if (confirm("你确定下单安装吗？")) {
+			// $(_this).parents("tr").prev("tr").remove();
+			// $(_this).parents("tr").remove();
+			$.ajax({
+				url: "http://d.weibaishi.com/Admin/Aingdan/yidaoda",
+				data:{'id':datas},
+				dataType: "json",
+				type:'post',
+				success: function (data) {
+					if(data=="1"){
+						$(_this).parents("tr").prev("tr").remove();
+						$(_this).parents("tr").remove();
+					}else if(data=="2"){
+						alert("操作错误")
+					}
+
+				}
+			});
+		} else {
+			
+		}
+	}
+
+
+
+	//填写单号
+	$(".bijichu").on('click',function(event){
+		var jhi=$(this);
+		event.stopPropagation();
+		$(".bijichu").each(function(i,n){
+			$(n).find(".tanbuks").hide();
+		})
+		$(this).find(".tanbuks").show();
+	});
+	//填写单号提交
+	$(".sfgers").on("click",function(){
+		var _this=$(this);
+		var id=$(this).attr("data");
+		var fuyan=$(this).parents(".tanbuks");
+		var serhu=fuyan.find(".danhao").val();
+		if(serhu==""){
+			alert("不能为空")
+		}else{
+			$.ajax({
+				url: "http://d.weibaishi.com/Admin/Aingdan/wuliuadd",
+				data:{'id':id,'wuliu':serhu},
+				dataType: "text",
+				type:'post',
+				success: function (data) {
+					var datasd=data.substr(data.length-1,1);
+					console.log(data.substr(data.length-1,1))
+					if(datasd=="1"){
+						_this.parents("tr").prev("tr").remove();
+						_this.parents("tr").remove();
+					}else{
+						alert("操作错误")
+					}
+				}
+			});
+		}
+	})
+
+
+
+	//取消订单
+	function xiadans(p_id,_this){
+		$.ajax({
+			url: "http://d.weibaishi.com/Admin/Aingdan/qx",
+			data:{'p_id':p_id},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				if(data){
+					$(_this).parents("tr").prev("tr").remove();
+					$(_this).parents("tr").remove();
+				}
+			}
+		});
+	}
+	//详情
+	function xiangqo(p_id,_this){
+		var overlay= $("#attr-overlay",parent.document);
+		var content= $("#attr-content",parent.document);
+		var widget_title= $("#widget-title",parent.document);
+		var windows=$("body",parent.document);
+		//关闭按钮
+		var closed=$("#closed",parent.document);
+
+		widget_title.text("详情")
+		overlay.show();
+		content.show();
+		$("#content_sd",parent.document).empty();
+
+		var sel=(windows.width()-content.width())/2;
+		var set=(windows.height()-content.height())/2;
+
+		content.offset({ top: set, left: sel });
+		closed.on("click",function(){
+			overlay.hide();
+			content.hide();
+		});
+
+		$.ajax({
+			url: "http://d.weibaishi.com/Admin/Aingdan/xiangqing",
+			data:{'p_id':p_id},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				data=data[0];
+
+				$("#content_sd",parent.document).append('<ul class="attr-content-con">\
+					<li class="xghujg">订单序号：'+data.p_id+'</li>\
+					<li class="xghujg">下单时间：'+data.order_time+'</li>\
+					<li class="xghujg">订单编号：'+data.order_number+'</li>\
+					<li class="xghujg">订单状态：'+data.order_state+'</li>\
+					<li class="xghujg">服务项目：'+data.goods_content+'</li>\
+					<li class="xghujg">服务地址：'+data.address+'</li>\
+					<li class="xghujg">客户姓名：'+data.username+'</li>\
+					<li class="xghujg">客户电话：'+data.phone+'</li>\
+					<li class="xghujg">商品 ID：'+data.goods_card+'</li>\
+					<li class="xghujg">卖家名称：'+data.goods_name+'</li>\
+					<li class="xghujg">货品名称：'+data.goods_number+'</li>\
+					<li class="xghujg">颜色分类：'+data.goods_color+'</li>\
+					</ul>');
+
+			}
+		});
+	}
+</script>

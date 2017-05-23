@@ -1,0 +1,56 @@
+<!--<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<a href="__MODULE__/Index/index">返回</a>
+<center><a href="__CONTROLLER__/index">未开据</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="__CONTROLLER__/yikj">已开据</a></center>
+	<table border=1>
+<th>发票抬头</th>
+<th>发票金额</th>
+<th>收件人</th>
+<th>发票邮寄地址</th>
+<th>电话</th>
+<tr>
+<foreach name='arr' item='vv'>
+
+	<td>{$vv.fptt}</td>
+	<td>{$vv.amount}</td>
+	<td>{$vv.user}</td>
+	<td>{$vv.dizhi}</td>
+	<td>{$vv.u_phone}</td>
+	<td>
+<a href="__CONTROLLER__/qrkj/fp_id/{$vv.fp_id}">确认开据</a>
+	</td>
+	
+</tr>
+</foreach>
+</body>
+</html>-->
+
+<foreach name='arr' item='vv'>
+<li class="lmbhu lmbhuopd" >
+   
+   <div class="listy_box">
+       <div class="listy_pk">发票抬头：{$vv.fptt}</div>
+       <div class="listy_pk">地址：{$vv.dizhi}</div>
+       <div class="listy_pk">金额：{$vv.amount}</div>
+       <div class="listy_pk">收件人：{$vv.user}</div>
+	   <div class="listy_pk">电话：{$vv.u_phone}</div>
+   </div>
+   
+   
+   <if condition="strtoupper($vv['zt']) eq  0">
+   <div class="listy_kr">
+       <span class="listy_con">
+           <a class="didb llvcer" href="__CONTROLLER__/qrkj/fp_id/{$vv.fp_id}" onclick="if(confirm('是否确认?')==false)return false;">确认</a>
+           <a class="didb" href="__CONTROLLER__/fapiaoshanchu/fp_id/{$vv.fp_id}" onclick="if(confirm('确定删除?')==false)return false;" >删除</a>
+       </span>
+   </div>
+   <else/>
+   </if>
+   
+</li>
+</foreach>

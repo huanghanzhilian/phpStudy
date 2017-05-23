@@ -1,0 +1,682 @@
+[ 2016-06-10T14:41:30+08:00 ] 123.116.116.147 /index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2016-06-10T14:41:38+08:00 ] 123.116.116.147 /index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2016-06-10T14:41:40+08:00 ] 123.116.116.147 /index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2016-06-10T14:42:43+08:00 ] 123.116.116.147 /index.php/Admin/Ddguanli/jixiu/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='0' )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id /phpstudy/www/Application/Admin/Controller/DdguanliController.class.php 第 19 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id  WHERE ( id in(27,28,29,30,31,32,56,64,65,67,75,76,78,79,84,85,86,87,89,90,91,92,93,94,95,96,97,98,99,100,101,102,104,105,106,107,108,110,111,112,114,115,117,118,119,120,122) )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: show /phpstudy/www/Application/Runtime/Cache/Admin/6c4c76002bd7e08eb8a1bbefe8d3aba3.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-06-10T14:43:33+08:00 ] 123.116.116.147 /index.php/Admin/Ddguanli/xiangqing/id/122/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `goods` WHERE ( id='122' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( question_id in (4258) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (1419) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id  WHERE ( id='122' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `zt_time` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `zt_time` WHERE ( goods_id in (122) ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined index: user_username /phpstudy/www/Application/Runtime/Cache/Admin/c88342a07b8da1396a3bfc26b486f499.php 第 25 行.
+NOTIC: [8] Undefined variable: vv /phpstudy/www/Application/Runtime/Cache/Admin/c88342a07b8da1396a3bfc26b486f499.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2016-06-10T14:43:37+08:00 ] 123.116.116.147 /index.php/Admin/Ddguanli/yizhipai/ways_id/3/stau/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='1' )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id /phpstudy/www/Application/Admin/Controller/DdguanliController.class.php 第 246 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id INNER JOIN m_user on goods.user_id=m_user.user_id  WHERE ( id in(25,47,103) )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2016-06-10T14:43:38+08:00 ] 123.116.116.147 /index.php/Admin/Ddguanli/jixiu/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='0' )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id /phpstudy/www/Application/Admin/Controller/DdguanliController.class.php 第 19 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id  WHERE ( id in(27,28,29,30,31,32,56,64,65,67,75,76,78,79,84,85,86,87,89,90,91,92,93,94,95,96,97,98,99,100,101,102,104,105,106,107,108,110,111,112,114,115,117,118,119,120,122) )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: show /phpstudy/www/Application/Runtime/Cache/Admin/6c4c76002bd7e08eb8a1bbefe8d3aba3.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2016-06-10T14:43:42+08:00 ] 123.116.116.147 /index.php/Admin/Ddguanli/wxuser/id/122/wxzx_id/8/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Undefined index: r /phpstudy/www/Application/Admin/Controller/DdguanliController.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id  WHERE ( id='122' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `m_user` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `m_user` WHERE ( user_id in(3,4,5,6,7) )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2016-06-10T14:43:53+08:00 ] 123.116.116.147 /index.php/Admin/Ddguanli/save1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0010s ]
+SQL: UPDATE `goods` SET `user_id`='3',`stau`='1' WHERE ( id='122' ) [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `zt_time` [ RunTime:0.0006s ]
+SQL: UPDATE `zt_time` SET `po_time`='2016-06-10 14:43:53' WHERE ( goods_id='122' ) [ RunTime:0.0103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2016-06-10T14:43:53+08:00 ] 123.116.116.147 /index.php/Admin/Ddguanli/yizhipai/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='1' )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id /phpstudy/www/Application/Admin/Controller/DdguanliController.class.php 第 246 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id INNER JOIN m_user on goods.user_id=m_user.user_id  WHERE ( id in(25,47,103,122) )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2016-06-10T14:43:55+08:00 ] 123.116.116.147 /index.php/Admin/Ddguanli/yizhipai/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='1' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: id /phpstudy/www/Application/Admin/Controller/DdguanliController.class.php 第 246 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id INNER JOIN m_user on goods.user_id=m_user.user_id  WHERE ( id in(25,47,103,122) )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2016-06-10T16:16:44+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2016-06-10T16:16:45+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/jixiu/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='0' )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: id F:\web\apache\htdocs\ceshi\www\Application\Admin\Controller\DdguanliController.class.php 第 19 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id  WHERE ( id in(44,45,46,47,49) )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined variable: show F:\web\apache\htdocs\ceshi\www\Application\Runtime\Cache\Admin\6c4c76002bd7e08eb8a1bbefe8d3aba3.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2016-06-10T16:16:47+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/wxuser/id/49/wxzx_id/8/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+NOTIC: [8] Undefined index: r F:\web\apache\htdocs\ceshi\www\Application\Admin\Controller\DdguanliController.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id  WHERE ( id='49' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `m_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `m_user` WHERE ( user_id in(3,4,5,6,7) )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2016-06-10T16:16:49+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/save1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0034s ]
+SQL: UPDATE `goods` SET `user_id`='3',`stau`='1' WHERE ( id='49' ) [ RunTime:0.0501s ]
+SQL: SHOW COLUMNS FROM `zt_time` [ RunTime:0.0022s ]
+SQL: UPDATE `zt_time` SET `po_time`='2016-06-10 16:16:49' WHERE ( goods_id='49' ) [ RunTime:0.0300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002431s ]
+
+[ 2016-06-10T16:16:49+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/yizhipai/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002009s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='1' )  [ RunTime:0.0023s ]
+NOTIC: [8] Undefined variable: id F:\web\apache\htdocs\ceshi\www\Application\Admin\Controller\DdguanliController.class.php 第 246 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id INNER JOIN m_user on goods.user_id=m_user.user_id  WHERE ( id in(43,49) )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001284s ]
+
+[ 2016-06-10T16:16:55+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2016-06-10T16:18:41+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/jixiu/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='0' )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: id F:\web\apache\htdocs\ceshi\www\Application\Admin\Controller\DdguanliController.class.php 第 19 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id  WHERE ( id in(44,45,46,47) )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: show F:\web\apache\htdocs\ceshi\www\Application\Runtime\Cache\Admin\6c4c76002bd7e08eb8a1bbefe8d3aba3.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2016-06-10T16:18:44+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/yizhipai/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='1' )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id F:\web\apache\htdocs\ceshi\www\Application\Admin\Controller\DdguanliController.class.php 第 246 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id INNER JOIN m_user on goods.user_id=m_user.user_id  WHERE ( id in(43,49) )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2016-06-10T16:44:21+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2016-06-10T16:44:22+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/jixiu/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='0' )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: id F:\web\apache\htdocs\ceshi\www\Application\Admin\Controller\DdguanliController.class.php 第 19 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id  WHERE ( id in(44,45,46,47) )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: show F:\web\apache\htdocs\ceshi\www\Application\Runtime\Cache\Admin\6c4c76002bd7e08eb8a1bbefe8d3aba3.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-06-10T16:44:24+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2016-06-10T16:44:25+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/jixiu/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='0' )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: id F:\web\apache\htdocs\ceshi\www\Application\Admin\Controller\DdguanliController.class.php 第 19 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id  WHERE ( id in(44,45,46,47) )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: show F:\web\apache\htdocs\ceshi\www\Application\Runtime\Cache\Admin\6c4c76002bd7e08eb8a1bbefe8d3aba3.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2016-06-10T16:48:05+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/dengdai/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='0' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id F:\web\apache\htdocs\ceshi\www\Application\Admin\Controller\DdguanliController.class.php 第 205 行.
+SQL: SELECT * FROM `goods` INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id  WHERE ( id in(44,45,46,47,52) )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-06-10T16:48:06+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/dengdai/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='0' )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: id F:\web\apache\htdocs\ceshi\www\Application\Admin\Controller\DdguanliController.class.php 第 205 行.
+SQL: SELECT * FROM `goods` INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id  WHERE ( id in(44,45,46,47,52) )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2016-06-10T16:48:06+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/wxuser/id/52/wxzx_id/8/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [8] Undefined index: r F:\web\apache\htdocs\ceshi\www\Application\Admin\Controller\DdguanliController.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id  WHERE ( id='52' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `m_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `m_user` WHERE ( user_id in(3,4,5,6,7) )  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-06-10T16:48:08+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/save1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0025s ]
+SQL: UPDATE `goods` SET `user_id`='3',`stau`='1' WHERE ( id='52' ) [ RunTime:0.0354s ]
+SQL: SHOW COLUMNS FROM `zt_time` [ RunTime:0.0025s ]
+SQL: UPDATE `zt_time` SET `po_time`='2016-06-10 16:48:08' WHERE ( goods_id='52' ) [ RunTime:0.0291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2016-06-10T16:48:08+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/Ddguanli/yizhipai/ways_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `goods` WHERE ( ways_id='3' and stau='1' )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: id F:\web\apache\htdocs\ceshi\www\Application\Admin\Controller\DdguanliController.class.php 第 246 行.
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN wxzx on goods.wxzx_id=wxzx.wxzx_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id INNER JOIN m_user on goods.user_id=m_user.user_id  WHERE ( id in(43,52) )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-06-10T17:13:18+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2016-06-10T17:33:13+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-06-10T18:15:28+08:00 ] 127.0.0.1 /ceshi/www/index.php/Admin/index/mima
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+ERR: 非法操作:mima
+

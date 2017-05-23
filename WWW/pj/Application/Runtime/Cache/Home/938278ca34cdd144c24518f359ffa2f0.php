@@ -1,0 +1,296 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<title>维百士-工程师-订单分布</title>
+<link rel="shortcut icon" href="/Public/img/ioc/16.ioc"><!--图标-->
+<link rel="icon" href="/Public/img/ioc/16.png"><!--图标-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="/Public/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="/Public/styles/public.css" rel="stylesheet" type="text/css">
+<script src="/Public/js/jquery-1.7.1.min.js"></script>
+<script src="/Public/js/script.js"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=94ca4100199c2f2a8f33300cece2eba2&plugin=AMap.CitySearch"></script>
+
+<script>
+$(function() {   		
+	
+	var lkj=$(document).height();
+	var cdkd=lkj-46;
+	
+	$(".conerty").height(cdkd);
+	
+/*	var map, geolocation;
+	//加载地图，调用浏览器定位服务
+	map = new AMap.Map('conerty', {
+	    resizeEnable: true
+	});
+	map.setZoom(9);
+	map.setCenter()
+	
+	map.plugin(["AMap.Scale"],function(){                         //加载插件
+		var scale = new AMap.Scale();                             //new对象
+		map.addControl(scale);                                    //插入对象
+	});
+	
+*/	
+
+
+		
+});
+    
+	
+	
+	
+	
+</script>
+
+
+<style>
+.muopgt{ position:fixed; left:0px; bottom:0px; color:#fff; background:red; width:100px; height:100px; z-index:2222; display:none;}
+.muopgtv{ position:fixed; right:0px; bottom:0px; color:#fff; background:red; width:100px; height:100px; z-index:2222;}
+.amap-info-sharp{ display:none;}
+.amap-info-outer{ position:fixed; left:50%; margin-left:-75px; bottom:50px; width:150px; padding:0; height:35px; line-height:35px; text-align:center; border:none;}
+.amap-info-outer a{ display:block; color:#fff; background:#3e7edb}
+.amap-info-close{ display:none;}
+.amap-icon img{ width:20px;}
+.taiwan{ background:url(../../../../Public/img/shifu_duan/mark_bsv.png) center center no-repeat; background-size: 100% !important; width:26px; height:45px ; text-align:center; line-height:24px; color:#fff; font-size:12px;}
+</style>
+</head>
+<body style="background:#f5f5f5">
+<div class="muopgt">
+   <?php if(is_array($arr)): foreach($arr as $key=>$v): ?><div class="nn"><?php echo ($v["id"]); ?></div><div class="uu"><?php echo ($v["fanwei"]); ?></div><?php endforeach; endif; ?>
+   <!--<img src="../../../../Public/img/shifu_duan/mark_bsv.png">-->
+</div>
+
+
+<div class="header header1">
+   
+    <span onclick="window.history.back()"></span>
+    <h1>订单分布<!--<?php echo ($my); ?>--></h1>
+    
+</div><!--头-->
+
+
+<div class="content">
+    <div class="content_con" style=" padding-bottom:0px;">
+        <div class="fw_banner_nn">
+            
+            <div class="conerty" id="conerty">
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+    
+	
+	
+    /*//初始化地图对象，加载地图
+    var map = new AMap.Map("conerty", {
+		resizeEnable: true,
+		center: [116.397428, 39.90923],//地图中心点
+        zoom: 13 //地图显示的缩放级别
+		});
+	
+	
+    var lnglats = [
+        [116.368904, 39.923423],
+        [116.382122, 39.921176],
+        [116.387271, 39.922501],
+        [116.398258, 39.914600]
+    ];
+    var infoWindow = new AMap.InfoWindow({offset: new AMap.Pixel(0, -30)});
+    for (var i = 0, marker; i < lnglats.length; i++) {
+        var marker = new AMap.Marker({
+            position: lnglats[i],
+            map: map
+        });
+        marker.content = '我是第' + (i + 1) + '个Marker';
+        marker.on('click', markerClick);
+        marker.emit('click', {target: marker});
+    }
+    function markerClick(e) {
+        infoWindow.setContent(e.target.content);
+        infoWindow.open(map, e.target.getPosition());
+    }
+    map.setFitView();*/
+(function(){	
+	var map, geolocation;
+	//加载地图，调用浏览器定位服务
+	map = new AMap.Map('conerty');
+	
+	map.plugin(['AMap.ToolBar'], function(){
+		var tool = new AMap.ToolBar();
+		map.addControl(tool);
+	});
+	
+	/*var lnglats = [
+        [116.368904, 39.923423],
+        [116.382122, 39.921176],
+        [116.387271, 39.922501],
+        [116.398258, 39.914600]
+    ];*/
+	
+	/*var infoWindow = new AMap.InfoWindow({
+		isCustom: true,  //使用自定义窗体
+		content: createInfoWindow(title,content.join("<br/>")),
+		offset: new AMap.Pixel(16, -50)//-113, -140
+	});*/
+	
+	
+	
+	
+	
+	map.plugin(["AMap.Scale"],function(){                         //加载插件
+		var scale = new AMap.Scale();                             //new对象
+		map.addControl(scale);                                    //插入对象
+	});
+	
+	
+	map.plugin('AMap.Geolocation', function() {
+							
+		geolocation = new AMap.Geolocation({
+			enableHighAccuracy: true,//是否使用高精度定位，默认:true
+			timeout: 10000,          //超过10秒后停止定位，默认：无穷大
+			maximumAge: 0,           //定位结果缓存0毫秒，默认：0
+			convert: true,           //自动偏移坐标，偏移后的坐标为高德坐标，默认：true
+			showButton: true,        //显示定位按钮，默认：true
+			buttonPosition: 'LB',    //定位按钮停靠位置，默认：'LB'，左下角
+			buttonOffset: new AMap.Pixel(10, 20),//定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
+			showMarker: true,        //定位成功后在定位到的位置显示点标记，默认：true
+			showCircle: false,        //定位成功后用圆圈表示定位精度范围，默认：true
+			panToLocation: true,     //定位成功后将定位到的位置作为地图中心点，默认：true
+			zoomToAccuracy:true,     //定位成功后调整地图视野范围使定位位置及精度范围视野内可见，默认：false
+			showButton:true          //是否显示定位按钮
+			
+		});
+			
+		map.addControl(geolocation);
+		geolocation.getCurrentPosition();
+		AMap.event.addListener(geolocation, 'complete', onComplete);//返回定位信息
+		AMap.event.addListener(geolocation, 'error', onError);      //返回定位出错信息
+	});
+	
+			$(".amap-geo").click(function(){
+				$(this).css({'background-position':'9px -224px'})
+			})
+	
+	//解析定位结果
+	function onComplete(data) {
+		var str=['定位成功'];
+		str.push('经度：' + data.position.getLng());
+		str.push('纬度：' + data.position.getLat());
+		str.push('精度：' + data.accuracy + ' 米');
+		str.push('是否经过偏移：' + (data.isConverted ? '是' : '否'));
+		//document.getElementById('tip').innerHTML = str.join('<br>');
+		
+		map.setZoom(11);                  //设置地图缩放比
+		$('.amap-geo').css({'background-position':'9px -183px'})
+		/*fzzbjs()*/
+		 $("#pdsa").click();
+		 
+	
+	}
+	
+	var lnglats = [];
+	var lng_id = [];
+	$(".uu").each(function(ing,suop){
+	    // var option = "<div>" + chuanz + "</div>";
+	    //$(".muopgtv").append(option);
+		lnglats[ing] = $(this).text().split(",");
+		console.log($(this).text());
+		//console.log( ing + ": "+$(this).text());
+	})
+	
+	
+	$(".nn").each(function(ing,suop){
+	    // var option = "<div>" + chuanz + "</div>";
+	    //$(".muopgtv").append(option);
+		console.log($(this).text());
+		lng_id[ing] = $(this).text().split(",");
+		//console.log( ing + ": "+$(this).text());
+	})
+	
+	//console.log(lnglats);
+	
+	
+	
+	
+	var infoWindow = new AMap.InfoWindow({offset:new AMap.Pixel(0,-30)
+	});
+	
+	var div = document.createElement('div');
+        div.className = 'circle';
+        //var r = Math.floor(data.count / 1024);
+        div.style.backgroundColor = 'rgb';
+        div.innerHTML = 1 || 0;
+	    //console.log(div);
+	for (var i = 0, marker; i < lnglats.length; i++) {
+		
+		var content= "<div class = 'taiwan'>"+(i+1)+"</div>";
+		var marker = new AMap.Marker({
+			content: content,
+			topWhenClick: true,
+			position: lnglats[i],
+			map: map,
+			//icon:'../../../../Public/img/shifu_duan/mark_bsv1.png',
+			//cursor: 'move',
+			//content: div,
+			//shadow: '#000',
+			//title: 'nn'
+			//draggable: true
+		});
+		marker.index = i;
+		marker.PPO=content
+		marker.content1='<a href="/Home/Shifu/shifuxiangqing/id/'+lng_id[i]+'">去抢单 ( '+(i+1)+' )</a>';
+        marker.on('click',markerClick);
+        //marker.emit('click',{target:marker});
+		//marker.setContent('<div style="background-color:#0808E3;width:100px;height:100px;line-height:100px;border-radius:50px;text-align:center;color:#FFF;">1000</div>');
+		
+	}
+	function markerClick(e){
+        infoWindow.setContent(e.target.content1);
+        infoWindow.open(map, e.target.getPosition());
+		//map.setCenter(e.poi.location);
+		
+		//marker.setContent(e.target.of.content.innerHTML='PP');
+		
+		
+		//var uui=e.target.of.content
+		//$(uui).text()=='kkkk'
+		//console.log($(uui).text());
+		console.log(this.index+1)
+		//console.log(e.target.of)
+		console.log($(".taiwan").text())
+		
+		var ubyyt=this.index+1
+		var sgyui=$(".taiwan").text()
+		console.log(sgyui)
+		$( ".taiwan" ).each(function(ing,suop){
+			if($(this).text()==ubyyt){
+				$(this).css({'background-image':'url(../../../../Public/img/shifu_duan/mark_bsv1.png)'})
+				
+			}else{
+				$(this).css({'background-image':'url(../../../../Public/img/shifu_duan/mark_bsv.png)'})
+			}
+		})
+    }
+    map.setFitView();
+	
+
+	
+})();	
+$(function(){
+$(".amap-icon img").click(function(){
+	
+})	
+})
+	
+</script>
+</body>
+</html>

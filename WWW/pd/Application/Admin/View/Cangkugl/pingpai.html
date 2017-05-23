@@ -1,0 +1,11 @@
+<foreach name='arr' item='kk'>
+        <li><!--<span><i></i><em></em></span>--><b></b>{$kk.model_name}
+        <ul>
+         <foreach name="kk['data']" item='ee'>
+                <li>
+                <a href='javascript:void(0)'onclick='cpkajax({$ee.cpk_id})'>{$ee.cpk_name}</a>
+                </li>
+        </foreach> 
+        </ul>
+        </li>
+    </foreach>

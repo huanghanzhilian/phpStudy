@@ -1,0 +1,215 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/new/script/jquery.citys.js" type="text/javascript"></script>
+<style type="text/css">
+	.anniu a {
+	    display: inline-block;
+	    border: solid 1px #517ed6;
+	    padding: 0 12px;
+	    margin: 0 12px;
+	    color: #517ed6;
+	    cursor: pointer;
+	}
+	/*物流单号*/
+	.danhao{
+		width: 100%;
+		height: 42px;
+		border: solid 1px #fff;
+		background: #7a8399;
+		padding: 0 8px;
+		color: #fff;
+		box-sizing: border-box;
+	}
+	.sfgers{
+		width: 100%;
+		background: #7a8399;
+		height: 38px;
+		border: none;
+		cursor: pointer;
+		margin-top: 8px;
+		color: #fff;
+	}
+
+	/* 查询服务范围 */
+	.sertitle{
+		height: 40px;
+		line-height: 40px;
+		color: #fff;
+		background: #636e8c;
+		text-indent: 12px;
+	}
+	.cityswe{
+		background: #99a3bf;
+		height: 90px;
+		line-height: 90px;
+		box-sizing: border-box;
+		padding: 0 12px;
+	}
+	.cityswe select{
+		background: #99a3bf;
+		color: #fff;
+		border: solid 1px #fff;
+		padding: 8px;
+		margin-right: 35px;
+		border-radius: 4px;
+	}
+	.cityswe select option{
+		background: #fff;
+		color: #000;
+	}
+	.sertabletitle{
+		background: #fff;
+		padding: 20px 0 10px 12px;
+	}
+	.places{
+		background: #22946b;
+		border-radius: 4px;
+		display: inline-block;
+		line-height: 22px;
+		padding: 8px;
+		color: #fff;
+	}
+	.places.on{
+		background: #e2a04b;
+	}
+	.table tbody tr:nth-child(2n) {
+	    border-bottom: solid 1px #ccc;
+	     text-align: center; 
+	}
+</style>
+<div class="sertitle">查询服务范围</div>
+<div id="demo1" class="cityswe">
+    <p>
+        <select name="province"></select>
+        <select name="city"></select>
+        <select name="area"></select>
+        <span class="places"></span>
+    </p>
+
+</div>
+<div class="fff"></div>
+
+<div class="sertabletitle">已开通服务的城市</div>
+<table class="table table2" cellspacing="0" cellpadding="0">
+	<thead>
+		<tr>
+			<th>城市名</th>
+			<th>服务区域</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<!-- <tr>
+			<td width="10%">已发货</td>
+			<td>已发货</td>
+		</tr> -->
+		</foreach><foreach name='arr' item='kk'>
+	</tbody>
+
+</table>
+
+<script type="text/javascript">
+    $('#demo1').citys({
+    	province: '北京',
+    	city: '海淀',
+    	// area: '思明',
+    	nodata: 'disabled',
+    	onChange: function(data) {
+    		/*var text = data['direct'] ? '(直辖市)' : '';
+    		$('#place').text('当前选中地区：' + data['province'] + text + ' ' + data['city'] + ' ' + data['area']);*/
+    		pohut(data);
+    	}
+    },function(api){
+    	var data=api.getInfo();
+    	/*var text = data['direct'] ? '(直辖市)' : '';
+		$('#place').text('当前选中地区：' + data['province'] + text + ' ' + data['city'] + ' ' + data['area']);*/
+    	// console.log(api.getInfo());
+		pohut(data);
+    });
+
+
+    //判断
+    function pohut(datas){
+    	$.ajax({
+			url: "http://d.weibaishi.com/Admin/eingdan/panduan",
+			data: {
+				'bianma': datas.code
+			},
+			dataType: "json",
+			type: 'post',
+			success: function(data) {
+				if (data == "1") {
+					$(".places").text("可上门服务").removeClass("on");
+				} else if (data == "2") {
+					$(".places").text("不可上门服务").addClass("on");
+				}
+			}
+		});
+    }
+    //請求
+    function sertdfg(datas){
+    	$.ajax({
+			url: "http://d.weibaishi.com/Admin/eingdan/fuwu",
+			/*data: {
+				'bianma': datas.code
+			},*/
+			dataType: "json",
+			type: 'post',
+			success: function(data) {
+				console.log(data)
+				var province,city,area,hasCity;
+				var juer={};
+
+				for (var i = 0; i < data.length; i++) {
+					juer[data[i].sffw]=data[i].sffww;
+
+					juer[data[i].city_number]=data[i].city_name;
+
+				}
+
+
+				var updateData = function(){
+                    province = {},city={},area={};
+                    hasCity = false;       //判断是非有地级城市
+                    for(var code in juer){
+                    	// console.log(code)
+						// console.log(code,juer[code])
+						if(code%1e4=="100"||!(code%1e4)){
+							province[code]=juer[code];
+						}else{
+							city[code]=juer[code];
+						}
+					}
+					//province["120100"]="天津市";
+					//province["130100"]="石家庄市"
+					//city["120101"]="和平区"
+					//city["130102"]="长安区"
+					//console.log(province)
+					//console.log(city)
+					console.log(province)
+					for(var xx in province){
+						/*$(".fff").append('<li class="xx'+xx+'" data="'+xx+'">'+province[xx]+'</li>');
+						for(var xxs in city){
+							var p=xxs-(xx-100);
+							if(p>0&&p<1e4){
+								console.log(p)
+								$(".xx"+xx).append('<i>'+city[xxs]+'</i>')
+							}
+						}*/
+						$("tbody").append('<tr><td width="10%">'+province[xx]+'</td><td class="xx'+xx+'" data="'+xx+'"></td></tr>');
+						for(var xxs in city){
+							var p=xxs-(xx-100);
+							if(p>0&&p<1e4){
+								console.log(p)
+								$(".xx"+xx).append('<span>'+city[xxs]+',</span>')
+							}
+						}
+					}
+                }
+                updateData();
+			}
+		});
+    }
+    sertdfg()
+</script>

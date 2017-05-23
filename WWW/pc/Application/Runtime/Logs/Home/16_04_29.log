@@ -1,0 +1,2655 @@
+[ 2016-04-29T10:51:12+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000856s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2016-04-29T10:51:15+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/pinpai/ide/1/type_name/%E6%89%8B%E6%9C%BA%E7%BB%B4%E4%BF%AE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `maintenance_brand` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `maintenance_brand` WHERE ( type_id='1' )  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-04-29T10:51:16+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/ajaxp/brand_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( brand_id='1' )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3,5) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3,4) )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001753s ]
+
+[ 2016-04-29T10:51:18+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/wenti/ide/1/color_name/%E7%99%BD%E8%89%B2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `maintenance_questiontype` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `maintenance_questiontype` WHERE ( questiontype_id in(1,2,3,4,5,6) )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(1) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(2) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(4) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(5) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(6) )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2016-04-29T10:51:21+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/mbr/model_id/1/color_name/%E7%99%BD%E8%89%B2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_warranty on maintenance_question.warranty_id=maintenance_warranty.warranty_id  WHERE ( question_id in (1,2) and model_id='1' )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_ways on maintenance_question.ways_id=maintenance_ways.ways_id  WHERE ( question_id in (1,2) )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: q F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\ecd235cf43aafd26a8ee45fbff58edce.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2016-04-29T10:51:22+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/1,2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_warranty on maintenance_question.warranty_id=maintenance_warranty.warranty_id  WHERE ( question_id in (1,2) and model_id='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 129 行.
+SQL: SHOW COLUMNS FROM `maintenance_ways` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `maintenance_ways` WHERE ( ways_id in(2,3) )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2016-04-29T10:51:24+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001822s ]
+
+[ 2016-04-29T10:59:52+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/index/add_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+
+[ 2016-04-29T11:00:14+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/index/add_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002712s ]
+
+[ 2016-04-29T11:00:15+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001413s ]
+
+[ 2016-04-29T11:00:37+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/pinpai/ide/1/type_name/%E6%89%8B%E6%9C%BA%E7%BB%B4%E4%BF%AE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `maintenance_brand` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `maintenance_brand` WHERE ( type_id='1' )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2016-04-29T11:00:38+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/ajaxp/brand_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( brand_id='1' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3,5) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3,4) )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2016-04-29T11:00:39+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/wenti/ide/1/color_name/%E7%99%BD%E8%89%B2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_questiontype` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `maintenance_questiontype` WHERE ( questiontype_id in(1,2,3,4,5,6) )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(1) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(2) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(4) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(5) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(6) )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2016-04-29T11:00:42+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/mbr/model_id/1/color_name/%E7%99%BD%E8%89%B2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_warranty on maintenance_question.warranty_id=maintenance_warranty.warranty_id  WHERE ( question_id in (2) and model_id='1' )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_ways on maintenance_question.ways_id=maintenance_ways.ways_id  WHERE ( question_id in (2) )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: q F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\ecd235cf43aafd26a8ee45fbff58edce.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2016-04-29T11:00:43+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_warranty on maintenance_question.warranty_id=maintenance_warranty.warranty_id  WHERE ( question_id in (2) and model_id='1' )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 129 行.
+SQL: SHOW COLUMNS FROM `maintenance_ways` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `maintenance_ways` WHERE ( ways_id in(2,3) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-04-29T11:00:47+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002329s ]
+
+[ 2016-04-29T11:01:55+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002576s ]
+
+[ 2016-04-29T11:04:12+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+
+[ 2016-04-29T11:05:34+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002227s ]
+
+[ 2016-04-29T11:06:59+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+
+[ 2016-04-29T11:07:00+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-04-29T11:07:12+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+
+[ 2016-04-29T11:07:13+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+
+[ 2016-04-29T11:07:15+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+
+[ 2016-04-29T11:07:29+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001956s ]
+
+[ 2016-04-29T11:24:37+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+
+[ 2016-04-29T11:24:37+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-04-29T11:24:59+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+
+[ 2016-04-29T11:25:18+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+
+[ 2016-04-29T11:25:19+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+
+[ 2016-04-29T11:25:52+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+
+[ 2016-04-29T11:26:19+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+
+[ 2016-04-29T11:26:20+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+
+[ 2016-04-29T11:26:56+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_warranty on maintenance_question.warranty_id=maintenance_warranty.warranty_id  WHERE ( question_id in (2) and model_id='1' )  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 129 行.
+SQL: SHOW COLUMNS FROM `maintenance_ways` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `maintenance_ways` WHERE ( ways_id in(2,3) )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-04-29T11:27:02+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_warranty on maintenance_question.warranty_id=maintenance_warranty.warranty_id  WHERE ( question_id in (2) and model_id='1' )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 129 行.
+SQL: SHOW COLUMNS FROM `maintenance_ways` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `maintenance_ways` WHERE ( ways_id in(2,3) )  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2016-04-29T11:27:32+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/index/add_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002339s ]
+
+[ 2016-04-29T11:27:33+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001974s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2016-04-29T11:27:56+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/pinpai/ide/1/type_name/%E6%89%8B%E6%9C%BA%E7%BB%B4%E4%BF%AE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `maintenance_brand` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `maintenance_brand` WHERE ( type_id='1' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-04-29T11:27:56+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/ajaxp/brand_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( brand_id='1' )  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3,5) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3,4) )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2016-04-29T11:29:26+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/wenti/ide/1/color_name/%E9%BB%91%E8%89%B2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `maintenance_questiontype` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `maintenance_questiontype` WHERE ( questiontype_id in(1,2,3,4,5,6) )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(1) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(2) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(4) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(5) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(6) )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2016-04-29T11:29:32+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/mbr/model_id/1/color_name/%E9%BB%91%E8%89%B2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_warranty on maintenance_question.warranty_id=maintenance_warranty.warranty_id  WHERE ( question_id in (2) and model_id='1' )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_ways on maintenance_question.ways_id=maintenance_ways.ways_id  WHERE ( question_id in (2) )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: q F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\ecd235cf43aafd26a8ee45fbff58edce.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2016-04-29T11:29:35+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E9%BB%91%E8%89%B2/question_id/2/ways/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_warranty on maintenance_question.warranty_id=maintenance_warranty.warranty_id  WHERE ( question_id in (2) and model_id='1' )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 129 行.
+SQL: SHOW COLUMNS FROM `maintenance_ways` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `maintenance_ways` WHERE ( ways_id in(2,3) )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-04-29T11:30:24+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/index/add_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002276s ]
+
+[ 2016-04-29T11:30:25+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2016-04-29T11:32:07+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-04-29T11:32:08+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+
+[ 2016-04-29T11:32:32+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2016-04-29T11:33:50+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2016-04-29T11:33:51+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-04-29T11:34:36+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+
+[ 2016-04-29T11:35:30+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-04-29T11:35:31+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+
+[ 2016-04-29T11:36:35+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+
+[ 2016-04-29T11:37:04+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+
+[ 2016-04-29T11:40:56+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [2] Illegal string offset 'field_7964' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 11 行.
+NOTIC: [2] Illegal string offset 'field_8104' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 12 行.
+NOTIC: [2] Illegal string offset 'field_7964' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 11 行.
+NOTIC: [2] Illegal string offset 'field_8104' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 12 行.
+NOTIC: [2] Illegal string offset 'field_7964' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 11 行.
+NOTIC: [2] Illegal string offset 'field_8104' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 12 行.
+NOTIC: [2] Illegal string offset 'field_7964' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 11 行.
+NOTIC: [2] Illegal string offset 'field_8104' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 12 行.
+NOTIC: [2] Illegal string offset 'field_7964' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 11 行.
+NOTIC: [2] Illegal string offset 'field_8104' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 12 行.
+NOTIC: [2] Illegal string offset 'field_7964' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 11 行.
+NOTIC: [2] Illegal string offset 'field_8104' F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001882s ]
+
+[ 2016-04-29T11:41:45+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2016-04-29T11:41:46+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2016-04-29T11:41:55+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002976s ]
+
+[ 2016-04-29T11:41:58+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2016-04-29T11:42:08+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2016-04-29T11:42:09+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2016-04-29T11:43:03+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001815s ]
+
+[ 2016-04-29T11:43:04+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001606s ]
+
+[ 2016-04-29T11:43:04+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2016-04-29T11:44:07+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002466s ]
+
+[ 2016-04-29T11:44:08+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2016-04-29T11:44:46+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-04-29T11:44:57+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-04-29T11:44:58+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000513s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001974s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002433s ]
+
+[ 2016-04-29T11:44:58+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2016-04-29T11:49:41+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002299s ]
+
+[ 2016-04-29T11:49:42+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001895s ]
+
+[ 2016-04-29T11:56:42+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: id F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001943s ]
+
+[ 2016-04-29T11:56:51+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined index: id F:\web\apache\htdocs\weibaishi\yuzuo\Application\Runtime\Cache\Home\72653c5b98bacce026832b51aa92934a.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2016-04-29T11:58:27+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+ERR: 非法操作:alipayapi.php
+
+[ 2016-04-29T12:14:58+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2016-04-29T12:15:00+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002032s ]
+
+[ 2016-04-29T12:15:03+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+ERR: 非法操作:alipayapi.php
+
+[ 2016-04-29T12:27:51+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+ERR: 非法操作:alipayapi.php
+
+[ 2016-04-29T12:28:02+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+ERR: 非法操作:alipayapi.php
+
+[ 2016-04-29T12:29:38+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002491s ]
+
+[ 2016-04-29T12:29:40+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+NOTIC: [2] require_once(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+
+[ 2016-04-29T12:31:08+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+NOTIC: [2] require_once(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+
+[ 2016-04-29T12:31:25+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [2] require_once(__apa__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+
+[ 2016-04-29T12:31:44+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+NOTIC: [2] require_once(__PUBLIC__/zfb/alipay.config.php/): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+
+[ 2016-04-29T12:33:10+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+NOTIC: [2] require_once(F:\web\apache\htdocs\weibaishi\yuzuo\Public\zfb): failed to open stream: Permission denied F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+
+[ 2016-04-29T12:36:04+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+NOTIC: [2] require_once(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+
+[ 2016-04-29T12:50:59+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+NOTIC: [2] require_once(Common/Util/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+
+[ 2016-04-29T12:51:37+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+NOTIC: [2] require_once(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 244 行.
+
+[ 2016-04-29T12:52:26+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: [2] require_once(./Application/Common/Util/zfb/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+
+[ 2016-04-29T13:36:24+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T13:39:41+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T13:45:58+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T13:46:27+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T13:49:03+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T13:49:06+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T13:49:21+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-04-29T13:49:22+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003197s ]
+
+[ 2016-04-29T13:49:30+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T13:50:27+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T13:50:29+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T13:50:31+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T13:54:31+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T14:01:29+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T14:01:52+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T14:02:23+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T14:02:25+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+
+[ 2016-04-29T14:03:20+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+
+[ 2016-04-29T14:04:00+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+
+[ 2016-04-29T14:05:38+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+NOTIC: D方法实例化没找到模型类Admin\Model\AlipaySubmitModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:06:54+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+NOTIC: D方法实例化没找到模型类Home\Model\AlipaySubmitModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:07:11+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+NOTIC: D方法实例化没找到模型类Home\Model\AlipaySubmitModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:09:02+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:09:04+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:11:34+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:12:03+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:13:39+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001727s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:14:15+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002368s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2016-04-29T14:14:16+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001956s ]
+
+[ 2016-04-29T14:14:18+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:18:21+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:18:32+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2016-04-29T14:18:33+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002580s ]
+
+[ 2016-04-29T14:18:35+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:26:50+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:27:37+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_submit' doesn't exist
+
+[ 2016-04-29T14:27:46+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+
+[ 2016-04-29T14:28:58+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 245 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+
+[ 2016-04-29T14:33:09+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 243 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 272 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 274 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 275 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 276 行.
+
+[ 2016-04-29T14:35:35+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000368s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002349s ]
+
+[ 2016-04-29T14:38:25+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 263 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+
+[ 2016-04-29T14:40:37+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 263 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+
+[ 2016-04-29T14:41:55+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 263 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+
+[ 2016-04-29T14:41:58+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [2] include(__PUBLIC__/zfb/lib/alipay_submit.class.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/lib/alipay_submit.class.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 263 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+
+[ 2016-04-29T14:47:17+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+
+[ 2016-04-29T14:47:46+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+
+[ 2016-04-29T14:49:03+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+
+[ 2016-04-29T14:50:08+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+
+[ 2016-04-29T14:50:46+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+
+[ 2016-04-29T14:50:51+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001882s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001176s ]
+
+[ 2016-04-29T14:50:52+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2016-04-29T14:50:53+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+
+[ 2016-04-29T14:51:59+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibaishi.alipay_config' doesn't exist
+
+[ 2016-04-29T14:53:17+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+
+[ 2016-04-29T14:54:38+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-04-29T14:57:24+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+
+[ 2016-04-29T14:58:07+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+
+[ 2016-04-29T15:00:00+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+
+[ 2016-04-29T15:00:03+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 270 行.
+
+[ 2016-04-29T15:02:07+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 263 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+
+[ 2016-04-29T15:03:46+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 263 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+
+[ 2016-04-29T15:04:28+08:00 ] 127.0.0.1 /weibaishi/yuzuo/index.php/Home/Index/alipayapi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [2] include(__PUBLIC__/zfb/alipay.config.php): failed to open stream: No such file or directory F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [2] include(): Failed opening '__PUBLIC__/zfb/alipay.config.php' for inclusion (include_path='.;C:\php\pear') F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 263 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 264 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 265 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: alipay_config F:\web\apache\htdocs\weibaishi\yuzuo\Application\Home\Controller\IndexController.class.php 第 269 行.
+

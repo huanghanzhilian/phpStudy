@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>搜索</title>
+<script src="jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+<form action="https://cn.bing.com/search" target="_blank" id="bd">
+    <input type="text" id="shuru"/>
+    <input type="submit" id="shous" value="搜索"/>
+</form>
+<div id="jiehuo" style=" height:200px; background:#ccc; display:none">
+    
+</div>
+<script>
+$(function(){
+    $("#shuru").bind('keyup',function(){
+		var shuruz=$("#shuru").val();
+		$.ajax({
+			      url:'http://api.bing.com/qsonhs.aspx?q='+shuruz,
+				  type: "get",
+				  success:function (data) {
+					  var bb=data.AS.Results[0].Suggests
+					  var html='';
+					  /*for(var i=0;i<bb.length;i++){
+						  html+='<li>'+bb[i].Txt+'</li>'; 
+					  }
+					  $("#jiehuo").html(html)*/
+					  $.each(bb,function(index,dew){
+						  //if(index<=bb.length){
+							  //console.log(dew.Txt);
+							  //console.log(dew);
+							  html+='<li>'+bb[index].Txt+'</li>'; 
+						  //}
+					  })
+					  $("#jiehuo").html(html)
+				  }
+					  
+				 
+			  });
+		/*$.get('test.php',function(d){
+			console.log(d);
+			$("#jiehuo").append("<li>"+ d.name + "</li>");
+		},'json')*/
+		$("#jiehuo").show();
+		
+	})
+})
+</script>
+</body>
+</html>

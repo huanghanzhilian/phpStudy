@@ -1,0 +1,40 @@
+<div class="ceomer_com">
+                <foreach name='arr' item='kk'>
+                <div style="position:relative;">
+                    <a class="shifu_aclc" href="__CONTROLLER__/xiangqing/id/{$kk.id}/shouhou_id/{$kk.shouhou_id}">
+                        <div class="rnmbur">
+                            <ul>
+                                <li>
+                                     <span class="chuangmbr">{$kk.dd}</span>
+                                </li>
+                                <li>
+                                     问题：<span class="chuangmbr">{$kk.contentt}</span>
+                                </li>
+                                <li>
+                                     姓名：<span class="chuangmbr">{$kk.username}</span>
+                                </li>
+                                <li>
+                                     电话：<span class="chuangmbr">{$kk.tell}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                    <if condition="strtoupper (($kk['u_phone']) eq  17301205932) || (($kk['u_phone']) eq  15811207510) || (($kk['u_phone']) eq  18231321037)">
+                      <a style=" position:absolute; top:14px; right:12px; color:red" href="__CONTROLLER__/shanchuuu/id/{$kk.id}/ways_id/{$kk.ways_id}" onclick="if(confirm('确定删除?')==false)return false;">删除</a>
+                    <else/>
+                    </if>
+                </div>
+                </foreach>
+            </div>
+            
+            <!--分页-->
+                 <!--   <div class="clopokc">
+                       {$page}
+                    </div>
+                    <div class="clopokc">
+                    <form style="display:inline-block;" method="post" action="" onSubmit="return Checked();">
+                        <input id="hhb" class="hhbn" type="text" value=""/>
+                        <input class="hhbnc" type="submit" value='GO'>
+                    </form>
+                    </div>-->
+                    <!--分页-->

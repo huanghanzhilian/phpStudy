@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<a href="__CONTROLLER__/question/brand_id/{$brand_id}/model_id/{$model_id}/questiontype_id/{$questiontype_id}">返回</a><br /><br />
+	<foreach name='arr' item='kk'>
+		{$kk.question_name}&nbsp;&nbsp;&nbsp;<a class="zjnmk_pp" href="__CONTROLLER__/planhuifu/brand_id/{$brand_id}/model_id/{$model_id}/plan_id/{$kk.plan_id}" onclick="if(confirm('确定恢复?')==false)return false;">恢复</a><br /><br />
+	</foreach>
+</body>
+</html>

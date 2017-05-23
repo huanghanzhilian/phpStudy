@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>列车时刻表查询_列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.3.css"/>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.mobile-1.4.3.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="index">
+    <div data-role="header" data-position="fixed">
+        <h1>标题1</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <table data-role="table" data-mode="reflow" class="ui-responsive table-stroke">
+            <thead><!--标题-->
+                <tr>
+                    <th>第一</th>
+                    <th>第二</th>
+                    <th>第三</th>
+                </tr>
+            </thead>
+            <tbody><!--表格主体-->
+                <tr>
+                    <td>111</td>
+                    <td>2222</td>
+                    <td>333</td>
+                </tr>
+                <tr>
+                    <td>444;</td>
+                    <td>555</td>
+                    <td>6666</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="camera">导航1</a></li>
+                <li><a href="#" data-icon="bullets">导航2</a></li>
+                <li><a href="#" data-icon="clocl">导航3</a></li>
+                <li><a href="#" data-icon="bars">导航4</a></li>
+                <li><a href="#" data-icon="camera">导航5</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="index2">
+    <div data-role="header">
+        <h1>标题2</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <p>内容2</p>
+        <p><a href="#index" data-transition="slidedown">index</a></p>
+    </div>
+    <div data-role="footer">
+        <h1>页脚2</h1>
+    </div>
+</div>
+
+
+<script>
+//页面初始化事件初始化成功后不再执行
+$(document).on("pagebeforehide","#index",function(){        //第一个页面消失
+	alert("pagebeforehide")
+})
+
+$(document).on("pagehide","#index",function(){        //第一个页面消失
+	alert("pagehide")
+})
+
+$(document).on("pagebeforeshow","#index2",function(){        //第一个页面消失
+	alert("pagebeforeshow")
+})
+
+$(document).on("pageshow","#index2",function(){        //第一个页面消失
+	alert("pageshow")
+})
+</script>
+
+</body>
+</html>

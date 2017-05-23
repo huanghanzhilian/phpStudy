@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<style type="text/css">
+	/* .table thead tr{
+		position: fixed;
+		width: 100%;
+	} */
+	/* html,body{
+		height: 100%;
+		background: #ccc;
+		overflow: hidden;
+	} */
+	/*图片*/
+	.imageserwidth img{
+		width: 66px;height: 66px;
+		display: inline-block;
+	}
+	.anniu span.huidupo{
+		color: #ff7e00;
+		border: solid 1px #ff7e00;
+	}
+
+	/* 时间 */
+	.sertime{
+		position: relative;
+	}
+	.sertime:hover ul{
+		display: block;
+	}
+	.sertime ul{
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		width: 100%;
+		text-align: left;
+		background: #fff;
+		padding: 8px;
+		box-shadow: 0px 0px 10px 4px #ccc;
+		color: #2d3340;
+		display: none;
+	}
+	.tablesw tbody tr{
+		border-bottom: solid 1px #ccc;
+		text-align: center!important;
+	}
+/* 	.table tbody tr:nth-child(2n) {
+    border-bottom: solid 1px #ccc;
+     text-align: left; 
+} */
+	</style>
+</head>
+<body>
+	<table class="table tablesw" cellspacing="0" cellpadding="0">
+		<thead>
+			<tr>
+				<th>申请时间</th>
+				<th>提现金额</th>
+				<th>提现人</th>
+				<th>提现卡号</th>
+				<th>银行</th>
+				<th>提现人手机号</th>
+				<th></th>
+			</tr>
+		</thead>
+	<foreach name='arr' item='kk'>
+		<tbody class="">
+
+				<tr>
+					<td width="10%">{$kk.tixian_time}</td>
+					<td>{$kk.tixian_amount}</td>
+					<td>{$kk.sf_username}</td>
+					<td width="18%">{$kk.card_number}</td>
+					<td width="18%">{$kk.card_name}</td>
+					<td>{$kk.sf_phone}</td>
+					<td width="20%">
+						<span class="amuhsre" onclick="resize({$kk.tixian_id},this)">不通过</span>
+						<span class="amuhsre" onclick="buzuo({$kk.tixian_id},this)">通过</span>
+					</td>
+				</tr>
+		</tbody>
+		
+			</foreach>
+	</table>
+</body>
+</html>
+
+
+
+
+<script type="text/javascript">
+
+	// 通过
+	function buzuo(_id, _this) {
+		if (confirm("你确定通过吗？")) {
+			$.ajax({
+				url: "http://m.weibaishi.com/admin/aingdan/tixian_suess",
+				data: {
+					'tixian_id': _id
+				},
+				dataType: "json",
+				type: 'post',
+				success: function(data) {
+					if (data == "1") {
+						window.location.reload();
+					}
+				}
+			});
+		}
+	}
+
+	//不通过
+	function resize(_id,_this) {
+		// var overlay= document.getElementById("attr-overlay");
+		var overlay= $("#attr-overlay",parent.document);
+		var content= $("#attr-content",parent.document);
+		var widget_title= $("#widget-title",parent.document);
+		var windows=$("body",parent.document);
+		//关闭按钮
+		var closed=$("#closed",parent.document);
+
+		widget_title.text("提现失败原因")
+		overlay.show();
+		content.show();
+		$("#content_sd",parent.document).empty();
+
+		var sel=(windows.width()-content.width())/2;
+		var set=(windows.height()-content.height())/2;
+
+		content.offset({ top: set, left: sel });
+
+		$("#content_sd", parent.document).append('<ul class="attr-content-con"><textarea class="scvbgklk comtesv" name="content" autocomplete="off"></textarea></ul>');
+		$("#content_sd", parent.document).append('<button class="attr-content-button">确定</button>');
+		$(".attr-content-button", parent.document).on("click", function() {
+			var contentss = $(".comtesv", parent.document).val();
+			if (contentss != "") {
+				tijiao(_this,_id,contentss);
+			} else {
+				alert("内容不能为空");
+			}
+		})
+
+		closed.on("click",function(){
+			overlay.hide();
+			content.hide();
+		});
+	}
+
+	//确认不通过
+	function tijiao(_this,pid,contentss){
+		var overlay= $("#attr-overlay",parent.document);
+		var content= $("#attr-content",parent.document);
+		// console.log(_this)
+		// console.log(pid)
+		// console.log(contentss)
+		$.ajax({
+			url: "http://m.weibaishi.com/admin/aingdan/tixian_error",
+			data: {
+				'tixian_id': pid,
+				'tixian_content': contentss
+			},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				if(data=="1"){
+					// $(_this).parents("tr").prev("tr").remove();
+					// $(_this).parents("tr").remove();
+					overlay.hide();
+					content.hide();
+					window.location.reload();
+				}else if(data=="2"){
+					alert("操作错误")
+				}
+
+			}
+		});
+	}
+</script>

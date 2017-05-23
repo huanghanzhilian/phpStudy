@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<div id='list'>
+<a href="__CONTROLLER__/index">返回</a><br /><br />
+	<foreach name='arr' item='kk'>
+			{$kk.cpk_name} &nbsp;&nbsp;{$kk.cpk_price}元&nbsp;&nbsp;&nbsp;<a href='javascript:void(0)'onclick='hq({$kk.huishou_id})'>赶快换钱去</a><br /><br />
+	</foreach>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	function hq(id){
+		//alert(id);
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/hqajax/huishou_id/"+id,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('list').innerHTML=ajax.responseText
+				}
+}
+	}
+
+
+</script>

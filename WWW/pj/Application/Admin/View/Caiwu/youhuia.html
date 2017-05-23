@@ -1,0 +1,17 @@
+
+<!--调整额度-->
+<div class="erdu erdu1" style="display:block;">
+    <i class="guanb_op cursor"></i>
+    <h3 class="guanb_op_h3">添加优惠金额</h3>
+    <form method="post" action="__CONTROLLER__/yhadd">
+        <ul class="guanb_op_ul">
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input class="imklj" type="text" name="money" value='' placeholder="直接输入数字即可，例:20000" autocomplete="off" />
+            </li>
+            <li class="guanb_op_ul_li">
+                <input class="cursor" type="submit" value="确定"/>
+            </li>
+        </ul>
+        <input type="hidden" name="id" value='{$id}'>
+    </form>
+</div>

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+   <meta charset="utf-8">
+   <title>WebSocket</title>
+   <script src = "https://cdn.wilddog.com/js/client/current/wilddog.js" ></script>
+      <script type="text/javascript">
+        var ref = new Wilddog("https://hjp123.wilddogio.com/");  
+		ref.on("child_added", function(datasnapshot) {    
+			console.log(datasnapshot.val());   // 结果会在 console 中打印出 "beijing"
+		}, function(error){
+			// 处理请求失败打错误
+		});
+      </script>
+		
+   </head>
+   <body>
+   </body>
+</html>

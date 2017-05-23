@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<style type="text/css">
+	/* .table thead tr{
+		position: fixed;
+		width: 100%;
+	} */
+	/* html,body{
+		height: 100%;
+		background: #ccc;
+		overflow: hidden;
+	} */
+	/* 创建新的邀请按钮 */
+	.sdclop{
+		/*text-align: right;
+		line-height: 50px;*/
+		position: relative;
+	}
+	.sdclop span{
+		width: 120px;
+		height: 40px;
+		background: #5a8bed;
+		/*display: inline-block;*/
+		position: absolute;
+		right: 12px;
+		top: 6px;
+		line-height: 40px;
+		border-radius: 8px;
+	}
+
+
+	/* 修改 */
+	.chengoos_xg {
+	    width: 18px;
+	    height: 18px;
+	    background: url(__PUBLIC__/img/xiugai_p0.png) center center no-repeat;
+	    background-size: 14px 14px;
+	    /* background: red; */
+	    display: inline-block;
+	    vertical-align: middle;
+	    cursor: pointer;
+	    margin-left: 10px;
+	}
+	.scvbgklk{
+		text-align: left;
+    	padding: 8px 10px;
+    	width: 60%;
+    	box-sizing: border-box;
+    	vertical-align: middle;
+	}
+	.scvbgklk.on{
+		border: 1px solid #3e7edb;
+    	border-radius: 4px;
+	}
+	.anniu span.huidupo{
+		color: #ff7e00;
+		border: solid 1px #ff7e00;
+	}
+
+	.toasttj2 {
+		z-index: 1003;
+		font-size: 1.37em;
+		position: fixed;
+		bottom: 50%;
+		width: 100%;
+		opacity: 0;
+		height: 24px;
+		display: none;
+		transition: opacity 1s ease-out;
+	}
+	</style>
+</head>
+<body>
+	<table class="table " cellspacing="0" cellpadding="0">
+		<thead>
+			<tr>
+				<th>入驻时间</th>
+				<th>商家名称</th>
+				<th>商家电话</th>
+				<th>授权代码</th>
+				<th></th>
+			</tr>
+		</thead>
+
+		<tbody class="">
+			<foreach name='arr' item='kk'>
+				<tr>
+					<td width="12%">{$kk.shou_time}</td>
+					<td width="15%">{$kk.shou_name}</td>
+					<td width="12%">{$kk.shou_phone}</td>
+
+					<td width="30%">
+						<textarea readonly="readonly" data="{$kk.shou_id}" class="scvbgklk" name="content" autocomplete="off">{$kk.shouquanma}</textarea>
+						<span class="chengoos_xg"></span>
+					</td>
+					<td width="15%"></td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						<div class="anniu-center">
+							<div class="anniu fl">
+
+								<span>暂停合作</span>
+								<span class="huidupo">恢复合作</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</foreach>
+		</tbody>
+	</table>
+	<div id="toastId2" class="toasttj2" style="display: none; opacity: 0;"></div>
+</body>
+</html>
+
+
+
+
+<script type="text/javascript">
+	function $S(s) {
+		return document.getElementById(s);
+	}
+
+	function $html(s, html) {
+		$S(s).innerHTML = html;
+	}
+	var toastTime2 = null;
+	var displayTime2 = null;
+
+	function setToast3(html) {
+		if (toastTime2 != null) {
+			clearTimeout(toastTime2);
+			clearTimeout(displayTime2);
+		}
+		$S('toastId2').style.display = 'block';
+		$S('toastId2').style.opacity = 1;
+		$html('toastId2', html);
+		toastTime2 = setTimeout(function() {
+			$S('toastId2').style.opacity = 0;
+			displayTime2 = setTimeout(function() {
+				$S('toastId2').style.display = 'none';
+			}, 1000);
+		}, 1000);
+	}
+
+
+	//复制
+	function copyUrl2() {
+		var Url2 = document.getElementById("biao1");
+		Url2.select(); // 选择对象
+		document.execCommand("Copy"); // 执行浏览器复制命令
+		// alert("已复制好，可贴粘。");
+		
+	}
+
+
+	//备注
+	$("body").click(function(){
+		$(".scvbgklk").attr("readonly", "true").removeClass('on');
+	})
+	$(".chengoos_xg").on('click',function(event){
+		event.stopPropagation();
+		var hhug=$(this).prev()[0];
+		hhug.select(); // 选择对象
+		document.execCommand("Copy"); // 执行浏览器复制命令
+		setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:175px;margin: 0 auto;">已复制好，可贴粘</div>');
+		$(this).prev().unbind();
+		$(this).prev().removeAttr("readonly").addClass('on');
+		$(this).prev().change(function(){
+			tijiswao(this);
+		})
+		$(this).prev().click(function(event){
+			$(this).prev().removeAttr("readonly").addClass('on');
+			event.stopPropagation();
+		})
+		$(this).parents('tr').siblings().find("textarea").attr("readonly", "true").removeClass('on');
+	});
+	function tijiswao(_this){
+		var id=$(_this).attr("data");
+		var datas=$(_this).val();
+		$.ajax({
+			url: "http://m.weibaishi.com/Admin/aingdan/saveshouquanma",
+			data:{'shou_id':id,'shouquanma':datas},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				if(data=="1"){
+					// alert("操作成功")
+					// $(_this).parents("tr").prev("tr").remove();
+					// $(_this).parents("tr").remove();
+				}else if(data=="2"){
+					alert("操作错误")
+				}
+
+			}
+		});
+	}
+
+
+	//重新邀请
+	function resize(datas,_this){
+		if (confirm("你确定重新邀请吗？")) {
+			// $(_this).parents("tr").prev("tr").remove();
+			// $(_this).parents("tr").remove();
+			$.ajax({
+				url: "http://m.weibaishi.com/Admin/aingdan/chongxinyaoqing",
+				data:{'yq_phone':datas},
+				dataType: "json",
+				type:'post',
+				success: function (data) {
+					if(data=="1"){
+						alert("操作成功")
+						// $(_this).parents("tr").prev("tr").remove();
+						// $(_this).parents("tr").remove();
+					}else if(data=="2"){
+						alert("操作错误")
+					}
+
+				}
+			});
+		} else {
+
+		}
+	}
+
+	//删除邀请
+	function buzuo(datas,_this){
+		if (confirm("你确定重新邀请吗？")) {
+			// $(_this).parents("tr").prev("tr").remove();
+			// $(_this).parents("tr").remove();
+			$.ajax({
+				url: "http://m.weibaishi.com/Admin/aingdan/shanchuyq",
+				data:{'yq_id':datas},
+				dataType: "json",
+				type:'post',
+				success: function (data) {
+					if(data=="1"){
+						$(_this).parents("tr").prev("tr").remove();
+						$(_this).parents("tr").remove();
+					}else if(data=="2"){
+						alert("操作错误")
+					}
+
+				}
+			});
+		} else {
+
+		}
+	}
+
+	//建立新的邀请
+	function xiangqo(p_id,_this){
+		var overlay= $("#attr-overlay",parent.document);
+		var content= $("#attr-content",parent.document);
+		var widget_title= $("#widget-title",parent.document);
+		var windows=$("body",parent.document);
+		//关闭按钮
+		var closed=$("#closed",parent.document);
+
+		widget_title.text("建立新的邀请")
+		overlay.show();
+		content.show();
+		$("#content_sd",parent.document).empty();
+
+		var sel=(windows.width()-content.width())/2;
+		var set=(windows.height()-content.height())/2;
+
+		content.offset({ top: set, left: sel });
+		closed.on("click",function(){
+			overlay.hide();
+			content.hide();
+		});
+
+		$("#content_sd",parent.document).append('<ul class="attr-content-con">\
+					<li class="xghujg xghujgse">\
+						<p>被邀请人手机号</p>\
+						<input value="" class="xghujgser" type="text">\
+					</li>\
+					<li class="xghujg xghujgse">\
+						<p>备注（选填）</p>\
+						<textarea class="shubxsa" name="content" autocomplete="off"></textarea>\
+					</li>\
+					<li class="xghujg xghujgse">\
+						<button class="attr-content-button">匹配</button>\
+					</li>\
+					</ul>');
+
+
+		$(".attr-content-button",parent.document).on("click",function(){
+			var mobile_1 = /^0{0,1}(14[0-9]|17[0-9]|13[0-9]|15[0-9]|18[0-9]|14[0-9])[0-9]{8}$/;
+			var sdfr=$(".xghujgser",parent.document).val();
+			var sdfrs=$(".shubxsa",parent.document).val();
+			if (!mobile_1.test(sdfr)) {
+				$(".xghujgser",parent.document).val('');
+	            $(".xghujgser",parent.document).focus().addClass("tips");
+	            $(".xghujgser",parent.document).attr("placeholder", "请输入正确手机号");
+				return false;
+	        }
+			if(sdfr!=""&&sdfrs!=""){
+				tijixaao(sdfr,sdfrs)
+			}else{
+				alert("备注不能为空")
+			}
+		})
+	}
+	//提交信息
+	function tijixaao(obj1,onj2){
+		var overlay= $("#attr-overlay",parent.document);
+		var content= $("#attr-content",parent.document);
+		$.ajax({
+			url: "http://m.weibaishi.com/Admin/aingdan/yaoqingadd",
+			data:{'yq_phone':obj1,'yq_content':onj2},
+			dataType: "text",
+			type:'post',
+			success: function (data) {
+				var datasd=data.substr(data.length-1,1);
+				if(datasd=="1"){
+					overlay.hide();
+					content.hide();
+					window.location.reload();
+				}else if(datasd=="2"){
+					overlay.hide();
+					content.hide();
+					alert("失败")
+				}else if(datasd=="3"){
+					overlay.hide();
+					content.hide();
+					alert("已邀请过")
+				}
+			}
+		});
+	}
+
+	
+</script>

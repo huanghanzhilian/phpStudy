@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>列车时刻表查询_列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.3.css"/>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.mobile-1.4.3.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="index">
+    <div data-role="header" data-position="fixed">
+        <h1>标题1</h1>
+    </div>
+    <div role="main" class="ui-content">
+    <form>
+            <div class=" ui-field-contain">
+                <label>发站地</label>
+                <input type="text">
+            </div>
+            <div class=" ui-field-contain">
+                <label>到达站</label>
+                <input type="text">
+            </div>
+            <div class=" ui-field-contain">
+                <label>车次</label>
+                <input type="text">
+            </div>
+        </form>
+        
+        
+        <form>
+            <label>发站地</label>
+            <input type="text">
+            <label>到达站</label>
+            <input type="text">
+            <label>车次</label>
+            <input type="text">
+            
+        </form>
+        <p>内容1</p>
+        <p><a href="#index2" data-transition="slideup">index2</a></p>
+        <a href="#" class="ui-btn">我是按钮</a>
+        <a href="#" class="ui-btn ui-btn-inline">我是按钮1</a>
+        <a href="#" class="ui-btn ui-btn-inline">我是按钮2</a>
+        <a href="#" class="ui-btn ui-btn-a">我是按钮3</a>
+        <a href="#" class="ui-btn ui-btn-b">我是按钮4</a>
+        <a href="#" class="ui-btn ui-btn-a ui-corner-all">我是按钮5</a>
+        <a href="#" class="ui-btn ui-btn-b ui-shadow">我是按钮6</a>
+        <input type="submit" value="我也是按钮">
+        <a href="#" class="ui-btn">我是按钮</a>
+        <a href="#" class="ui-btn ui-btn-inline">我是按钮1</a>
+        <a href="#" class="ui-btn ui-btn-inline">我是按钮2</a>
+        <a href="#" class="ui-btn ui-btn-a">我是按钮3</a>
+        <a href="#" class="ui-btn ui-btn-b">我是按钮4</a>
+        <a href="#" class="ui-btn ui-btn-a ui-corner-all">我是按钮5</a>
+        <a href="#" class="ui-btn ui-btn-b ui-shadow">我是按钮6</a>
+        <input type="submit" value="我也是按钮">
+        
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#" >导航1</a></li>
+                <li><a href="#" >导航2</a></li>
+                <li><a href="#" >导航3</a></li>
+                <li><a href="#" >导航4</a></li>
+                <li><a href="#" >导航5</a></li>
+            </ul><br><br>
+            <ul data-role="listview">
+                <li><a href="#" >
+                    <h2>G1次</h2>
+                    <p>19:30</p>
+                    <p>22:00</p>
+                    <p class="ui-li-aside">9:00开</p>
+                </a></li>
+                <li><a href="#" >导航2</a></li>
+                <li><a href="#" >导航3</a></li>
+                <li><a href="#" >导航4</a></li>
+                <li><a href="#" >导航5</a></li>
+            </ul>
+        
+        
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="camera">导航1</a></li>
+                <li><a href="#" data-icon="bullets">导航2</a></li>
+                <li><a href="#" data-icon="clocl">导航3</a></li>
+                <li><a href="#" data-icon="bars">导航4</a></li>
+                <li><a href="#" data-icon="camera">导航5</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="index2">
+    <div data-role="header">
+        <h1>标题2</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <p>内容2</p>
+        <p><a href="#index" data-transition="slidedown">index</a></p>
+    </div>
+    <div data-role="footer">
+        <h1>页脚2</h1>
+    </div>
+</div>
+
+
+<script>
+//页面初始化事件初始化成功后不再执行
+$(document).on("pagebeforehide","#index",function(){        //第一个页面消失
+	alert("pagebeforehide")
+})
+
+$(document).on("pagehide","#index",function(){        //第一个页面消失
+	alert("pagehide")
+})
+
+$(document).on("pagebeforeshow","#index2",function(){        //第一个页面消失
+	alert("pagebeforeshow")
+})
+
+$(document).on("pageshow","#index2",function(){        //第一个页面消失
+	alert("pageshow")
+})
+</script>
+
+</body>
+</html>

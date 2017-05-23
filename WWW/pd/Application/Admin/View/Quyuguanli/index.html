@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>维百士_区域地图管理</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/Admin_modify.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<style type="text/css">
+
+</style>
+</head>
+<body class="body1_color">
+<div class="header public_width">
+    <h1 class="header_h1">区域地图管理
+        <a class="youb_mk" href="__CONTROLLER__/shifuglz">人员分配</a>
+    </h1>
+    
+</div>
+
+<div class="container public_width">
+    <!--公共返回-->
+    <div class="Return">
+        <!--<span class="Return_button cursor" onClick="window.history.back()">返回</span>-->
+        <a class="Return_button " href="__MODULE__/index/index">返回</a>
+        
+    </div>
+    <!--公共返回-->
+    
+    <!--上部tab-->
+    <div class="tab_quehu">
+        <ul class="tab_quehu_ul clearfix">
+            <li class="tab_quehu_li fl"><a class="on" href="__CONTROLLER__/index">上门服务</a></li>
+            <li class="tab_quehu_li fl"><a href="__CONTROLLER__/jixiugl">寄修服务</a></li>
+            <li class="tab_quehu_li fl"><a href="__CONTROLLER__/daodiangl">到店服务</a></li>
+        </ul>
+    </div>
+    <!--上部tab-->
+    
+    <div class="container_modify" id="xgpinpan">
+        <ul class="zhuti_rom" style=" padding:0 110px; ">
+            <li class="lmbhu lmbhuopd" style="border-bottom:none; text-align:center;">
+                <a class="Return_button Return_button_pko" href="__CONTROLLER__/map_gl">添加区域</a>
+                
+            </li>
+            
+        </ul>
+        <ul class="zhuti_rom" id="mubn">
+        <foreach name='arr' item='vv'>
+            <li class="lmbhu lmbhuopd" >
+                <a class="didbio fr" href="__CONTROLLER__/qyshanchu/smwx_id/{$vv.smwx_id}" onclick="if(confirm('确定删除?')==false)return false;">删除</a>
+                <a class="didbio fr" href="__CONTROLLER__/map_gl_xg/smwx_id/{$vv.smwx_id}">服务范围</a>
+                <a class="didbio fr" href="__CONTROLLER__/shifugl/smwx_id/{$vv.smwx_id}">人员</a>
+                名称：
+                <input data='{$vv.smwx_id}' class="xiubuttce xiubuttce_as1 bvbaw" style="text-align:left; width:80px;" type="text" name="brand_name" value="{$vv.smwx_name}" readonly="readonly">
+                <span class="chengoos_xg"></span>
+            </li>
+        </foreach>
+            
+            <!--<foreach name='arr' item='vv'>
+            <li class="lmbhu lmbhuopd" >
+               
+               <div class="listy_box">
+                   <div class="listy_pk">订单号：{$vv.ddh}</div>
+                   
+                   <div style="line-height:30px;" class="listy_pk">机型：{$vv.model_name}<br/>问题：{$vv.question_name}</div>
+                   <div class="listy_pk">工程师：{$vv.user_username}<span class="fr">应付{$vv.amount}元 <span class="youhuikl">优惠后价格 <i class="danw">{$vv.amountt}</i> 元</span></span></div>
+               </div>
+               <div class="listy_kr">
+                   <span class="listy_con">
+                       <a class="didb llvcer" href="__CONTROLLER__/queren/id/{$vv.id}" onclick="if(confirm('确定操作?')==false)return false;">确认</a>
+                       <a class="didb llvcer" href='javascript:void(0)'onclick='ass({$vv.id})'>添加优惠金额</a>
+                       <a class="didb" href="__MODULE__/Ddguanli/xiangqing/id/{$vv.id}" >查看详情</a>
+                   </span>
+               </div>
+            </li>
+            </foreach>-->
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--调整额度-->
+<div id="p">
+    
+</div>
+<!--调整额度-->
+
+
+<!--添加新员工-->
+<div class="erdu erdu5">
+    <i class="guanb_op cursor"></i>
+    <h3 class="guanb_op_h3">添加新员工</h3>
+    <form method="post" action="__CONTROLLER__/yuangong" enctype="multipart/form-data">
+        <ul class="guanb_op_ul">
+            <li class="guanb_op_ul_li mkjui_poi">
+                <div class="nbvji">
+                    <input type="file" onchange="preview(this)" multiple="multiple" name="img"  accept="image/gif,image/jpeg,image/jpg,image/png" >
+                    <span class="addpic">员工照片</span>
+                    <div class="addpic" id="preview"></div>
+                </div>
+            </li>
+        
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input class="imklj" type="text" name="user_username" value='' placeholder="员工姓名" autocomplete="off" />
+            </li>
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input class="imklj" type="text" name="user_name" value='' placeholder="员工电话" autocomplete="off" />
+            </li>
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input class="imklj" type="text" name="pwd" value='' placeholder="初始密码" autocomplete="off" />
+            </li>
+                <dl class="list_dll">
+                   <dt class="list_dtt"><span>上门</span><span>寄修</span><span>到店</span></dt>
+                   <dd class="list_ddd">
+                       <span>
+                           <select name="smwx_id">
+                                   <option value="">-请选择-</option>
+                               <foreach name='arr' item='vv'>
+                                   <option value="{$vv.smwx_id}">{$vv.smwx_name}</option>
+                               </foreach>
+                           </select>
+                       </span>
+                       <span>
+                           <select name="jxzx_id">
+                                   <option value="">-请选择-</option>
+                               <foreach name='arr1' item='vv'>
+                                   <option value="{$vv.jxzx_id}">{$vv.jxzx_name}</option>
+                               </foreach>
+                           </select>
+                       </span>
+                       <span>
+                           <select name="wxzx_id">
+                                   <option value="">-请选择-</option>
+                               <foreach name='arr2' item='vv'>
+                                   <option value="{$vv.wxzx_id}">{$vv.wxzx_name}</option>
+                               </foreach>
+                           </select>
+                       </span>
+                   </dd>
+                </dl>
+                
+            
+            <li class="guanb_op_ul_li">
+                <input class="cursor" type="submit" value="确定"/>
+            </li>
+            
+        </ul>
+   </form>
+</div>
+<!--添加新员工-->
+
+
+<script>
+$(function(){
+	
+	
+	$(".chengoos_xg").on('click',function(event){
+		$(this).prev().unbind();
+		$(this).prev().removeAttr("readonly").addClass('on');
+		$(this).prev().change(function(){
+			tijiao(this);
+		})
+		$(this).prev().click(function(event){
+			$(this).prev().removeAttr("readonly").addClass('on');
+			event.stopPropagation(); 
+		})
+		$(this).parents('li').siblings().find("input").attr("readonly", "true").removeClass('on');
+		event.stopPropagation(); 
+	})
+	
+	$("body").click(function(){
+		$(".lmbhu").find("input").attr("readonly", "true").removeClass('on');
+	})
+	
+	
+	
+	$(".erdu").each(function(q,w){
+		//console.log()
+	    $(this).css({'margin-top':-($(this).height()/2+40)})
+    });
+	
+	//添加新员工
+	$("#tianco").on('click',function(){
+		$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+		$('.zdvjio').show();
+		$('.erdu5').show();
+		
+		$(".guanb_op").on('click',function(){
+			$('.zdvjio').hide();
+		    $('.erdu5').hide();
+			$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+		})
+	});
+	//添加新员工
+	
+	
+	
+	
+	
+})
+function tijiao(c){
+	$.ajax({
+		url:"__CONTROLLER__/xiugaichengshi",
+		data: {'smwx_id':c.getAttribute('data'),'smwx_name':c.value},
+		type: "post",
+		//dataType: "html",
+		success: function (data) {
+			$(c).val(data);
+		}
+	});
+    //c.value='jjjjjjj'
+	/*console.log($(".Return_button "))
+	console.log(c)
+	console.log(c.value)
+	console.log(c.getAttribute('data'))
+	console.log($(c).val())*/
+}
+</script>
+<script type="text/javascript">    
+ function preview(file)  
+ {  
+ var prevDiv = document.getElementById('preview');  
+ console.log(file.files) 
+ if (file.files && file.files[0])  
+ {  
+ var reader = new FileReader();  
+ 
+ reader.onload = function(evt){ 
+ //console.log(reader) 
+ prevDiv.innerHTML = '<img src="' + evt.target.result + '" />';  
+}
+ reader.readAsDataURL(file.files[0]);
+
+}  
+ else    
+ {  
+ prevDiv.innerHTML = '<div class="img" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>';  
+ }  
+ }  
+ </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小旗子标注设置</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/style.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/qizhi.css">
+	<script type="text/javascript">
+		if(!{$water}){
+			window.location='__CONTROLLER__/pianbu_null.html'
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="header" id="header">
+			<h1 class="qizi-title">小旗子标注设置
+			<!-- <a class="pull-right" href="__CONTROLLER__/tuichua">退出登录</a> -->
+			</h1>
+			<div class="con-nav"></div>
+		</div>
+
+		<div class="containers conta-qz" id="containers">
+			<div class="qizi-log-con" id="cvmnd">
+				<div class="qizhi-bsar clearfix" id="qizhi-bsar">
+					<div class="row flex-wrap" >
+						<label class="bdhu">下单</label>
+						<ul class="rootu flex-wrap flex-con" id="xd">
+							<li class="flex-con hong" data="红旗">
+								<span></span>
+							</li>
+							<li class="flex-con huang" data="黄旗">
+								<span></span>
+							</li>
+							<li class="flex-con lu" data="绿旗">
+								<span></span>
+							</li>
+							<li class="flex-con lan" data="蓝旗">
+								<span></span>
+							</li>
+							<li class="flex-con zhi" data="紫旗">
+								<span></span>
+							</li>
+						</ul>
+					</div>
+					<div class="row flex-wrap" >
+						<label class="bdhu">刷单</label>
+						<ul class="rootu flex-wrap flex-con" id="sd">
+							<li class="flex-con hong" data="红旗">
+								<span></span>
+							</li>
+							<li class="flex-con huang" data="黄旗">
+								<span></span>
+							</li>
+							<li class="flex-con lu" data="绿旗">
+								<span></span>
+							</li>
+							<li class="flex-con lan" data="蓝旗">
+								<span></span>
+							</li>
+							<li class="flex-con zhi" data="紫旗">
+								<span></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<button class="qizi-login shyuji" id="butnkd" onclick="chdsem(this)">确定</button>
+			</div>
+
+			<!-- <foreach name="arr" item="kk">
+			{$kk.qizi_color}
+			{$kk.qizi_name}
+
+		</foreach> -->
+			<div class="qizi-log-con" id="hjgf">
+				<div class="qizhi-bsar clearfix" >
+					<foreach name="arr" item="kk">
+						<div class="row flex-wrap" >
+							<label class="bdhu">{$kk.qizi_name}</label>
+							<ul class="rootu rootu2 flex-con">
+								<li class="flex-con on" data="{$kk.qizi_color}">
+
+								</li>
+							</ul>
+						</div>
+					</foreach>
+					
+				</div>
+				<button class="qizi-login shyuji" id="xiugai">修改</button>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/new/script/qizhi.js"></script>
+	<script type="text/javascript">
+
+		var hjgf=document.getElementById("hjgf")
+		var hjgf_li=hjgf.getElementsByTagName("li");
+		var cvmnd=document.getElementById("cvmnd");
+		var xiugai=document.getElementById("xiugai");
+		xiugai.onclick=function(){
+			hjgf.style.display="none";
+			cvmnd.style.display="block"
+		};
+
+		if(hjgf_li.length==0){
+			hjgf.style.display="none"
+		}else{
+			cvmnd.style.display="none"
+		}
+		// console.log(hjgf_li.length)
+		for (var i = 0; i < hjgf_li.length; i++) {
+			switch (hjgf_li[i].getAttribute('data')) {
+				case "红旗":
+					hjgf_li[i].classList.add("hong");
+					break;
+				case "黄旗":
+					hjgf_li[i].classList.add("huang");
+					break;
+				case "绿旗":
+					hjgf_li[i].classList.add("lu");
+					break;
+				case "蓝旗":
+					hjgf_li[i].classList.add("lan");
+					break;
+				case "紫旗":
+					hjgf_li[i].classList.add("zhi");
+					break;
+				default:
+					//alert('case都不是的执行');
+			}
+		};
+		function chdsem(_this) {
+			if (_this.getAttribute('data') && _this.getAttribute('datas')) {
+				var k = _this.getAttribute('data');
+				var s = _this.getAttribute('datas');
+
+				var request = new XMLHttpRequest();
+				request.open("POST", "__CONTROLLER__/qztj");
+				var data = "qizi_color=" + ["下单", "刷单"] + "&qizi_name=" + [k, s];
+				console.log(data);
+				request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				request.send(data);
+				request.onreadystatechange = function() {
+					if (request.readyState === 4) {
+						if (request.status === 200) {
+							console.log(request.responseText)
+							if(request.responseText=="1"){
+								location.href = "__CONTROLLER__/qz";
+							}
+						} else {
+							alert("发生错误：" + request.status);
+						}
+					}
+				}
+			}
+		}
+	</script>
+</body>
+</html>

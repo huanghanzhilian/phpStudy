@@ -1,0 +1,1224 @@
+[ 2016-07-29T23:05:15+08:00 ] 124.192.131.132 /inquiries
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+NOTIC: [8] Undefined index: username /www/pj/Application/Home/Controller/IndexController.class.php 第 366 行.
+NOTIC: [8] Undefined index: id /www/pj/Application/Home/Controller/IndexController.class.php 第 367 行.
+SQL: SHOW COLUMNS FROM `yonghuuser` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yonghuuser` WHERE ( phone='' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2016-07-29T23:05:21+08:00 ] 124.192.131.132 /Home/Index/sendSms/phone/18231321037
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+ERR: 模板不存在:./Application/Home/View/Index/sendSms.html
+
+[ 2016-07-29T23:05:36+08:00 ] 124.192.131.132 /Home/Index/denglu/u_phone/18231321037/nums/2526
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2016-07-29T23:05:40+08:00 ] 124.192.131.132 /Home/Index/denglu/u_phone/18231321037/nums/2526
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-07-29T23:05:59+08:00 ] 124.192.131.132 /Home/Index/denglu/u_phone/18231321037/nums/2529
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `yonghuuser` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: phone /www/pj/Application/Home/Controller/IndexController.class.php 第 1434 行.
+SQL: SELECT * FROM `yonghuuser` WHERE ( phone='' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2016-07-29T23:05:59+08:00 ] 124.192.131.132 /Home/Index/membercentent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8] Undefined index: id /www/pj/Application/Home/Controller/IndexController.class.php 第 354 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2016-07-29T23:06:02+08:00 ] 124.192.131.132 /order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id INNER JOIN zt_time on goods.id=zt_time.goods_id  WHERE ( u_phone='18231321037' ) ORDER BY id desc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: h /www/pj/Application/Home/Controller/IndexController.class.php 第 1461 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2016-07-29T23:06:08+08:00 ] 124.192.131.132 /anarchy/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `goods` WHERE ( id='3' and u_phone='18231321037' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `zt_time` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `zt_time` WHERE ( goods_id='3' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: lx /www/pj/Application/Home/Controller/IndexController.class.php 第 1059 行.
+NOTIC: [8] Undefined variable: l /www/pj/Application/Home/Controller/IndexController.class.php 第 1060 行.
+NOTIC: [8] Undefined variable: a /www/pj/Application/Home/Controller/IndexController.class.php 第 1061 行.
+NOTIC: [8] Undefined variable: qx_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1062 行.
+NOTIC: [8] Undefined variable: po_timex /www/pj/Application/Home/Controller/IndexController.class.php 第 1063 行.
+NOTIC: [8] Undefined variable: ho_timex /www/pj/Application/Home/Controller/IndexController.class.php 第 1064 行.
+NOTIC: [8] Undefined variable: ko_timex /www/pj/Application/Home/Controller/IndexController.class.php 第 1065 行.
+NOTIC: [8] Undefined variable: jo_timex /www/pj/Application/Home/Controller/IndexController.class.php 第 1066 行.
+NOTIC: [8] Undefined variable: fk_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1068 行.
+NOTIC: [8] Undefined variable: fk_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1069 行.
+NOTIC: [8] Undefined variable: po_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1071 行.
+NOTIC: [8] Undefined variable: jo_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1072 行.
+NOTIC: [8] Undefined variable: ko_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1073 行.
+NOTIC: [8] Undefined variable: ho_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1074 行.
+NOTIC: [8] Undefined variable: po_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1076 行.
+NOTIC: [8] Undefined variable: jo_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1077 行.
+NOTIC: [8] Undefined variable: ko_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1078 行.
+NOTIC: [8] Undefined variable: qo_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1079 行.
+NOTIC: [8] Undefined variable: ho_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1080 行.
+NOTIC: [8] Undefined variable: gg /www/pj/Application/Home/Controller/IndexController.class.php 第 1081 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: qo_time /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 119 行.
+NOTIC: [8] Use of undefined constant 去付款 - assumed '去付款' /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 129 行.
+NOTIC: [8] Use of undefined constant 取消订单 - assumed '取消订单' /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 133 行.
+NOTIC: [8] Undefined variable: ch /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2016-07-29T23:06:12+08:00 ] 124.192.131.132 /anarchy/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `goods` WHERE ( id='1' and u_phone='18231321037' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `zt_time` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `zt_time` WHERE ( goods_id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: s /www/pj/Application/Home/Controller/IndexController.class.php 第 1058 行.
+NOTIC: [8] Undefined variable: lx /www/pj/Application/Home/Controller/IndexController.class.php 第 1059 行.
+NOTIC: [8] Undefined variable: l /www/pj/Application/Home/Controller/IndexController.class.php 第 1060 行.
+NOTIC: [8] Undefined variable: qx_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1062 行.
+NOTIC: [8] Undefined variable: po_timex /www/pj/Application/Home/Controller/IndexController.class.php 第 1063 行.
+NOTIC: [8] Undefined variable: ho_timex /www/pj/Application/Home/Controller/IndexController.class.php 第 1064 行.
+NOTIC: [8] Undefined variable: po_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1071 行.
+NOTIC: [8] Undefined variable: ho_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1074 行.
+NOTIC: [8] Undefined variable: po_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1076 行.
+NOTIC: [8] Undefined variable: qo_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1079 行.
+NOTIC: [8] Undefined variable: ho_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1080 行.
+NOTIC: [8] Undefined variable: gg /www/pj/Application/Home/Controller/IndexController.class.php 第 1081 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: qo_time /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 119 行.
+NOTIC: [8] Use of undefined constant 去付款 - assumed '去付款' /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 129 行.
+NOTIC: [8] Use of undefined constant 取消订单 - assumed '取消订单' /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 133 行.
+NOTIC: [8] Undefined variable: ch /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2016-07-29T23:06:17+08:00 ] 124.192.131.132 /details/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `m_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_user` WHERE ( user_name='18231321037' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yhq` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yhq` WHERE ( user_id='' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `goods` WHERE ( id='1' and u_phone='18231321037' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( question_id in (1) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN m_user on goods.user_id=m_user.user_id  WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `goods` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `smwx` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `smwx` WHERE ( smwx_id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jiance` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chanpinku` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jiance` WHERE ( jc_id in(1) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jiance` WHERE ( jc_id in(1) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `chanpinku` WHERE ( cpk_id in (9) )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: jxzx_n /www/pj/Application/Home/Controller/IndexController.class.php 第 816 行.
+NOTIC: [8] Undefined variable: jxzx_name /www/pj/Application/Home/Controller/IndexController.class.php 第 817 行.
+NOTIC: [8] Undefined variable: jxzx_phone /www/pj/Application/Home/Controller/IndexController.class.php 第 818 行.
+NOTIC: [8] Undefined variable: jxzx_username /www/pj/Application/Home/Controller/IndexController.class.php 第 819 行.
+NOTIC: [8] Undefined variable: wxzx_n /www/pj/Application/Home/Controller/IndexController.class.php 第 820 行.
+NOTIC: [8] Undefined variable: wxzx_name /www/pj/Application/Home/Controller/IndexController.class.php 第 821 行.
+NOTIC: [8] Undefined variable: wxzx_phone /www/pj/Application/Home/Controller/IndexController.class.php 第 822 行.
+NOTIC: [8] Undefined variable: wxzx_time /www/pj/Application/Home/Controller/IndexController.class.php 第 823 行.
+NOTIC: [8] Undefined variable: gg /www/pj/Application/Home/Controller/IndexController.class.php 第 829 行.
+NOTIC: [8] Undefined variable: yh /www/pj/Application/Home/Controller/IndexController.class.php 第 831 行.
+NOTIC: [8] Undefined variable: s /www/pj/Application/Home/Controller/IndexController.class.php 第 832 行.
+NOTIC: [8] Undefined variable: a /www/pj/Application/Home/Controller/IndexController.class.php 第 833 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined variable: sjxzx_username /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 57 行.
+NOTIC: [8] Use of undefined constant 需检测 - assumed '需检测' /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 103 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 109 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 112 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 115 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 127 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 131 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 132 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 139 行.
+NOTIC: [8] Undefined variable: arr190 /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 145 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 151 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 154 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 157 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 162 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 169 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 172 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 175 行.
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/cb28a49a349e4e03e7a985f6739fcae2.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2016-07-29T23:06:24+08:00 ] 124.192.131.132 /anarchy/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `goods` WHERE ( id='1' and u_phone='18231321037' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `zt_time` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `zt_time` WHERE ( goods_id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: s /www/pj/Application/Home/Controller/IndexController.class.php 第 1058 行.
+NOTIC: [8] Undefined variable: lx /www/pj/Application/Home/Controller/IndexController.class.php 第 1059 行.
+NOTIC: [8] Undefined variable: l /www/pj/Application/Home/Controller/IndexController.class.php 第 1060 行.
+NOTIC: [8] Undefined variable: qx_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1062 行.
+NOTIC: [8] Undefined variable: po_timex /www/pj/Application/Home/Controller/IndexController.class.php 第 1063 行.
+NOTIC: [8] Undefined variable: ho_timex /www/pj/Application/Home/Controller/IndexController.class.php 第 1064 行.
+NOTIC: [8] Undefined variable: po_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1071 行.
+NOTIC: [8] Undefined variable: ho_time /www/pj/Application/Home/Controller/IndexController.class.php 第 1074 行.
+NOTIC: [8] Undefined variable: po_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1076 行.
+NOTIC: [8] Undefined variable: qo_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1079 行.
+NOTIC: [8] Undefined variable: ho_timew /www/pj/Application/Home/Controller/IndexController.class.php 第 1080 行.
+NOTIC: [8] Undefined variable: gg /www/pj/Application/Home/Controller/IndexController.class.php 第 1081 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: qo_time /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 119 行.
+NOTIC: [8] Use of undefined constant 去付款 - assumed '去付款' /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 129 行.
+NOTIC: [8] Use of undefined constant 取消订单 - assumed '取消订单' /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 133 行.
+NOTIC: [8] Undefined variable: ch /www/pj/Application/Runtime/Cache/Home/5d62dd83b0000869764a022c4eaf35e8.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2016-07-29T23:06:29+08:00 ] 124.192.131.132 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2016-07-29T23:06:31+08:00 ] 124.192.131.132 /phone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_brand` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_brand`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( brand_id='1' ) ORDER BY pai_id  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5,6) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5,6) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5,6) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,7,8,9,10) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(11,12) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(11,12) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2016-07-29T23:06:33+08:00 ] 124.192.131.132 /model/1/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id='3' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_questiontype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_questiontype` WHERE ( questiontype_id in(1,2,3,4,5,6,7,8,9,11,12) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(1) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(2) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(3) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(4) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(5) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(6) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(7) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(8) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(9) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(11) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(12) and model_id='1' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2016-07-29T23:06:39+08:00 ] 124.192.131.132 /Home/Index/mbr?question_id=14&color_id=3&model_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id='3' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in (14) )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: b /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: a /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: c /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: d /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: e /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: f /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: g /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: h /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: i /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: j /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( plan_id in (3)and question_id in(14) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (3) )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: money /www/pj/Application/Home/Controller/IndexController.class.php 第 540 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2016-07-29T23:06:40+08:00 ] 124.192.131.132 /setup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: ways /www/pj/Application/Home/Controller/IndexController.class.php 第 569 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(14) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (3) )  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `maintenance_plan` WHERE ( plan_id in (3) ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: money /www/pj/Application/Home/Controller/IndexController.class.php 第 590 行.
+NOTIC: [8] Undefined variable: userr_id /www/pj/Application/Home/Controller/IndexController.class.php 第 591 行.
+SQL: SHOW COLUMNS FROM `m_user` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `m_user` INNER JOIN jxzx on m_user.jxzx_id=jxzx.jxzx_id  WHERE ( user_id ='3，4，5，6，7，8，9，10，11' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: jxzx_id /www/pj/Application/Home/Controller/IndexController.class.php 第 599 行.
+SQL: SHOW COLUMNS FROM `jxzx` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jxzx` WHERE ( jxzx_id in(1) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `m_user` INNER JOIN wxzx on m_user.wxzx_id=wxzx.wxzx_id  WHERE ( user_id ='3，4，5，6，7，8，9，10，11' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: wxzx_id /www/pj/Application/Home/Controller/IndexController.class.php 第 611 行.
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wxzx` WHERE ( wxzx_id in(1) )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2016-07-29T23:06:42+08:00 ] 124.192.131.132 /Home/Index/shangmen
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `city` WHERE ( parent_id=1 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Home/Controller/IndexController.class.php 第 666 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-07-29T23:06:45+08:00 ] 124.192.131.132 /Home/Index/daodian
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/3948c8d5a8bc97ba1e4c9fb5486e81c1.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2016-07-29T23:07:31+08:00 ] 124.192.131.132 /Home/Index/sheng_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-07-29T23:07:42+08:00 ] 124.192.131.132 /Home/Index/shangmen
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `city` WHERE ( parent_id=1 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Home/Controller/IndexController.class.php 第 666 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2016-07-29T23:07:43+08:00 ] 124.192.131.132 /Home/Index/locaddr?id=id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-07-29T23:07:54+08:00 ] 124.192.131.132 /setup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: [8] Undefined index: ways /www/pj/Application/Home/Controller/IndexController.class.php 第 569 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(14) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (3) )  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `maintenance_plan` WHERE ( plan_id in (3) ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: money /www/pj/Application/Home/Controller/IndexController.class.php 第 590 行.
+NOTIC: [8] Undefined variable: userr_id /www/pj/Application/Home/Controller/IndexController.class.php 第 591 行.
+SQL: SHOW COLUMNS FROM `m_user` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `m_user` INNER JOIN jxzx on m_user.jxzx_id=jxzx.jxzx_id  WHERE ( user_id ='3，4，5，6，7，8，9，10，11' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: jxzx_id /www/pj/Application/Home/Controller/IndexController.class.php 第 599 行.
+SQL: SHOW COLUMNS FROM `jxzx` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jxzx` WHERE ( jxzx_id in(1) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `m_user` INNER JOIN wxzx on m_user.wxzx_id=wxzx.wxzx_id  WHERE ( user_id ='3，4，5，6，7，8，9，10，11' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: wxzx_id /www/pj/Application/Home/Controller/IndexController.class.php 第 611 行.
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wxzx` WHERE ( wxzx_id in(1) )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-07-29T23:07:56+08:00 ] 124.192.131.132 /Home/Index/shangmen
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `city` WHERE ( parent_id=1 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Home/Controller/IndexController.class.php 第 666 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2016-07-29T23:07:57+08:00 ] 124.192.131.132 /Home/Index/locaddr?id=id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2016-07-29T23:08:22+08:00 ] 124.192.131.132 /setup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+NOTIC: [8] Undefined index: ways /www/pj/Application/Home/Controller/IndexController.class.php 第 569 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(14) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (3) )  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `maintenance_plan` WHERE ( plan_id in (3) ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: money /www/pj/Application/Home/Controller/IndexController.class.php 第 590 行.
+NOTIC: [8] Undefined variable: userr_id /www/pj/Application/Home/Controller/IndexController.class.php 第 591 行.
+SQL: SHOW COLUMNS FROM `m_user` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `m_user` INNER JOIN jxzx on m_user.jxzx_id=jxzx.jxzx_id  WHERE ( user_id ='3，4，5，6，7，8，9，10，11' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: jxzx_id /www/pj/Application/Home/Controller/IndexController.class.php 第 599 行.
+SQL: SHOW COLUMNS FROM `jxzx` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jxzx` WHERE ( jxzx_id in(1) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `m_user` INNER JOIN wxzx on m_user.wxzx_id=wxzx.wxzx_id  WHERE ( user_id ='3，4，5，6，7，8，9，10，11' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: wxzx_id /www/pj/Application/Home/Controller/IndexController.class.php 第 611 行.
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wxzx` WHERE ( wxzx_id in(1) )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2016-07-29T23:08:23+08:00 ] 124.192.131.132 /Home/Index/shangmen
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `city` WHERE ( parent_id=1 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Home/Controller/IndexController.class.php 第 666 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2016-07-29T23:08:28+08:00 ] 124.192.131.132 /Home/Index/locaddr?id=id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2016-07-29T23:08:58+08:00 ] 124.192.131.132 /Home/Index/locaddr?id=id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2016-07-29T23:09:20+08:00 ] 124.192.131.132 /model/10/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id='3' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='10' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_questiontype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_questiontype` WHERE ( questiontype_id in(1,11) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(1) and model_id='10' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(11) and model_id='10' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2016-07-29T23:17:23+08:00 ] 106.39.222.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2016-07-29T23:17:24+08:00 ] 106.39.222.200 /phone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_brand` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_brand`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( brand_id='1' ) ORDER BY pai_id  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5,6) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5,6) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5,6) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(3,4,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,7,8,9,10) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(11,12) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(11,12) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,5) )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2016-07-29T23:17:26+08:00 ] 106.39.222.200 /model/1/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id='3' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_questiontype` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_questiontype` WHERE ( questiontype_id in(1,2,3,4,5,6,7,8,9,11,12) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(1) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(2) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(3) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(4) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(5) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(6) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(7) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(8) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(9) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(11) and model_id='1' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(12) and model_id='1' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2016-07-29T23:17:28+08:00 ] 106.39.222.200 /Home/Index/mbr?question_id=1&color_id=3&model_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id='3' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in (1) )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: b /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: c /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: d /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: e /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: f /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: g /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: h /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: i /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+NOTIC: [8] Undefined variable: j /www/pj/Application/Home/Controller/IndexController.class.php 第 508 行.
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (2) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( plan_id in (2)and question_id in(1) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (2) )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: money /www/pj/Application/Home/Controller/IndexController.class.php 第 540 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2016-07-29T23:17:29+08:00 ] 106.39.222.200 /setup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+NOTIC: [8] Undefined index: ways /www/pj/Application/Home/Controller/IndexController.class.php 第 569 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(1) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (2) )  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `maintenance_plan` WHERE ( plan_id in (2) ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: money /www/pj/Application/Home/Controller/IndexController.class.php 第 590 行.
+NOTIC: [8] Undefined variable: userr_id /www/pj/Application/Home/Controller/IndexController.class.php 第 591 行.
+SQL: SHOW COLUMNS FROM `m_user` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `m_user` INNER JOIN jxzx on m_user.jxzx_id=jxzx.jxzx_id  WHERE ( user_id ='3，4，5，6，7，8，9，10，11' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: jxzx_id /www/pj/Application/Home/Controller/IndexController.class.php 第 599 行.
+SQL: SHOW COLUMNS FROM `jxzx` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jxzx` WHERE ( jxzx_id in(1) )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `m_user` INNER JOIN wxzx on m_user.wxzx_id=wxzx.wxzx_id  WHERE ( user_id ='3，4，5，6，7，8，9，10，11' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: wxzx_id /www/pj/Application/Home/Controller/IndexController.class.php 第 611 行.
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wxzx` WHERE ( wxzx_id in(1) )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2016-07-29T23:17:29+08:00 ] 106.39.222.200 /Home/Index/shangmen
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `city` WHERE ( parent_id=1 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Home/Controller/IndexController.class.php 第 666 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2016-07-29T23:17:30+08:00 ] 106.39.222.200 /Home/Index/sheng_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2016-07-29T23:17:31+08:00 ] 106.39.222.200 /Home/Index/daodian
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Runtime/Cache/Home/3948c8d5a8bc97ba1e4c9fb5486e81c1.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2016-07-29T23:17:32+08:00 ] 106.39.222.200 /Home/Index/sheng_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2016-07-29T23:17:34+08:00 ] 106.39.222.200 /Home/Index/shangmen
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `city` WHERE ( parent_id=1 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: arr /www/pj/Application/Home/Controller/IndexController.class.php 第 666 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2016-07-29T23:17:35+08:00 ] 106.39.222.200 /Home/Index/locaddr?id=id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2016-07-29T23:27:20+08:00 ] 66.249.75.37 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2016-07-29T23:28:58+08:00 ] 221.223.66.121 /Home/Index/dingdan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `goods` INNER JOIN maintenance_ways on goods.ways_id=maintenance_ways.ways_id INNER JOIN maintenance_model on goods.model_id=maintenance_model.model_id INNER JOIN maintenance_color on goods.color_id=maintenance_color.color_id INNER JOIN maintenance_plan on goods.plan_id=maintenance_plan.plan_id INNER JOIN maintenance_question on goods.question_id=maintenance_question.question_id INNER JOIN zt_time on goods.id=zt_time.goods_id  WHERE ( u_phone='13810488388' ) ORDER BY id desc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: h /www/pj/Application/Home/Controller/IndexController.class.php 第 1461 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2016-07-29T23:32:13+08:00 ] 123.125.143.25 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2016-07-29T23:50:52+08:00 ] 111.206.36.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+

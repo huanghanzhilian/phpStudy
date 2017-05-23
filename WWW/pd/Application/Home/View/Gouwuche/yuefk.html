@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+ <if condition="strtoupper($t) eq  0">
+<form method="post" action="__CONTROLLER__/yuequfukuan">
+	可用余额:{$yuemoney} <br /><br />
+	商品价格:{$arr.amount}
+	<input type="hidden" name="id" value='{$arr.id}'><br /><br />
+	<input type="submit" value='确定付款'>
+</form>
+<elseif condition="strtoupper($t) eq  1"/> 
+	<form method="post" action="__CONTROLLER__/maichuyuequfukuan">
+	可用余额:{$yuemoney} <br /><br />
+	商品价格:{$arr.amount}
+	<input type="hidden" name="id" value='{$arr.id}'><br /><br />
+	<input type="submit" value='确定付款'>
+</form>
+  <else/>
+</if>
+</body>
+</html>

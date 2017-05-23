@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理系统</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_login.css">
+</head>
+<body class="flex-wrap flex-vertical">
+	<div class="header">
+		<a href="admin_login.html" class="logo" title="后台管理"></a>
+	</div>
+	<div class="content  flex-con">
+		<div class="web_qr_login">
+			<div class="tips"></div>
+			<div class="login_form">
+				<div class="row_dr clearfix">
+					<div class="sgybop">
+						<label class="user"></label>
+						<div class="rootu">
+							<input placeholder="用户名" type="text" name="username" id="username" autocomplete="off">
+						</div>
+					</div>
+				</div>
+				<div class="row_dr clearfix">
+					<div class="sgybop">
+						<label class="password"></label>
+						<div class="rootu">
+							<input placeholder="密码" type="password" name="password" id="password" autocomplete="off">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="anbhfl">
+				<div class="low_login" id="p_low_login_box">
+					<a class="checked" id="p_low_login_enable" href="javascript:void(0);"></a>
+					<label class="low_login_wording" id="low_login_wording">记住我</label>
+				</div>
+			</div>
+			<div class="submit">
+				<button class="btnbuts" onclick="chem()">登录</button>
+				<!-- <input type="submit" value="登 录" class="btnbuts" id="login_button" onclick="chem()"> -->
+			</div>
+		</div>
+	</div>
+	<script>
+		function chem() {
+			var username = document.getElementById('username').value;
+			var pwd = document.getElementById('password').value;
+			var ajax = new XMLHttpRequest();
+			//ajax.open("get","/Home/Shifu/chem/username/"+username+"/pwd/"+pwd);
+			ajax.open("get","__CONTROLLER__/chemm?username="+username+"&pwd="+pwd)
+			ajax.send();
+			ajax.onreadystatechange = function() {
+				if (ajax.readyState == 4 && ajax.status == 200) {
+					console.log(ajax.responseText)
+					if (ajax.responseText == 1) {
+						alert("密码错误")
+						//location.href = "__CONTROLLER__/";
+					} else if (ajax.responseText == 2) {
+						alert("账号不存在")
+					}else{
+						location.href = "__CONTROLLER__/index";
+					}
+				}
+			}
+
+		}
+	</script>
+</body>
+</html>

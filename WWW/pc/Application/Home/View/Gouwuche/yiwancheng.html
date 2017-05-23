@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<foreach name='arr' key='aa' item='kk'>
+		订单号:{$aa} <br />
+		商品:<br />
+		<foreach name='kk' item='cc'>
+		{$cc.cpk_name} <br />
+		</foreach> 已完成 <br /> <br />
+	</foreach>	<br /> 
+
+</body>
+</html>

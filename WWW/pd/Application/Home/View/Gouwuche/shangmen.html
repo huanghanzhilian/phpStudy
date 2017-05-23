@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+					<span style=''id='f'>
+					<select name="sheng" id='sheng' onchange='ajaxsheng()'>
+						<option value="省">
+							省
+						</option>
+						<foreach name='arr4' item='vv' >
+							<option value="{$vv.region_id}">
+								{$vv.region_name}
+							</option>
+						</foreach>
+					</select>
+				</span>
+				<span id='s'>		
+				</span>
+				<span id='ss'>		
+				</span><br />
+				<label>详细地址:</label>
+				<span><input type="text" class="txt" name="address" id="address"/></span>
+				
+				<input type="hidden" name="ways_id" id='ways_id' value='1'><br /><br />
+				<!-- <a href='javascript:void(0)'onclick='sma(2)'>预约时间：</a><br /><br/><div id='sma'></div> -->
+</html>

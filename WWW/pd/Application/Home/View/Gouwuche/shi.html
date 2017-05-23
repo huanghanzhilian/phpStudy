@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<select name="shi" id='shi' onchange='ajaxshi()'>
+						<option value="市">
+							市
+						</option>
+						<foreach name='arr' item='vl' >
+							<option value="{$vl.region_id}">
+								{$vl.region_name}
+							</option>
+						</foreach>
+					</select>
+</body>
+</html>

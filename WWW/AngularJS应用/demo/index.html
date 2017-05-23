@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="siteCtrl"> 
+
+<!-- <ul>
+  <li ng-repeat="x in names">
+    {{ x.Name + ', ' + x.Country }}
+  </li>
+</ul> -->
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('siteCtrl', function($scope, $http) {
+	/*$http.get("http://www.runoob.com/try/angularjs/data/sites.php")
+		.success(function(response) {
+			$scope.names = response.sites;
+		});*/
+
+	/*$http({
+		method: 'post',
+		url: 'http://m.weibaishi.com/admin/bingdan/qiandao1',
+		data: {
+			sfphone: "18231321037",
+			id: 1,
+			qiandao_zt: 1
+		}
+	}).success(function(req) {
+		//console.log(req)
+		$scope.names = req.zt
+	})*/
+
+	$http({
+		method: 'post',
+		url: 'http://m.weibaishi.com/admin/bingdan/qiandao1',
+		data: {
+			sfphone: "18231321037",
+			id: 1,
+			qiandao_zt: 1
+		},
+		headers: {
+			'Content-Type': 'application/x-www-form-urlencoded'
+		},
+		transformRequest: function(obj) {
+			var str = [];
+			for (var p in obj) {
+				str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+			}
+			return str.join("&");
+		}
+	}).success(function(req) {
+		console.log(req);
+	})
+});
+</script>
+
+</body>
+</html>

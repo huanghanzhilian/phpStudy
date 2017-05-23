@@ -1,0 +1,106 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>维百士-手机维修-填写售后信息</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="/Public/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="/Public/img/ioc/16.png" type="images/png"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="/Public/styles/style.css" rel="stylesheet" type="text/css">
+<link href="/Public/styles/public.css" rel="stylesheet" type="text/css">
+<script src="/Public/js/jquery-1.7.1.min.js"></script>
+<script src="/Public/js/script.js"></script>
+<style>
+.mkjjnbr{ padding:0; height:40px; line-height:40px;}
+.tousyna_2_acun{ margin:0;}
+.shounred li{ width:60%; height: inherit40px; line-height:40px; border:1px solid #f0f0f0; border-radius: 4px; margin:20px auto; text-align: center; color:#808080;}
+.obj_hure{ display:none;}
+.shounred li.on{ background:#3e7edb; border-color:#3e7edb; color:#fff;}
+</style>
+</head>
+<body>
+<div class="header">
+    <span onclick="window.history.back()"></span>
+    <h1>填写售后信息</h1>
+</div><!--头-->
+
+<div class="content">
+    <div class="content_con">
+        <div class="public_lrcbr">
+            <div id='list_b'>
+                <form method="post" action="/Home/Shifu/tijiao" onSubmit="return Checked()" />                    
+                    <ul class="shounred">
+                        <li>
+                            <input class="obj_hure" type="radio" name="uuid" value='2'> 质量问题  
+                        </li>
+                        <li>
+                            <input class="obj_hure" type="radio" name="uuid" value='1'>技术问题
+                        </li>
+                        <li>
+                            <input class="obj_hure" type="radio" name="uuid" value='3'>其他问题 
+                        </li>
+                    </ul>
+                    
+                    <div class="row row_1 mkjjnbr">
+                        <label class="bqf bqf_1" id="bz">小结</label>
+                    </div>
+                    </textarea>
+                    <div class="tousyna_2 tousyna_2_acun" id="tous_dc_2">
+                        <textarea name="xiaojie" id="xiaojie" rows="" cols="" placeholder="填写此次维修的内容及故障描述"></textarea>
+                    </div>
+                    <input type="hidden" name="id" value='<?php echo ($id); ?>'>
+                    <input type="hidden" name="shouhou_id" value='<?php echo ($shouhou_id); ?>'>
+                    <input class="submit_sd" type="submit" value='提交'>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+	$(".shounred li").click(function(){
+		$(this).find('input').attr("checked",true);
+		$( ".obj_hure" ).each(function(){
+			if($(this).attr('checked')){
+				$(this).parent().addClass('on')
+			}else{
+				$(this).parent().removeClass('on')
+			}
+		});
+	})
+})
+
+var checkSubmitFlg = false;
+function Checked(){
+	var nnmuo=$("input.obj_hure[type='radio'][checked]").length
+	if(nnmuo<1){
+		alert('请选择问题')
+		return false;
+	}
+	
+	var tutle_n=$("#xiaojie").val();
+	if(tutle_n =='' || tutle_n == null){
+		$("#xiaojie").focus().addClass("tips");
+		//$("#xiaojie").attr("placeholder", "描述您手机的故障或者其他要求");
+		return false;
+	}
+	
+	
+	
+   if (!checkSubmitFlg) {
+	   checkSubmitFlg = true;
+	   return true;
+   }else{
+	   alert("抱歉不能反复提交");
+	   return false;
+   }
+			
+	
+	//return true;
+	//return false;
+}
+</script>
+</body>
+</html>

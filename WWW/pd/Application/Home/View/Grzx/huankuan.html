@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<!-- <a href="__CONTROLLER__/huankuandingdan">还款订单</a> -->
+<form method="post" action="__CONTROLLER__/quhuankuan">
+	未还金额:{$yixiaofei} <br /><br />
+	请输入还款金额:<input type="text" name="money">
+	<input type="hidden" name="yixiaofei" value='{$yixiaofei}'>
+	<input type="submit" value='确认去还款'>
+</form>
+	
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>维百士_财务管理</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/Admin_modify.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<style type="text/css">
+.tab_quehu_ul .tab_quehu_li{ width:25%;}
+
+.youhuikl{ margin-left:15px; color: rgb(74, 182, 121);}
+.danw{ font-style:normal; color: rgb(227, 91, 92);}
+</style>
+</head>
+<body class="body1_color">
+<div class="header public_width">
+    <h1 class="header_h1">财务管理
+        <!--<a class="youb_mk" href="__CONTROLLER__/lz">已离职</a>-->
+    </h1>
+    
+</div>
+
+<div class="container public_width">
+    <!--公共返回-->
+    <div class="Return">
+        <!--<span class="Return_button cursor" onClick="window.history.back()">返回</span>-->
+        <a class="Return_button" href="__MODULE__/index/index">返回</a>
+    </div>
+    <!--公共返回-->
+    
+    <!--上部tab-->
+    <div class="tab_quehu">
+        <ul class="tab_quehu_ul clearfix">
+            <li class="tab_quehu_li fl"><a class="on" href="__CONTROLLER__/index">确认付款</a></li>
+            <li class="tab_quehu_li fl"><a href="__CONTROLLER__/thtk">退货退款</a></li>
+            <li class="tab_quehu_li fl"><a href="__CONTROLLER__/fapiaoind">发票管理</a></li>
+            <li class="tab_quehu_li fl"><a href="__CONTROLLER__/tixianguanli">提现管理</a></li>
+        </ul>
+    </div>
+    <!--上部tab-->
+    
+    <div class="container_modify" id="xgpinpan">
+        <ul class="zhuti_rom" style=" padding:0 110px; ">
+            <li class="lmbhu lmbhuopd" style="border-bottom:none;">
+                <a class="aubtgh on" href="javascript:;" onclick='tui_a(4)'>待确认</a>
+                <a class="aubtgh" href="javascript:;" onclick='tui_a(5)'>已确认</a>
+            </li>
+        </ul>
+        <ul class="zhuti_rom" id="mubn">
+            
+            <foreach name='arr' item='vv'>
+            <li class="lmbhu lmbhuopd" >
+               
+               <div class="listy_box">
+                   <div class="listy_pk">订单号：{$vv.ddh}</div>
+                   
+                   <div style="line-height:30px;" class="listy_pk">机型：{$vv.model_name}<br/>问题：{$vv.question_name}</div>
+                   <div class="listy_pk">工程师：{$vv.user_username}<span class="fr">应付{$vv.amount}元 <span class="youhuikl">优惠后价格 <i class="danw">{$vv.amountt}</i> 元</span></span></div>
+               </div>
+               <div class="listy_kr">
+                   <span class="listy_con">
+                       <a class="didb llvcer" href="__CONTROLLER__/queren/id/{$vv.id}" onclick="if(confirm('确定操作?')==false)return false;">确认</a>
+                       <a class="didb llvcer" href='javascript:void(0)'onclick='ass({$vv.id})'>添加优惠金额</a>
+                       <a class="didb" href="__MODULE__/Ddguanli/xiangqing/id/{$vv.id}" >查看详情</a>
+                   </span>
+               </div>
+            </li>
+            </foreach>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--调整额度-->
+<div id="p">
+    
+</div>
+<!--调整额度-->
+</body>
+</html>
+<script type="text/javascript">
+function ass(id){
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/youhuia/id/"+id,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('p').innerHTML=ajax.responseText;
+					$(".erdu").each(function(q,w){
+						//console.log()
+						$(this).css({'margin-top':-($(this).height()/2+40)})
+					});
+					
+					//关闭
+					$(".guanb_op").on('click',function(){
+						//$('.zdvjio').hide();
+						$('.erdu').remove()
+						$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+					})
+					//关闭
+				}
+			}
+	}
+	
+function tui_a(stau){
+	//alert(ways_id);
+	var ajax=new XMLHttpRequest()
+		ajax.open("get","__CONTROLLER__/yiqueren/stau/"+stau,true)
+		ajax.send()
+		ajax.onreadystatechange=function(){
+			if(ajax.readyState==4 && ajax.status==200){
+				document.getElementById('mubn').innerHTML=ajax.responseText;
+				cdrbut()
+			}
+		}
+}
+
+
+$(function(){
+	$(".aubtgh").click(function(){
+		if($(this).hasClass('on')){
+			//$(this).removeClass('on')
+		}else{
+		    $(this).addClass('on').siblings().removeClass('on');
+		};
+	})
+	cdrbut()
+	
+	
+})
+
+function cdrbut(){
+	$(".danw").each(function(q,w){
+		if($(this).text()==''){
+			$(this).parent().remove();
+		}
+    });
+}
+</script>

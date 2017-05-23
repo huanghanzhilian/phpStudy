@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<title>新订单</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+</head>
+<body style="background:#f5f5f5">
+<div class="header header1">
+    <span onclick="window.history.back()"></span>
+    <h1>师傅中心{$my}</h1>
+    <!-- <em>去购买</em> -->
+</div><!--头-->
+<div class="content">
+    <div class="content_con">
+        <div class="dingdan">
+            <ul class="clearfix">
+                 <li>
+                    <a class="on" href="__CONTROLLER__/shifu">新订单</a>
+                 </li>
+                 <li>
+                    <a href="__CONTROLLER__/daiwancheng">待完成</a>
+                 </li>
+                 <li>
+                    <a href="__CONTROLLER__/yiwancheng">已完成</a>
+                 </li>
+            </ul>
+        </div>
+        
+        <foreach name='arr' item='vv'>
+        <div class="jixing">
+      
+            <div class="jixing_title jixing_title1">
+                <span></span>
+                订单编号：{$vv.ddh}
+                <em><a href="__CONTROLLER__/shifuxiangqing/id/{$vv.id}">详情</a></em>
+            </div>
+            <div class="jixing_con">
+                <ul>
+                    <li>手机号：{$vv.u_phone}</li>
+                    <li>机型问题：{$vv.model_name}:{$vv.question_name}</li>
+                    <li>服务方式：
+					 <if condition="strtoupper($vv['ways_id']) eq  1">
+							上门服务
+					<elseif condition="strtoupper($vv['ways_id']) eq  2"/> 
+							到店服务
+					<elseif condition="strtoupper($vv['ways_id']) eq  3"/>
+					        寄修服务
+					 </if>
+					</li>
+                </ul>
+            </div>
+            <div class="jixing_btn">
+                 
+                <h1>{$vv.xo_time}<span>编辑</span></h1>
+                
+                <div class="pan_k">
+                </div>
+            </div>
+        </div>
+        </foreach>
+        
+        
+        
+
+<!--<center>{$my}</center>
+    <a href="__CONTROLLER__/index">返回</a><br /><br />
+
+	<a href="__CONTROLLER__/xindingdan">新订单</a><br /><br />
+	<a href="__CONTROLLER__/daiwancheng">待完成</a><br /><br />
+	<a href="__CONTROLLER__/yiwancheng">已完成</a><br /><br />
+
+	<table border=1>
+    <th>订单编号:</th>
+	<th>机型问题:</th>
+	<th>服务方式:</th>
+	<th>手机号:</th>
+	<th>状态</th>
+<foreach name='arr' item='vv'>
+<tr>
+	<td>{$vv.u_number}</td>
+	<td>{$vv.model_name}:{$vv.question_name}</td>
+	<td>{$vv.ways_name}</td>
+	<td>{$vv.u_phone}</td>
+	<td><a href="__CONTROLLER__/shifuxiangqing/id/{$vv.id}">详情</a></td>	
+</tr>
+</foreach>	
+</table>-->
+
+
+    </div>
+</div>
+
+
+<div class="footer footer1">
+    <div class="bot">
+      <ul class="clearfix">
+          <li>
+              <a href="#" >
+                  <span class="sh_icon1"></span>
+                  <p>配件订单</p>
+              </a>
+          </li>
+          <li>
+              <a href="#" >
+                  <span class="sh_icon2"></span>
+                  <p>仓库</p>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="on" >
+                  <span class="sh_icon3"></span>
+                  <p>师傅中心</p>
+              </a>
+          </li>
+          <li>
+              <a href="#" >
+                  <span class="sh_icon4"></span>
+                  <p>我的</p>
+              </a>
+          </li>
+         
+      </ul>
+    </div>
+</div>
+</body>
+</html>

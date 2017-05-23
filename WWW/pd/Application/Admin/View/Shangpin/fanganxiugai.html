@@ -1,0 +1,22 @@
+
+	<form method="post" action="__CONTROLLER__/fananxiugaiadd">
+		解决方案:<input type="text" name="plan_name" value='{$arr.plan_name}'><br /><br />
+		价格:<input type="text" name="money" value='{$arr.money}'><br /><br />
+		维修时间:<input type="text" name="m_time" value='{$arr.m_time}'><br /><br />
+		保质期:<input type="text" name="warranty_name" value='{$arr.warranty_name}'><br /><br />
+		描述:<select name="instructions_id">
+		<foreach name='arr5' item='j'>
+			<option value="{$j.instructions_id}">
+				{$j.instructions_name}
+			</option>
+		</foreach>
+		</select><br /><br />
+		<input type="hidden" name="plan_id" value='{$arr.plan_id}' >
+		<input type="hidden" name="model_id" value='{$model_id}'>
+		<input type="hidden" name="brand_id" value='{$brand_id}'>
+		<input type="submit" value='确定'>
+		<input type="button" value="取消" onclick="adda(1)">
+	</form> 
+    
+    
+ 

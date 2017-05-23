@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		a{text-decoration:none;}
+		#le{float:left;}
+		#list{float:left;margin-left:30px;}
+		#gw{float:right;margin-right:300px;}
+	</style>
+</head>
+	<body>
+	<center>{$my}<span id='gw'><a href="__CONTROLLER__/gouwuche">购物车(<span id='fi'></span>)</a></span></center>&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
+		<foreach name='arr' item='kk'>
+		<a href="">{$kk.brand_name}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		</foreach>
+<br /><br />
+		<div id='le'>
+		<foreach name='arr1' item='v'>
+			<a href='javascript:void(0)'onclick='cpkajax({$v.model_id});'/>{$v.model_name} </a><br /><br />
+		</foreach>
+		</div>
+ <br /><br />
+ <div id='li'>
+<foreach  name='arr2' item='h'>
+		{$h.cpk_name}&nbsp;&nbsp;<span>{$h.cpk_price}元</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:void(0)' onclick='tjgwc({$h.cpk_id});'>+</a><br />	<br />
+ </foreach>
+ 
+<!-- <foreach  name='arr3' item='hh'>
+		{$hh.cpk_name}&nbsp;&nbsp;  <span></span> {$hh.cpp_price}元&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href='javascript:void(0)'onclick='a1();'>-</a>&nbsp;&nbsp;&nbsp;
+		<span id='first{$hh.cpk_id}'></span>&nbsp;&nbsp;&nbsp;
+		<a href='javascript:void(0)'onclick='a2();'>+</a><br /><br />
+ </foreach -->> 
+ </div>
+	</body>
+</html>
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	function cpkajax(model_id){
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/chanpinkuajax/model_id/"+model_id,true)
+			//alert(model_id);/* style='display:none'*/
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('li').innerHTML=ajax.responseText
+				}
+			}
+	}
+	function tjgwc(id){
+			var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/add_gouwuche/id/"+id,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('fi'+id).innerHTML=ajax.responseText
+				}
+			}
+	
+	}
+		
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		#le{float:left;}
+		#list{float:left;margin-left:30px;}
+	</style>
+</head>
+<body>
+<div>
+	<foreach name='arr6' item='kk'>
+		<a href="__CONTROLLER__/pinpai/ide/{$kk.type_id}/type_name/{$kk.type_name}">{$kk.type_name}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</foreach>
+</div><br /><br /><br />
+<div>
+	<div id='le'>
+		<foreach name='arr3' item='kk'>
+			<a id='u' href='javascript:void(0)'onclick='ajaxpp({$kk.brand_id});'>{$kk.brand_name}</a><br /><br />
+		</foreach>
+	</div>
+	<div id='list'>
+		<foreach name='arr' item='kk'>
+		<h3>{$kk.model_name}</h3>
+		 <foreach name="kk['data']" item='ee'>
+			<a href="__CONTROLLER__/wenti/model_id/{$kk.model_id}/color_id/{$ee.color_id}">{$ee.color_name}</a><br /><br />
+		</foreach> 
+	</foreach>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	function ajaxpp(brand_id){
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/ajaxp/brand_id/"+brand_id,true)
+			//alert(brand_id);
+			/* */ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('list').innerHTML=ajax.responseText
+				}
+			} 
+	}
+</script>

@@ -1,0 +1,172 @@
+
+
+
+html,body{
+	width: 100%;
+	height: 100%;
+	min-width: 1100px;
+}
+body{
+	background-image: none;
+}
+/* 顶部*/
+#header{
+	width: 100%;
+	min-width: 1100px;
+}
+#header_1{
+	width: 100%;
+	min-width: 1100px;
+	/* min-height: 130px; */
+	padding: 22px 0;
+	//background: #23578e;
+	background:url(../../new/image/huskal/bg2.png) center center no-repeat;
+	background-size: 100%;
+}
+.box_fl{
+	width: 630px;
+	padding-left: 30px;
+	line-height: 40px;
+	color: #fff;
+}
+.box_fr{
+	width: 500px;
+	position: relative;
+
+}
+.skaht{
+	margin-top: 25px;
+}
+.skaht span{
+	width: 115px;
+	height: 38px;
+	color: #fff;
+	display: inline-block;
+	line-height: 38px;
+	text-align: center;
+	border-radius: 4px;
+	margin-right: 38px;
+	cursor: pointer;
+}
+.skaht span.slkaj_l{
+	background: #5a8bed;
+	border: solid 1px #5a8bed;
+	box-shadow: 0px 0px 10px 1px #282c30;
+}
+.skaht span.slkaj_r{
+	border: solid 1px #fff;
+}
+
+.boxcom{
+	margin-right: 80px;
+	font-size: 16px;
+}
+.moery{
+	font-size: 30px;
+	font-weight: 700;
+}
+.com_title{
+
+}
+.com_title li{
+	line-height: 52px;
+	background: #798cad;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+/* container */
+.container{
+	overflow: auto;
+}
+.com_main{
+
+}
+.com_main li{
+	text-align: center;
+	line-height: 20px;
+	padding: 20px 0;
+}
+.com_main:nth-child(2n) {
+    background: #f0f2f5;
+}
+
+/* 遮罩 */
+.attr-content{
+	// width: 530px;
+	height: 490px;
+}
+
+.boxauak{
+	width: 354px;
+	padding-top: 25px;
+	margin: auto;
+}
+.qizi-login{
+	margin-top: 12px;
+}
+.utchus{
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	top: 100%;
+	left: 0;
+	z-index: 9999;
+	padding: 0 6px;
+	background: #edf1f7;
+	display: none;
+}
+ul.utchus.on{
+	display: block;
+}
+.utchus li{
+	line-height: 24px;
+	cursor: pointer;
+}
+.utchus li a{
+	line-height: 24px;
+	display: block;
+	color: #4d4d4d;
+}
+.posutaw{
+	position: absolute;
+	top: 0px;
+	right: 0;
+	width: 46px;
+	height: 46px;
+	background:url(../../img/jiantou2.png) center center no-repeat;
+	background-size: 16px;
+	cursor: pointer;
+}
+
+.tableaa {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+.tableaa th, .tableaa td {
+    border: solid 1px #ececec;
+    padding: 8px;
+    color: #4d4d4d;
+}
+.tableaa th{
+	background: #f5f5f5;
+
+}
+.tableaa td {
+    padding: 12px 8px;
+}
+.shuamlop{
+    height: 558px;
+    /* background: red; */
+    overflow: auto;
+}
+.moery span{
+	font-weight: normal;
+	font-size: 22px;
+	margin-left: 4px;
+}
+
+.com_main:nth-child(2n) textarea {
+    background: #f0f2f5;
+}

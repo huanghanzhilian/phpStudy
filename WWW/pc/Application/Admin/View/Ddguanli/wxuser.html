@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<form method="post" action="__CONTROLLER__/save1">
+	<foreach name='arr' item='k'>
+		<input type="radio" name="user_id"value='{$k.user_id}'>{$k.user_username}
+	</foreach><br /><br />
+	<input type="hidden" name="id" value='{$id}'>
+	 <input type="hidden" name="ways_id" value='{$ways_id}'> <!---->
+	<input type="submit" value='确定'>
+</form>
+	
+</body>
+</html>

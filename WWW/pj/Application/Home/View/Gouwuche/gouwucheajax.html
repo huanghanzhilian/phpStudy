@@ -1,0 +1,57 @@
+<!--<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+		<table border=1>
+			<th>商品</th>
+			<th>商品名称</th>
+			<th>价格</th>
+			<th>购买数量</th>
+			<th>详情</th>
+			<th>操作</th>
+		<foreach name='arr1' item='vv'>
+			<tr>
+				<td><img src="__PUBLIC__/{$vv.path}" width=70 height=70/></td>
+				<td>{$vv.cpk_name}</td>
+				<td><span id='ddv'>{$vv.gw_pricee}</span></td>
+				<td>
+					<font size=5><a href="javascript:void(0)" onclick="jian({$vv.gw_id});"style="text-decoration:none">-</a>&nbsp&nbsp
+					<span id='first{$vv.gw_id}'>{$vv.nums}</span>&nbsp;&nbsp<a href="javascript:void(0)"onclick="jia({$vv.gw_id});"style="text-decoration:none">+</a></font>
+				</td>
+				<td>开发中....</td>
+				<td><a href="javascript:void(0)" onclick='del({$vv.gw_id})'>删除</a></td>
+			</tr>
+		</foreach>
+	</table><br /><br />
+	<div>{$zjg}<span id='abc'>{$price}</span>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="__CONTROLLER__/querendingdan">{$qr}</a></div>
+	</div>
+</body>
+</html>-->
+
+
+
+<div class="peijian_m">
+    <div class="peijian_m_box">
+        <ul>
+            <foreach name='arr1' item='vv'>
+            <li>
+                <div class="mkloop_r">
+                    <span data="{$vv.gw_id}" onclick="jian(this,{$vv.gw_id});" class="jianqu"></span>
+                    <em id='first{$vv.gw_id}'>{$vv.nums}</em>
+                    <span onclick="jia({$vv.gw_id});" class="jiadd"></span>
+                </div>
+                <div class="mkloop_l">
+                    <span>{$vv.cpk_name}</span>
+                    <span class="biansd">{$vv.gw_pricee}元</span><!--<a href="javascript:void(0)" onclick='del({$vv.gw_id})'>删除</a>-->
+                </div> 
+            </li>
+            </foreach>
+            
+            
+        </ul>
+    </div>
+</div>

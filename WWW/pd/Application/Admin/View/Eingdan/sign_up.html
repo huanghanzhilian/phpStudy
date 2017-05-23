@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>维百士合作商家注册</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/ligon_up.css">
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<div class="header login_header" id="header">
+		<h1 class="qizip_title">合作商家注册</h1>
+		<!-- <h1 class="qizi-title">维百士合作商家注册</h1>
+		<div class="con-nav"></div> -->
+	</div>
+	<div class="login_containers" id="containers">
+		<div class="qizi-log-cons">
+			<div class="lohugrt">
+				<div class="submit-form submit-form1">
+					<div class="input-group">
+						<p class="input-title">您的手机号</p>
+						<div class="input-fill">
+							<i class="input_icon input_icon_tel"></i>
+							<input class="qizi-shuru qizi-shuru2" id="telser" type="text" name="" placeholder="您的手机号">
+							<span onclick="duanxin(this)" class="verification verifica">获取验证码</span>
+							<p class="msg"></p>
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-fill">
+							<input class="qizi-shuru qizi-shuru1" id="yanzhngp" type="text" name="" placeholder="输入验证码">
+							<p class="msg"></p>
+						</div>
+					</div>
+					<div class="input-group">
+						<p class="input-title">设置登入密码</p>
+						<div class="input-fill">
+							<i class="input_icon input_icon_psd"></i>
+							<input class="qizi-shuru" type="password" id="password" name="" placeholder="设置登入密码">
+							<p class="msg"></p>
+						</div>
+					</div>
+					<div class="input-group" style="margin-bottom: 15px;">
+						<div class="input-fill">
+							<input class="qizi-shuru qizi-shuru1" id="queren" type="password" name="" placeholder="确认登入密码">
+							<p class="msg"></p>
+						</div>
+					</div>
+					<!-- margin-bottom: 15px; -->
+					<button class="qizi-login" onclick="lengop()">注册并登录</button>
+					<a class="sign_up sign_up1" href="__CONTROLLER__/login.html">已经注册？</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script>
+/*	var usera=3;  //店铺
+	var yama=false;  //验证码
+	// strpuy
+	var strpuy;*/
+	var yama=false;  //验证码
+	var cbhup=false;//是否可以发送验证码
+	var times=60;  //时间倒计时
+	var timer=null;    //计时器
+
+	$("#telser").on("keyup",function(){
+		var parer=$(this).parents(".input-fill");
+		var mobile_1 = /^0{0,1}(14[0-9]|17[0-9]|13[0-9]|15[0-9]|18[0-9]|14[0-9])[0-9]{8}$/;
+		var value=$(this).val();
+		if(mobile_1.test(value)){
+			$.ajax({
+				url: "__CONTROLLER__/shou_yz",
+				data: {
+					'shou_phone': value
+				},
+				dataType: "json",
+				type: 'post',
+				success: function(data) {
+					if (data == "1") {
+						cbhup=true;
+						parer.find(".verification").addClass("verifica1");
+						parer.find(".msg").html('<i class="zqsw"></i>输入正确');
+					} else if (data == "2") {
+						cbhup=false;
+						parer.find(".verification").removeClass("verifica1");
+						parer.find(".msg").html('<i class="cwe"></i>您已注册过');
+					}
+				}
+			});
+		}else{
+			cbhup=false;
+			parer.find(".verification").removeClass("verifica1");
+			parer.find(".msg").html('<i class="cwe"></i>输入有误');
+		}
+	});
+	$("#telser").on("blur",function(){
+		var parer=$(this).parents(".input-fill");
+		parer.find(".msg").show();
+	})
+	//发送验证码
+	function duanxin(_this){
+		if (cbhup) {
+			clearInterval(timer);
+			timer = setInterval(function() {
+				times--;
+				if (times <= 0) {
+					_this.innerHTML = '获取验证码';
+					clearInterval(timer);
+					times = 60;
+					// send.disabled = false;
+				} else {
+					_this.innerHTML = times + '秒后重试'
+					// send.disabled = true;
+				}
+			}, 1000)
+			$.ajax({
+				url: "__CONTROLLER__/yzm",
+				data: {
+					'shou_phone': $("#telser").val()
+				},
+				dataType: "json",
+				type: 'post',
+				success: function(data) {
+					// console.log(data)
+					/*if (data = "1") {
+						parer.find(".msg").html('<i class="zqsw"></i>输入正确');
+					} else if (data = "2") {
+						parer.find(".msg").html('<i class="cwe"></i>您已注册过');
+					}*/
+				}
+			});
+		} else {
+			return;
+		}
+	}
+	// 输入验证码
+	$("#yanzhngp").on("focus",function(){
+		var parer=$(this).parents(".input-fill");
+		parer.find(".msg").show();
+	});
+	$("#yanzhngp").on("keyup",function(){
+		var value=$(this).val();
+		var parer=$(this).parents(".input-fill");
+		if(value.length=="4"){
+			$.ajax({
+				url: "__CONTROLLER__/jiaoyan",
+				data:{'yzm':value},
+				dataType: "json",
+				type:'post',
+				success: function (data) {
+					if(data=="1"){
+						parer.find(".msg").html('<i class="zqsw"></i>正确');
+						yama=true;
+					}else if(data=="2"){
+						parer.find(".msg").html('<i class="cwe"></i>验证码错误');
+						yama=false;
+					}
+				}
+			});
+		}else{
+			//parer.find(".msg").html('<i class="cwe"></i>验证码错误');
+			yama=false;
+		}
+	});
+
+	//注册
+	function lengop(){
+		if(!cbhup){
+			$("#telser").parents(".input-fill").find(".msg").show().html('<i class="cwe"></i>手机号有误');
+			return;
+		}
+		if(!yama){
+			$("#yanzhngp").parents(".input-fill").find(".msg").show().html('<i class="cwe"></i>验证码错误');
+			return;
+		}
+		if($("#password").val()==""){
+			$("#password").parents(".input-fill").find(".msg").show().html('<i class="cwe"></i>密码不能为空');
+			/*$("#password").val("");
+			$("#password").focus().addClass("tips");
+			$("#password").attr("placeholder", "密码不能为空");*/
+			return;
+		}
+		if($("#queren").val()!=$("#password").val()){
+			/*$("#shoutrs").val("");
+			$("#shoutrs").focus().addClass("tips");
+			$("#shoutrs").attr("placeholder", "授权代码不能为空");*/
+			$("#queren").parents(".input-fill").find(".msg").show().html('<i class="cwe"></i>密码不一致');
+			return;
+		}
+		$.ajax({
+			url: "__CONTROLLER__/zhuce",
+			data: {
+				"shou_phone":$("#telser").val(),
+				"yzm":$("#yanzhngp").val(),
+				"pwd":$("#password").val(),
+			},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				//console.log(data)
+				if(data=="1"){
+					location.href = "__CONTROLLER__/index";
+				}else if(data=="3"){
+					$("#yanzhngp").parents(".input-fill").find(".msg").show().html('<i class="cwe"></i>验证码不符');
+				}else if(data=="4"){
+					$("#telser").parents(".input-fill").find(".msg").show().html('<i class="cwe"></i>电话号码不符');
+				}
+
+			}
+		});
+	}
+/*	telser
+yanzhngp
+password
+shoutrs
+parer.find(".msg").html('<i class="cwe"></i>验证码错误');
+					yama=false;
+*/
+</script>
+</body>
+</html>
+
+
+
+
+

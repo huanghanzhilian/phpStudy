@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		a{text-decoration:none;}
+		#le{float:left;}
+		#list{float:left;margin-left:30px;}
+		#gw{float:right;margin-right:300px;}
+	</style>
+</head>
+	<body>
+	<a href="__MODULE__/Index/index">返回</a>
+	<center>{$my}<span id='gw'><a href="__CONTROLLER__/gouwuche">购物车(<span id='fi'>{$nums}</span>)</a></span></center>&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
+		<foreach name='arr' item='kk'>
+		<a href='javascript:void(0)'onclick='brandajax({$kk.brand_id});'>{$kk.brand_name}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		</foreach>
+<br /><br />
+		<div id='brand_list'>
+		<div id='le'>
+		<foreach name='arr1' item='v'>
+			<a href='javascript:void(0)'onclick='cpkajax({$v.model_id});'/>{$v.model_name} </a><br /><br />
+		</foreach>
+		</div>
+ <br /><br />
+ <div id='li'>
+<foreach  name='arr2' item='h'>
+		{$h.cpk_name}&nbsp;&nbsp;<span>{$h.cpk_price}元</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:void(0)' onclick='tjgwc({$h.cpk_id});'>+</a><br />	<br />
+ </foreach>
+ 
+<!-- <foreach  name='arr3' item='hh'>
+		{$hh.cpk_name}&nbsp;&nbsp;<span>{$hh.cpp_price}元</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:void(0)' onclick='tjgwc({$hh.cpk_id});'>+</a><br />	<br />
+ </foreach>  -->
+ </div>
+ </div>
+	</body>
+</html>
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+
+function cpkajax(model_id){
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/chanpinkuajax/model_id/"+model_id,true)
+			//alert(model_id);/* style='display:none'*/
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('li').innerHTML=ajax.responseText
+				}
+			}
+	}
+function tjgwc(id){
+			var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/gwc/id/"+id,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('fi').innerHTML=ajax.responseText
+				}
+			}
+	
+	}
+		function brandajax(brand_id){
+			var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/branda/brand_id/"+brand_id,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('brand_list').innerHTML=ajax.responseText
+				}
+			}
+	
+	}
+</script>

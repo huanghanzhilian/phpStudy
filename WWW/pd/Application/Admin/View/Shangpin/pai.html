@@ -1,0 +1,37 @@
+
+    
+    
+<foreach name='arr' item='kk'>
+                <li class="" id="{$kk.model_id}">
+                    <div class="zhuti_rom_list_r fr">
+                        <a class="Return_button_a1" href="__CONTROLLER__/yanse/model_id/{$kk.model_id}/brand_id/{$brand_id}">颜色</a>
+                        <a class="Return_button_a1" href="__CONTROLLER__/xiaowenti/model_id/{$kk.model_id}/brand_id/{$brand_id}">问题</a>
+                        <a class="Return_button_a1" href="__CONTROLLER__/fangan/model_id/{$kk.model_id}/brand_id/{$brand_id}">解决方案</a>
+                        <a class="Return_button_a1" href="__CONTROLLER__/chanpinkua/model_id/{$kk.model_id}/brand_id/{$brand_id}">产品库</a>
+                        <!--<a id="{$kk.model_id}" class="Return_button_a1" href="__CONTROLLER__/paixu/model_id/{$kk.model_id}/brand_id/{$brand_id}">排序</a>-->
+                        <span class="vbcxv">
+                            <a class="shang_up" href='javascript:void(0)'onclick='as1({$kk.model_id},this)'></a>
+                            <a class="xia_up" href='javascript:void(0)'onclick='as2({$kk.model_id},this)'></a>
+                        </span>
+                        <a class="zjnmk_pp" href="__CONTROLLER__/modelshanchu/model_id/{$kk.model_id}/brand_id/{$brand_id}" onclick="if(confirm('确定删除?')==false)return false;"><span class="zhkkbn"></span></a>
+                    </div>
+                    
+                        <form style="display:inline-block;" method="post" action="__CONTROLLER__/model_nameup">
+                            <strong class="buctrese">
+                                
+                                <input readonly="true" class="xiubuttce xiubuttce_as1" style="text-align:left; width:130px;" type="text" name="model_name" value='{$kk.model_name}'>
+                            
+                                <span class="mzsaw mzsaw_cc1">
+                                    <input style="display:none; background:#fff;" class="Return_button_a1" type="submit" value='确定'>
+                                    <span class="btn_xiuga btrui cursor">修改</span>
+                                    <input class="nnbbbv Return_button_a1" style=" display:none; background:#fff;" type="reset" value="取消" />
+                                </span>
+                            </strong>
+                            <input type="hidden" name="model_id" value='{$kk.model_id}'>
+                           <!-- <input type="hidden" name="model_id" value='{$model_id}'>-->
+                            <input type="hidden" name="brand_id" id='brand_id' value='{$brand_id}'>
+                        </form>
+                    
+                   
+                </li>
+            </foreach>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>维百士合作商家</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	<style type="text/css">
+		/*系统公共*/
+		/*top*/
+		.header .logo {
+
+		    float: left;
+		}
+		.commutr{
+			margin-left: 195px;
+			/*background: red;*/
+			height: 99%;
+			box-sizing: border-box;
+		}
+		.main-center{
+			display: inline-block;
+			/*margin-top: 60px;*/
+			width: 100%;
+			/*background: #ccc;*/
+			height: 100%;
+			padding-top: 60px;
+			box-sizing: border-box;
+		}
+		.alerds{
+			padding: 12px 12px;
+			text-align: left;
+			color: #e78424;
+		}
+		.sdcmkj{
+			/*background: red;*/
+			border: solid 1px #ccc;
+		}
+		/*搜索*/
+		.nav form{
+			padding: 8px;
+			position: relative;
+		}
+		.nav form .search-input {
+		    padding: 0 30px 0 10px;
+		    width: 100%;
+		    height: 30px;
+		    font-size: 14px;
+		    border: 1px solid #7080a0;
+		    /*border-radius: 40px;*/
+		    box-sizing: border-box;
+		    background-color: #2d3340;
+		    color: #fff;
+		}
+		.nav form .search-btn {
+			position: absolute;
+			top: 9px;
+			right: 9px;
+			width: 30px;
+			height: 30px !important;
+			line-height: normal !important;
+			padding: 0 !important;
+			color: #969696 !important;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			background: none;
+			border: none;
+			cursor: pointer;
+			background: url(__PUBLIC__/img/search-icons.png) center center no-repeat;
+		}
+		/*占位符search-icons*/
+		.tips::-webkit-input-placeholder{color:#b2ccff;}
+		.tips:-moz-placeholder{color:#b2ccff}
+		.tips::-moz-placeholder{color:#b2ccff;}
+		.tips:-ms-input-placeholder{color:#b2ccff; }
+
+		.tabs1{
+			height: 100%;
+		}
+		.track{
+			position:absolute;
+			top:0;
+			right:0;
+			width:4px;
+			height:100%;
+		}
+		.track div{
+			width:4px;
+			background: rgba(71,81,102,.5);
+			border-radius: 3px;
+		}
+		.shuio{
+			height: 100%;
+		}
+		#tabs {
+		    /*margin-top: 60px;*/
+		    padding-top: 30px;
+		    box-sizing: border-box;
+		}
+		.top_nav{
+			float: left;
+			height: 100%;
+		}
+		.top_nav_list{
+			height: 100%;
+		}
+		.top_nav li{
+			float: left;
+			height: 100%;
+			line-height: 60px;
+			margin-right: 55px;
+		}
+		.top_nav li a{
+			display: inline-block;
+			padding: 8px 25px;
+			line-height: 22px;
+			border-radius: 8px;
+			color: #fff;
+			transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+		}
+		.top_nav li a:hover{
+			background-color: #275fce;
+			box-shadow:0px 0px 10px 4px #71a0ff; 
+		}
+		.top_nav li.active a{
+			background: #275fce;
+			box-shadow:0px 0px 10px 4px #71a0ff; 
+		}
+
+		/*右侧管理员*/
+		.header .head_text {
+		    height: 100%;
+		    color: #FFF;
+		    width: 180px;
+		     padding: 0 0px; 
+		    background: #5381db;
+		}
+		.head_text_li{
+			position: relative;
+			padding: 0 10px;
+		}
+		.head_text_li:hover .dropdown-menu{
+			display: block;
+		}
+		.dropdown-menu {
+		    position: absolute;
+		    top: 100%;
+		    left: 0;
+		    z-index: 1000;
+		    display: none;
+		    float: left;
+		    min-width: 160px;
+		    padding: 5px 0;
+		    /*margin: 2px 0 0;*/
+		    list-style: none;
+		    font-size: 14px;
+		    text-align: left;
+		    background-color: #fff;
+		    border: 1px solid #ccc;
+		    border: 1px solid rgba(0,0,0,.15);
+		    border-radius: 4px;
+		    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		    background-clip: padding-box;
+		    /*background-color: red;*/
+		}
+		.dropdown-menu a {
+		    padding: 10px 20px;
+		    line-height: 40px;
+		    /*-webkit-transition: all .1s .1s;*/
+		    /*transition: all .1s .1s;*/
+
+		}
+		.dropdown-menu > li > a {
+		    display: block;
+		    padding: 3px 20px;
+		    clear: both;
+		    font-weight: 400;
+		    color: #333;
+		    white-space: nowrap;
+		}
+		.dropdown-menu a:hover{
+			background: #5a8bed;
+			color: #fff;
+		}
+		.dropdown-menu a:hover i.iconfont{
+			/*background: url(__PUBLIC__/img/per.png) center center no-repeat;*/
+			background-image: url(__PUBLIC__/new/image/eingdan_login/mima-clet.png);
+		}
+		.dropdown-menu a:hover i.iconfonts{
+			background-image: url(__PUBLIC__/img/exit.png);
+		}
+		.iconfont{
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(__PUBLIC__/new/image/eingdan_login/mima.png) center center no-repeat;
+		}
+		.iconfonts{
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(__PUBLIC__/img/exit1.png) center center no-repeat;
+		}
+		/*系统公共*/
+
+		.tabs1 li a {
+			padding-left: 57px;
+		}
+		/*active*/
+		.tabs1 li a{
+			background-position: 20px center;
+			background-repeat: no-repeat;
+		}
+		.tabs1 li a.as1{
+			background-image: url(__PUBLIC__/new/image/eingdan_login/fanwei.png);
+		}
+		.tabs1 li.active a.as1{
+			background-image: url(__PUBLIC__/new/image/eingdan_login/fanwei-clect.png);
+		}
+
+
+		.tabs1 li a.as2{
+			background-image: url(__PUBLIC__/new/image/eingdan_login/qb.png);
+		}
+
+		.tabs1 li.active a.as2{
+			background-image: url(__PUBLIC__/new/image/eingdan_login/qb-clect.png);
+		}
+
+
+		.tabs1 li a.as3{
+			background-image: url(__PUBLIC__/new/image/eingdan_login/chax.png);
+		}
+
+		.tabs1 li.active a.as3{
+			background-image: url(__PUBLIC__/new/image/eingdan_login/chax-clect.png);
+		}
+
+
+		.tabs1 li a.as4{
+			background-image: url(__PUBLIC__/new/image/eingdan_login/zl.png);
+		}
+
+		.tabs1 li.active a.as4{
+			background-image: url(__PUBLIC__/new/image/eingdan_login/zl-clect.png);
+		}
+
+		.header .logo {
+		    background: url(__PUBLIC__/new/image/eingdan_login/logosss.png) left center no-repeat;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header clearfix">
+		<a href="index.html" class="logo" title="后台管理"></a>
+		<div class="top_nav">
+			<ul class="top_nav_list">
+				<!-- <li class="active">
+					<a href="__CONTROLLER__/index.html">订单管理</a>
+				</li>
+				<li>
+					<a href="__CONTROLLER__/pladmin.html">人员管理</a>
+				</li>
+				<li>
+					<a href="__CONTROLLER__/buadmin.html">商家管理</a>
+				</li>
+				<li>
+					<a href="__CONTROLLER__/fiadmin.html">财务管理</a>
+				</li> -->
+			</ul>
+		</div>
+        <ul class="head_text fr">
+	        <li class="head_text_li">
+	        	<img class="avatar" src="__PUBLIC__/new/image/head portrait.png">
+	        	<span class="dropdown-toggle">{$shou_name}</span>
+	        	<ul class="dropdown-menu">
+	        		<li>
+	        			<a href="__CONTROLLER__/set_psd/shou_name/{$shou_name}">
+	        				<i class="iconfont"></i>
+	        				<span>修改密码</span>
+	        			</a>
+	        		</li>
+	        		<li>
+	        			<a href="__CONTROLLER__/tuichu">
+	        				<i class="iconfonts"></i>
+	        				<span>退出登入</span>
+	        			</a>
+	        		</li>
+	        	</ul>
+	        </li>
+        </ul>
+	</div>
+
+	<!-- nav-collapse -->
+	<div class="main-left">
+		<div class="tabs tabs1" id="tabs">
+			<div class="shuio">
+				<ul class="nav">
+					<li id="yuyaonh" class="active"><span>{$content}</span><a class="as1" href="__CONTROLLER__/inq_fw.html" target="mainFrame">查看服务范围</a></li>
+					<li><a class="as2" href="__CONTROLLER__/qz.html" target="mainFrame">旗标设置</a></li>
+					<li><a class="as3" href="__CONTROLLER__/order_inq.html" target="mainFrame">订单查询</a></li>
+					<li><a class="as4" href="__CONTROLLER__/order_inq.html" target="mainFrame">服务种类</a></li>
+				</ul>
+			</div>
+			<div class="track"><div></div></div>
+		</div>
+	</div>
+
+	<div class="commutr">
+		<div class="main-center" id="main-center">
+			<iframe src="__CONTROLLER__/inq_fw.html"  frameborder="0" name="mainFrame" width="100%" height="99%"></iframe>
+		</div>
+	</div>
+
+
+
+    <div class="attr-overlay" id="attr-overlay"></div>
+    <div class="attr-content" id="attr-content">
+        <div class="widget-close" id="closed">
+            关闭
+        </div>
+        <div id="widget-title" class="widget-title"></div>
+        <div id="content_sd"></div>
+    </div>
+</body>
+<script type="text/javascript" src="__PUBLIC__/new/script/admin_index.js"></script>
+</html>

@@ -1,0 +1,246 @@
+html, body {
+	height: 100%;
+}
+body {
+	background: url(../../new/image/eingdan_login/bg1.png) center center no-repeat;
+	background-size: cover;
+}
+a {
+	-webkit-transition: all linear .32s;
+	-moz-transition: all linear .32s;
+	-ms-transition: all linear .32s;
+	transition: all linear .32s;
+}
+.login_header {
+	height: 70px;
+	background: url(../../new/image/sj_admin/nav-bsg.png) 0 0 no-repeat;			/*background-size: 230px;*/
+	background-size: cover;
+	width: 100%;
+	 position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1001;
+	/* box-shadow: 0px 0px 3px 0px rgba(12, 26, 16, 0.6); */
+	min-width: 1200px;
+}
+.qizip_title{
+	width: 350px;
+	height: 70px;
+	line-height: 70px;
+	margin: auto;
+	font-size: 22px;
+	font-weight: normal;
+	color: #fff;
+	background: url(../../new/image/eingdan_login/logo_a.png) 0 center no-repeat;
+	text-indent: 150px;
+}
+.login_containers {
+	 height: 100%; 
+	position: relative;
+}
+.qizi-log-cons {
+	color: #2b3142;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 1192px;
+	/* background: #ccc; */
+	 padding: 120px 0 70px 0; 
+	/* margin: 120px 0 70px 0; */;
+}
+.lohugrt {
+	width: 1192px;
+	/* height: 500px; */
+	background: #fff;
+	/* position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -596px;
+	margin-top: -222px; */
+	box-shadow: 0px 0px 6px 0px rgba(12, 26, 16, 0.5);
+	padding: 100px 0;
+}
+.submit-form {
+	width: 350px;
+	margin: 0px auto;
+}
+.input-group {
+	line-height: 34px;
+	margin-bottom: 6px;
+}
+.qizi-shuru {
+	box-sizing: border-box;
+	width: 100%;
+	border-radius: 2px;
+	border: 1px solid #7080a0;
+	height: 46px;
+	padding: 0 8px 0 50px;
+}
+.qizi-login {
+	background-color: #0096ff;
+	border: 2px solid #e5e6e8;
+	color: #FFF;
+	cursor: pointer;
+	border: none;
+	height: 51px;
+	width: 100%;
+	font-size: 18px;
+	background: #5c7ee6 url(../../new/image/eingdan_login/btn.png) center center no-repeat;
+}
+.sign_up {
+	display: block;
+	text-align: center;
+	margin-top: 36px;
+}
+.lohugrt a {
+	font-size: 14px;
+	color: #5a8bed;
+}
+.lohugrt a:hover {
+
+	/*color: #fff;*/
+	opacity: .8;
+}
+.checkboxs {
+	margin-bottom: 15px;
+	vertical-align: middle;
+}
+.remember-btn {
+	vertical-align: middle;
+}
+.remember-btn span {
+	vertical-align: middle;
+	color: #999;
+}
+.remember-btn input {
+	vertical-align: middle;
+}
+.input-fill {
+	position: relative;
+}
+.input_icon {
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	left: 0;
+	top: 1px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.input_icon_id {
+	background-image: url(../../new/image/eingdan_login/shop.png);
+}
+.input_icon_psd {
+	background-image: url(../../new/image/eingdan_login/code.png);
+}
+.input_icon_tel {
+	background-image: url(../../new/image/eingdan_login/phone.png);
+}
+.input_icon_sqm {
+	background-image: url(../../new/image/eingdan_login/safe.png);
+}
+.submit-form1 {
+	margin-top: 30px;
+}
+.sign_up1 {
+	margin-top: 16px;
+}
+.qizi-shuru1 {
+	padding-left: 8px;
+}
+.qizi-shuru2 {
+	padding-right: 100px;
+}
+.verification {
+	color: #5a8bed;
+	position: absolute;
+	height: 100%;
+	top: 0px;
+	right: 8px;
+	line-height: 44px;
+}
+.input-group1 {
+	margin-bottom: 20px;
+}
+.comhu_tinle {
+	margin-top: 46px;
+	margin-left: 30px;
+	height: 22px;
+	line-height: 22px;
+}
+.return_linge {
+	padding: 0 12px;
+	/* background: url(../../new/image/eingdan_login/back.png) center left no-repeat; */
+	/* text-indent: 14px; */
+	display: inline-block;
+	color: #5a8bed;
+	cursor: pointer;
+}
+.text_color1 {
+	color: #5a8bed;
+}
+.scrollbar {
+	width: 1120px;			/*height: 430px;*/
+	margin: 20px auto 10px;
+	overflow: hidden;
+	position: relative;
+}
+.s2 .box {
+	width: 100%;
+	height: 430px;
+}
+.s2 .content {
+	width: 10000px;
+}
+.s2 .content li {
+	float: left;		/*width: 250px;*/
+	height: 430px;				/*border-right:1px dashed #e2e2e2;*/
+
+	/*line-height:40px;*/
+	text-index: 0.5em;
+}
+.s2 .track {
+	width: 100%;
+	height: 4px;
+}
+.s2 .track div {
+	height: 4px;
+	background: #999;
+}
+.msg {
+	position: absolute;
+	left: 102%;
+	top: 0px;
+	height: 44px;
+	line-height: 44px;
+	width: 100%;
+	display: none;
+}
+.msg i {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: #FC0;
+	margin-right: 5px;
+}
+.msg i.cwe {
+	/* background: red; */
+	background: url(../../new/image/eingdan_login/wrong.png) center left no-repeat;
+	background-size: cover;
+}
+.msg i.zqsw {
+	/* background: ##03F; */
+	background: url(../../new/image/eingdan_login/right.png) center left no-repeat;
+	background-size: cover;
+}
+
+/*verification*/
+.verifica {
+	color: #999;
+	cursor: pointer;
+}
+.verifica1 {
+	color: #5a8bed;
+}

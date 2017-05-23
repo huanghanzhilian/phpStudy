@@ -1,0 +1,2 @@
+<?php if (!defined('THINK_PATH')) exit(); if(is_array($arr)): foreach($arr as $key=>$kk): echo ($kk["ma"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($kk["yhqprice"]); ?> 元&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($kk["yonghuname"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($kk["phone"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href='javascript:void(0)'onclick='de(<?php echo ($kk["yhq_id"]); ?>)'>删除</a><br /><br /><?php endforeach; endif; ?>

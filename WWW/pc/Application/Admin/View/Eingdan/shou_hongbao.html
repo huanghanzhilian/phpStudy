@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单红包</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/ligon_up.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/red_box.css">
+	<style type="text/css">
+		body{
+			background: #fff;
+		}
+	</style>
+</head>
+<body class="flex-wrap flex-vertical">
+
+	<!-- 顶部 -->
+	<div id="header">
+		<div id="header_1" class="clearfix">
+			<div class="box_fl fl">
+				<div class="boxcom fl">
+					<div class="boxcom_title">当前余额</div>
+					<div class="moery">{$shou_money}<soan>元</span></div>
+				</div>
+				<div class="boxcom fl">
+					<div class="boxcom_title">累计返现</div>
+					<div class="moery">{$num_money}<soan>元</span></div>
+				</div>
+			</div>
+			<div class="box_fr fr">
+				<div class="skaht">
+					<span class="slkaj_l" onclick="setcopi(this)">余额提现</span>
+					<span class="slkaj_r" onclick="lishtya(this)">提现记录</span>
+				</div>
+			</div>
+		</div>
+		<ul class=" com_title flex-wrap">
+			<li class="flex-con">返现时间</li>
+			<li class="flex-con">返现金额</li>
+			<li class="flex-con">订单编号</li>
+		</ul>
+	</div>
+		
+	<!-- 内容 -->
+	<div class="container flex-con">
+		<foreach name='arr' item='kk'>
+			<ul class="com_main flex-wrap">
+				<li class="flex-con">{$kk.sgoods_time}</li>
+				<li class="flex-con">{$kk.sgoods_money}</li>
+				<li class="flex-con">{$kk.sgoodsnumber}</li>
+			</ul>
+		</foreach>
+	</div>
+	<!-- 弹出 -->
+	<div class="attr-overlay" id="attr-overlay"></div>
+	<div class="attr-content" id="attr-content" style="height: 590px;">
+        <div class="widget-close" id="closed">
+            关闭
+        </div>
+        <div id="widget-title" class="widget-title"></div>
+        <div id="content_sd">
+        	<!-- <div class="boxauak">
+        		<div class="input-group">
+        						<p class="input-title">支付宝账户名(实名)</p>
+        						<div class="input-fill">
+        							<input class="qizi-shuru qizi-shuru1" id="z_username" type="text" name="">
+        						</div>
+        					</div>
+        					<div class="input-group">
+        						<p class="input-title">支付宝账号(手机号/邮箱)</p>
+        						<div class="input-fill">
+        							<input class="qizi-shuru qizi-shuru1" id="zz_username" type="text" name="">
+        						</div>
+        					</div>
+        					<div class="input-group">
+        						<p class="input-title">提现金额</p>
+        						<div class="input-fill">
+        							<input class="qizi-shuru qizi-shuru1" id="mouder" type="text" name="">
+        						</div>
+        					</div>
+        					<button class="qizi-login" onclick="chem()">确认申请</button>
+        	</div> -->
+			<!--表格-->
+            <table class="tableaa" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th width="25%">操作时间</th>
+                        <th>提现金额(元)</th>
+                        <th>提现后账户余额(元)</th>
+                        <th width="26%">提现账户</th>
+                        <th>提现状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        这里的id和for里面的c1 需要循环出来
+                        <td align="center">x</td>
+                        <td align="center">后台设计</td>
+                        <td align="center">测试内容</td>
+                        <td align="center">x</td>
+                        <td align="center">x</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+var times=60;  //时间倒计时
+var timer=null;    //计时器
+function setcopi(el) {
+	var overlay = $("#attr-overlay");
+	var content = $("#attr-content");
+	var widget_title = $("#widget-title");
+	var windows = $("body");
+	content.css("width","720px");
+	//关闭按钮
+	var closed = $("#closed");
+	closed.on("click", function() {
+		overlay.hide();
+		content.hide();
+	});
+	//遮罩层
+	overlay.on("click", function() {
+		overlay.hide();
+		content.hide();
+	});
+
+	widget_title.text("余额提现-提现账户")
+	overlay.show();
+	content.show();
+	$("#content_sd").empty();
+	var sel = (windows.width() - content.width()) / 2;
+	var set = (windows.height() - content.height()) / 2;
+
+	content.offset({
+		top: set,
+		left: sel
+	});
+		//console.log('{$shou_name}')
+	$.ajax({
+		url: "http://weibaishi.com/admin/eingdan/account_list",
+		data: {
+			'shou_name': '{$shou_name}'
+		},
+		dataType: "json",
+		type: 'post',
+		success: function(data) {
+			//console.log('shou_name': '{$shou_name}')
+			//data=[];
+
+			var html = '<div class="boxauak">\
+	        		<div class="input-group">\
+						<p class="input-title">支付宝真实名(实名)</p>\
+						<div class="input-fill">\
+							<input num="" class="qizi-shuru qizi-shuru1" id="z_username" type="text" name="">\
+							<p class="msg"></p>';
+			if (data.length == 0) {
+				//alert(1)
+			} else {
+				html += '<em class="posutaw"></em>\
+							<ul class="utchus">';
+				$.each(data, function(i, n) {
+					html += '<li num="' + n.account_id + '" num2="' + n.account_number + '">' + n.account_name + '</li>';
+				});
+				html += '</ul>';
+			}
+			html += '</div>\
+					</div>\
+					<div class="input-group">\
+						<p class="input-title">支付宝账号(手机号/邮箱)</p>\
+						<div class="input-fill">\
+							<input class="qizi-shuru qizi-shuru1" id="zz_username" type="text" name="">\
+							<p class="msg"></p>\
+						</div>\
+					</div>\
+					<div class="input-group">\
+						<p class="input-title">提现金额</p>\
+						<div class="input-fill">\
+							<input num="{$shou_money}" class="qizi-shuru qizi-shuru1" id="mouder" type="text" name="" placeholder="本次最多可提现{$shou_money}元">\
+							<p class="msg"></p>\
+						</div>\
+					</div>\
+					<div class="input-group">\
+						<p class="input-title">您注册时手机号</p>\
+						<div class="input-fill">\
+							<input class="qizi-shuru qizi-shuru1 qizi-shuru2" id="yanzhengma" type="text" disabled="true" value="{$shou_phone}">\
+							<span onclick="duanxin(this)" class="verification verifica">获取验证码</span>\
+						</div>\
+					</div>\
+					<div class="input-group">\
+						<p class="input-title">填写验证码</p>\
+						<div class="input-fill">\
+							<input class="qizi-shuru qizi-shuru1" id="yanzhengma1" type="text" name="">\
+							<p class="msg"></p>\
+						</div>\
+					</div>\
+					<button class="qizi-login" onclick="chem()">确认申请</button>\
+	        	</div>';
+
+			$("#content_sd").html(html);
+			if (data.length != 0) {
+				$("#z_username").val(data[0].account_name);
+				$("#z_username").attr("num",data[0].account_id)
+				$("#zz_username").val(data[0].account_number)
+				//alert(1)
+			}
+			content.on('click',function(){
+				var $ul=$(".utchus");
+				$ul.removeClass('on');
+			})
+			$(".posutaw").on('click',function(event){
+				event.stopPropagation();
+				var $ul=$(".utchus");
+				if($ul.hasClass('on')){
+					$ul.removeClass('on');
+				}else{
+					$ul.addClass('on');
+				}
+			})
+			$(".utchus li").on('click',function(event){
+				//event.stopPropagation();
+				$("#z_username").val($(this).text());
+				$("#z_username").attr("num",$(this).attr("num"))
+				$("#zz_username").val($(this).attr("num2"))
+				//console.log(this)
+			})
+		}
+	});
+}
+//lishtya提现记录
+function lishtya(el) {
+	var overlay = $("#attr-overlay");
+	var content = $("#attr-content");
+	var widget_title = $("#widget-title");
+	var windows = $("body");
+	content.css("width","914px");
+	//关闭按钮
+	var closed = $("#closed");
+	closed.on("click", function() {
+		overlay.hide();
+		content.hide();
+	});
+	//遮罩层
+	overlay.on("click", function() {
+		overlay.hide();
+		content.hide();
+	});
+
+	widget_title.text("提现记录")
+	overlay.show();
+	content.show();
+	//$("#content_sd").empty();
+	var sel = (windows.width() - content.width()) / 2;
+	var set = (windows.height() - content.height()) / 2;
+
+	content.offset({
+		top: set,
+		left: sel
+	});
+
+	$.ajax({
+		url: "http://weibaishi.com/admin/eingdan/tixian_list",
+		data: {
+			'shou_name':'{$shou_name}'
+		},
+		dataType: "json",
+		type: 'post',
+		success: function(data) {
+			console.log(data)
+			var html='<div class="shuamlop">\
+				<table class="tableaa" cellspacing="0" cellpadding="0">\
+                <thead>\
+                    <tr>\
+                        <th width="25%">操作时间</th>\
+                        <th>提现金额(元)</th>\
+                        <th>提现后账户余额(元)</th>\
+                        <th width="26%">提现账户</th>\
+                        <th>提现状态</th>\
+                    </tr>\
+                </thead>\
+                <tbody>';
+            $.each(data, function(i, n) {
+            	n.tixian_zt=(function(){
+            		if(n.tixian_zt=="1"){
+            			return "提现中";
+            		}else if(n.tixian_zt=="2"){
+            			return "已完成";
+            		}else if(n.tixian_zt=="3"){
+            			return "失败";
+            		}
+            	})()
+				html += '<tr>\
+                        <td align="center">'+n.tixian_time+'</td>\
+                        <td align="center">'+n.tixian_money+'</td>\
+                        <td align="center">'+n.tixian_yu+'</td>\
+                        <td align="center">'+n.account_name+','+n.account_number+'</td>\
+                        <td align="center">'+n.tixian_zt+'</td>\
+                    </tr>';
+			});
+			html+='</tbody>\
+            </table>\
+            </div>'
+            $("#content_sd").html(html);
+		}
+	});
+}
+
+//确认申请
+function chem(){
+	var nubor=/^[0-9]*$/g;//判断非数字
+	var nubor1=/^[0-9]*$/g;//判断非数字
+	var max_mouder={$shou_money};//最高可提现金额
+	var account_name=$("#z_username").val();//姓名
+	var account_number=$("#zz_username").val();//账号
+	//var account_id="";//账号id
+	var tixian_money=$("#mouder").val();//金额
+	var yanzhengma1=$("#yanzhengma1").val();//验证码
+	if(account_name==""){
+		$("#z_username").next().show().html('<i class="cwe"></i>不能为空');
+		return;
+	}else{
+		$("#z_username").next().hide().html('');
+	}
+	if(account_number==""){
+		$("#zz_username").next().show().html('<i class="cwe"></i>不能为空');
+		return;
+	}else{
+		$("#zz_username").next().hide().html('');
+	}
+	if(tixian_money>max_mouder){
+		$("#mouder").next().show().html('<i class="cwe"></i>金额超出');
+		return;
+	}else if(tixian_money==""){
+		$("#mouder").next().show().html('<i class="cwe"></i>不能为空');
+		return;
+	}else if(!nubor.test(tixian_money)){
+		$("#mouder").next().show().html('<i class="cwe"></i>请输入正确金额');
+		return;
+	}else{
+		$("#mouder").next().hide().html('');
+	}
+
+	if(yanzhengma1==""){
+		$("#yanzhengma1").next().show().html('<i class="cwe"></i>不能为空');
+		return;
+	}else if(!nubor1.test(yanzhengma1)){
+		$("#yanzhengma1").next().show().html('<i class="cwe"></i>请输入正确验证码');
+		return;
+	}else{
+		//$("#yanzhengma1").next().hide().html('');
+	}
+
+	$.ajax({
+		url: "http://weibaishi.com/admin/eingdan/yzma",
+		data: {
+			'yzm': $("#yanzhengma1").val(),
+			'shou_name': '{$shou_name}',
+		},
+		dataType: "text",
+		type: 'post',
+		success: function(data) {
+			// console.log(data)
+			if(data=="1"){
+				$("#yanzhengma1").next().hide().html('');
+			}else if(data=="2"){
+				$("#yanzhengma1").next().show().html('<i class="cwe"></i>验证码错误');
+				return;
+			}
+			$.ajax({
+				url: "http://weibaishi.com/admin/eingdan/tixian_add",
+				data: {
+					'tixian_money': tixian_money,
+					'account_name': account_name,
+					'account_number': account_number,
+					'shou_name':'{$shou_name}'
+					//'account_id': account_id,
+				},
+				dataType: "json",
+				type: 'post',
+				success: function(data) {
+					if(data=="1"){
+						window.location.reload();
+					}else if(data=="2"){
+						window.location.reload();
+					}
+				}
+			});
+		}
+	});
+	/*$.ajax({
+		url: "http://weibaishi.com/admin/eingdan/tixian_add",
+		data: {
+			'tixian_money': tixian_money,
+			'account_name': account_name,
+			'account_number': account_number,
+			//'account_id': account_id,
+		},
+		dataType: "json",
+		type: 'post',
+		success: function(data) {
+			console.log(data)
+		}
+	});*/
+}
+//获取验证码
+function duanxin(el){
+	//console.log($("#yanzhengma").val())
+	clearInterval(timer);
+	timer = setInterval(function() {
+		times--;
+		if (times <= 0) {
+			el.innerHTML = '获取验证码';
+			clearInterval(timer);
+			el = 60;
+			// send.disabled = false;
+		} else {
+			el.innerHTML = times + '秒后重试'
+				// send.disabled = true;
+		}
+	}, 1000)
+	$.ajax({
+		url: "http://weibaishi.com/admin/eingdan/dxfs",
+		data: {
+			'shou_name': '{$shou_name}',
+		},
+		dataType: "text",
+		type: 'post',
+		success: function(data) {
+			//console.log(data)
+		}
+	});
+}
+/*$.ajax({
+	url: "http://weibaishi.com/admin/eingdan/tixian_list",
+	// data:{'p_id':datas},
+	dataType: "json",
+	type: 'post',
+	success: function(data) {
+		console.log(data)
+	}
+});*/
+</script>
+</html>

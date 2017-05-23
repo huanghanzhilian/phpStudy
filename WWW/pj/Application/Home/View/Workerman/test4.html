@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试</title>
+</head>
+<body>
+	<foreach name='arr' item='kk'>
+		{$kk.name}
+    </foreach>
+    <script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript">
+		ws = new WebSocket("ws://101.200.219.26:2346");
+		ws.onopen = function() {
+			console.log("连接成功");
+			// ws.send("1");
+			// console.log("给服务端发送一个字符串：2");
+		};
+		ws.onmessage = function(e) {
+			console.log("收到服务端的消息：" + e.data);
+		};
+	</script>
+</body>
+</html>

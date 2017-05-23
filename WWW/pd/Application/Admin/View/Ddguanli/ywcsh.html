@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>维百士后台管理-售后管理</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+</head>
+<body style="background:#f5f5f5">
+<div class="header ">
+    <a href="__CONTROLLER__/shangmen/ways_id/1"><span></span></a>
+    <h1>售后管理<!--{$my}--></h1>
+    <!-- <em>去购买</em> -->
+</div><!--头-->
+<div class="content">
+    <div class="content_con">
+        <!--tab头-->
+        <div class="shifudu_top">
+            <ul class="pubcvt shifudu_top_ul shifudu_top_ul_gd">
+                <li class="pubcvt_v shifudu_top_li ">
+                    <a id="nmchu" href="javascript:void(0)" onclick='ass(0)' >申请售后</a>
+                </li>
+                <li class="pubcvt_v shifudu_top_li">
+                    <a href="javascript:void(0)" onclick='ass(1)' >售后中</a>
+                </li>
+                <li class="pubcvt_v shifudu_top_li shifudu_top_li_1">
+                    <a href="__CONTROLLER__/ywcsh/zt/3">已完成</a>
+                </li>
+            </ul>
+        </div>
+        <!--tab头-->
+    
+        <div id='e'>
+            <div class="ceomer_com">
+                <foreach name='arr' item='kk'>
+                <div style="position:relative;">
+                    <a class="shifu_aclc" href="__CONTROLLER__/xiangqing/id/{$kk.id}">
+                        <div class="rnmbur">
+                            <ul>
+                                <li>
+                                     <span class="chuangmbr">{$kk.dd}</span>
+                                </li>
+                                <li>
+                                     问题：<span class="chuangmbr">{$kk.contentt}</span>
+                                </li>
+                                <li>
+                                     姓名：<span class="chuangmbr">{$kk.username}</span>
+                                </li>
+                                <li>
+                                     电话：<span class="chuangmbr">{$kk.tell}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                    <if condition="strtoupper (($kk['u_phone']) eq  17301205932) || (($kk['u_phone']) eq  15811207510) || (($kk['u_phone']) eq  18231321037)">
+                      <a style=" position:absolute; top:14px; right:12px; color:red" href="__CONTROLLER__/shanchuuu/id/{$kk.id}/ways_id/{$kk.ways_id}" onclick="if(confirm('确定删除?')==false)return false;">删除</a>
+                    <else/>
+                    </if>
+                </div>
+                </foreach>
+            </div>
+                    <div class="clopokc">
+                        {$page}
+                    </div>
+        </div>
+        
+        
+         <!--分页-->
+                   
+                    <!--<div class="clopokc">
+                    <form style="display:inline-block;" method="post" action="" onSubmit="return Checked();">
+                        <input id="hhb" class="hhbn" type="text" value=""/>
+                        <input class="hhbnc" type="submit" value='GO'>
+                    </form>
+                    </div>-->
+                    <!--分页-->
+        
+    </div>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript">
+function ass(id){
+			//alert(fk);
+			var ajax=new XMLHttpRequest()
+				ajax.open("get","__CONTROLLER__/shouhouaa/zt/"+id,true)
+				ajax.send()
+				ajax.onreadystatechange=function(){
+					if(ajax.readyState==4 && ajax.status==200){
+						document.getElementById('e').innerHTML=ajax.responseText;
+						$(".shifu_aclc").each(function(i,m){
+							var hjk=$(this).attr('href');
+							if(id==0){
+								$(this).attr('href',hjk+'/hh/2');
+							}else if(id==1){
+								$(this).attr('href',hjk+'/hh/4');
+							}else if(id==3){
+								$(this).attr('href',hjk+'/hh/6');
+							}
+							//console.log()
+						})
+					}
+				}
+	} 
+	
+	
+$(function(){
+	
+	$(".shifudu_top_li").click(function(){
+		if($(this).hasClass('shifudu_top_li_1')){
+			//$(this).removeClass('shifudu_top_li_1')
+			//$(this).find('b').css({'background-color':'#e6e6e6'})
+		}else{
+		$(this).addClass('shifudu_top_li_1').siblings().removeClass('shifudu_top_li_1')
+		
+		};
+	})
+	//$(".shifudu_top_li").eq(1).click()
+	//$(".shifudu_top_li>a").eq(1).click()
+})
+</script>
+
+
+
+
+
+
+
+
+

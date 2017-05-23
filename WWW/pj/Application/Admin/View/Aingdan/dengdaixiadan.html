@@ -1,0 +1,219 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+<style type="text/css">
+	/*查看商品*/
+	.anniu a {
+	    display: inline-block;
+	    border: solid 1px #517ed6;
+	    padding: 0 12px;
+	    margin: 0 12px;
+	    color: #517ed6;
+	    cursor: pointer;
+	}
+
+</style>
+{$count}
+<table class="table" cellspacing="0" cellpadding="0">
+	<thead>
+		<tr>
+			<th>下单时间</th>
+			<th>订单状态</th>
+			<th>服务项目</th>
+			<th>服务地址</th>
+			<th>客户姓名</th>
+			<th>客户电话</th>
+			<th>订单编号</th>
+		</tr>
+	</thead>
+	<foreach name='arr' item='kk'>
+	<tbody>
+		<tr>
+			<td  width="10%">{$kk.revise_time}</td>
+			<td>{$kk.order_state}</td>
+			<td width="16%">{$kk.goods_number}</td>
+			<td width="19%">{$kk.address}</td>
+			<td>{$kk.username}</td>
+			<td>{$kk.phone}</td>
+			<td>{$kk.order_number}</td>
+		</tr>
+		<tr>
+			<td colspan="7">
+				<!-- <div class="anniu-center">
+					<div class="anniu fl">
+						<span onclick="resize({$kk.p_id},this)">匹配SKU</span>
+						<span onclick="buzuo({$kk.p_id},this)">暂不做</span>
+						<span onclick="buffuhe({$kk.p_id},this)">不符合</span>
+					</div>
+					<div class="anniu_hu fr">
+						<span onclick="xiangqo({$kk.p_id},this)">订单详情</span>
+					</div>
+				</div> -->
+
+				<div class="anniu-center">
+					<div class="anniu fl">
+							<span onclick="xiadans({$kk.p_id},this)">下单</span>
+							<span onclick="fasongdx({$kk.p_id},this)">发送短信</span>
+							<span class="bijichu" data="{$kk.p_id}">笔记
+							<div style="display:none" class="tanbuks">
+								<div class="shuop">
+									<textarea data="4147" class="shubhg_pc" name="content" autocomplete="off" >{$kk.beizhu}</textarea>
+								</div>
+                            </div>
+							</span>
+							<a href="https://item.taobao.com/item.htm?id={$kk.goods_card}" target="_blank">查看商品</a>
+					</div>
+					<div class="anniu_hu fr">
+						<span onclick="xiangqo({$kk.p_id},this)">订单详情</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+	</foreach>
+
+</table>
+<div class="clopokc">
+	{$show}
+</div>
+<div id="toastId2" class="toasttj2" style="display: none; opacity: 0;"></div>
+<script src="__PUBLIC__/new/script/toast.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$('body').on("click",function(){
+		$(".tanbuks").hide();
+	})
+	//下单
+	function xiadans(p_id,_this){
+		$.ajax({
+			url: "http://m.weibaishi.com/Admin/Aingdan/xiadan",
+			data:{'p_id':p_id},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				if(data&&data!="8"){
+					$(_this).parents("tr").prev("tr").remove();
+					$(_this).parents("tr").remove();
+					setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作成功</div>');
+				}else if(data=="8"){
+					$(_this).parents("tr").prev("tr").remove();
+					$(_this).parents("tr").remove();
+					setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">此订单已被处理</div>');
+				}
+			}
+		});
+	}
+	//初始化循环笔记按钮是否有内容
+	$(".bijichu").each(function(i,n){
+		if($(n).find("textarea").val()!=""){
+			$(n).addClass("bijichuav");
+		}
+	});
+
+	//发送短信
+	function fasongdx(p_id,_this){
+		if (confirm("你确定发送吗？")) {
+			$.ajax({
+				url: "http://m.weibaishi.com/Admin/Aingdan/dx",
+				data:{'p_id':p_id},
+				dataType: "json",
+				type:'post',
+				success: function (data) {
+					console.log(data)
+				}
+			});
+			// console.log(p_id)
+		} else {
+
+		}
+		// $.ajax({
+		// 		url: "http://m.weibaishi.com/Admin/Aingdan/dx",
+		// 		data:{'p_id':p_id},
+		// 		dataType: "json",
+		// 		type:'post',
+		// 		success: function (data) {
+		// 			console.log(data)
+		// 		}
+		// 	});
+	}
+
+	//笔记
+	$(".bijichu").on('click',function(event){
+		var jhi=$(this);
+		event.stopPropagation();
+		$(".bijichu").each(function(i,n){
+			$(n).find(".tanbuks").hide();
+		})
+		$(this).find(".tanbuks").show();
+		$(this).find("textarea").focus();
+		var p_id=$(this).attr("data");
+		$(this).find("textarea").on("change",function(){
+			var content=$(this).val();
+			//判断笔记按钮是否有内容
+			if(content!=""){
+				jhi.addClass("bijichuav");
+			}else{
+				jhi.removeClass("bijichuav");
+			}
+			$.ajax({
+				url: "http://m.weibaishi.com/Admin/Aingdan/beizhu",
+				data:{'p_id':p_id,'beizhu':content},
+				dataType: "json",
+				type:'post',
+				success: function (data) {
+					// console.log(data)
+				}
+			});
+			jhi.find(".tanbuks").hide();
+		})
+	})
+
+	//详情
+	function xiangqo(p_id,_this){
+		var overlay= $("#attr-overlay",parent.document);
+		var content= $("#attr-content",parent.document);
+		var widget_title= $("#widget-title",parent.document);
+		var windows=$("body",parent.document);
+		//关闭按钮
+		var closed=$("#closed",parent.document);
+
+		widget_title.text("详情")
+		overlay.show();
+		content.show();
+		$("#content_sd",parent.document).empty();
+
+		var sel=(windows.width()-content.width())/2;
+		var set=(windows.height()-content.height())/2;
+
+		content.offset({ top: set, left: sel });
+		closed.on("click",function(){
+			overlay.hide();
+			content.hide();
+		});
+
+		$.ajax({
+			url: "http://m.weibaishi.com/Admin/Aingdan/xiangqing",
+			data:{'p_id':p_id},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				data=data[0];
+
+				$("#content_sd",parent.document).append('<ul class="attr-content-con">\
+					<li class="xghujg">订单序号：'+data.p_id+'</li>\
+					<li class="xghujg">下单时间：'+data.order_time+'</li>\
+					<li class="xghujg">订单编号：'+data.order_number+'</li>\
+					<li class="xghujg">订单状态：'+data.order_state+'</li>\
+					<li class="xghujg">服务项目：'+data.goods_content+'</li>\
+					<li class="xghujg">服务地址：'+data.address+'</li>\
+					<li class="xghujg">客户姓名：'+data.username+'</li>\
+					<li class="xghujg">客户电话：'+data.phone+'</li>\
+					<li class="xghujg">商品 ID：'+data.goods_card+'</li>\
+					<li class="xghujg">卖家名称：'+data.goods_name+'</li>\
+					<li class="xghujg">货品名称：'+data.goods_number+'</li>\
+					<li class="xghujg">颜色分类：'+data.goods_color+'</li>\
+					</ul>');
+
+			}
+		});
+	}
+</script>

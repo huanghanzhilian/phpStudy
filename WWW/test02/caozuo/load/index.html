@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>使用load()方法异步请求数据</title>
+<style>
+.fl{ float:left;}
+.fr{ float:right}
+#divtest{ width:300px;}
+.title{ background:#0000ff; height:40px; line-height:40px; color:#fff; overflow:hidden; padding:0 10px;}
+</style>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="divtest">
+    <div class="title">
+        <span class="fl">我最爱吃的水果</span>
+        <span class="fr">
+            <input id="btnShow" type="button" value="加载">
+        </span>
+    </div>
+    <ul></ul>
+</div>
+<script>
+$(function(){
+	$("#btnShow").bind("click",function(){        //绑定事件  点击运行函数
+		var we=$(this);                            //变量we等于按钮
+		$("ul").html("<img src='jz.gif'>")        //点击后ul插入图片
+		.load("jiazai.html li",function(){        //使用load()方法异步请求数据   参数url为加载服务器地址，可选项data参数为请求时发送的数据，callback参数为数据请求成功后，执行的回调函数。
+			we.attr("disabled", "true");          //点击后按钮禁用
+		});
+	});
+})
+</script>
+</body>
+</html>

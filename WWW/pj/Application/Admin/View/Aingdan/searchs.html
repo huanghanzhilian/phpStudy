@@ -1,0 +1,58 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+
+<table class="table" cellspacing="0" cellpadding="0">
+	<thead>
+		<tr>
+			<th>序号</th>
+			<th>下单时间</th>
+			<th>订单状态</th>
+			<th>服务项目</th>
+			<th>服务地址</th>
+			<th>客户姓名</th>
+			<th>客户电话</th>
+			<th>订单编号</th>
+		</tr>
+	</thead>
+	<foreach name='arr' item='vv'>
+	<tbody>
+		<tr>
+			<td>{$kk.username}
+</td>
+			<td  width="10%">{$kk.phone}</td>
+			<td>1</td>
+			<td width="16%">1</td>
+			<td width="19%">1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>	
+			<td colspan="8">
+				<!-- <div class="anniu-center">
+					<div class="anniu fl">
+							<span onclick="xiadans({$kk.p_id},this)">下单</span>
+							<span>发送短信</span>
+							<span class="bijichu" data="{$kk.p_id}">笔记
+							<div style="display:none" class="tanbuks">
+								<div class="shuop">
+									<textarea data="4147" class="shubhg_pc" name="content" autocomplete="off" >{$kk.beizhu}</textarea>
+								</div>
+				                            </div>
+							</span>
+							<a href="https://item.taobao.com/item.htm?id={$kk.goods_card}" target="_blank">查看商品</a>
+					</div>
+					<div class="anniu_hu fr">
+						<span onclick="xiangqo({$kk.p_id},this)">订单详情</span>
+					</div>
+				</div> -->
+			</td>
+		</tr>
+	</tbody>
+</foreach><br />
+<foreach name='arr1' item='kk'>
+{$kk.username}
+{$kk.phone}
+</foreach>
+</table>

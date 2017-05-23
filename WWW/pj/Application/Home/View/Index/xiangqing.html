@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>维百士-订单详情</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<link href="__PUBLIC__/styles/style.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+<link href="__PUBLIC__/styles/photoswipe.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="__PUBLIC__/js/klass.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/code.photoswipe-3.0.5.min.js"></script>
+<script type="text/javascript">
+	(function(window, PhotoSwipe){
+	
+		document.addEventListener('DOMContentLoaded', function(){
+		
+			var
+				options = {},
+				instance = PhotoSwipe.attach( window.document.querySelectorAll('#mmcubn_p a'), options );
+		
+		}, false);
+		
+		
+	}(window, window.Code.PhotoSwipe));
+	
+</script>
+<style>
+body{ background:#f1f1f1;}
+.mnuber {
+    display: block;
+    margin-left: 70px;
+    margin-right: 40px;
+}
+
+
+/*聊天*/
+.duifan{ padding:0 12px;}
+.duifanxx{}
+.duifanxx.kl{ text-align:left;}
+.duifanxx.kr{ text-align: right;}
+.cjusr{ padding:5px 15px; background:#83bca5; display:inline-block; border-radius: 6px; color:#fff;}
+.color_p{ background:#38adff;}
+.color_pd{ background:#f65e8d;}
+.duifanxx p{ color:#4c4c4c; margin:4px 0;}
+
+.toushu_pl{ overflow:hidden; margin-bottom:20px; padding-top:30px; background:#fff; position:relative;}
+.shubhu_op{ height:50px; display:block; width:100%;}
+.tijiao_box{ background:#fff; text-align:right;}
+.aniupo{ width:70px; height:25px; background:#6eb320; color:#fff;  border-radius: 4px;}
+.ioc_xzioc{ position:absolute; left:0px; top:0px; border-bottom:1px solid #f0f0f0; height:30px; width:100%;line-height:30px;  }
+.tubuanu_c{ width:24px; height:18px; background: url(__PUBLIC__/img/sdsaxs.png); display:inline-block; overflow:hidden; vertical-align:middle; margin-left:10px; background-size:24px 18px; }
+.tubuanu_c input[type=file]{ opacity: 0; display:block;}
+.tubuanu_b{ background:none; overflow:hidden;}
+.tubuanu_b img{ width:100%; height:100%; display:block;}
+/*聊天*/
+</style>
+</head>
+<body>
+<div class="header">
+    <span><a href="__CONTROLLER__/dingdan"></a></span>
+    <div class="rder_sw">
+        <ul>
+            <li>
+                <a href="http://m.weibaishi.com/anarchy/{$arr19.id}">订单状态</a>
+            </li>
+            <li>
+                <a class="on" href="http://m.weibaishi.com/details/{$arr19.id}">订单详情</a>
+            </li>
+        </ul>
+    </div>
+</div><!--头-->
+
+    
+
+<div class="content">
+    <div class="content_con" style="padding-bottom:20px;">
+        <div class="content_con_one">
+            <h1 class="da_con_ce">订单编号：{$arr19.ddh}</h1>
+            <div class="da_con">
+                <ul>
+                    <li>
+                        工程师：<span>{$arr19.user_username}</span>
+                    </li>
+                    <li>
+                        手机：<span>{$arr19.user_name}</span><a class="ousc" href="tel:{$arr19.user_name}">拨打</a>
+                    </li>
+                    <li>
+                        <strong style=" float:left; font-weight:normal;">维修内容：</strong>
+                        <span style="display:block; margin-left:70px; margin-right:40px;">
+                            <foreach name='arr10' item='kk'>
+                                {$kk.cpk_name}
+                            </foreach>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="da_con">
+                <ul>
+                    <li>
+                        <strong style=" float:left; font-weight:normal; height: inherit;">修前检测：</strong>
+                        <span class="mnuber">
+                            <foreach name='arr8' item='v'>
+                                {$v.jc_name}{$v.zt} <br />
+                            </foreach>
+                        </span>
+                    </li>
+                    <li>
+                        <strong style=" float:left; font-weight:normal; height: inherit;">修后检测：</strong>
+                        <span class="mnuber">
+                            <foreach name='arr9' item='v'>
+                                {$v.jc_name}{$v.zt} <br />
+                            </foreach>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="da_con">
+                <ul>
+                    <li>
+                        服务方式：<span>{$arr19.ways_name}</span>
+                    </li>
+                    <li>
+                        上门地址：<span>{$arr19.shangmen}</span>
+                    </li>
+                    <li>
+                        <strong style=" float:left; font-weight:normal;">预约时间：</strong>
+                        <span style="display:block; margin-left:70px; margin-right:40px;">{$dasj} 至 {$dasjc}</span>
+                    </li>
+                    <li>
+                        维修中心：<span>{$jxzx_name}</span>
+                    </li>
+                    <li>
+                        <strong style=" float:left; font-weight:normal;">邮寄地址：</strong><span style="display:block; margin-left:70px; margin-right:40px;">{$jxzx_n}</span>
+                    </li>
+                    <li>
+                        收件人：<span>{$sjxzx_username}</span>
+                    </li>
+                    <li>
+                        电话：<span>{$jxzx_phone}</span><a class="ousc" href="tel:{$jxzx_phone}">拨打</a>
+                    </li>
+                    <li>
+                        <strong style=" float:left; font-weight:normal;">回寄地址：</strong><span style="display:block; margin-left:70px; margin-right:40px;">{$arr19.u_address}</span>
+                    </li>
+                    <li>
+                        维修店铺：<span>{$wxzx_name}</span>
+                    </li>
+                    <li>
+                        <strong style=" float:left; font-weight:normal;">店铺地址：</strong><span style="display:block; margin-left:70px; margin-right:40px;">{$wxzx_n}</span><a style=" float:right;" class="ousc" href="http://m.amap.com/navi/?start=&dest=116.314315,39.982103&destName=北京中关村店&key=94ca4100199c2f2a8f33300cece2eba2">导航</a>
+                    </li>
+                    <li>
+                        店铺电话：<span>{$wxzx_phone}</span><a class="ousc" href="tel:{$wxzx_phone}">拨打</a>
+                    </li>
+                    <li>
+                        姓名：<span>{$arr19.u_name}</span>
+                    </li>
+                    <li>
+                        手机：<span>{$arr19.u_phone}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="da_con da_con_cv">
+                <ul>
+                    <li>
+                        机型：<span>{$arr19.model_name}</span>
+                    </li>
+                    <li>
+                       问题：<foreach name='question' item='kk'>
+                                <span>{$kk.question_name},</span>
+                            </foreach>
+                    </li>
+                    <li>
+                        方案：<foreach name='plan' item='k'>
+                                    <span>{$k.plan_name},</span>
+                                 </foreach>
+                    </li>
+                </ul>
+            </div>
+            <div class="da_con da_con_cv">
+                <ul>
+                    <li>
+                        备注：<span>{$arr19.u_note}</span>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="da_con_ce da_con_ce_1">订单预估价格：
+			<if condition="strtoupper($arr19['amountd']) eq 需检测">
+			{$arr19.amountd}
+			<else/> 
+			{$arr19.amountd} <span>元</span>
+			</if>
+			</h1>
+            <h1 class="da_con_ce da_con_ce_1 da_con_ce_2 da_con_ce_3">订单应付价格：
+                <span class="tf_null">{$arr19.amount}</span>
+                <span>元</span>
+            </h1>
+        </div>
+        
+        <!--发送消息-->
+    <div class="duifan">
+        <!--<div id="mmcubn_p_c" class="duifanxx kl">
+             <span class="cjusr">11</span>
+        </div>-->
+        
+        <div id="mmcubn_p">
+            
+        
+            
+        
+            
+            
+            <foreach name='arrg2' item='vv'>
+                <div class="duifanxx kl " >
+                    <p>{$vv.gdhf_name}{$vv.gdhf_time}</p>
+                    <p>
+                        <if condition="strtoupper($vv['gdhf_content']) eq ''">
+                           <span class="cjusr"><a href="__PUBLIC__/{$vv.img}"><img src="__PUBLIC__/{$vv.img}" width=50 height=50 /></a></span>
+                        <elseif condition="strtoupper($vv['img'] eq '')"/>
+                           <span class="cjusr">{$vv.gdhf_content}</span>
+                        <else/>
+                          <!-- {$arr.ddh} -->
+                        </if>
+                    </p>
+                </div>
+            </foreach>
+            
+            <foreach name='arrg3' item='oo'>
+                <div class="duifanxx kr " >
+                    <p>{$oo.gdhf_name}{$oo.gdhf_time}</p>
+                    <p>
+                        <if condition="strtoupper($oo['gdhf_content']) eq ''">
+                           <span class="cjusr color_pd"><a href="__PUBLIC__/{$oo.img}"><img src="__PUBLIC__/{$oo.img}" width=50 height=50 /></a></span>
+                        <elseif condition="strtoupper($oo['img'] eq '')"/>
+                           <span class="cjusr color_pd">{$oo.gdhf_content}</span>
+                        <else/>
+                          <!-- {$arr.ddh} -->
+                        </if>
+                    </p>
+                </div>
+            </foreach>
+            
+            
+        </div>
+        
+        
+        <div class="form">
+            <div class="toushu_pl">
+                    <div class="ioc_xzioc">
+                        <span class="tubuanu_c">
+                            <form method="post" action="__CONTROLLER__/sccc" onsubmit="return Checkedcut()" enctype="multipart/form-data">
+                               <input type="file" onchange="preview(this)" multiple="multiple" id="img" name="img"  accept="image/gif,image/jpeg,image/jpg,image/png" >
+                               <input type="hidden" name="id" value="{$arr19.id}">
+                               <input id="bhffr" style="display:none" type="submit" value="提交"/>
+                            </form>>
+                        </span>
+                        <span class="tubuanu_c tubuanu_b" id="tubuanu_b">
+                        
+                        </span>
+                    </div>
+                    <textarea class="shubhu_op" name="contentt" id="contentt" rows="" cols="" placeholder="填写客户新要求/备注"></textarea>
+                    <div class="tijiao_box">
+                        <input class="aniupo" data='{$arr19.id}' id="btnCheck" type="button" value="提交" />
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!--发送消息-->
+        
+    </div>
+</div>
+
+
+<script>
+function preview(file){
+	if(file.files && file.files[0]){  
+        var reader = new FileReader();  
+        reader.onload = function(evt){ 
+            tubuanu_b.innerHTML= '<img src="' + evt.target.result + '" />'; 
+		}
+		reader.readAsDataURL(file.files[0]);
+		$("#bhffr").click();
+    }
+}
+
+function Checkedcut(){
+	return true;
+}
+
+
+
+$(function(){
+	$("#btnCheck").bind("click", function () {
+		
+		$("body").ajaxStart(function(){ 
+			$(this).append('<div class="jztp"><img src="__PUBLIC__/img/jz.gif"/></div>');
+			$(".Maskc1").show();
+			$(".models>.models_lis>ul> li").remove();
+		});
+		$("body").ajaxStop(function(){
+			$(".jztp").remove();
+			$(".Maskc1").hide();
+			$("#contentt").val('')
+		});
+		
+		if($("#contentt").val()==''){
+			alert(1)
+		}else{
+			$.ajax({
+				url:"__CONTROLLER__/gdhfadd",
+				data: {'id':$("#btnCheck").attr('data'),'gdhf_content':$("#contentt").val()},
+				type: "post",
+				dataType: "html",
+				success: function (data) {
+					$("#mmcubn_p").html(data);
+					
+				}
+			});
+		}
+	})
+})
+</script>
+
+
+</body>
+</html>

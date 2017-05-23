@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<a href="__CONTROLLER__/model/brand_id/{$brand_id}">返回</a><br /><br />
+			<form method="post" action="__CONTROLLER__/questiontypeadd">
+				<input type="text" name="questiontype_name">
+				<input type="hidden" name="brand_id" value='{$brand_id}'>
+				<input type="submit" value='添加'>&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value='清空'>
+				
+			</form>
+</body>
+</html>

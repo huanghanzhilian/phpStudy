@@ -1,0 +1,672 @@
+[ 2016-05-18T17:29:06+08:00 ] 127.0.0.1 /ceshi/yu1/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `maintenance_type` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `maintenance_type`  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `maintenance_brand` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `maintenance_brand`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `maintenance_color` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `maintenance_model`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3,5) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3,4) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3,4) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `maintenance_color` WHERE ( color_id in(1,2,3) )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-05-18T17:29:07+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/wenti/ide/1/color_name/%E7%99%BD%E8%89%B2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_questiontype` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `maintenance_questiontype` WHERE ( questiontype_id in(1,2,3,4,5,6,7,8,9,10,11,12) )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(1) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(2) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(4) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(5) )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(6) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(7) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(8) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(9) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(10) )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(11) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(12) )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-05-18T17:29:11+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/mbr/question_id/1/color_name/%E7%99%BD%E8%89%B2/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in (1) and model_id='1' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (1) )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 518 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2016-05-18T17:29:14+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/1/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+NOTIC: [8] Undefined index: ways F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 538 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(1) and model_id='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (1) )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 568 行.
+NOTIC: [8] Undefined variable: ways1 F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 589 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001046s ]
+
+[ 2016-05-18T17:29:18+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/youji/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `city` WHERE ( parent_id=1 )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wxzx` WHERE ( ways_id='3' )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-05-18T17:29:21+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/daodian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wxzx` WHERE ( ways_id='2' )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001095s ]
+
+[ 2016-05-18T17:29:28+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/wenti/ide/1/color_name/%E7%99%BD%E8%89%B2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_questiontype` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `maintenance_questiontype` WHERE ( questiontype_id in(1,2,3,4,5,6,7,8,9,10,11,12) )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(1) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(2) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(4) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(5) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(6) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(7) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(8) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(9) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(10) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(11) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `maintenance_question` WHERE ( questiontype_id in(12) )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2016-05-18T17:29:33+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/mbr/question_id/16/color_name/%E7%99%BD%E8%89%B2/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `maintenance_model` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `maintenance_model` WHERE ( model_id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in (16) and model_id='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (6) )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 518 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2016-05-18T17:29:35+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/16/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+NOTIC: [8] Undefined index: ways F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 538 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(16) and model_id='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (6) )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 568 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2016-05-18T17:29:38+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/shangmen/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `city` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wxzx` WHERE ( ways_id='1' )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2016-05-18T17:29:43+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/youji/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `city` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wxzx` WHERE ( ways_id='3' )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2016-05-18T17:29:46+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/daodian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wxzx` WHERE ( ways_id='2' )  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2016-05-18T17:39:53+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/shangmen/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `city` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wxzx` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wxzx` WHERE ( ways_id='1' )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2016-05-18T17:51:10+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/16/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+NOTIC: [8] Undefined index: ways F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 538 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(16) and model_id='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (6) )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 568 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2016-05-18T17:51:11+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/shangmen/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: arr4 F:\web\apache\htdocs\ceshi\yu1\Application\Runtime\Cache\Home\40a511670addccac2123d28e1d500f53.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2016-05-18T17:52:17+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/16/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [8] Undefined index: ways F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 538 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(16) and model_id='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (6) )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 568 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2016-05-18T17:52:19+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/shangmen/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined variable: arr4 F:\web\apache\htdocs\ceshi\yu1\Application\Runtime\Cache\Home\40a511670addccac2123d28e1d500f53.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2016-05-18T17:53:24+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/16/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+NOTIC: [8] Undefined index: ways F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 538 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(16) and model_id='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (6) )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 568 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2016-05-18T17:53:26+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/16/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+NOTIC: [8] Undefined index: ways F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 538 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(16) and model_id='1' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (6) )  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 568 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2016-05-18T17:53:26+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/16/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+NOTIC: [8] Undefined index: ways F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 538 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(16) and model_id='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (6) )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 568 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-05-18T17:53:28+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/shangmen/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: arr4 F:\web\apache\htdocs\ceshi\yu1\Application\Runtime\Cache\Home\40a511670addccac2123d28e1d500f53.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2016-05-18T17:53:30+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/yuyueshijian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+
+[ 2016-05-18T17:53:50+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/yuyueshijian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2016-05-18T17:53:55+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/16/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+NOTIC: [8] Undefined index: ways F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 538 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(16) and model_id='1' )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (6) )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 568 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-05-18T17:53:55+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/chuangjian/model_name/%E8%8B%B9%E6%9E%9C6s/color_name/%E7%99%BD%E8%89%B2/question_id/16/model_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+NOTIC: [8] Undefined index: ways F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 538 行.
+SQL: SHOW COLUMNS FROM `maintenance_question` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `maintenance_question` INNER JOIN maintenance_questiontype on maintenance_question.questiontype_id=maintenance_questiontype.questiontype_id INNER JOIN maintenance_plan on maintenance_question.plan_id=maintenance_plan.plan_id  WHERE ( question_id in(16) and model_id='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `maintenance_plan` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `maintenance_plan` WHERE ( plan_id in (6) )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: money F:\web\apache\htdocs\ceshi\yu1\Application\Home\Controller\IndexController.class.php 第 568 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2016-05-18T17:53:57+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/shangmen/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Undefined variable: arr4 F:\web\apache\htdocs\ceshi\yu1\Application\Runtime\Cache\Home\40a511670addccac2123d28e1d500f53.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2016-05-18T17:53:59+08:00 ] 127.0.0.1 /ceshi/yu1/index.php/Home/Index/yuyueshijian/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+

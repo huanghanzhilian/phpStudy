@@ -1,0 +1,98 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>手机维修 | 苹果/安卓手机维修 | 数码维修 | 电脑维修</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="/pc/Public/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="/pc/Public/img/ioc/16.png" type="images/png"/>
+<link href="/pc/Public/styles/public.css" rel="stylesheet" type="text/css">
+<link href="/pc/Public/styles/pc_style.css" rel="stylesheet" type="text/css">
+<style>
+.news_con_con_top{ padding:30px 0px; background:#4e88dc; color:#fff; text-align:center;}
+.news_con_con_top h1{ font-size:20px; font-weight:normal; line-height:50px;}
+.news_con_con_top p{ font-size:13px;}
+.but_xinwen_com_neir h2,.zaiyao{ font-weight:normal; font-size:17px; color:#4c4c4c; line-height:32px;}
+.but_xinwen_com_neir{}
+.but_xinwen_com_neir p{ font-size:16px; color:#808080; text-indent:2em; line-height:30px; margin:12px 0;}
+.but_xinwen_com_neir img{ display:block; margin:22px auto; max-width:90%; min-width:50%;}
+</style>
+</head>
+
+<body>
+    <div class="gongg_12w">
+        <div class="news_list_top">
+            <a class="jing_nubu" href="/pc/Home/Index/index">首页 </a> > <a class="jing_nubu" href="/pc/Home/Index/news_list">精彩资讯 </a> > <span>VR这么多领域 微鲸VR为何偏偏看中了VR直播？</span>
+        </div>
+        <div class="news_list_com">
+            <div class="news_list_com_l fl">
+                <div class="news_con_con_top">
+                    <h1>VR这么多领域 微鲸VR为何偏偏看中了VR直播？</h1>
+                    <p>腾讯新闻 2016-8-9 11:43</p>
+                </div>
+                <!--pc_content6 -->
+                <div class=" but_xinwen but_xinwen_a_1">
+                    <div class="but_xinwen_com but_xinwen_com_neir">
+                        <h1 class="zaiyao">这里是新闻的摘要：2014年2月，Facebook斥资20亿美元收购VR创业公司Oculus，引发了外界对VR的关注，同时也带动了国内一大批公司在VR领域的布局，华人文化和其旗下微鲸就是其中的一员。</h1>
+                        <img src="/pc/Public/img/banner/4.png">
+                        <img src="/pc/Public/img/diicon.png">
+                        <img src="/pc/Public/img/fzsf.jpg">
+                        <p>
+                           8月8日，微鲸VR母公司华人文化（CMC）宣布，B轮入股美国VR直播公司NextVR，这已经是华人文化和微鲸VR近三个月以来第三次在VR领域展开重大资本动作：5月31日，微鲸与上海文广（SMG）、JAUNT合资成立JAUNT中国，总投入超过1亿美元；4月25日，微鲸宣布，将在全球范围内投入10亿元创新产业基金，联手合作伙伴生产出1万小时的VR内容。
+                        </p>
+                        <h2>VR布局首选VR直播</h2>
+                        <p>
+                           8月8日，微鲸VR母公司华人文化（CMC）宣布，B轮入股美国VR直播公司NextVR，这已经是华人文化和微鲸VR近三个月以来第三次在VR领域展开重大资本动作：5月31日，微鲸与上海文广（SMG）、JAUNT合资成立JAUNT中国，总投入超过1亿美元；4月25日，微鲸宣布，将在全球范围内投入10亿元创新产业基金，联手合作伙伴生产出1万小时的VR内容。
+                        </p>
+                        <h2>VR布局首选VR直播</h2>
+                        <p>
+                           8月8日，微鲸VR母公司华人文化（CMC）宣布，B轮入股美国VR直播公司NextVR，这已经是华人文化和微鲸VR近三个月以来第三次在VR领域展开重大资本动作：5月31日，微鲸与上海文广（SMG）、JAUNT合资成立JAUNT中国，总投入超过1亿美元；4月25日，微鲸宣布，将在全球范围内投入10亿元创新产业基金，联手合作伙伴生产出1万小时的VR内容。
+                        </p>
+                        <h2>VR布局首选VR直播</h2>
+                        <p>
+                           8月8日，微鲸VR母公司华人文化（CMC）宣布，B轮入股美国VR直播公司NextVR，这已经是华人文化和微鲸VR近三个月以来第三次在VR领域展开重大资本动作：5月31日，微鲸与上海文广（SMG）、JAUNT合资成立JAUNT中国，总投入超过1亿美元；4月25日，微鲸宣布，将在全球范围内投入10亿元创新产业基金，联手合作伙伴生产出1万小时的VR内容。
+                        </p>
+                        <h2>VR布局首选VR直播</h2>
+                        <p>
+                           8月8日，微鲸VR母公司华人文化（CMC）宣布，B轮入股美国VR直播公司NextVR，这已经是华人文化和微鲸VR近三个月以来第三次在VR领域展开重大资本动作：5月31日，微鲸与上海文广（SMG）、JAUNT合资成立JAUNT中国，总投入超过1亿美元；4月25日，微鲸宣布，将在全球范围内投入10亿元创新产业基金，联手合作伙伴生产出1万小时的VR内容。
+                        </p>
+                        <h2>VR布局首选VR直播</h2>
+                        <p>
+                           8月8日，微鲸VR母公司华人文化（CMC）宣布，B轮入股美国VR直播公司NextVR，这已经是华人文化和微鲸VR近三个月以来第三次在VR领域展开重大资本动作：5月31日，微鲸与上海文广（SMG）、JAUNT合资成立JAUNT中国，总投入超过1亿美元；4月25日，微鲸宣布，将在全球范围内投入10亿元创新产业基金，联手合作伙伴生产出1万小时的VR内容。
+                        </p>
+                        <h2>VR布局首选VR直播</h2>
+                        <p>
+                           8月8日，微鲸VR母公司华人文化（CMC）宣布，B轮入股美国VR直播公司NextVR，这已经是华人文化和微鲸VR近三个月以来第三次在VR领域展开重大资本动作：5月31日，微鲸与上海文广（SMG）、JAUNT合资成立JAUNT中国，总投入超过1亿美元；4月25日，微鲸宣布，将在全球范围内投入10亿元创新产业基金，联手合作伙伴生产出1万小时的VR内容。
+                        </p>
+                        <h2>VR布局首选VR直播</h2>
+                        <p>
+                           8月8日，微鲸VR母公司华人文化（CMC）宣布，B轮入股美国VR直播公司NextVR，这已经是华人文化和微鲸VR近三个月以来第三次在VR领域展开重大资本动作：5月31日，微鲸与上海文广（SMG）、JAUNT合资成立JAUNT中国，总投入超过1亿美元；4月25日，微鲸宣布，将在全球范围内投入10亿元创新产业基金，联手合作伙伴生产出1万小时的VR内容。
+                        </p>
+                        <h2>VR布局首选VR直播</h2>
+                        <p>
+                           8月8日，微鲸VR母公司华人文化（CMC）宣布，B轮入股美国VR直播公司NextVR，这已经是华人文化和微鲸VR近三个月以来第三次在VR领域展开重大资本动作：5月31日，微鲸与上海文广（SMG）、JAUNT合资成立JAUNT中国，总投入超过1亿美元；4月25日，微鲸宣布，将在全球范围内投入10亿元创新产业基金，联手合作伙伴生产出1万小时的VR内容。
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="news_list_com_r fl">
+                <h1>精彩推荐</h1>
+                <div class="news_list_com_r_com">
+                    <a href="#">
+                        <img src="/pc/Public/img/banner/4.png">
+                    </a>
+                    <a href="#">
+                        <img src="/pc/Public/img/banner/4.png">
+                    </a>
+                    <a href="#">
+                        <img src="/pc/Public/img/banner/4.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

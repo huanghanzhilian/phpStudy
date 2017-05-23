@@ -1,0 +1,646 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>维百士-订单详情</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<link href="__PUBLIC__/styles/style.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+<script src="__PUBLIC__/js/date.js"></script>
+<link href="__PUBLIC__/styles/photoswipe.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="__PUBLIC__/js/klass.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/code.photoswipe-3.0.5.min.js"></script>
+<script type="text/javascript">
+	(function(window, PhotoSwipe){
+	
+		document.addEventListener('DOMContentLoaded', function(){
+		
+			var
+				options = {},
+				instance = PhotoSwipe.attach( window.document.querySelectorAll('#mmcubn_p a'), options );
+		
+		}, false);
+		
+		
+	}(window, window.Code.PhotoSwipe));
+	
+</script>
+<style>
+
+body{ background:#f1f1f1;}
+.mnuber {
+    display: block;
+    margin-left: 70px;
+    margin-right: 40px;
+}
+.butt_crert{ height:45px; width:100%; line-height:45px; text-align:center}
+.ulkjh{ height:100%;}
+.ulkjh_p{}
+.but_ani{ display: inline-block; background:#3e7edb;  vertical-align:middle; line-height:35px; width:80%; border-radius: 4px; color:#fff;}
+
+
+/*聊天*/
+.duifan{ padding:0 12px;}
+.duifanxx{}
+.duifanxx.kl{ text-align:left;}
+.duifanxx.kr{ text-align: right;}
+.cjusr{ padding:5px 15px; background:#83bca5; display:inline-block; border-radius: 6px; color:#fff;}
+.color_p{ background:#38adff;}
+.color_pd{ background:#f65e8d;}
+.duifanxx p{ color:#4c4c4c; margin:4px 0;}
+
+.toushu_pl{ overflow:hidden; margin-bottom:20px; padding-top:30px; background:#fff; position:relative;}
+.shubhu_op{ height:50px; display:block; width:100%;}
+.tijiao_box{ background:#fff; text-align:right;}
+.aniupo{ width:70px; height:25px; background:#6eb320; color:#fff;  border-radius: 4px;}
+.ioc_xzioc{ position:absolute; left:0px; top:0px; border-bottom:1px solid #f0f0f0; height:30px; width:100%;line-height:30px;  }
+.tubuanu_c{ width:24px; height:18px; background: url(__PUBLIC__/img/sdsaxs.png); display:inline-block; overflow:hidden; vertical-align:middle; margin-left:10px; background-size:24px 18px; }
+.tubuanu_c input[type=file]{ opacity: 0; display:block;}
+.tubuanu_b{ background:none; overflow:hidden;}
+.tubuanu_b img{ width:100%; height:100%; display:block;}
+/*聊天*/
+</style>
+</head>
+<body>
+<!--头-->
+<div class="header">
+    <span onclick="window.history.back()"></span>
+    <!--<span>
+	<if condition="strtoupper($hh eq 1)">
+			<a href="__MODULE__/Caiwu/thtk"></a>
+		<elseif condition="strtoupper($hh eq 2)"/> 
+			<a href="__CONTROLLER__/shouhou"></a>
+		<elseif condition="strtoupper($hh eq 3)"/> 
+			<a href="__CONTROLLER__/quxiaole"></a>
+		<elseif condition="strtoupper($hh eq 4)"/> 
+		<a href="__CONTROLLER__/shouhou"></a>
+		<elseif condition="strtoupper($hh eq 5)"/> 
+			<a href="__CONTROLLER__/jdhquxiao"></a>
+			<elseif condition="strtoupper($hh eq 6)"/> 
+			<a href="__CONTROLLER__/shouhou"></a>
+		<elseif condition="strtoupper($hh eq 0)"/> 
+			<a href="__CONTROLLER__/{$b}/ways_id/{$ways_id}"></a>
+		<else/>
+		</if>
+	
+	</span>-->
+    <h1>订单详情</h1>
+    <em class="lsycrd"><a id="zhuku_op" data="{$arr.stau}" href="javascript:;"></a></em>
+</div>
+<!--头-->
+    
+
+<div class="content">
+    <div class="content_con" style="padding-bottom:20px;">
+        <!--主体信息-->
+        <div class="content_con_one">
+            <h1 class="da_con_ce">订单编号：
+			
+			
+         {$arr.ddh} 
+           
+		</h1>
+            <div class="da_con">
+                <ul>
+				<li>取消原因；{$arr.quxiaocontent}</li>
+				    <foreach name='ast' item='pp'>
+					<li>
+                        售后工程师：<span id="panmlo">{$pp.user_username}</span>
+                    </li>
+                    <li>
+                        售后时间：<span>{$pp.sh_time}</span>
+                    </li>
+					 <li>
+                        售后编号：<span>{$pp.dd}</span>
+                    </li>
+					  <li>
+                        售后问题：<span>{$pp.contentt}</span>
+                    </li>
+					<li>
+						是否解决<span><if condition="strtoupper($pp['zt']) eq  3">
+							
+						已解决
+			
+                <else/>
+					未解决
+             </if></span>
+					</li>
+					</foreach>
+                    <li>
+                        工程师：<span>{$arr.user_username}</span>
+                    </li>
+                    <li>
+                        手机：<span>{$arr.user_name}</span><a class="ousc" href="tel:{$arr.user_name}">拨打</a>
+                    </li>
+					
+                    <li>
+                        <strong style=" float:left; font-weight:normal;">维修内容：</strong>
+                        <span style="display:block; margin-left:70px; margin-right:40px;">
+                            <foreach name='arr10' item='k'>
+                                {$k.cpk_name}
+                            </foreach>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="da_con">
+                <ul>
+                    <li>
+                        <strong style=" float:left; font-weight:normal; height: inherit;">修前检测：</strong>
+                        <span class="mnuber">
+                            <foreach name='arr8' item='kk'>
+                                {$kk.jc_name} <br />
+                            </foreach>
+                        </span>
+                    </li>
+                    <li>
+                        <strong style=" float:left; font-weight:normal; height: inherit;">修后检测：</strong>
+                        <span class="mnuber">
+                            <foreach name='arr9' item='v'>
+                                {$kk.jc_name} <br />
+                            </foreach>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="da_con">
+                <ul>
+                    <li>
+                        服务方式：<span>{$arr.ways_name}</span>
+                    </li>
+                    <li>
+                        下单时间：<span>{$arr1.xo_time}</span>
+                    </li>
+                    <li>
+                        <!--上门地址：<span>{$arr.shangmen}</span>-->
+                        <strong style=" float:left; font-weight:normal;">上门地址：</strong>
+                        <span id="get_butt"  data="{$arr.fanwei}" style="display:block; margin-left:70px; margin-right:40px;">{$arr.shangmen}</span>
+                        <a id="daohang" style=" float:right;" class="ousc" href="http://m.amap.com/navi/?start=&dest=116.314315,39.982103&destName=北京中关村店&key=94ca4100199c2f2a8f33300cece2eba2">导航</a>
+                    </li>
+                    <li>
+                        <strong style=" float:left; font-weight:normal;">预约时间：</strong>
+                        <span id="dsjdf" style="display:block; margin-left:70px; margin-right:40px;">{$dasj} 至 {$dasjc}</span>
+                        <a data="{$arr.id}" id="dsj" style=" float:right;" class="ousc" href="javascript:;">修改</a>
+                    </li>
+                     <li>
+                        剩余时间：<i style="font-style:normal;" data_l="{$arr.dasj}" data_r="{$arr.dasjc}" class="chuangmbr panduan_a"></i>
+                    </li>
+                    <li>
+                        维修中心：<span>{$jxzx_name}</span>
+                    </li>
+                    <li>
+                        <strong style=" float:left; font-weight:normal;">邮寄地址：</strong><span style="display:block; margin-left:70px; margin-right:40px;">{$jxzx_n}</span>
+                    </li>
+                    <li>
+                        收件人：<span>{$sjxzx_username}</span>
+                    </li>
+					<li>
+                        ping++退款单号：<span>{$eee.order_no}</span>
+                    </li>
+                    <li>
+                        电话：<span>{$jxzx_phone}</span><a class="ousc" href="tel:{$jxzx_phone}">拨打</a>
+                    </li>
+                    <li>
+                        <strong style=" float:left; font-weight:normal;">回寄地址：</strong><span style="display:block; margin-left:70px; margin-right:40px;">{$arr19.u_address}</span>
+                    </li>
+                    <li>
+                        维修店铺：<span>{$wxzx_name}</span>
+                    </li>
+                    <li>
+                        <strong style=" float:left; font-weight:normal;">店铺地址：</strong><span style="display:block; margin-left:70px; margin-right:40px;">{$wxzx_n}</span><a style=" float:right;" class="ousc" href="http://m.amap.com/navi/?start=&dest=116.314315,39.982103&destName=北京中关村店&key=94ca4100199c2f2a8f33300cece2eba2">导航</a>
+                    </li>
+                    <li>
+                        店铺电话：<span>{$wxzx_phone}</span><a class="ousc" href="tel:{$wxzx_phone}">拨打</a>
+                    </li>
+                    <li>
+                        姓名：<span>{$arr.u_name}</span>
+                    </li>
+                    <li>
+                        手机：<span>{$arr.u_phone}</span><a class="ousc" href="tel:{$arr.u_phone}">拨打</a>
+                    </li>
+                    <li>
+                        地址：<span>{$arr.shangmen}</span>
+                    </li>
+                    <li>
+                        邮寄地址：<span>{$arr.u_address}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="da_con da_con_cv">
+                <ul>
+                    <li>
+                        机型：<span>{$arr.model_name}{$arr.color_name}</span>
+                    </li>
+                    <li>
+                       问题：<foreach name='question' item='kk'>
+                                <span>{$kk.question_name},</span>
+                            </foreach>
+                    </li>
+                    <li>
+                        方案：<foreach name='plan' item='k'>
+                                    <span>{$k.plan_name},</span>
+                                 </foreach>
+                    </li>
+                </ul>
+            </div>
+            <div class="da_con da_con_cv">
+                <ul>
+                    <li>
+                        备注：<span>{$arr.u_note}</span>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="da_con_ce da_con_ce_1">订单预估价格：
+			<if condition="strtoupper($arr19['amountd']) eq 需检测">
+			{$arr.amountd}
+			<else/> 
+			{$arr.amountd} <span>元</span>
+			</if>
+			</h1>
+            <h1 class="da_con_ce da_con_ce_1 da_con_ce_2 da_con_ce_3">订单应付价格：
+                <span class="tf_null">{$arr.amount}</span>
+                <span>元</span>
+            </h1>
+
+           <!--{$gl}-->
+        </div>
+        <!--主体信息-->
+        
+        <!--发送消息-->
+        <div class="duifan">
+            <!--<div id="mmcubn_p_c" class="duifanxx kl">
+                 <span class="cjusr">11</span>
+            </div>-->
+            
+            <div id="mmcubn_p">
+                <foreach name='arrg3' item='oo'>
+                    <div class="duifanxx kl " >
+                        <p>{$oo.gdhf_name}{$oo.gdhf_time}</p>
+                        <p>
+                           <!-- <span class="cjusr color_pd">{$oo.gdhf_content}</span>-->
+                            <if condition="strtoupper($oo['gdhf_content']) eq ''">
+                               <span class="cjusr color_pd"><a href="__PUBLIC__/{$oo.img}"><img src="__PUBLIC__/{$oo.img}" width=50 height=50 /></a></span>
+                            <elseif condition="strtoupper($oo['img'] eq '')"/>
+                               <span class="cjusr color_pd">{$oo.gdhf_content}</span>
+                            <else/>
+                              <!-- {$arr.ddh} -->
+                            </if>
+                        </p>
+                    </div>
+                </foreach>
+            
+                <foreach name='arrg2' item='vv'>
+                    <div class="duifanxx kl " >
+                        <p>{$vv.gdhf_name}{$vv.gdhf_time}</p>
+                        <p>
+                            <if condition="strtoupper($vv['gdhf_content']) eq ''">
+                               <span class="cjusr color_p"><a href="__PUBLIC__/{$vv.img}"><img src="__PUBLIC__/{$vv.img}" width=50 height=50 /></a></span>
+                            <elseif condition="strtoupper($vv['img'] eq '')"/>
+                               <span class="cjusr color_p">{$vv.gdhf_content}</span>
+                            <else/>
+                              <!-- {$arr.ddh} -->
+                            </if>
+                        </p>
+                    </div>
+                </foreach>
+            
+                <foreach name='arrg1' item='kk'>
+                    <div class="duifanxx kr">
+                        <p>{$kk.gdhf_name}{$kk.gdhf_time}</p>
+                        <p>
+                            <if condition="strtoupper($kk['gdhf_content']) eq ''">
+                               <span class="cjusr"><a href="__PUBLIC__/{$kk.img}"><img src="__PUBLIC__/{$kk.img}" width=50 height=50 /></a></span>
+                            <elseif condition="strtoupper($kk['img'] eq '')"/>
+                               <span class="cjusr">{$kk.gdhf_content}</span>
+                            <else/>
+                              <!-- {$arr.ddh} -->
+                            </if>
+                        </p>
+                    </div>
+                </foreach>
+            </div>
+            
+            
+            <div class="form">
+                <div class="toushu_pl">
+                    <div class="ioc_xzioc">
+                        <span class="tubuanu_c">
+                            <form method="post" action="__CONTROLLER__/scc" onsubmit="return Checkedcut()" enctype="multipart/form-data">
+                               <input type="file" onchange="preview(this)" multiple="multiple" id="img" name="img[]"  accept="image/gif,image/jpeg,image/jpg,image/png" >
+                               <input type="hidden" name="id" value="{$arr.id}">
+                               <input id="bhffr" style="display:none" type="submit" value="提交"/>
+                            </form>>
+                        </span>
+                        <span class="tubuanu_c tubuanu_b" id="tubuanu_b">
+                        
+                        </span>
+                    </div>
+                    <textarea class="shubhu_op" name="contentt" id="contentt" rows="" cols="" placeholder="填写客户新要求/备注"></textarea>
+                    <div class="tijiao_box">
+                        <input class="aniupo" data='{$arr.id}' id="btnCheck" type="button" value="提交" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--发送消息-->
+        
+        
+        <!--功能操作-->
+        <div class="butt_crert">
+            <ul class="pubcvt ulkjh">
+                <li class="pubcvt_v ulkjh_p">
+                    <a class="but_ani" href="__CONTROLLER__/thtk/id/{$arr.id}" onclick="if(confirm('确定申请?')==false)return false;">{$gll}</a>
+                </li>
+            
+                <li class="pubcvt_v ulkjh_p">
+                    <a class="but_ani" href="__CONTROLLER__/wxuser/id/{$arr.id}/ways_id/{$ways_id}" onclick="if(confirm('确定申请?')==false)return false;">{$of}</a>
+                </li>
+                <li class="pubcvt_v ulkjh_p">
+                    <a class="but_ani" href="__CONTROLLER__/cxfp/id/{$arr.id}" onclick="if(confirm('确定申请?')==false)return false;">{$off}</span></a>
+                </li>
+                <li class="pubcvt_v ulkjh_p">
+                    <a class="but_ani tuainm" href="javascript:void(0)">{$offf}</a>
+                </li>
+				<li class="pubcvt_v ulkjh_p">
+                    <a class="but_ani" href="__CONTROLLER__/tkshenhe/id/{$arr.id}" onclick="if(confirm('确定操作?')==false)return false;">{$gf}</a>
+                </li>
+                <li class="pubcvt_v ulkjh_p">
+                    <a class="but_ani" href="__CONTROLLER__/fenpei/shouhou_id/{$shouhou_id}/" onclick="if(confirm('确定申请?')==false)return false;">{$gff}</a>
+                </li>
+				<li class="pubcvt_v ulkjh_p">
+                    <a class="but_ani" href="__CONTROLLER__/fenpei/shouhou_id/{$shouhou_id}/" onclick="if(confirm('确定申请?')==false)return false;">{$hdd}</a>
+                </li>
+				<li class="pubcvt_v ulkjh_p">
+                    <a class="but_ani" href="__CONTROLLER__/huifu/id/{$arr.id}/" onclick="if(confirm('确定恢复?')==false)return false;" >{$hddd}</a>
+                </li>
+				<li class="pubcvt_v ulkjh_p">
+                    <a class="but_ani" href="__CONTROLLER__/admshouhou/id/{$arr.id}/" onclick="if(confirm('确定申请售后?')==false)return false;" >{$glll}</a>
+                </li>
+                
+                <li class="pubcvt_v ulkjh_p">
+                    <a class="but_ani" href="__CONTROLLER__/fapiao/id/{$arr.id}/" onclick="if(confirm('确定申请发票?')==false)return false;" >{$shen}</a>
+                </li>
+
+            </ul>
+        </div>
+        <!--功能操作-->
+    </div>
+</div>
+    
+<!--取消原因-->
+<div class="erdu erdu1">
+    <i class="guanb_op cursor"></i>
+    <h3 class="guanb_op_h3">取消原因</h3>
+    <form method="post" action="__CONTROLLER__/quxiao" onsubmit="return Checked();">
+        <ul class="guanb_op_ul">
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input id="quxiaocontent" class="imklj" type="text" name="quxiaocontent" value='' placeholder="填写取消订单原因" autocomplete="off" />
+            </li>
+            <li class="guanb_op_ul_li">
+                <input class="cursor" type="submit" value="确定"/>
+            </li>
+        </ul>
+        <input type="hidden" name="id" value="{$arr.id}">
+        <input type="hidden" name="ways_id" value="{$ways_id}">
+   </form>
+</div>
+<!--取消原因-->
+
+  
+    
+<script>
+var jingweo=$("#get_butt").attr('data')
+var dizhixq=$("#get_butt").text()
+var contenttoi=document.getElementById('contentt')
+var tubuanu_b=document.getElementById('tubuanu_b')
+$("#daohang").attr('href',"http://m.weibaishi.com/Admin/Ddguanli/map_zgd/?"+jingweo);
+
+function preview(file){
+	if(file.files && file.files[0]){  
+        var reader = new FileReader();  
+        reader.onload = function(evt){ 
+            tubuanu_b.innerHTML= '<img src="' + evt.target.result + '" />'; 
+		}
+		reader.readAsDataURL(file.files[0]);
+		$("#bhffr").click();
+    }
+	//console.log(file.files)
+}
+
+function Checkedcut(){
+	return true;
+}
+
+function Checked(){
+	var nnmuo=$("input.imklj[name='quxiaocontent']").val();
+	if(nnmuo==''){
+		$("#quxiaocontent").focus().addClass("tips");
+		return false;
+	}
+	return true;
+}
+
+
+function dellk(){
+	 var rpp=window.confirm('您确定要修改吗');
+    if (rpp==true){
+        return true;
+    }
+    else{
+        return false;
+    } 	 
+	 
+}
+
+
+$(function(){
+	$(".but_ani").each(function( index ) {
+		if($(this).text()==''){
+			$(this).parent().remove(); 
+		}
+		//$(this).find('b').text(index+1)
+	});
+	
+	$(".erdu").each(function(q,w){
+		//console.log()
+	    $(this).css({'margin-top':-($(this).height()/2+40)})
+    });
+	
+	//调整额度
+	$(".tuainm").on('click',function(){
+		var user_id=$(this).parents(".lmbhu").attr('id');
+		$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+		$('.zdvjio').show();
+		$('.erdu1').show();
+		$('.erdu1').find("input[name='user_id']").val(user_id)
+		
+		$(".guanb_op").on('click',function(){
+			$('.zdvjio').hide();
+		    $('.erdu1').hide();
+			$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+		})
+	});
+	//调整额度
+	
+	$("#btnCheck").bind("click", function () {
+		$("body").ajaxStart(function(){ 
+			$(this).append('<div class="jztp"><img src="__PUBLIC__/img/jz.gif"/></div>');
+			$(".Maskc1").show();
+			$(".models>.models_lis>ul> li").remove();
+		});
+		$("body").ajaxStop(function(){
+			$(".jztp").remove();
+			$(".Maskc1").hide();
+			$("#contentt").val('')
+			$("#tubuanu_b").html('');
+		});
+		
+		$.ajax({
+			url:"__CONTROLLER__/gdhfadd",
+			data: {'id':$("#btnCheck").attr('data'),'gdhf_content':$("#contentt").val()},
+			type: "post",
+			dataType: "html",
+			success: function (data) {
+				$("#mmcubn_p").html(data);
+				/*$("ul").append("<li>你输入的<b>  "
+				+ $("#txtNumber").val() + " </b>是<b> "
+				+ data + " </b></li>");*/
+				//alert(1)
+			}
+		});
+	});
+	
+	var zhuku_op=document.getElementById('zhuku_op');
+	var pp=parseInt($("#zhuku_op").attr('data'))
+	//console.log(pp)
+	switch(pp){
+		case 0:
+		$("#zhuku_op").text('待分配')
+		break;
+		case 1:
+		$("#zhuku_op").text('已指派')
+		break;
+		case 2:
+		$("#zhuku_op").text('已接单')
+		break;
+		case 3:
+		$("#zhuku_op").text('维修中')
+		break;
+		case 4:
+		$("#zhuku_op").text('待付款')
+		break;
+		case 5:
+		$("#zhuku_op").text('已完成')
+		break;
+		case 6:
+		$("#zhuku_op").text('已评价')
+		break;
+		case 10:
+		$("#zhuku_op").text('已取消')
+		break;
+		default:
+		//alert('case都不是的执行');
+	}
+	
+	if(pp==5 && $("#panmlo").text()!=''){
+	    $("#zhuku_op").text('售后')
+	}
+	
+})
+</script>
+<script>
+
+function FreshTime(){
+	$(".panduan_a").each(function(index,kku) {
+		var cdata=$(this).attr('data_l')*1000;    //预约时间
+		var ddata=$(this).attr('data_r')*1000;    //停止时间
+		var nowtime = new Date().getTime();    //当前时间
+		var lefttime=parseInt((cdata - nowtime)/1000);    //预约时间-当前
+		var lefttimevv=parseInt((ddata - nowtime)/1000);  //预约结束时间-当前
+		//console.log(lefttime);
+		//console.log(lefttimevv);
+		d=parseInt(lefttime/(60*60*24));//parseInt求整数(lefttime/(60*60*24));剩余时间毫秒除以（24小时*60分钟*60秒）等于天数
+		h=parseInt(lefttime/(60*60)%24);//parseInt求整数(lefttime/(60*60)%24)剩余时间毫秒除以(60*60)%24)求天剩下的小时数
+		m=parseInt(lefttime/60%60);//parseInt求整数(lefttime/60%60);剩余时间毫秒除以60秒再求除60余数
+		s=parseInt(lefttime%60);//求秒余数
+		
+		
+		if(lefttime<=0&&lefttimevv>=0){
+			$(this).text('已到预约时间').css({'color':'#ff830b'});
+		}else if(lefttime<0 && lefttimevv<0){
+			$(this).text('订单已超时').css({'color':'#e35b5c'});
+		}else if(lefttime==0 && lefttimevv==0){
+			$(this).text('hah ').css({'color':'#e35b5c'});
+		}else{
+			$(this).text("还剩"+d+"天"+h+"小时"+m+"分"+s+"秒").css({'color':'#4ab679'});
+		}
+		
+		if(cdata==0){
+			$(this).text('到店/寄修订单').css({'color':'#e35b5c'});
+		}
+	});
+}
+FreshTime()
+var sh;
+sh=setInterval(FreshTime,1000);//变动秒数
+
+
+function datecs(mmb,mmbc){
+	var sid=$("#dsj").attr('data')
+		//alert(mmb);
+		//alert(mmbc);
+		//alert(sid);
+	var ajax=new XMLHttpRequest()
+		ajax.open("get","__CONTROLLER__/datechuli/id/"+sid+"/mmb/"+mmb+"/mmbc/"+mmbc)
+		ajax.send()
+		ajax.onreadystatechange=function(){
+			if(ajax.readyState==4 && ajax.status==200){
+				document.getElementById('dsjdf').innerHTML=ajax.responseText;
+			}
+		}
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

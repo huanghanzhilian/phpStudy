@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>维百士-工程师-提现信息</title>
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ioc"><!--图标-->
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png"><!--图标-->
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+<style>
+
+</style>
+</head>
+<body style=" background:#f0f0f0;"> 
+<div class="header">
+   <a href="__CONTROLLER__/my_wallet"><span></span></a>
+    <h1>提现信息</h1>
+</div><!--头-->
+<!--内容-->
+<div class="content">
+    <div class="content_con">
+    
+        <div class="ceomer_com">
+            <foreach name='arr' item='k'>
+                <h1 class="da_con_ce">{$k.txsq_time}
+                    <span class="shifu_qx shifu_qx_c">
+                        <if condition="strtoupper($k['zta']) eq  1">
+                                  申请中
+                           <elseif condition="strtoupper($k['zta']) eq  2"/> 
+                                  申请成功
+                           <elseif condition="strtoupper($k['zta']) eq  3"/> 
+                                  申请失败
+                              <else/>
+                      
+                       </if>
+                    </span>
+                </h1>
+                <div class="rnmbur rnmbur1c">
+                    <ul>
+                        <li>
+                             提现金额：<span class="chuangmbr">
+                                      {$k.amt} 元
+                                  </span>
+                                  <span class="bimnb fr"></span>
+                        </li>
+                        <li>
+                             提现账户：<span class="chuangmbr">
+                                     {$k.kahao}  
+                                  </span>
+                        </li>
+                        <li>
+                             <span class="chuangmbr">
+                                     {$kk.cpk_name}
+                                  </span>
+                        </li>
+                        <li>
+                            <span class="desc">
+                               提现单号：{$k.ddh}
+                            </span>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </foreach>
+	</div>
+    
+    
+    
+    
+    
+    
+<!--<a href="__CONTROLLER__/yuer_tixian">返回</a><br /><br /><br />
+	<div id='ssc'>
+	<foreach name='arr' item='k'>
+			单号:{$k.ddh} <br />
+			提现金额:{$k.amt}<br />		
+			账号:{$k.kahao}<br />
+			申请时间:{$k.txsq_time}<br />
+			<br />
+		<if condition="strtoupper($k['zta']) eq  1">
+				申请中
+         <elseif condition="strtoupper($k['zta']) eq  2"/> 
+				申请成功
+		<elseif condition="strtoupper($k['zta']) eq  3"/> 
+				申请失败
+            <else/>
+	
+	 </if>
+	 <br /><br /><br />
+	</foreach>
+</div>-->
+
+    </div>
+</div>
+</body>
+</html>

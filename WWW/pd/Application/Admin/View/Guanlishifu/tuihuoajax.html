@@ -1,0 +1,49 @@
+
+
+
+
+
+<foreach name='arr' item='kk'>
+<li class="lmbhu lmbhuopd" >
+   
+   <div class="listy_box">
+       <div class="listy_pk">订单号：{$kk.ddh}</div>
+       <div class="listy_pk">退货人：{$kk.username} {$kk.tuihuouser}</div>
+       <div class="listy_pk">退货编号：{$kk.cangku_name}</div>
+       <div class="listy_pk">退货产品：{$kk.cpk_name}<span class="fr">{$kk.cpk_price}元</span></div>
+   </div>
+   
+   <if condition="strtoupper($kk['zt']) eq  0">
+   <div class="listy_kr">
+       <span class="listy_con">
+           <a class="didb llvcer" href="__CONTROLLER__/tuihuotg/tuihuo_id/{$kk.tuihuo_id}" onclick="if(confirm('是否确定通过?')==false)return false;">确认退货</a>
+           <a class="didb llvcer" href="javascript:;" >退货不合格</a>
+           <a class="didb" href="__CONTROLLER__/tuihuobtg/tuihuo_id/{$kk.tuihuo_id}" onclick="if(confirm('是否不通过?')==false)return false;">取消退货</a>
+       </span>
+   </div>
+   <elseif condition="strtoupper($kk['zt']) eq  1"/> 
+   <!--{$ywc}-->
+   <elseif condition="strtoupper($kk['zt']) eq  2"/> 
+       <!--{$sb}-->
+    <else/>
+   </if>
+</li>
+</foreach>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

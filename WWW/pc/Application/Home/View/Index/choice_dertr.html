@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>维百士-业务覆盖</title>
+	<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+	<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+	<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		html,body{
+			height: 100%;
+			width: 100%;
+			 min-height: 768px;
+			min-width: 1200px;
+		}
+		body{
+			background: #235fa0 url(__PUBLIC__/img/index1/address/bg1a1.png) center center no-repeat;
+			background-size: cover;
+		}
+		.fl{
+			float: left;
+		}
+		.fr{
+			float: right;
+		}
+		.header{
+			width: 100%;
+			height: 95px;
+			background: url(__PUBLIC__/img/index1/address/bg2a2.png);
+			background-size: cover;
+			min-width: 1200px;
+		}
+		.header_com{
+			width: 1200px;
+			margin: 0 auto;
+			height: 100%;
+			position: relative;
+		}
+		.logo_title{
+			width: 458px;
+			height: 42px;
+			background: url(__PUBLIC__/img/index1/address/title.png) 0 0 no-repeat;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+			/*background-size: cover;*/
+		}
+		.number{
+			width: 206px;
+			height: 24px;
+			background: url(__PUBLIC__/img/index1/address/number.png) 0 0 no-repeat;
+			margin-top: 36px;
+		}
+
+		.mainCon{
+			width: 1035px;
+			/*height: 90%;*/
+			margin: 0 auto;
+			/* background: #ccc; */
+			position: relative;
+			padding-bottom: 50px;
+		}
+		.mainbox{
+			/* position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%); */
+		}
+
+		.maintitle{
+			margin: 0 auto;
+			width: 438px;
+			height: 35px;
+			padding: 80px 0 40px 0;
+			background: url(__PUBLIC__/img/index1/address/title2.png) center center no-repeat;
+		}
+		.maincontent{
+			/*width: 365px;*/
+			margin: 0 auto;
+		}
+		.minslis a{
+			position: relative;
+		    display: block;
+		    overflow: hidden;
+		    padding: 0 0 0 12px;
+		    height: 45px;
+		    border: 1px solid #aaa;
+		    border-radius: 5px;
+		    background-color: rgba(255,255,255,.1);
+		    /* box-shadow: 0 0 3px white inset, 0 1px 1px rgba(0, 0, 0, 0.1); */
+		    color: #fff !important;
+		    text-decoration: none;
+		    white-space: nowrap;
+		    line-height: 45px;
+		    font-size: 16px;
+		}
+		.minslis a span{
+			display: block;
+		    overflow: hidden;
+		    margin-right: 95px;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		}
+		.minslis a span i{
+			font-style: normal;
+			color: #f67c13;
+			position: absolute;
+			top: 0px;
+			right:38px;
+		}
+		.minslis{
+			position: relative;
+			width: 22%;
+			/* margin-bottom:35px; */
+			float: left;
+			margin-right: 3%;
+		}
+		.maincontent_list .minslis:last-child {
+		    margin-right: 0;
+		}
+		.maincontent_list .minslis:last-child a {
+		    background: none;
+		    border: none;
+		    padding: 0 0 0 22px;
+		}
+		.minslis:last-child a div{
+			left: 0;
+			right: auto;
+		}
+		#a2.maincontent_list .minslis:last-child {
+		    margin-right: 0;
+		}
+		#a2.maincontent_list .minslis:last-child a {
+		    background-color: rgba(255,255,255,.1);
+		    border: 1px solid #aaa;
+		    padding: 0 0 0 12px;
+		}
+		#a2 .minslis:last-child a div{
+			left: auto;
+			right: 8px;
+		}
+		.minslis.chosen-with-drop a {
+			background-color:#3a496a;
+		  border: 1px solid #aaa;
+		  border-bottom: none;
+		  -moz-border-radius-bottomright: 0;
+		  border-bottom-right-radius: 0;
+		  -moz-border-radius-bottomleft: 0;
+		  border-bottom-left-radius: 0;
+		}
+		.minslis a div {
+		    position: absolute;
+		    top: 0;
+		    right: 8px;
+		    display: block;
+		    width: 18px;
+		    height: 100%;
+		}
+		.minslis a div b {
+		    display: block;
+		    width: 100%;
+		    height: 100%;
+		    background: url(__PUBLIC__/img/index1/address/xl.png) no-repeat 0px 20px;
+		}
+		.minslis .chosen-drop{
+			position: absolute;
+			top: 100
+			margin-top: -1px;
+		    border-radius: 0 0 4px 4px;
+		    background-clip: padding-box;
+		    left: -9999px;
+		    z-index: 1010;
+		    width: 100%;
+		    border: 1px solid #aaa;
+		    border-top: 0;
+		    background: #3a496a;
+		    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+		    box-sizing: border-box;
+		    color:#fff;
+		}
+		.minslis.chosen-with-drop .chosen-drop{
+			left:0;
+		}
+		.chosen-results{
+			padding: 0 8px 6px 8px;
+		    position: relative;
+		    overflow-x: hidden;
+		    overflow-y: auto;
+		    max-height: 240px;
+		    -webkit-overflow-scrolling: touch;
+
+		}
+		.active-result{
+			line-height: 34px;
+			padding: 0 8px;
+
+		}
+		.active-result i{
+			font-style: normal;
+			float: right;
+		}
+		.lspw{
+			background: #1b2337;
+		}
+		.btn{
+			display: inline-block;
+		    padding: 6px 12px;
+		    font-size: 14px;
+		    font-weight: normal;
+		    line-height: 1.3333333;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: middle;
+		    cursor: pointer;
+		    background-image: none;
+		    border: 1px solid transparent;
+		    border-radius: 4px;
+		}
+		.s-btn {
+		    height: 40px;
+		    width: 365px;
+		    vertical-align: middle;
+		    font-size: 18px;
+		    overflow: hidden;
+		        background-color: rgba(255,255,255,.1);
+		    border: 1px solid #aaa;
+		    color: #FFFFFF;
+		    letter-spacing: 5px;
+		    font-family: "\5FAE\8F6F\96C5\9ED1","Microsoft YaHei","\5B8B\4F53","SimSun";
+		}
+		.avsrrop{
+			background: #2173dd;
+		}
+		/*搜索框*/
+		.chosen-search {
+		    position: relative;
+		    z-index: 1010;
+		    margin: 0;
+		    padding: 3px 4px;
+		    white-space: nowrap;
+		}
+		.chosen-search input[type="text"] {
+		    margin: 1px 0;
+		    padding: 6px 20px 6px 5px;
+		    width: 100%;
+		    height: auto;
+		    outline: 0;
+		    border: 1px solid #aaa;
+		    background: white url(chosen-sprite.png) no-repeat 100% -20px;
+		    background: url(chosen-sprite.png) no-repeat 100% -20px;
+		    font-size: 1em;
+		    font-family: sans-serif;
+		    line-height: normal;
+		    border-radius: 0;
+		    box-sizing: border-box;
+		    color: #fff;
+		}
+		/*搜索框end*/
+
+		/*对话框*/
+		.button{
+				margin-bottom:20px;
+			}
+			.dialog .widget-container{
+				position:relative;
+				width:320px;
+				height:200px;
+				background:#fff;
+			}
+			.dialog .widget-title{
+				height:40px;
+				padding-left:8px;
+				background:#cee1ee;
+				line-height:40px;
+			}
+			.dialog .widget-close{
+				position:absolute;
+				top:0;
+				right:0;
+				width:40px;
+				height:40px;
+				line-height:40px;
+				text-align:center;
+				cursor:pointer;
+			}
+			.dialog .widget-content{
+				height:100px;
+				padding:10px;
+				line-height:100px;
+				text-align:center;
+			}
+			.dialog .widget-buttons{
+				height:40px;
+				padding:0 20px;
+				line-height:40px;
+				text-align:right;
+			}
+			.dialog .widget-buttons button{
+				width:80px;
+				height:22px;
+				border:none;
+				line-height:22px;
+				background:#cee1ee;
+				outline:none;
+				cursor:pointer;
+			}
+			.maincontent_list{
+				margin-bottom: 50px;
+			}
+			.maincontent_list p.title{
+				line-height: 30px;
+				border-bottom: solid 1px #fff;
+				color: #bfc8dc;
+			}
+			.minslis_box{
+				padding: 40px 0;
+				border-bottom: dashed 1px #fff;
+			}
+			.row{
+				font-size: 16px;
+				color: #fff;
+				line-height: 50px;
+			}
+			.row input{
+				font-size: 16px;
+				margin-left: 8px;
+				background: none;
+				border-bottom:solid 1px #fff;
+				color: #fff;
+			}
+			.tabsuo{}
+			.tabsuo>div{
+				width: 240px;
+				height: 50px;
+				background-color: rgba(255,255,255,.1);
+				border: 1px solid #aaa;
+				border-radius: 5px;
+				font-size: 16px;
+				line-height: 50px;
+				text-align: center;
+				color: #fff;
+				margin-right: 18px;
+				cursor: pointer;
+			}
+			.tabsuo>div.on{
+				background-color: #4d77fd;
+			}
+			.spsowm{
+				width: 360px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				display: block;
+				margin: 30px auto 0 auto;
+				font-size: 16px;
+				color: #fff;
+				background: #1e82fd;
+				border: none;
+				border-radius: 50px;
+			}
+			#shuakl{
+				margin-top: 20px;
+			}
+	</style>
+</head>
+<body>
+	<!-- 顶部 -->
+	<!-- <div class="header">
+		<div class="header_com">
+			<div class="logo_title"></div>
+			<div class="number fr"></div>
+		</div>
+	</div> -->
+	<!-- 中部 -->
+	<div class="mainCon">
+		<div class="mainbox">
+			<div class="maintitle"></div>
+			<div class="maincontent" id="maincontent">
+				<!-- 列表 -->
+				<div class="maincontent_list ">
+					<p class="title" id="city_title">服务地址查询</p>
+					<!-- chosen-with-drop -->
+					<div class="minslis_box clearfix">
+						<div class="minslis province">
+							<a href="javascript:;">
+								<span>请选择省...</span>
+								<div><b></b></div>
+							</a>
+						</div>
+						<!-- 市 -->
+						<div class="minslis city">
+							<a href="javascript:;">
+								<span>请选择省...</span>
+								<div><b></b></div>
+							</a>
+						</div>
+						<!-- 市end -->
+						<!-- 区县 -->
+						<div class="minslis area">
+							<a href="javascript:;">
+								<span>请选择省...</span>
+								<div><b></b></div>
+							</a>
+						</div>
+						<!-- 区县end -->
+						<div class="minslis" id="showcneys" style="display: none;">
+							<a href="javascript:;">
+								<span></span>
+								<div><b></b></div>
+							</a>
+						</div>
+						<!-- <button onclick="shustr()" class="btn s-btn" id="searchBtn">查询</button> -->
+					</div>
+				</div>
+				<div class="maincontent_list " id="a2">
+
+				</div>
+				<div class="maincontent_list " id="a3">
+
+				</div>
+				<div class="maincontent_list " id="a4">
+
+				</div>
+				<div class="maincontent_list " id="a5">
+
+				</div>
+				<!-- 列表end -->
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+
+			<div class="dialog dialog1"></div>
+</body>
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/jquery.cityssj.js"></script>
+<script src="__PUBLIC__/js/jquery.dialog.js"></script>
+<script src="__PUBLIC__/js/model_wbs1.js"></script>
+<script src="__PUBLIC__/js/formInfo.js"></script>
+<script src="__PUBLIC__/js/orderStatus.js"></script>
+
+<script>
+$(function(){
+	$('#maincontent').citys({
+        required:false,
+        nodata:'disabled',
+        onChange:function(data){
+            //判断省市区是否全
+            if(data.province&&data.city&&data.area){
+            	pohut(data)
+            	$("#showcneys").show();
+            	//$(".btn").addClass('avsrrop');
+            }else{
+            	$("#showcneys").hide();
+            	//$(".btn").removeClass('avsrrop');
+            }
+            var text = data['direct']?'(直辖市)':'';
+            $('#city_title').text('服务地址查询：'+data['province']+text+' '+data['city']+' '+data['area']);
+        }
+    });
+
+    //
+    $(".dialog1").dialog({
+		'title':'',
+		'content':'sssss',
+		'buttons':{
+			'确定':function(api){
+				api.close();
+			}
+		}
+	},function(api){
+		//console.log(api)
+		$('#btn1').click(function(){
+			api.open();
+			api.setContent();
+			//console.log(api.getButtons())
+			//console.log(api.isOpen())
+		});
+	});
+})
+
+//判断
+function pohut(datas){
+	$.ajax({
+		url: "http://weibaishi.com/home/Index/panduan",
+		data: {
+			'bianma': datas.code
+		},
+		dataType: "json",
+		type: 'post',
+		success: function(data) {
+			if (data == "1") {
+
+				/*$(".dialog1").dialog({
+					'title': '',
+					'content': '可上门服务',
+					'autoOpen':true,
+					'buttons': {
+						'确定': function(api) {
+							api.close();
+						}
+					}
+				})*/
+				//alert("可上门服务")
+				$("#showcneys span").text("可上门服务").removeClass("on");
+				// openModelType();
+				//判断a2是否存在子元素
+            	if(!$("#a2").children().length){
+            		$('#a2').openModelType({
+						onChange: function(data) {
+							if(data.types&&data.brands&&data.models&&data.sku){
+								//判断a3是否存在子元素
+            					if(!$("#a3").children().length){
+            						$("#a3").formInfo({
+										onChange: function(data) {
+											if(data.username&&data.tel&&data.songau){
+												$("#a4").orderStatus({
+													onChange: function(data) {
+
+														if(data==2){
+															$("#wuliu").on('keyup',function(){
+																if($(this).val()!=""){
+																	$("#a5").html('<button class="spsowm">立即下单</button>')
+																}else{
+																	$("#a5").html('');
+																}
+
+															})
+															if($("#wuliu").val()!=""){
+																$("#a5").html('<button class="spsowm">立即下单</button>')
+															}else{
+																$("#a5").html('');
+															}
+														}else{
+															$("#a5").html('<button class="spsowm">立即下单</button>')
+														}
+													}
+												})
+											}
+										}
+									});
+            					}
+							}
+							$('#city_title2').text('选择服务项目：'+data['types']+' '+data['brands']+' '+data['models']+' '+data['sku']);
+						}
+					});
+            	}
+			} else if (data == "2") {
+				/*$(".dialog1").dialog({
+					'title': '',
+					'content': '不可上门服务',
+					'autoOpen':true,
+					'buttons': {
+						'确定': function(api) {
+							api.close();
+						}
+					}
+				})*/
+				//alert("不可上门服务")
+				$("#showcneys span").text("不可上门服务").addClass("on");
+			}
+		}
+	});
+}
+</script>
+</html>

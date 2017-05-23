@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		#l{float:left; }
+		#ky{float:right; margin-right:20px;width:90%;}
+	
+	</style>
+</head>
+<body><center><a href="__MODULE__/Caiwu/tuichua">退出登录</a>
+<input type="text" id="sea" placeholder='请输入关键字/'>
+	<input type="button" id="sou" value="搜索" onclick="ajax(1)"></center>
+	<div id='l'>
+	<a href="__MODULE__/Shangpin/index">商品管理</a><br /><br /><br />
+	用户管理<br /><br /><br />
+	<a href="__MODULE__/Guanlishifu/index">师傅配件管理</a><br /><br /><br />
+	<a href="__MODULE__/Ddguanli/shangmen/ways_id/1">订单管理</a><br /><br />
+	
+	<a href="__MODULE__/caiwu/index">{$laite}</a><br /><br />
+	
+	<a href="__MODULE__/Youhuiquan/index">优惠券管理</a><br /><br /><br />
+   <!-- <a href="__MODULE__/Guanlishifu/shifugl">员工管理</a><br /><br /><br />-->
+    <a href="__MODULE__/cangkugl/index">仓库管理</a><br /><br /><br />
+    <a href="__MODULE__/Quyuguanli/index">服务范围管理</a><br /><br /><br />
+    <a href="__CONTROLLER__/ygyun">员工位置</a>
+	</div>
+	
+	<div id='ky'>
+	
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+function ajax(){
+		var sea=document.getElementById("sea").value
+		//alert(sea);
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/dingdan_list/sea/"+sea,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('ky').innerHTML=ajax.responseText
+				}
+			}
+	}
+
+</script>

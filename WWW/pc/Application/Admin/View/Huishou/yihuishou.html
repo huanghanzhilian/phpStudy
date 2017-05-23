@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<a href="__MODULE__/Index/index">返回</a><br /><br />
+	<center><a href="__CONTROLLER__/index">待确认</a> <a href="__CONTROLLER__/yihuishou">已回收</a></center><br /><br />
+	<foreach name='arr' item='kk'>
+		{$kk.goodsdanhao}&nbsp;&nbsp;&nbsp;&nbsp;{$kk.cpk_name} &nbsp;&nbsp;{$kk.cpk_price}元<br /><br />
+	</foreach>
+</body>
+</html>

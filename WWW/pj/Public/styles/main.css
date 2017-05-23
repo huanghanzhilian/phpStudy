@@ -1,0 +1,40 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+.mmk {
+  height: 4rem;
+}
+.mmkl {
+  width: 50%;
+  height: 2.4rem;
+  float: left;
+}
+.mmkr {
+  width: 50%;
+  height: 2.4rem;
+  float: right;
+}
+.mmnn {
+  display: block;
+  height: 4.13333333rem;
+}
+body {
+  font-size: 13px;
+}
+[data-dpr="2"] body {
+  font-size: 25px;
+}
+[data-dpr="2.5"] body {
+  font-size: 31px;
+}
+[data-dpr="2.75"] body {
+  font-size: 34px;
+}
+[data-dpr="3"] body {
+  font-size: 38px;
+}
+[data-dpr="4"] body {
+  font-size: 50px;
+}

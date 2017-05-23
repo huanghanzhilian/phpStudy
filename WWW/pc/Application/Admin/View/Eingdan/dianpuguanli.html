@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/ligon_up.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/red_box.css">
+	<style type="text/css">
+		body{
+			background: #fff;
+		}
+		.box_fl{
+			width: auto;
+		}
+		.sdclop{
+		/*text-align: right;
+		line-height: 50px;*/
+		position: relative;
+	}
+	.sdclop span{
+		width: 120px;
+		height: 40px;
+		background: #5a8bed;
+		/*display: inline-block;*/
+		position: absolute;
+		right: 12px;
+		top: 6px;
+		line-height: 40px;
+		border-radius: 8px;
+	}
+
+
+	/* 修改 */
+	.chengoos_xg {
+	    width: 18px;
+	    height: 18px;
+	    background: url(__PUBLIC__/img/xiugai_p0.png) center center no-repeat;
+	    background-size: 14px 14px;
+	    /* background: red; */
+	    display: inline-block;
+	    vertical-align: middle;
+	    cursor: pointer;
+	    margin-left: 10px;
+	}
+	.scvbgklk{
+		text-align: left;
+    	padding: 8px 10px;
+    	width: 86%;
+    	box-sizing: border-box;
+    	vertical-align: middle;
+	}
+	.scvbgklk.on{
+		border: 1px solid #3e7edb;
+    	border-radius: 4px;
+	}
+
+
+	/*newtype*/
+	.flex-wrap {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+		}
+		.flex-con {
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			flex: 1;
+		}
+		.flex-con2 {
+			-webkit-box-flex: 2;
+			-webkit-flex: 2;
+			flex: 2;
+		}
+		.flex-vertical {
+			-webkit-box-orient: vertical;
+			-webkit-flex-flow: column;
+			flex-flow: column;
+		}
+		html,body{
+			height: 100%;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.dfs{
+			height: 50px;
+			background: #eaeaea;
+		}
+		.headersw{
+			height: 50px;
+			width: 100%;
+			background: #99a3bf;
+			position: fixed;
+			left: 0px;
+		}
+		.headersw div{
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			color: #fff;
+		}
+		.conmutre{
+			overflow: auto;
+			position: relative;
+		}
+		.ascdfs{
+			padding-top: 50px;
+		}
+		ul.ascdfs li{
+			/*width: 2500px;*/
+			/*border-bottom: solid 1px #ccc;*/
+			/*background: red;*/
+		}
+		ul.ascdfs li .row{
+			padding: 15px 25px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		.col-md-1{
+			width: 250px;
+			float: left;
+		}
+		.row_but{
+			width: 100%;
+			padding: 15px 25px;
+			box-sizing: border-box;
+		}
+		ul.ascdfs li:nth-child(2n) {
+		    /*background: #f0f2f5;*/
+		}
+		/* toast */
+		.toasttj2 {
+			z-index: 21003;
+			font-size: 1.37em;
+			position: fixed;
+			bottom: 50%;
+			width: 100%;
+			opacity: 0;
+			height: 24px;
+			display: none;
+			transition: opacity 1s ease-out;
+		}
+		/* toast end */
+		.dessuw{
+			display: inline-block;
+			line-height: 24px;
+			padding: 0 6px;
+			color: #fff;
+		    cursor: pointer;
+		}
+		.dessuw.dessuw1{
+			background: #6aa8fd;
+		}
+		.dessuw.dessuw2{
+			background: #cacbcc;
+			cursor: default;
+		}
+		.dessuw.dessuw3{
+			background: #788aff;
+		}
+		.dessuw.dessuw4{
+			background: #eb5858;
+		}
+		.dessuw.dessuwsw{
+			color: #000;
+		}
+
+		.pslwjs{
+			font-weight: 600;
+			margin-right: 4px;
+			display: inline-block;
+		}
+		/*对话框*/
+		.button{
+				margin-bottom:20px;
+			}
+			.dialog .widget-container{
+				position:relative;
+				width:350px;
+				/* height:200px; */
+				background:#fff;
+			}
+			.dialog .widget-title{
+				color: #4d4d4d !important;
+				/*height:40px;*/
+				padding-left:8px;
+				background: none !important;
+				/* line-height:20px !important; */
+				border: none !important;
+				padding: 12px 0;
+				font-weight: 600;
+				font-size: 18px;
+			}
+			.dialog .widget-close{
+				position:absolute;
+				top:0;
+				right:0;
+				width:40px;
+				height:40px;
+				line-height:40px;
+				text-align:center;
+				cursor:pointer;
+			}
+			.dialog .widget-content{
+				height:75px;
+				padding:0 10px 10px 10px;
+				line-height:22px;
+				text-align:center;
+				color: #998b8b;
+				font-size: 15px;
+			}
+			.dialog .widget-buttons{
+				height:40px;
+				padding:0 20px;
+				line-height:40px;
+				text-align:right;
+				display: -webkit-box;
+			    display: -webkit-flex;
+			    display: flex;
+			    margin-bottom: 20px;
+			    font-size: 15px;
+			}
+			.dialog .widget-buttons button{
+				width:80px;
+				height:38px;
+				border:none;
+				line-height:38px;
+				background:#6aa8fd;
+				border: solid 1px #6aa8fd;
+				outline:none;
+				cursor:pointer;
+				-webkit-box-flex: 1;
+			    -webkit-flex: 1;
+			    flex: 1;
+			    margin: 0 10px;
+			    color: #fff;
+			}
+			.dialog .widget-buttons button.button-1{
+				background: none;
+				color: #6aa8fd;
+			}
+			.maincontent_list{
+				margin-bottom: 50px;
+			}
+			.maincontent_list p.title{
+				line-height: 30px;
+				border-bottom: solid 1px #fff;
+				color: #bfc8dc;
+			}
+			.minslis_box{
+				padding: 40px 0;
+				border-bottom: dashed 1px #fff;
+			}
+			.widget-close a{
+				display: none;
+			}
+			/*对话框*/
+
+
+			#header_1{
+				padding: 0;
+				background: url(__PUBLIC__/new/image/sj_admin/bg1.png) center center no-repeat;
+	    		background-size: cover;
+	    		text-align: center;
+	    		line-height: 128px;
+			}
+			#header_1 .imageser{
+				vertical-align: middle;
+			}
+			.slwjeisa{
+				display: inline-block;
+				width: 24px;
+				height:24px;
+				background: url(__PUBLIC__/new/image/sj_admin/ASAEW.png) center center no-repeat;
+			}
+	</style>
+	<script type="text/javascript">
+		if(!{$water}){
+			window.location='__CONTROLLER__/pianbu_null.html'
+		}
+	</script>
+</head>
+<body class="flex-wrap flex-vertical">
+	<!-- 顶部 -->
+	<div id="header">
+		<div id="header_1" class="clearfix" style="height: 128px">
+			<img class="imageser" src="__PUBLIC__/new/image/sj_admin/sadaAA.png">
+			<!-- <div class="box_fl fl">
+				<div class="boxcom fl">
+					<div class="boxcom_title">累计下单</div>
+					<div class="moery">{$liji}<span>单</span></div>
+				</div>
+				<div class="boxcom fl">
+					<div class="boxcom_title">手动下单</div>
+					<div class="moery">{$shoudong}<span>单</span></div>
+				</div>
+				<div class="boxcom fl">
+					<div class="boxcom_title">自动下单</div>
+					<div class="moery">{$zidong}<span>单</span></div>
+				</div>
+				<div class="boxcom fl">
+					<div class="boxcom_title">物流在途</div>
+					<div class="moery">{$zaitu}<span>单</span></div>
+				</div>
+				<div class="boxcom fl">
+					<div class="boxcom_title">已完成</div>
+					<div class="moery">{$wancheng}<span>单</span></div>
+				</div>
+			</div> -->
+			<!-- <div class="box_fr fr">
+				<div class="skaht">
+					<span class="slkaj_l" onclick="setcopi(this)">余额提现</span>
+					<span class="slkaj_r" onclick="lishtya(this)">提现记录</span>
+				</div>
+			</div> -->
+		</div>
+		<ul class=" com_title flex-wrap">
+			<li class="flex-con">店铺ID (店铺名称)</li>
+			<li class="flex-con">店铺连接</li>
+			<li class="flex-con">开启自动下单</li>
+			<li class="flex-con">旗标设置</li>
+			<li class="flex-con">合作宝贝</li>
+			<!-- <li class="flex-con">操作</li> -->
+		</ul>
+	</div>
+
+	<!-- 内容 -->
+	<div class="container flex-con">
+		<!-- <ul class="com_main flex-wrap">
+			<li class="flex-con">wwww</li>
+			<li class="flex-con">wwww</li>
+			<li class="" style="width: 280px;"></li>
+			<li class="flex-con">wwww</li>
+			<li class="flex-con">wwww</li>
+			<li class="flex-con">wwww</li>
+			<li class="flex-con">wwww</li>
+		</ul> -->
+		<foreach name='arr' item='kk'>
+			<ul class="com_main flex-wrap">
+				<li class="flex-con">
+					<textarea opwuqi="1" readonly="readonly" data="{$kk.shou_id}" class="scvbgklk" name="content" autocomplete="off">{$kk.shou_name}</textarea>
+					<span class="chengoos_xg"></span>
+				</li>
+				<li class="flex-con">
+					<textarea opwuqi="2" readonly="readonly" data="{$kk.shou_id}" class="scvbgklk" name="content" autocomplete="off">{$kk.shou_lianjie}</textarea>
+					<span class="chengoos_xg"></span>
+				</li>
+				<li class="flex-con">
+					<if condition="(strtoupper($kk['shou_zt']) eq  1)">
+						<a data="{$kk.shou_id}" data_name="{$kk.shou_name}" onclick="resizesw(this)" href="javascript:;" class="dessuw dessuw1">开启自动下单</a href="javascript:;" title="ff">
+					<elseif condition="(strtoupper($kk['shou_zt']) eq  2)"/>
+						<a data="{$kk.shou_id}" href="javascript:;" class="dessuw dessuw2">自动下单审请中</a href="javascript:;" title="ff">
+					<elseif condition="(strtoupper($kk['shou_zt']) eq  3)"/>
+						<a data="{$kk.shou_id}" data_name="{$kk.shou_name}" onclick="quxiaozidxd(this)" href="javascript:;" class="dessuw dessuw3">取消自动下单</a href="javascript:;" title="ff">
+					<elseif condition="(strtoupper($kk['shou_zt']) eq  4)"/>
+						<a data="{$kk.shou_id}" data_name="{$kk.shou_name}" href="javascript:;" onclick="resizesw(this)" title="授权码失效请重新填写" class="dessuw dessuw4">自动下单失败</a href="javascript:;" title="ff">
+					</if>
+				</li>
+				<li class="flex-con">
+					<if condition="(strtoupper($kk['shou_zt']) eq  1) or (strtoupper($kk['shou_zt']) eq  2) or (strtoupper($kk['shou_zt']) eq  4)">
+						<a href="javascript:;" class="dessuw dessuw2">旗标设置</a>
+					<elseif condition="(strtoupper($kk['qizi_zt']) eq  1) "/>
+						<a data="{$kk.shou_id}" data_name="{$kk.shou_name}" onclick="dkkdlse(this)" href="javascript:;" class="dessuw dessuw1">旗标修改</a>
+					<elseif condition="(strtoupper($kk['qizi_zt']) eq  0) "/>
+						<a data="{$kk.shou_id}" data_name="{$kk.shou_name}" onclick="dkkdlse(this)" href="javascript:;" class="dessuw dessuw1">旗标设置</a href="javascript:;" title="ff">
+					</if>
+				</li>
+				<li class="flex-con">
+					<if condition="(strtoupper($kk['shou_zt']) eq  3)">
+						<a data="{$kk.shou_id}" data_name="{$kk.shou_name}" onclick="shejwk(this)" href="javascript:;" class="dessuw dessuw1">合作宝贝</a href="javascript:;" title="ff">
+					<else/>
+						<a href="javascript:;" title="授权码失效请重新填写" class="dessuw dessuw2">合作宝贝</a href="javascript:;" title="ff">
+					</if>
+				</li>
+				<!-- <li class="flex-con">
+					<a data="{$kk.shou_id}" data_name="{$kk.shou_name}" onclick="sjalosl(this)" class="dessuw dessuwsw" href="javascript:;">删除</a>
+				</li> -->
+			</ul>
+		</foreach>
+	</div>
+	<!-- 弹出 -->
+	<div class="attr-overlay" id="attr-overlay"></div>
+	<div class="attr-content" id="attr-content">
+        <div class="widget-close" id="closed">
+            关闭
+        </div>
+        <div id="widget-title" class="widget-title"></div>
+        <div id="content_sd">
+        </div>
+    </div>
+    <!-- toast -->
+    <div id="toastId2" class="toasttj2" style="display: none; opacity: 0;"></div>
+    <!-- toast end -->
+    <!-- 对话框 -->
+	<div class="dialog dialog1"></div>
+    <!-- 对话框 -->
+</body>
+<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/new/script/toast.js" type="text/javascript"></script>
+<script src="__PUBLIC__/js/jquery.dialog.js"></script>
+<script type="text/javascript">
+
+	//修改连接
+	$("body").click(function(){
+		$(".scvbgklk").attr("readonly", "true").removeClass('on');
+	})
+	$(".chengoos_xg").on('click',function(event){
+		$(this).prev().unbind();
+		$(this).prev().removeAttr("readonly").addClass('on');
+		$(this).prev().change(function(){
+			tijiswao(this);
+		})
+		$(this).prev().click(function(event){
+			$(this).prev().removeAttr("readonly").addClass('on');
+			event.stopPropagation();
+		})
+		//console.log($(this).parents('ul.com_main').siblings().find("textarea"))
+		$(this).parents('ul.com_main').siblings().find("textarea").attr("readonly", "true").removeClass('on');
+		event.stopPropagation();
+	});
+	function tijiswao(_this){
+		var id=$(_this).attr("data");
+		var datas=$(_this).val();
+		var opwuqi=$(_this).attr("opwuqi");
+		if(opwuqi=="1"){
+			$.ajax({
+				url: "http://weibaishi.com/Admin/eingdan/saveshou",
+				data:{'shou_id':id,'shou_name':datas},
+				dataType: "json",
+				type:'post',
+				success: function (data) {
+					if(data=="1"){
+						// alert("操作成功")
+						// $(_this).parents("tr").prev("tr").remove();
+						// $(_this).parents("tr").remove();
+						setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作成功</div>');
+					}else if(data=="2"){
+						setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作错误</div>');
+						setTimeout(function() {
+							location.reload()
+						}, 1500)
+					}
+
+				}
+			});
+		}else if(opwuqi=="2"){
+			$.ajax({
+				url: "http://weibaishi.com/Admin/eingdan/savelianjie",
+				data:{'shou_id':id,'shou_lianjie':datas},
+				dataType: "json",
+				type:'post',
+				success: function (data) {
+					if(data=="1"){
+						// alert("操作成功")
+						// $(_this).parents("tr").prev("tr").remove();
+						// $(_this).parents("tr").remove();
+						setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作成功</div>');
+					}else if(data=="2"){
+						setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作错误</div>');
+						setTimeout(function() {
+							location.reload()
+						}, 1500)
+					}
+
+				}
+			});
+		}
+	}
+
+
+
+	//开启自动下单
+	function resizesw(el) {
+		// var overlay= document.getElementById("attr-overlay");
+		var data_name=$(el).attr("data_name");//获取中文名字
+		var data_id=$(el).attr("data");//获取id
+
+		var overlay = $("#attr-overlay"); //遮罩层
+		var content = $("#attr-content"); //弹窗box
+		var widget_title = $("#widget-title"); //弹窗头
+		var windows = $("body");
+		var closed = $("#closed"); //关闭按钮
+
+		widget_title.text("开启自动下单")
+		overlay.show();
+		content.show();
+		$("#content_sd").empty();
+		var sel = (windows.width() - content.width()) / 2;
+		var set = (windows.height() - content.height()) / 2;
+
+		content.offset({
+			top: set,
+			left: sel
+		});
+		closed.on("click", function() {
+			overlay.hide();
+			content.hide();
+		});
+		overlay.on("click", function() {
+			overlay.hide();
+			content.hide();
+		});
+		var Html = '<div class="submit-form" style="margin-top: 46px;">\
+					<div class="input-group">\
+						<p class="input-title"><span class="pslwjs">'+data_name+'</span>店铺授权代码<a href="__CONTROLLER__/set_help.html" target="_blank" title="如何获取授权代码" class="slwjeisa fr" ></a></p>\
+						<div class="input-fill">\
+							<textarea id="sslwpwls" class="qizi-shuru qizi-shuru1" name="content" autocomplete="off" placeholder="请输入店铺授权码" style="padding-top:4px; height: 135px;"></textarea>\
+							<p class="msg"></p>\
+						</div>\
+					</div>\
+					<button id="sksowss" style="margin-top: 20px;" class="qizi-login">提交自动下单申请</button>\
+				</div>'
+		$("#content_sd").html(Html);
+		
+		$("#sksowss").on('click',function(){
+			var sslwpwls=$("#sslwpwls").val();
+			if(!sslwpwls){
+				setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">授权码不能为空</div>');
+				return;
+			}
+			$.ajax({
+				url: "http://weibaishi.com/admin/eingdan/tijiaoshenhe",
+				data:{'shou_id':data_id,'shouquanma':sslwpwls},
+				dataType: "json",
+				type: 'post',
+				success: function(data) {
+					if(data=="1"){
+						/*overlay.hide();
+						content.hide();*/
+						setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作成功</div>');
+						setTimeout(function() {
+							location.reload()
+						}, 1500)
+					}else if(data=="2"){
+						overlay.hide();
+						content.hide();
+						setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作错误</div>');
+					}
+				}
+			});
+		})
+	}
+
+	//合作宝贝
+	function shejwk(el){
+		var data_name=$(el).attr("data_name");//获取中文名字
+		var data_id=$(el).attr("data");//获取id
+		
+		var overlay = $("#attr-overlay"); //遮罩层
+		var content = $("#attr-content"); //弹窗box
+		var widget_title = $("#widget-title"); //弹窗头
+		var windows = $("body");
+		var closed = $("#closed"); //关闭按钮
+
+		widget_title.text("合作宝贝")
+		overlay.show();
+		content.show();
+		$("#content_sd").empty();
+		var sel = (windows.width() - content.width()) / 2;
+		var set = (windows.height() - content.height()) / 2;
+
+		content.offset({
+			top: set,
+			left: sel
+		});
+		closed.on("click", function() {
+			overlay.hide();
+			content.hide();
+		});
+		overlay.on("click", function() {
+			overlay.hide();
+			content.hide();
+		});
+		$.ajax({
+			url: "__CONTROLLER__/baobeilist/shou_name/"+data_name+"",
+			/*data: {
+				'shou_id': data_id,
+			},*/
+			dataType: "html",
+			type: 'get',
+			success: function(data) {
+				$("#content_sd").html(data);
+			}
+		});
+	}
+
+
+	//旗标设置
+	function dkkdlse(el){
+		var data_name=$(el).attr("data_name");//获取中文名字
+
+		var data_id=$(el).attr("data");//获取id
+		
+		var overlay = $("#attr-overlay"); //遮罩层
+		var content = $("#attr-content"); //弹窗box
+		var widget_title = $("#widget-title"); //弹窗头
+		var windows = $("body");
+		var closed = $("#closed"); //关闭按钮
+
+		widget_title.text("旗标设置")
+		overlay.show();
+		content.show();
+		$("#content_sd").empty();
+		var sel = (windows.width() - content.width()) / 2;
+		var set = (windows.height() - content.height()) / 2;
+
+		content.offset({
+			top: set,
+			left: sel
+		});
+		closed.on("click", function() {
+			overlay.hide();
+			content.hide();
+		});
+		overlay.on("click", function() {
+			overlay.hide();
+			content.hide();
+		});
+		$.ajax({
+			url: "__CONTROLLER__/qz/shou_name/"+data_name+"",
+			/*data: {
+				'shou_id': data_id,
+			},*/
+			dataType: "html",
+			type: 'get',
+			success: function(data) {
+				$("#content_sd").html(data);
+			}
+		});
+	}
+
+
+	//删除
+	function sjalosl(el){
+		var data_name=$(el).attr("data_name");//获取中文名字
+		if(data_name.length>7){
+			var ioku=data_name.substring(6);
+			data_name=data_name.replace(ioku,'...');
+		}
+		var data_id=$(el).attr("data");//获取id
+		$(".dialog1").dialog({
+			'title': '是否删除店铺"'+data_name+'"',
+			'content': '删除店铺后,所有与该店铺相关的设置及数据都将失效且无法恢复',
+			'autoOpen':true,
+			'buttons': {
+				'确定删除': function(api) {
+					$.ajax({
+						url: "http://weibaishi.com/admin/eingdan/shanchu",
+						data: {
+							'shou_id': data_id,
+						},
+						dataType: "json",
+						type: 'post',
+						success: function(data) {
+							if (data == "1") {
+							api.close();
+							/*	setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作成功</div>');*/
+								setTimeout(function() {
+									location.reload()
+								}, 10)
+							} else if (data == "2") {
+								api.close();
+								setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作错误</div>');
+							}
+						}
+					});
+					
+				},
+				'取消': function(api) {
+					api.close();
+				}
+			}
+		})
+	}
+
+
+	//取消自动下单
+	function quxiaozidxd(el){
+		var data_name=$(el).attr("data_name");//获取中文名字
+		if(data_name.length>7){
+			var ioku=data_name.substring(6);
+			data_name=data_name.replace(ioku,'...');
+		}
+		var data_id=$(el).attr("data");//获取id
+		$(".dialog1").dialog({
+			'title': '是否取消"'+data_name+'"自动下单功能',
+			'content': '取消自动下单后,若要重新开启该店铺自动下单功能,需要重新申请',
+			'autoOpen':true,
+			'buttons': {
+				'确定取消': function(api) {
+					$.ajax({
+						url: "http://weibaishi.com/admin/eingdan/guanbi",
+						data: {
+							'shou_id': data_id,
+						},
+						dataType: "json",
+						type: 'post',
+						success: function(data) {
+							if (data == "1") {
+							api.close();
+								setTimeout(function() {
+									location.reload()
+								}, 10)
+							} else if (data == "2") {
+								api.close();
+								setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作错误</div>');
+							}
+						}
+					});
+					
+				},
+				'暂不取消': function(api) {
+					api.close();
+				}
+			}
+		})
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*$.ajax({
+	url: "http://weibaishi.com/admin/eingdan/tixian_list",
+	// data:{'p_id':datas},
+	dataType: "json",
+	type: 'post',
+	success: function(data) {
+		console.log(data)
+	}
+});*/
+</script>
+</html>

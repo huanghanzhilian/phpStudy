@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+
+// 打开一个 web socket
+var ws = new WebSocket("ws://101.200.219.26:2346");
+
+ws.onopen = function() {
+	// Web Socket 已连接上，使用 send() 方法发送数据
+	//ws.send('17301205932');
+	//alert("数据发送中...");
+	console.log('Connection to server opened');
+};
+
+ws.onmessage = function(e) {
+	//var data = JSON.parse(e.data);
+	//nickname = data.nickname;
+	var nuopge=e.data.split(",")
+	//console.log(nuopge);
+	if(nuopge[0]=="user"){
+		appendLog(nuopge[1]);
+	}
+	//console.log("ID: [%s] = %s", data.id, data.message);
+}
+// ws.onclose = function() {
+// 	// 关闭 websocket
+// 	alert("连接已关闭...");
+// };
+
+function appendLog(e) {
+	var messages = document.getElementById('messages');
+	var messageElem = document.createElement("li");
+	var preface_label;
+	preface_label = "<span>" + e + "</span>";
+	messageElem.innerHTML = preface_label;
+	messages.appendChild(messageElem);
+	//var count_people = document.getElementById("count_people");
+	//count_people.innerHTML = clientcount;
+
+}
+
+function sendMessage() {
+	var message = $('#message').val().trim();
+	if (message.length < 1) {
+		alert("不能发送空内容！");
+		return;
+	}
+	//var u_name="user,"+$('#message').val()
+	//console.log(u_name)
+
+	var u_name="user,"+$('#message').val()
+	ws.send(u_name);
+	$('#message').val("");
+	$('#message').focus();
+	//console.log(ws.bufferedAmount);
+}
+</script>
+<body>
+	<div id="liao">
+		<ul id="messages">
+
+		</ul>
+	</div>
+	 <form role="form" id="chat_form" onsubmit="sendMessage(); return false;">
+            <div class="form-group">
+                <input class="form-control" type="text" name="message" id="message" placeholder="输入聊天内容" value="" autofocus/>
+            </div>
+            <button type="button" id="send" class="btn btn-primary" onclick="sendMessage();">发送!</button>
+    </form>
+
+    <!-- <foreach name='arr' item='kk'>
+		{$kk.name}
+    </foreach> -->
+    <!-- {$kk.name} -->
+</body>
+</html>

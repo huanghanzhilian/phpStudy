@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+<button id="but">点击</button>
+
+<script>
+$("#but").click(function(){
+	$.ajax({
+		url:"json_xx.json",
+		//data: { num: $("#txtNumber").val() },
+		type: "get",
+		success: function (data) {
+			$.each(data, function (c,cs) {
+			    console.log(cs.name);
+			})
+		}
+	});
+})
+</script>
+</body>
+</html>

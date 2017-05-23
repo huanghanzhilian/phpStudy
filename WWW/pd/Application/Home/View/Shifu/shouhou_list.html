@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>维百士-手机维修-售后订单</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+</head>
+<body style="background:#f5f5f5">
+<div class="header ">
+    <a href="__MODULE__/Shifu/daiwancheng"><span></span></a>
+    <h1>售后订单<!--{$my}--></h1>
+    <!-- <em>去购买</em> -->
+</div><!--头-->
+<div class="content">
+    <div class="content_con">
+        <!--tab头-->
+        <div class="shifudu_top">
+            <ul class="pubcvt shifudu_top_ul shifudu_top_ul_gd">
+                <li class="pubcvt_v shifudu_top_li shifudu_top_li_1">
+                    <a href="javascript:void(0)" onclick='ass(1)'>售后中<span>({$nums1})</span></a>
+                </li>
+                <li class="pubcvt_v shifudu_top_li">
+                    <a href="javascript:void(0)" onclick='ass(3)'>已完成<span>({$nums2})</span></a>
+                </li>
+            </ul>
+        </div>
+        <!--tab头-->
+    
+        <div id='e'>
+            <div class="ceomer_com">
+                <foreach name='arr' item='kk'>
+                    <a class="shifu_aclc" href="__CONTROLLER__/shouhouxq/id/{$kk.id}/shouhou_id/{$kk.shouhou_id}">
+                        <div class="rnmbur">
+                            <ul>
+                                <li>
+                                     <span class="chuangmbr">{$kk.dd}</span>
+                                </li>
+                                <li>
+                                     机型：<span class="chuangmbr">{$kk.model_name}</span>
+                                </li>
+                                <li>
+                                     故障描述：<span class="chuangmbr">{$kk.contentt}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </foreach>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+function ass(id){
+			//alert(fk);
+			var ajax=new XMLHttpRequest()
+				ajax.open("get","__CONTROLLER__/shouhou_wc/zt/"+id,true)
+				ajax.send()
+				ajax.onreadystatechange=function(){
+					if(ajax.readyState==4 && ajax.status==200){
+						document.getElementById('e').innerHTML=ajax.responseText
+					}
+				}
+	} 
+
+
+$(function(){
+	$(".shifudu_top_li").click(function(){
+		if($(this).hasClass('shifudu_top_li_1')){
+			//$(this).removeClass('shifudu_top_li_1')
+			//$(this).find('b').css({'background-color':'#e6e6e6'})
+		}else{
+		$(this).addClass('shifudu_top_li_1').siblings().removeClass('shifudu_top_li_1')
+		
+		};
+	})
+	//$(".shifudu_top_li").eq(1).click()
+	//$(".shifudu_top_li>a").eq(1).click()
+})
+</script>

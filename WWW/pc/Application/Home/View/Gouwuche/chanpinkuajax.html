@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<foreach  name='arr2' item='h'>
+		{$h.cpk_name}&nbsp;&nbsp;<span>{$h.cpk_price}元</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:void(0)' onclick='tjgwc({$h.cpk_id});'>+</a><br />	<br />
+ </foreach>
+ 
+<foreach  name='arr3' item='hh'>
+		{$hh.cpk_name}&nbsp;&nbsp;<span>{$hh.cpp_price}元</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:void(0)' onclick='tjgwc({$hh.cpk_id});'>+</a><br />	<br />
+ </foreach> 
+</body>
+</html>

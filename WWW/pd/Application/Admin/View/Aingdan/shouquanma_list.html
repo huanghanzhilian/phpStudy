@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/dialog.css">
+	<style type="text/css">
+	/* .table thead tr{
+		position: fixed;
+		width: 100%;
+	} */
+	/* html,body{
+		height: 100%;
+		background: #ccc;
+		overflow: hidden;
+	} */
+	/* 创建新的邀请按钮 */
+	.sdclop{
+		/*text-align: right;
+		line-height: 50px;*/
+		position: relative;
+	}
+	.sdclop span{
+		width: 120px;
+		height: 40px;
+		background: #5a8bed;
+		/*display: inline-block;*/
+		position: absolute;
+		right: 12px;
+		top: 6px;
+		line-height: 40px;
+		border-radius: 8px;
+	}
+
+
+	/* 修改 */
+	.chengoos_xg {
+	    width: 18px;
+	    height: 18px;
+	    background: url(__PUBLIC__/img/xiugai_p0.png) center center no-repeat;
+	    background-size: 14px 14px;
+	    /* background: red; */
+	    display: inline-block;
+	    vertical-align: middle;
+	    cursor: pointer;
+	    margin-left: 10px;
+	}
+	.scvbgklk{
+		text-align: left;
+    	padding: 8px 10px;
+    	width: 60%;
+    	box-sizing: border-box;
+    	vertical-align: middle;
+	}
+	.scvbgklk.on{
+		border: 1px solid #3e7edb;
+    	border-radius: 4px;
+	}
+	.anniu span.huidupo{
+		color: #ff7e00;
+		border: solid 1px #ff7e00;
+	}
+
+	.toasttj2 {
+		z-index: 1003;
+		font-size: 1.37em;
+		position: fixed;
+		bottom: 50%;
+		width: 100%;
+		opacity: 0;
+		height: 24px;
+		display: none;
+		transition: opacity 1s ease-out;
+	}
+	</style>
+</head>
+<body>
+	<table class="table " cellspacing="0" cellpadding="0">
+		<thead>
+			<tr>
+				<th>申请时间</th>
+				<th>店铺ID</th>
+				<th>商家账户</th>
+				<th>授权代码</th>
+				<th></th>
+			</tr>
+		</thead>
+
+		<tbody class="">
+			<foreach name='arr' item='kk'>
+				<tr>
+					<td width="12%">{$kk.shenhe_time}</td>
+					<td width="15%">{$kk.shou_name}</td>
+					<td width="12%">{$kk.shou_phone}</td>
+
+					<td width="30%">
+						<textarea readonly="readonly" data="{$kk.shou_id}" class="scvbgklk" name="content" autocomplete="off">{$kk.shouquanma}</textarea>
+						<span class="chengoos_xg"></span>
+					</td>
+					<td width="15%">
+						<span data="{$kk.shou_id}" class="amuhsre" onclick="tongguo(this)">通过</span>
+						<span data="{$kk.shou_id}" class="amuhsre" onclick="butongguo(this)">不通过</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5" height="0">
+
+					</td>
+				</tr>
+			</foreach>
+		</tbody>
+	</table>
+
+	<!-- 对话框 -->
+	<div class="dialog dialog1"></div>
+    <!-- 对话框 -->
+    <!-- toast -->
+    <div id="toastId2" class="toasttj2" style="display: none; opacity: 0;"></div>
+    <!-- toast end -->
+</body>
+</html>
+
+
+
+<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/new/script/dialog.js" type="text/javascript"></script>
+<script src="__PUBLIC__/new/script/toast.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+
+	function $S(s) {
+		return document.getElementById(s);
+	}
+
+	function $html(s, html) {
+		$S(s).innerHTML = html;
+	}
+	var toastTime2 = null;
+	var displayTime2 = null;
+
+	function setToast3(html) {
+		if (toastTime2 != null) {
+			clearTimeout(toastTime2);
+			clearTimeout(displayTime2);
+		}
+		$S('toastId2').style.display = 'block';
+		$S('toastId2').style.opacity = 1;
+		$html('toastId2', html);
+		toastTime2 = setTimeout(function() {
+			$S('toastId2').style.opacity = 0;
+			displayTime2 = setTimeout(function() {
+				$S('toastId2').style.display = 'none';
+			}, 1000);
+		}, 1000);
+	}
+
+
+	//复制
+	function copyUrl2() {
+		var Url2 = document.getElementById("biao1");
+		Url2.select(); // 选择对象
+		document.execCommand("Copy"); // 执行浏览器复制命令
+		// alert("已复制好，可贴粘。");
+
+	}
+
+
+	//备注
+	$("body").click(function(){
+		$(".scvbgklk").attr("readonly", "true").removeClass('on');
+	})
+	$(".chengoos_xg").on('click',function(event){
+		event.stopPropagation();
+		var hhug=$(this).prev()[0];
+		hhug.select(); // 选择对象
+		document.execCommand("Copy"); // 执行浏览器复制命令
+		setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:175px;margin: 0 auto;">已复制好，可贴粘</div>');
+		$(this).prev().unbind();
+		$(this).prev().removeAttr("readonly").addClass('on');
+		$(this).prev().change(function(){
+			tijiswao(this);
+		})
+		$(this).prev().click(function(event){
+			$(this).prev().removeAttr("readonly").addClass('on');
+			event.stopPropagation();
+		})
+		$(this).parents('tr').siblings().find("textarea").attr("readonly", "true").removeClass('on');
+	});
+	function tijiswao(_this){
+		var id=$(_this).attr("data");
+		var datas=$(_this).val();
+		$.ajax({
+			url: "http://d.weibaishi.com/Admin/aingdan/saveshouquanma",
+			data:{'shou_id':id,'shouquanma':datas},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				if(data=="1"){
+					// alert("操作成功")
+					// $(_this).parents("tr").prev("tr").remove();
+					// $(_this).parents("tr").remove();
+				}else if(data=="2"){
+					alert("操作错误")
+				}
+
+			}
+		});
+	}
+
+
+	//通过
+	function tongguo(el){
+		//var data_name=$(el).attr("data_name");//获取中文名字
+		var data_id=$(el).attr("data");//获取id
+		$(".dialog1").dialog({
+			'title': '温馨提示',
+			'content': '你确定通过吗？',
+			'autoOpen': true,
+			'buttons': {
+				'确定': function(api) {
+					$.ajax({
+						url: "http://d.weibaishi.com/Admin/aingdan/shouquanmatongguo",
+						data: {
+							'shou_id': data_id
+						},
+						dataType: "text",
+						type: 'post',
+						success: function(data) {
+							data=data.charAt(data.length - 1);
+							if (data == "1") {
+								api.close();
+								$(el).parents("tr").prev("tr").remove();
+								$(el).parents("tr").remove();
+								setToast3('<div class="toast_conent">操作成功</div>');
+								//location.reload()
+							} else if (data == "2") {
+								setToast3('<div class="toast_conent">操作错误</div>');
+							}
+
+						}
+					});
+					api.close();
+				},
+				'取消': function(api) {
+					api.close();
+				}
+			}
+		})
+	}
+
+	//不通过
+	function butongguo(el){
+		//var data_name=$(el).attr("data_name");//获取中文名字
+		var data_id=$(el).attr("data");//获取id
+		$(".dialog1").dialog({
+			'title': '温馨提示',
+			'content': '你确定不通过吗？',
+			'autoOpen': true,
+			'buttons': {
+				'确定': function(api) {
+					$.ajax({
+						url: "http://d.weibaishi.com/Admin/aingdan/shouquanmashibai",
+						data: {
+							'shou_id': data_id
+						},
+						dataType: "text",
+						type: 'post',
+						success: function(data) {
+							data=data.charAt(data.length - 1);
+							if (data == "1") {
+								api.close();
+								$(el).parents("tr").prev("tr").remove();
+								$(el).parents("tr").remove();
+								setToast3('<div class="toast_conent">操作成功</div>');
+								//location.reload()
+							} else if (data == "2") {
+								setToast3('<div class="toast_conent">操作错误</div>');
+							}
+
+						}
+					});
+					api.close();
+				},
+				'取消': function(api) {
+					api.close();
+				}
+			}
+		})
+	}
+
+
+</script>

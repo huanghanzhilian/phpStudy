@@ -1,0 +1,49 @@
+<foreach name='arrg3' item='oo'>
+                <div class="duifanxx kl " >
+                    <p>{$oo.gdhf_name}{$oo.gdhf_time}</p>
+                    <p>
+                        <!--<span class="cjusr color_pd">{$oo.gdhf_content}</span>-->
+                        <if condition="strtoupper($oo['gdhf_content']) eq ''">
+                           <span class="cjusr color_pd"><a href="__PUBLIC__/{$oo.img}"><img src="__PUBLIC__/{$oo.img}" width=50 height=50 /></a></span>
+                        <elseif condition="strtoupper($oo['img'] eq '')"/>
+                           <span class="cjusr color_pd">{$oo.gdhf_content}</span>
+                        <else/>
+                          <!-- {$arr.ddh} -->
+                        </if>
+                    </p>
+                </div>
+            </foreach>
+        
+            
+        
+            <foreach name='arrg1' item='kk'>
+                <div class="duifanxx kl">
+                    <p>{$kk.gdhf_name}{$kk.gdhf_time}</p>
+                    <p>
+                        <!--<span class="cjusr">{$kk.gdhf_content}</span>-->
+                        <if condition="strtoupper($kk['gdhf_content']) eq ''">
+                           <span class="cjusr color_p"><a href="__PUBLIC__/{$kk.img}"><img src="__PUBLIC__/{$kk.img}" width=50 height=50 /></a></span>
+                        <elseif condition="strtoupper($kk['img'] eq '')"/>
+                           <span class="cjusr color_p">{$kk.gdhf_content}</span>
+                        <else/>
+                          <!-- {$arr.ddh} -->
+                        </if>
+                    </p>
+                </div>
+            </foreach>
+            
+            <foreach name='arrg2' item='vv'>
+                <div class="duifanxx kr " >
+                    <p>{$vv.gdhf_name}{$vv.gdhf_time}</p>
+                    <p>
+                        <!--<span class="cjusr color_p">{$vv.gdhf_content}</span>-->
+                         <if condition="strtoupper($vv['gdhf_content']) eq ''">
+                           <span class="cjusr"><a href="__PUBLIC__/{$vv.img}"><img src="__PUBLIC__/{$vv.img}" width=50 height=50 /></a></span>
+                        <elseif condition="strtoupper($vv['img'] eq '')"/>
+                           <span class="cjusr">{$vv.gdhf_content}</span>
+                        <else/>
+                          <!-- {$arr.ddh} -->
+                        </if>
+                    </p>
+                </div>
+            </foreach>

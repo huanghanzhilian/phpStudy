@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body><center><input type="text" id="sea" placeholder='搜索您需要查找的订单号'><input type="button" value="搜索" onclick="sear()"></center>
+	商品管理<br /><br /><br />
+	用户管理<br /><br /><br />
+	<a href="__MODULE__/Huishou/index">回收管理</a><br /><br /><br />
+	<a href="__MODULE__/Guanlishifu/index">师傅管理</a><br /><br /><br />
+	<a href="__MODULE__/Ddguanli/jixiu/ways_id/3">订单管理</a><br /><br /><br />
+	<a href="__MODULE__/caiwu/index">财务管理</a><br /><br /><br />
+	<a href="__MODULE__/Fapiao/index">发票管理</a><br /><br /><br />
+	<a href="__MODULE__/Youhuiquan/index">优惠券管理</a>
+	<div id='ky'>
+	
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+function sear(){
+		var sea=document.getElementById("sea").value
+		alert(sea);
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/dingdan_list/sea/"+sea,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+				document.getElementById('ky').innerHTML=ajax.responseText
+				
+			}
+		}
+	
+	}
+
+</script>

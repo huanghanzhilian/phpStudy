@@ -1,0 +1,107 @@
+/*对话框*/
+.button {
+	margin-bottom: 20px;
+}
+.dialog .widget-container {
+	position: relative;
+	width: 350px;				/* height:200px; */
+	background: #fff;
+}
+.dialog .widget-title {
+	color: #4d4d4d !important;				/*height:40px;*/
+	padding-left: 8px;
+	background: none !important;				/* line-height:20px !important; */
+	border: none !important;
+	padding: 12px 0;
+	font-weight: 600;
+	font-size: 18px;
+}
+.dialog .widget-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.dialog .widget-content {
+	height: 75px;
+	padding: 0 10px 10px 10px;
+	line-height: 22px;
+	text-align: center;
+	color: #998b8b;
+	font-size: 15px;
+}
+.dialog .widget-buttons {
+	height: 40px;
+	padding: 0 20px;
+	line-height: 40px;
+	text-align: right;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+.dialog .widget-buttons button {
+	width: 80px;
+	height: 38px;
+	border: none;
+	line-height: 38px;
+	background: #6aa8fd;
+	border: solid 1px #6aa8fd;
+	outline: none;
+	cursor: pointer;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	margin: 0 10px;
+	color: #fff;
+}
+.dialog .widget-buttons button.button-1 {
+	background: none;
+	color: #6aa8fd;
+}
+.maincontent_list {
+	margin-bottom: 50px;
+}
+.maincontent_list p.title {
+	line-height: 30px;
+	border-bottom: solid 1px #fff;
+	color: #bfc8dc;
+}
+.minslis_box {
+	padding: 40px 0;
+	border-bottom: dashed 1px #fff;
+}
+.widget-close a {
+	display: none;
+}
+
+/*对话框*/
+
+/* toast */
+.toasttj2 {
+	z-index: 21003;
+	font-size: 1.37em;
+	position: fixed;
+	bottom: 50%;
+	width: 100%;
+	opacity: 0;
+	height: 24px;
+	display: none;
+	transition: opacity 1s ease-out;
+}
+
+.toast_conent {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 2px;
+	padding: 6px;
+	text-align: center;
+	width: 200px; 
+	margin: 0 auto;
+}
+/* toast end */

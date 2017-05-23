@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.flex-wrap {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+		}
+		.flex-con {
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			flex: 1;
+		}
+		.flex-vertical {
+			-webkit-box-orient: vertical;
+			-webkit-flex-flow: column;
+			flex-flow: column;
+		}
+		html,body{
+			height: 100%;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.dfs{
+			height: 50px;
+			background: #eaeaea;
+		}
+		.headersw{
+			height: 50px;
+			width: 2500px;
+			background: #99a3bf;
+			position: fixed;
+			left: 0px;
+		}
+		.headersw div{
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			color: #fff;
+		}
+		.conmutre{
+			overflow: auto;
+			position: relative;
+		}
+		.ascdfs{
+			padding-top: 50px;
+		}
+		ul.ascdfs li{
+			width: 2500px;
+			/*border-bottom: solid 1px #ccc;*/
+			/*background: red;*/
+		}
+		ul.ascdfs li .row{
+			padding: 15px 25px;
+			box-sizing: border-box;
+		}
+		.col-md-1{
+			width: 250px;
+			float: left;
+		}
+		.row_but{
+			width: 100%;
+			padding: 15px 25px;
+			box-sizing: border-box;
+		}
+		ul.ascdfs li:nth-child(2n) {
+		    background: #f0f2f5;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+</head>
+<body class="flex-wrap flex-vertical">
+	<div class="flex-con sd flex-wrap flex-vertical">
+		
+		<div class="conmutre flex-con">
+			<div class="headersw">
+				<div class="col-md-1">货品名称</div>
+				<div class="col-md-1">颜色</div>
+				<div class="col-md-1">客户姓名</div>
+				<div class="col-md-1">客户电话</div>
+				<div class="col-md-1">订单编号</div>
+				<div class="col-md-1">订单编号</div>
+				<div class="col-md-1">订单编号</div>
+				<div class="col-md-1">订单编号</div>
+				<div class="col-md-1">订单编号</div>
+				<div class="col-md-1">订单编号</div>
+			</div>
+			<ul class="ascdfs">
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="row_commit clearfix">
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">北京 北京市 西城区 广安门外街道红莲北里1号楼2单元503</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+						<div class="row col-md-1">2017-02-23 14:58:56</div>
+					</div>
+					<div class="row_but">
+						<div class="anniu-center clearfix">
+							<div class="anniu fl">
+								<span onclick="resize(37,this)">匹配SKU</span>
+								<span onclick="buzuo(37,this)">暂不做</span>
+								<span onclick="buffuhe(37,this)">不符合</span>
+							</div>
+							<div class="anniu_hu fr">
+								<span onclick="xiangqo(37,this)">订单详情</span>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="dfs"></div>
+</body>
+<script type="text/javascript">
+	$(".conmutre").scroll(function(event) {
+		var left=$(this).scrollLeft();
+		// console.log(left);
+		$(".headersw").css({'left' : -left});
+	}); 
+</script>
+</html>

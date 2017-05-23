@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<a href="__CONTROLLER__/index">返回</a><br /><br />
+	<foreach name='arr' item='kk'>
+			{$kk.cpk_name} &nbsp;&nbsp;{$kk.cpk_price}元&nbsp;&nbsp;&nbsp;<a href='javascript:void(0)'onclick='hq({kk.huishou_id})'>赶快换钱去</a><br /><br />
+	</foreach>
+</body>
+</html>

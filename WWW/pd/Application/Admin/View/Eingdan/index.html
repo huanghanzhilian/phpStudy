@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>维百士合作商家</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/ligon_up.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/red_box.css">
+	<style type="text/css">
+		html{
+			overflow: hidden;
+		}
+		body{
+			background: url(__PUBLIC__/new/image/sj_admin/1366_768bg1.png) center center no-repeat;
+			background-size: cover;
+			position: relative;
+			overflow: hidden;
+		}
+		/*系统公共*/
+		/*top*/
+		.header .logo {
+
+		    float: left;
+		}
+		.commutr{
+			margin-left: 165px;
+			/*background: red;*/
+			height: 99%;
+			box-sizing: border-box;
+		}
+		.main-center{
+			position: absolute;
+			top: 60px;
+			left:165px;
+			bottom: 0;
+   			right: 0;
+			overflow: hidden;
+			/* width: 100%;
+			height: 100%;
+			padding-top: 60px;
+			box-sizing: border-box; */
+		}
+		.alerds{
+			padding: 12px 12px;
+			text-align: left;
+			color: #e78424;
+		}
+		.sdcmkj{
+			/*background: red;*/
+			border: solid 1px #ccc;
+		}
+		/*搜索*/
+		.nav form{
+			padding: 8px;
+			position: relative;
+		}
+		.nav form .search-input {
+		    padding: 0 30px 0 10px;
+		    width: 100%;
+		    height: 30px;
+		    font-size: 14px;
+		    border: 1px solid #7080a0;
+		    /*border-radius: 40px;*/
+		    box-sizing: border-box;
+		    background-color: #2d3340;
+		    color: #fff;
+		}
+		.nav form .search-btn {
+			position: absolute;
+			top: 9px;
+			right: 9px;
+			width: 30px;
+			height: 30px !important;
+			line-height: normal !important;
+			padding: 0 !important;
+			color: #969696 !important;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			background: none;
+			border: none;
+			cursor: pointer;
+			background: url(__PUBLIC__/img/search-icons.png) center center no-repeat;
+		}
+		/*占位符search-icons*/
+		.tips::-webkit-input-placeholder{color:#b2ccff;}
+		.tips:-moz-placeholder{color:#b2ccff}
+		.tips::-moz-placeholder{color:#b2ccff;}
+		.tips:-ms-input-placeholder{color:#b2ccff; }
+
+		.tabs1{
+			height: 100%;
+		}
+		.track{
+			position:absolute;
+			top:0;
+			right:0;
+			width:4px;
+			height:100%;
+		}
+		.track div{
+			width:4px;
+			background: rgba(71,81,102,.5);
+			border-radius: 3px;
+		}
+		.shuio{
+			height: 100%;
+		}
+		#tabs {
+		    /*margin-top: 60px;*/
+		    padding-top: 0px;
+		    box-sizing: border-box;
+		}
+		.top_nav{
+			float: left;
+			height: 100%;
+		}
+		.top_nav_list{
+			height: 100%;
+		}
+		.top_nav li{
+			float: left;
+			height: 100%;
+			line-height: 60px;
+			margin-right: 55px;
+		}
+		.top_nav li a{
+			display: inline-block;
+			padding: 8px 25px;
+			line-height: 22px;
+			border-radius: 8px;
+			color: #fff;
+			transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+		}
+		.top_nav li a:hover{
+			background-color: #275fce;
+			box-shadow:0px 0px 10px 4px #71a0ff; 
+		}
+		.top_nav li.active a{
+			background: #275fce;
+			box-shadow:0px 0px 10px 4px #71a0ff; 
+		}
+
+		/*右侧管理员*/
+		.header .head_text {
+		    height: 100%;
+		    color: #FFF;
+		    width: 200px;
+		     padding: 0 0px; 
+		    background: #5381db;
+		}
+		.head_text_li{
+			position: relative;
+			padding: 0 10px;
+		}
+		.head_text_li:hover .dropdown-menu{
+			display: block;
+		}
+		.dropdown-menu {
+		    position: absolute;
+		    top: 100%;
+		    left: 0;
+		    z-index: 1000;
+		     display: none; 
+		    float: left;
+		    /* min-width: 160px; */
+		    width: 100%;
+		    /* padding: 5px 0; */
+		    /*margin: 2px 0 0;*/
+		    list-style: none;
+		    font-size: 14px;
+		    text-align: left;
+		    background-color: #fff;
+		    border: 1px solid #ccc;
+		    border: 1px solid rgba(0,0,0,.15);
+		    border-radius: 4px;
+		    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		    background-clip: padding-box;
+		    background:url(__PUBLIC__/new/image/sj_admin/user-bg.png) 0 0 no-repeat;
+		    background-size: cover;
+		    /*background-color: red;*/
+		}
+		.dropdown-menu a {
+		    padding: 10px 20px;
+		    line-height: 40px;
+		    /*-webkit-transition: all .1s .1s;*/
+		    /*transition: all .1s .1s;*/
+
+		}
+		.dropdown-menu > li > a {
+		    display: block;
+		    padding: 3px 30px;
+		    clear: both;
+		    font-weight: 400;
+		    color: #fff;
+		    white-space: nowrap;
+		}
+		.dropdown-menu > li > a>span{
+			margin-left: 8px;
+		}
+		.dropdown-menu a:hover{
+			background: #668cc8;
+			color: #fff;
+		}
+
+		.iconfont{
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(__PUBLIC__/new/image/sj_admin/Password.png) center center no-repeat;
+		}
+		.iconfonts{
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(__PUBLIC__/new/image/sj_admin/exit-.png) center center no-repeat;
+		}
+		.iconfontsaa{
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(__PUBLIC__/new/image/sj_admin/shop.png) center center no-repeat;
+		}
+		.iconfontsaass{
+			width: 20px;
+			height: 22px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(__PUBLIC__/new/image/sj_admin/help.png) center center no-repeat;
+		}
+		/*系统公共*/
+
+		.tabs1 li a {
+			padding-left: 57px;
+		}
+		/*active*/
+		.tabs1 li a{
+			background-position: 20px center;
+			background-repeat: no-repeat;
+		}
+		.tabs1 li a.as1{
+			background-image: url(__PUBLIC__/new/image/sj_admin/Manual.png);
+		}
+
+
+
+		.tabs1 li a.as2{
+			background-image: url(__PUBLIC__/new/image/sj_admin/accounting-icon.png);
+		}
+
+		.tabs1 li a.as3{
+			background-image: url(__PUBLIC__/new/image/eingdan_login/chax.png);
+		}
+
+		.tabs1 li.active a.as3{
+			background-image: url(__PUBLIC__/new/image/eingdan_login/chax-clect.png);
+		}
+
+
+		.tabs1 li a.as4{
+			background-image: url(__PUBLIC__/new/image/sj_admin/AUTO.png);
+		}
+
+
+		.header .logo {
+		    background: url(__PUBLIC__/new/image/eingdan_login/logosss.png) left center no-repeat;
+		    width: 200px;
+		}
+
+
+
+		.dropdown-caret {
+	    display: inline-block;
+	    width: 0;
+	    height: 0;
+	    vertical-align: middle;
+	    content: "";
+	    border: 4px solid;
+	    border-right-color: transparent;
+	    border-bottom-color: transparent;
+	    border-left-color: transparent;
+	    margin-top: 4px;
+	}
+	.honggfs{
+		height: 100%;
+		width: 80px;
+		background:url(__PUBLIC__/new/image/huskal/redpocket.png) center 1px no-repeat;
+		background-size: 80px;
+		position: relative;
+		
+	}
+	.honggfs:hover .alopsq{
+		display: block;
+	}
+	.alopsq{
+		position: absolute;
+		right: 0px;
+		top: 100%;
+		width: 280px;
+		height: 156px;
+		background:url(__PUBLIC__/new/image/huskal/bg-card.png) center center no-repeat;
+		color: #fff;
+		padding:12px 20px;
+		box-sizing: border-box;
+		overflow: hidden;
+		display: none;
+	}
+	.alopsq .titles{
+		font-weight: 600;
+		line-height: 32px;
+		text-align: center;
+		color: #0cd1da;
+	}
+	.alopsq .coments{
+
+	}
+
+	/* 添加切换店铺 */
+	.addesrt{
+		position: relative;
+		/* background: red; */
+		min-height: 50px;
+		cursor: pointer;
+	}
+	.posuw{
+		 display: none; 
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		z-index: 20000;
+		/* background: red; */
+	}
+	.addesrt>ul{
+
+	}
+	.addesrt ul>li{
+		color: #0cd1da;
+		height: 45px;
+		line-height: 45px;
+		background: #2d3340;
+		/*text-indent: 34px;*/
+	}
+	.addesrt ul>li>a{
+		color: #0cd1da;
+		height: 45px;
+		line-height: 45px;
+		background: #2d3340;
+		/*text-indent: 34px;*/
+		padding-left: 34px;
+		display: block;
+		overflow: hidden;
+		/* margin-right: 26px; */
+		padding-right: 26px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.addpaok{
+		color: #0cd1da;
+/* 		height: 50px; */
+		line-height: 50px;
+		text-indent: 34px;
+		background: #2d3340;
+	}
+	.addpaok span{
+		display: inline-block;
+		font-size: 24px;
+		margin-right: 4px;
+		width: 20px;
+		height: 20px;
+		line-height: 16px;
+		vertical-align: middle;
+		text-align: left;
+		text-indent: 0px;
+		position: relative;
+	}
+	.addpaok2{
+		display: none;
+		position: relative;
+		
+	}
+	.addpaok2 span{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	    display: inline-block;
+	    width: 0;
+	    height: 0;
+	    vertical-align: middle;
+	    content: "";
+	    border: 4px solid;
+	    border-right-color: transparent;
+	    border-bottom-color: transparent;
+	    border-left-color: transparent;
+	    margin-top: 4px;
+	    margin-left:10px;
+	}
+	.asder0{
+		display: none;
+	}
+	.asder1{
+		display: block;
+	}
+	.asdear0{
+		display: block;
+		top: 0;
+	}
+
+	/* 添加切换店铺end */
+
+	/* toast */
+	.toasttj2 {
+		z-index: 21003;
+		font-size: 1.37em;
+		position: fixed;
+		bottom: 50%;
+		width: 100%;
+		opacity: 0;
+		height: 24px;
+		display: none;
+		transition: opacity 1s ease-out;
+	}
+	/* toast end */
+
+	.shuamlop {
+	    height: 448px;
+	    overflow: auto;
+	}
+	.attr-content {
+	    overflow: hidden;
+	}
+
+	.main-left{
+		width: 165px !important;
+		background: rgba(24,37,64,0.7) !important;
+		top: 60px !important;
+	}
+	#tabs {
+	    margin-top: 0px !important;
+	}
+	.sueyw{
+		width: 125px;
+		display: block;
+		overflow: hidden;
+		margin-right: 26px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.header {
+	    background-color: rgba(90,139,237,0.3) !important;
+	    position: relative;
+	    left: auto;
+	    top: auto;
+	}
+	.tabs1 li.active a {
+	    background-color: rgba(112,151,215,0.8) !important;
+	}
+	.tabs1 a:hover{
+		background-color: rgba(112,151,215,0.8) !important;
+	}
+	</style>
+</head>
+<body>
+	<div class="header clearfix">
+		<a href="index.html" class="logo" title="后台管理"></a>
+		<div class="top_nav">
+		</div>
+        <ul class="head_text fr">
+	        <li class="head_text_li">
+	        	<img class="avatar" src="__PUBLIC__/new/image/head portrait.png">
+	        	<span class="dropdown-toggle">{$shou_phone}</span>
+	        	<span class="dropdown-caret"></span>
+	        	<ul class="dropdown-menu">
+	        		<!-- <li>
+	        			<a href="javascript:;" onclick="zishuqk()">
+	        				<i class="iconfonts"></i>
+	        				<span>自动下单</span>
+	        			</a>
+	        		</li> -->
+	        		<li>
+	        			<a href="__CONTROLLER__/dianpuguanli" target="mainFrame">
+	        				<i class="iconfontsaa"></i>
+	        				<span>店铺管理</span>
+	        			</a>
+	        		</li>
+	        		<li>
+	        			<!-- <a href="__CONTROLLER__/set_psd/shou_name/{$shou_name}"> -->
+	        			<a href="__CONTROLLER__/forget_psd">
+	        				<i class="iconfont"></i>
+	        				<span>修改密码</span>
+	        			</a>
+	        		</li>
+	        		<li>
+	        			<!-- <a href="__CONTROLLER__/set_psd/shou_name/{$shou_name}"> -->
+	        			<a target="_blank" href="__CONTROLLER__/help">
+	        				<i class="iconfontsaass"></i>
+	        				<span>帮助手册</span>
+	        			</a>
+	        		</li>
+	        		<li>
+	        			<a href="__CONTROLLER__/tuichu">
+	        				<i class="iconfonts"></i>
+	        				<span>退出登入</span>
+	        			</a>
+	        		</li>
+	        	</ul>
+	        </li>
+        </ul>
+        <!-- <a href="__CONTROLLER__/shou_hongbao/shou_name/{$dte}" target="mainFrame" class="honggfs fr">
+        			<div class="alopsq">
+        				<div class="titles">订单返红包</div>
+        				<div class="coments">
+        					即日起至2017年4月31日，若客户通过淘宝下单并能成功完成上门安装，则成功上门安装的每笔订单 将奖励10元现金红包给对应淘宝
+        				</div>
+        			</div>
+        		</a> -->
+	</div>
+
+	<!-- nav-collapse -->
+	<div class="main-left">
+		<div class="tabs tabs1" id="tabs">
+			<div class="shuio">
+				<div class="addesrt">
+					<!-- <div class="addpaok" onclick="resize()">
+						<span>+</span>添加店铺
+					</div> -->
+					<div class="addpaok addpaok2 asder{$water}">
+						<div class="sueyw">
+							{$dte}
+						</div>
+						<span></span>
+					</div>
+					<div class="posuw asdear{$water}" style="overflow: hidden;">
+						<ul>
+							<foreach name='arr9' item='kk'>
+								<li class="dp_admin">
+									<a href="javascript:;">{$kk.shou_name}</a>
+								</li>
+							</foreach>
+						</ul>
+						<div style="background: #12141a; box-shadow:4px 2px 6px #333333; "  class="addpaok" onclick="resize()">
+							<span>+</span>添加店铺
+						</div>
+					</div>
+				</div>
+				<ul class="nav">
+					<li class="active"><a class="as1" href="__CONTROLLER__/shoudong/shou_name/{$dte}" target="mainFrame">手动下单</a></li>
+					<li><a class="as2" href="__CONTROLLER__/dingdancop/shou_name/{$dte}" target="mainFrame">订单核算</a></li>
+					<!-- <li><a class="as3" href="__CONTROLLER__/qz/shou_name/{$dte}" target="mainFrame">旗标设置</a></li> -->
+					<!-- <li><a class="as4" href="__CONTROLLER__/baobeilist/shou_name/{$dte}" target="mainFrame">合作宝贝</a></li> -->
+					<!-- <li><a class="as4" href="__CONTROLLER__/inq_fw/shou_name/{$dte}" target="mainFrame">服务范围</a></li> -->
+					<li><a class="as4" href="__CONTROLLER__/fuwuzl/shou_name/{$dte}" target="mainFrame">服务区域</a></li>
+				</ul>
+			</div>
+			<div class="track"><div></div></div>
+		</div>
+	</div>
+
+
+		<div class="main-center" id="main-center">
+			<iframe src="__CONTROLLER__/shoudong/shou_name/{$dte}"  frameborder="0" name="mainFrame" width="100%" height="100%"></iframe>
+		</div>
+
+
+
+	<!-- 遮罩弹窗 -->
+    <div class="attr-overlay" id="attr-overlay"></div>
+    <div class="attr-content" id="attr-content" style="height: 490px;">
+        <div class="widget-close" id="closed">
+            关闭
+        </div>
+        <div id="widget-title" class="widget-title"></div>
+        <div id="content_sd"></div>
+    </div>
+    <!-- 遮罩弹窗end -->
+    <!-- toast -->
+    <div id="toastId2" class="toasttj2" style="display: none; opacity: 0;"></div>
+    <!-- toast end -->
+</body>
+<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="__PUBLIC__/new/script/admin_index.js"></script>
+<script src="__PUBLIC__/new/script/toast.js" type="text/javascript"></script>
+<script type="text/javascript">
+	//添加店铺
+	function resize() {
+		// var overlay= document.getElementById("attr-overlay");
+		var overlay= $("#attr-overlay");//遮罩层
+		var content= $("#attr-content");//弹窗box
+		var widget_title= $("#widget-title");//弹窗头
+		var windows=$("body");
+		var closed=$("#closed");//关闭按钮
+
+		widget_title.text("添加店铺")
+		overlay.show();
+		content.show();
+		$("#content_sd").empty();
+		var sel=(windows.width()-content.width())/2;
+		var set=(windows.height()-content.height())/2;
+
+		content.offset({ top: set, left: sel });
+		closed.on("click",function(){
+			overlay.hide();
+			content.hide();
+		});
+		overlay.on("click",function(){
+			overlay.hide();
+			content.hide();
+		});
+		var Html='<div class="submit-form" style="margin-top: 46px;">\
+					<div class="input-group">\
+						<p class="input-title">您的店铺ID(店铺名称)</p>\
+						<div class="input-fill">\
+							<i class="input_icon input_icon_id"></i>\
+							<input class="qizi-shuru" id="username" type="text" name="" >\
+							<p class="msg"></p>\
+						</div>\
+					</div>\
+					<div class="input-group">\
+						<p class="input-title">店铺首页连接</p>\
+						<div class="input-fill">\
+							<input class="qizi-shuru qizi-shuru1" type="text" id="link" name="">\
+							<p class="msg"></p>\
+						</div>\
+					</div>\
+					<button id="sksow" style="margin-top: 20px;" class="qizi-login">确认添加</button>\
+				</div>'
+		$("#content_sd").html(Html);
+		/*$.ajax({
+			url: "http://d.weibaishi.com/admin/aingdan/type_list",
+			// data:{'p_id':datas},
+			dataType: "json",
+			type:'post',
+			success: function (data) {
+				var navHtml='';
+				$(data).each(function(i, v) {
+					navHtml += '<li class="FlowBut" onclick="shugts(this)" content="' + v.type_name + '" num="' + v.type_id + '" >' + v.type_name + '</li>';
+				})
+				$("#a1 .FlowButtons-list",parent.document).html(navHtml);
+			}
+		});*/
+		//提交数据
+		var shuop=false;
+		var shuop1=false;
+		//店铺输入
+		$("#username").on('keyup',function(){
+			if($(this).val().length>0){
+				$(this).next().hide().html('');
+			}else{
+				$(this).next().show().html('<i class="cwe"></i>店铺不能为空');
+			}
+		});
+		//店铺失焦
+		$("#username").on("blur",function(){
+			var value=$(this).val();
+			if(value!=""){
+				$.ajax({
+					url: "http://d.weibaishi.com/admin/eingdan/shou_nameyz",
+					data:{'shou_name':value},
+					dataType: "json",
+					type: 'post',
+					success: function(data) {
+						//console.log(data)
+						if(data=="1"){
+							$("#username").next().show().html('<i class="zqsw"></i>正确');
+							shuop=true;
+						}else if(data=="2"){
+							$("#username").next().show().html('<i class="cwe"></i>此店铺已存在');
+							shuop=false;
+						}
+					}
+				});
+			}
+		})
+		//连接输入
+		$("#link").on('keyup',function(){
+			if($(this).val().length>0){
+				$(this).next().hide().html('');
+			}else{
+				$(this).next().show().html('<i class="cwe"></i>店铺不能为空');
+			}
+		});
+		//连接失焦
+		$("#link").on("blur",function(){
+			var value=$(this).val();
+			//var urlRegExp=/^((https|http|ftp|rtsp|mms)?:\/\/)+[A-Za-z0-9]+\.[A-Za-z0-9]+[\/=\?%\-&_~`@[\]\':+!]*([^<>\"\"])*$/;
+			/*var j=/^((https|http|ftp|rtsp|mms)?:\/\/)+[A-Za-z0-9]+\.[A-Za-z0-9]+[\/=\?%\-&_~`@[\]\':+!]*([^<>\"\"])*$/;*/
+			//var urlRegExp=/^((https|http|ftp|rtsp|mms|taobao.com|tmall.com|www.taobao.com|www.tmall.com))/;
+			var urlRegExp=/((taobao.com|tmall.com))/i;
+			if(urlRegExp.test(value)){
+				$("#link").next().show().html('<i class="zqsw"></i>正确');
+				shuop1=true;
+			}else{
+				$("#link").next().show().html('<i class="cwe"></i>请输入正确连接');
+				shuop1=false;
+			}
+		})
+		//提交
+		$("#sksow").on('click',function(){
+			if(!shuop){
+				$("#username").next().show().html('<i class="cwe"></i>店铺有误');
+			}else if(!shuop1){
+				$("#link").next().show().html('<i class="cwe"></i>连接有误');
+			}else{
+				$.ajax({
+					url: "http://d.weibaishi.com/admin/eingdan/shou_add",
+					data: {
+						'shou_name': $("#username").val(),
+						'shou_lianjie': $("#link").val()
+					},
+					dataType: "json",
+					type: 'post',
+					success: function(data) {
+						if (data == "1") {
+							overlay.hide();
+							content.hide();
+							setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作成功</div>');
+							setTimeout(function(){
+								location.reload()
+							},1500)
+						} else if (data == "2") {
+							overlay.hide();
+							content.hide();
+							setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作失败</div>');
+							setTimeout(function(){
+								location.reload()
+							},1500)
+						}
+					}
+				});
+			}
+		})
+	}
+
+
+	/*
+	zishuqk
+	自动下单
+	*/
+	function zishuqk(){
+		var overlay= $("#attr-overlay");//遮罩层
+		var content= $("#attr-content");//弹窗box
+		var widget_title= $("#widget-title");//弹窗头
+		var windows=$("body");
+		var closed=$("#closed");//关闭按钮
+
+		widget_title.text("自动下单")
+		overlay.show();
+		content.show();
+		$("#content_sd").empty();
+		var sel=(windows.width()-content.width())/2;
+		var set=(windows.height()-content.height())/2;
+
+		content.offset({ top: set, left: sel });
+		closed.on("click",function(){
+			overlay.hide();
+			content.hide();
+		});
+		overlay.on("click",function(){
+			overlay.hide();
+			content.hide();
+		});
+		var Html='<div class="shuamlop">\
+				<table class="tableaa" cellspacing="0" cellpadding="0">\
+	                <thead>\
+	                    <tr>\
+	                        <th width="25%">店铺ID (店铺名称)</th>\
+	                        <th>店铺授权代码</th>\
+	                        <th width="26%">操作</th>\
+	                    </tr>\
+	                </thead>\
+	                <tbody>\
+		                <tr>\
+	                        <td align="center">x</td>\
+	                        <td align="center">后台设计</td>\
+	                        <td align="center">测试内容</td>\
+	                    </tr>\
+	                </tbody>\
+	            </table>\
+	        </div>';
+		$("#content_sd").html(Html);
+	}
+
+
+	//点击切换
+	/*$("body").on('click',function(){
+		$(".addpaok2").removeClass('on');
+		$(".posuw").hide();
+	})*/
+	/*$(".addpaok2").on('click',function(event){
+		event.stopPropagation();
+		if ($(this).hasClass('on')) {
+			// $(el).children("ul").slideUp();
+			$(this).removeClass('on');
+			$(this).next().hide();
+		} else {
+			$(this).addClass('on');
+			$(this).next().show();
+			// $(el).children(".lishuth").addClass('on');
+			// $(el).children("ul").stop(true, false).slideDown();
+			// $(el).siblings().children("ul").slideUp(100);
+			// $(el).siblings().removeClass('on');
+			// $(el).siblings().children(".lishuth").removeClass('on');
+			// //var _this_h = $(this).offset().top
+		}
+	})*/
+	$(".addesrt").hover(function(){
+		//console.log($(this).children())
+		// console.log($(this).find("ul").children("li"))
+		if($(this).find("ul").children("li").length==0){
+			$(".posuw ").show()
+		}else{
+			$(".posuw ").show()
+		}
+		
+	},function(){
+		if($(this).find("ul").children("li").length==0){
+			$(".posuw ").show()
+		}else{
+			$(".posuw ").hide()
+		}
+		
+	})
+	//切换店铺
+	$(".dp_admin").on('click',function(){
+		var value=$(this).text();
+		$.ajax({
+			url: "http://d.weibaishi.com/admin/eingdan/qiehuan",
+			data: {
+				'shou_name': value,
+			},
+			dataType: "json",
+			type: 'post',
+			success: function(data) {
+				if (data == "1") {
+					location.reload()
+				} else if (data == "2") {
+					setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">操作失败</div>');
+					/*setTimeout(function() {
+						location.reload()
+					}, 1500)*/
+				}
+			}
+		});
+	})
+
+</script>
+
+</html>

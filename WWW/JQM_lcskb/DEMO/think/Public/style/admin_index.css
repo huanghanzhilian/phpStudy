@@ -1,0 +1,178 @@
+
+html,body{
+	height: 100%;
+}
+.headers{
+	height: 60px;
+	width: 100%;
+}
+.header{
+	height: 60px;
+    background-color: #5a8bed;
+    padding: 0 0 0 10px;
+    /* position: fixed; width: 100%; */
+}
+.header .logo{
+	width: 500px;
+    height: 100%;
+    background: url(../image/logo.png) left center no-repeat;
+    box-shadow: none;
+	border: none;
+	display: inline-block;
+}
+.header .head_text{
+	height: 100%;
+    color: #FFF;
+    width: 180px;
+    padding: 0 10px;
+    background: #5381db;
+}
+.header .head_text .head_text_li{
+	height: 100%;
+	line-height: 60px;
+	vertical-align: middle;
+}
+.header .head_text .avatar{
+	border-radius: 50px;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 10px;
+}
+.header .head_text .dropdown-toggle{
+	vertical-align: middle;
+	display: inline-block;
+}
+.main-left{
+	width: 165px;
+	background-color: #2d3340;
+	/*  height: 100%;  */
+}
+.main-center{ overflow: auto; }
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+.table thead{
+	line-height: 50px;
+	background-color: #99a3bf;
+	color: #fff;
+	font-size: 15px;
+}
+.table tbody{
+	text-align: center;
+}
+.table tbody tr{
+	border-bottom: solid 1px #ccc;
+	line-height: 24px;
+}
+.table tbody tr td{
+	padding: 15px 0;
+}
+.anniu{
+	margin-top: 12px;
+}
+.anniu span{
+	display: inline-block;
+	border:solid 1px #517ed6;
+	padding: 0 12px;
+	margin: 0 12px;
+	color: #517ed6;
+	cursor: pointer;
+}
+.xianghu{
+	margin-top: 12px;
+}
+.xianghu span{
+	margin-right: 50px;
+	color: #517ed6;
+	cursor: pointer;
+}
+
+.tabs1{
+	color: #b2ccff
+}
+.tabs1 h2{
+	height: 40px;
+	line-height: 40px;
+	padding-top: 10px;
+	font-size: 15px;
+	font-weight: normal;
+	vertical-align: middle;
+	padding-left: 8px;
+}
+.tabs1 h2 span{
+	vertical-align: middle;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background:url(../image/OrderImport-icon.png) left center no-repeat;
+}
+.tabs1 li{
+	height: 40px;
+}
+.tabs1 a{
+	color: #b2ccff;
+	display: block;
+	line-height: 40px;
+	padding-left: 40px;
+	transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.tabs1 a:hover{
+	background-color: #517ed6;
+	color:#fff;
+}
+.tabs1 li.active a{
+	background-color: #517ed6;
+	color:#fff;
+	position: relative;
+}
+.tabs1 li.active a:after {
+    content: "";
+	border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+    height: 0px;
+    width: 0px;
+    display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+.tabsd{
+	height: 55px;
+	background: #475166;
+	color: #fff;
+	line-height: 55px;
+	text-align: center;
+	cursor: pointer;
+}
+.tabsd .active{
+	position: relative;
+	color: #ffa200;
+}
+.tabsd .active:after {
+    content: "";
+	border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffa200;
+    height: 0px;
+    width: 0px;
+    display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+}
+.tabsd .active:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: #ffa200;
+	left: 0;
+	bottom: 0;
+}

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>乐视云 上传DEMO</title>
+    <link rel="stylesheet" href="http://www.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <style>
+        body {
+            margin: 0 10px;
+            font-size: 16px;
+            font-family: Microsoft Yahei;
+            color: #333;
+        }
+
+        a:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        .ml-20 {
+            margin-left: 20px;
+        }
+
+        .hrPageTable > thead > tr > th,
+        .hrPageTable > thead > tr > td {
+            border-bottom-width: 1px;
+        }
+
+        .hrPageTable tr th,
+        .hrPageTable tr td {
+            text-align: center;
+        }
+
+        .hrPageTable > thead > tr > th {
+            background: #ddd;
+        }
+
+        .hrPageCtrl {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .hrPageCtrlList a,
+        .hrPageCtrlList span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+            .hrPageCtrlList a:hover {
+                background: #428bca;
+                color: #fff;
+            }
+
+        a.hrPageCurrent.active {
+            background: #428bca;
+            color: #fff;
+        }
+
+        .posiT-n {
+            position: relative;
+            top: 3px;
+        }
+
+        .hrPageCtrlList a.hrPageDisabled {
+            background: #eee;
+            color: #428bca;
+            cursor: not-allowed;
+        }
+
+            .hrPageCtrlList a.hrPageDisabled:hover {
+                background: #eee;
+                color: #428bca;
+            }
+    </style>
+    <script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="html5Upload.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#fileSelecter").selectUpload({
+                selectFileId: "fileSelecter", //绑定添加文件按钮
+                addFiles: function (file, fileType) {//每添加一个视频文件的回调
+                    $("#videoId").html(file.name);
+                    $("#videoProgress").html("0");
+                    $("#videoSpeed").html("0");
+                    $("#videoStatus").html("等待上传");
+                }
+            });
+
+
+            $("#uploadBtn").click(function () {
+                window.uploadFunction({
+                    uploadUrl: "/../video_init.php",//上传初始化地址
+                    file: window.userSelectedFiles[window.userSelectedFiles.length-1],//要上传的文件
+                    load: function (e, msg) { //一个文件上传完成后的回调
+                        if (msg == "暂时放弃此文件上传") {
+                            $("#videoSpeed").html("0");
+                            $("#videoStatus").html("暂时放弃此文件上传");
+                        } else {
+                            $("#videoProgress").html("100%");
+                            $("#videoSpeed").html("0");
+                            $("#videoStatus").html("上传完成");
+                        }
+                    },
+                    progress: function (e) {//上传进度回调
+                        if (e.progress == "视频丢失") {
+                            $("#videoSpeed").html(0);
+                            $("#videoStatus").html("视频丢失");
+                        } else {
+                            $("#videoProgress").html(e.progress);
+                            $("#videoSpeed").html(e.speed);
+                            $("#videoStatus").html("正在上传");
+                        }
+                    },
+                    error: function (e,msg) {//发上错误回调
+                        if (msg == "上传失败") {
+                            $("#videoSpeed").html("0");
+                            $("#videoStatus").html("上传失败");
+                        } else {
+                            $("#videoSpeed").html("0");
+                            $("#videoStatus").html("网络连接断开");
+                        }
+                    },
+                    abort: function (e) { //终止上传
+
+                    },
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <table class="hrPageTable table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>视频名称</th>
+                <th>上传进度</th>
+                <th>上传速度</th>
+                <th>上传状态</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="videoId"></td>
+                <td id="videoProgress"></td>
+                <td id="videoSpeed"></td>
+                <td id="videoStatus"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="color:red">此demo 只演示了单文件上传</div>
+
+    <div>
+        <input type="button" class="uploadBtn" id="uploadBtn" value="开始上传" />
+        <input type="button" id='fileSelecter' class="uploadBtn" value="添加视频" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+[ 2017-02-05T11:55:51+08:00 ] 127.0.0.1 /ceshi/DEMO/think/index.php/chear/phone/17301205932
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载模块:Chear
+
+[ 2017-02-05T11:56:02+08:00 ] 127.0.0.1 /ceshi/DEMO/think/index.php/index/chear/phone/17301205932
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+ERR: 无法加载模块:Index
+
+[ 2017-02-05T11:56:22+08:00 ] 127.0.0.1 /ceshi/DEMO/think/index.php/chear/phone/17301205932
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001627s ]
+ERR: 无法加载模块:Chear
+
+[ 2017-02-05T11:56:44+08:00 ] 127.0.0.1 /ceshi/DEMO/think/index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载模块:Index
+
+[ 2017-02-05T11:56:48+08:00 ] 127.0.0.1 /ceshi/DEMO/think/index.php/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+ERR: 无法加载模块:Index
+
+[ 2017-02-05T11:56:51+08:00 ] 127.0.0.1 /ceshi/DEMO/think/index.php/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+ERR: 无法加载模块:Index
+
+[ 2017-02-05T11:56:58+08:00 ] 127.0.0.1 /ceshi/DEMO/think/index.php/chear
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001459s ]
+ERR: 无法加载模块:Chear
+
+[ 2017-02-05T11:57:20+08:00 ] 127.0.0.1 /ceshi/DEMO/think/index.php/chear
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001329s ]
+ERR: 无法加载模块:Chear
+
+[ 2017-02-05T11:57:32+08:00 ] 127.0.0.1 /ceshi/DEMO/think/index.php/hone/index/chear
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+ERR: 无法加载模块:Hone
+
+[ 2017-02-05T11:57:42+08:00 ] 127.0.0.1 /ceshi/DEMO/think/index.php/Hone/index/chear
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001467s ]
+ERR: 无法加载模块:Hone
+

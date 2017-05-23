@@ -1,0 +1,26 @@
+
+
+<foreach name='arr' item='k'>
+<li class="lmbhu lmbhuopd" >
+   
+   <div class="listy_box">
+       <div class="listy_pk">单号：{$k.ddh}<span class="fr" style="color:#999;">申请时间:{$k.txsq_time}</span></div>
+       
+       <div class="listy_pk">提现金额：{$k.amt}</div>
+       <div class="listy_pk">提现账号：{$k.kahao}</div>
+       <div class="listy_pk">姓名：{$k.user_username}</div>
+   </div>
+
+   
+   <if condition="strtoupper($k['zta']) eq  1">
+   <div class="listy_kr">
+       <span class="listy_con">
+           <a class="didb llvcer" href="__CONTROLLER__/tongguo/id/{$k.tixianshenqing_id}" onclick="if(confirm('是否确认通过?')==false)return false;">确认通过</a>
+           <a class="didb" href="__CONTROLLER__/jujue/id/{$k.tixianshenqing_id}" onclick="if(confirm('确定拒绝?')==false)return false;" >拒绝</a>
+       </span>
+   </div>
+   <else/>
+   </if>
+   
+</li>
+</foreach>

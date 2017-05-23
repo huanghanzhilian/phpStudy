@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		a{text-decoration:none;}
+		#le{float:left;}
+		#list{float:left;margin-left:30px;}
+	</style>
+</head>
+<body>
+<a href="__CONTROLLER__/peijiandingdan">返回</a><br /><br />
+	<foreach  name='arr4' item='k'>
+	<a href='javascript:void(0)'onclick='j()'>{$k.brand_name}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</foreach><br /> <br /><br />
+	
+	<div id='le'>
+	<a href='javascript:void(0)'onclick='quanbu(0)'>全部</a><br /><br />
+	<foreach  name='arr3' item='k'>
+	<a href='javascript:void(0)'onclick='jixing({$k.model_id})'>{$k.model_name}</a><br /> <br />
+	</foreach>
+	</div>
+	<div id='list'>
+
+
+	<foreach name='arr' item='kk'>
+		<a href='javascript:void(0)'onclick=''><h3>{$kk.cpk_name}</a>&nbsp;&nbsp;&nbsp;&nbsp;{$kk.cpp_price}元&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+		<foreach name="kk['data']" item='ee'>
+		{$ee.cangku_name}&nbsp;&nbsp;&nbsp;&nbsp; 数量({$ee.numss})&nbsp;&nbsp;&nbsp;<br />
+		</foreach><br /><br />
+	</foreach>
+	
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	function jixing(model_id){
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/peijian/model_id/"+model_id,true)
+			//alert(model_id);/* style='display:none'*/
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('list').innerHTML=ajax.responseText
+				}
+			}
+	}
+function quanbu(model_id){
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/quan/model_id/"+model_id,true)
+			//alert(model_id);/* style='display:none'*/
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('list').innerHTML=ajax.responseText
+				}
+			}
+	}
+
+
+</script>

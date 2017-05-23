@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>搜索</title>
+<script src="jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+<form action="https://cn.bing.com/search" target="_blank" id="bd">
+    <input type="text" id="shuru"/>
+    <input type="button" id="shous" value="搜索"/>
+</form>
+<div id="jiehuo" style=" height:200px; background:#ccc; display:none">
+    
+</div>
+<script>
+$(function(){
+    $("#shous").bind('click',function(){
+		var shuruz=$("#shuru").val();
+		$.post('test.php',{num:shuruz},function(d){
+			console.log(d);
+			$("#jiehuo").append("<li>你输入的"+shuruz+"是"+ d.name + "</li>");
+		},'json')
+		/*$.get('test.php',function(d){
+			console.log(d);
+			$("#jiehuo").append("<li>"+ d.name + "</li>");
+		},'json')*/
+		$("#jiehuo").show();
+		
+	})
+})
+</script>
+</body>
+</html>

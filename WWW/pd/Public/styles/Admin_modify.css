@@ -1,0 +1,310 @@
+
+
+
+/*公共调用*/
+.public_width{ width:1040px; background:#fff; margin:auto;}
+.body1_color{ background:#f0f2f5;}
+.cursor{cursor:pointer;}
+/*公共调用*/
+
+/*top*/
+.header{ height:80px; line-height:80px; background:#2d5ab8;}
+.header_h1{ color:#fff; text-align:center; font-size:20px; font-weight:500; position:relative;}
+.youb_mk{ position:absolute; color:#fff; right:20px;}
+/*top*/
+
+
+/*主体*/
+.container{ color:#4c4c4c; min-height:668px;}
+.Return{ height:66px; line-height:66px; text-align:center;}
+.Return_button{ width:66px; height:36px; line-height:36px; border:1px solid #e1e3e5; border-radius: 4px; display:inline-block; color:#4c4c4c;}
+
+.zhuti_rom{  padding:0 110px 120px;}
+.zhuti_rom li{ height:52px; line-height:52px; border-bottom:1px solid #e1e3e5;padding:0 38px;}
+.zhuti_rom li a{ color:#4c4c4c;  line-height:52px; vertical-align:middle;}
+.zhuti_rom li a.zjnmk{ width:700px; display:block;}
+.zhuti_rom li a.zjnmk:hover{ color:#3e7edb;}
+.zhuti_rom li a.zjnmk_pp{ width:40px; float:right; text-align:center; display:block;}
+.zhuti_rom li:first-child{border-top:1px solid #e1e3e5;} 
+.zhkkbn{ width:22px; height:22px; display:inline-block; background:url(../../../../Public/img/Admin_modify/delete.png) center center no-repeat; vertical-align:middle;}
+/*公共添加产品*/
+.append_cp{ padding:6px 0 20px 0;}
+.append_cp_box{ margin:auto; width:372px;}
+.append_cp_text{ border:1px solid #e1e3e5; height:48px; line-height:48px; padding:0 10px; width:270px; border-radius:4px 0 0 4px;}
+.append_cp_anniu{ background:#3e7edb; height:50px; line-height:50px; width:80px; color:#fff; border-radius:0 4px 4px 0;}
+/*公共添加产品*/
+
+
+/*产品库 > 手机维修*/
+.buctrese{ vertical-align:middle; font-weight:normal; margin-right:18px;}
+.zhuti_rom li a.buctrese_lian{ color:#3e7edb;}
+/*产品库 > 手机维修*/
+
+/*添加机型*/
+.zhuti_rom_list_l{ width:300px; display:block;}
+.zhuti_rom_list_r{ width:430px; display:block;}
+.Return_button_a1{ padding:0 15px; height:30px; line-height:30px !important; border:1px solid #e1e3e5; border-radius: 4px; display:inline-block; cursor:pointer;}
+.append_cp_anniu_but{ background:#3e7edb; height:50px; line-height:50px; width:372px; color:#fff; border-radius:4px; border:none;}
+.append_cp_butcin{ text-align:center; padding:6px 0;}
+.append_cp_butcin a{ color:#4c4c4c;}
+
+.bikuss{ display:none;}
+.zhuti_rom_a1{}
+.zhuti_rom_a1 li{ height:auto; padding:20px 0;}
+.Return_button_a2{ margin:0 12px;}
+.erji_h2{ height:45px; line-height:45px; text-align:center; font-weight:normal; color:#afb0b2; font-size:16px; border-bottom:1px solid #e1e3e5;}
+.li_list_conm{ text-align:center;}
+.li_list_conm input{border-radius: 4px;}
+.color_ya.on{ background:#3e7edb; color:#fff;}
+.color_ya1.on{ background:#3e7edb; color:#fff;}
+.color_ya_input,.color_ya1_input{ display:none;}
+/*添加机型*/
+
+
+
+/*占位符*/
+.tips::-webkit-input-placeholder{color:#3e7edb;}
+.tips:-moz-placeholder{color:#3e7edb}
+.tips::-moz-placeholder{color:#3e7edb;}
+.tips:-ms-input-placeholder{color:#3e7edb; }
+
+
+/*产品库管理_修改问题*/
+.zhuti_rom_list_ncon{ text-align:right;}
+/*产品库管理_修改问题*/
+
+
+/*产品库管理_小问题修改*/
+.bcrfgt{margin-top:10px; margin-right:10px;}
+/*产品库管理_小问题修改*/
+
+
+/*产品库管理_解决方案*/
+.zhuti_rom_list_r_a1c{ width:450px;}
+.xiubuttce{ width:40px; padding:8px 10px; text-align:center; }
+.xiubuttce.on{border:1px solid #3e7edb; border-radius:4px;}
+.xiubuttce_as1{ width:170px;}
+.mzsaw{ width:70px; display:inline-block; text-align:center;} 
+.mzsaw_cc1{ width:auto;}
+.mmbucts{ position:relative; display:inline-block;}
+.mmbucts ul{ position:absolute; left:-100px; width:300px;  z-index:20; background:#fff; border:1px solid #3e7edb; border-radius:4px; overflow:hidden; }
+.mmbucts ul li{ height:auto; line-height:20px; width:auto; padding:10px; text-align:left; 
+text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.nnb{ background:#3e7edb; width:140px; height:45px; border:none; border-radius:4px; color:#fff; margin:35px auto 15px; display:block;}
+.cuanhpue{ background-image: url(../img/Admin_modify/sec3.png); background-position:center center; background-repeat: no-repeat; width:20px; height:20px; background-size: 100%; display:inline-block; vertical-align:middle;}
+.cuanhpue.on{ background-image:url(../img/Admin_modify/sec4.png)}
+.vcxv{ display:none;}
+
+/*产品库管理_解决方案*/
+
+
+.zhuti_rom_ll{ padding-bottom:0px;}
+.zhuti_rom li.cdfgd{ border-top:none; display:none;}
+.zhuti_rom li.li_list_conm_ppmk{ padding:20px 0;}
+
+
+
+.shang_up{ width:24px; height:24px; display:inline-block; vertical-align:middle; background:url(../img/Admin_modify/up.png) center center no-repeat;  background-size: 14px;}
+.xia_up{ width:24px; height:24px; display:inline-block; vertical-align:middle; background:url(../img/Admin_modify/down.png) center center no-repeat;  background-size: 14px;}
+
+
+
+/*主体*/
+
+
+
+/*人员管理*/
+.append_cp_box_po{ text-align:center;}
+.append_cp_anniu_but_q{ width:auto; padding: 0 30px;}
+.img_ionm{ width:40px; height:40px; vertical-align:middle; border-radius:100%;}
+.xiaoshu{ font-weight:normal; font-style:normal;}
+.up_cune{ background:url(../../../../Public/img/jiantou2.png) center center no-repeat; width:15px; height:15px; background-size: 100%; display:inline-block; vertical-align:middle;}
+.up_cune_p_box{ padding:0 15px; cursor:pointer;}
+.up_cune_p{background: url(../../../../Public/img/jiantou2.png) center center no-repeat; width:20px; height:20px; background-size: 100%; display:inline-block; vertical-align:middle; 
+    -webkit-transition: all .28s ease-in .1s;
+    transition: all .28s ease-in .1s;
+}
+.up_cune_p_box.on .up_cune_p{ 
+webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    transform: rotate(180deg);
+}
+.zhuti_rom li.lmbhu{ height:auto;}
+.zhuti_rom li.box_list_list:first-child{ border:none;}
+.zhuti_rom li.box_list_list{ padding:0; height:auto;  border:none;}
+.box_list_list.box_list_list_1{ width:35%; text-align:center;}
+.box_list_list.box_list_list_2{ width:50%;}
+.zhuti_rom li.box_list_list.box_list_list_3{  width:15%; height:104px;}
+.pcdef_ghu{ margin:0 15px;}
+.ced_wid{ margin-right:10px;}
+.box_list_ul_po{ display:none; height:104px;}
+.medki_xs{ margin-right:10px;}
+
+.mlkipop{ position:relative; display:inline-block; text-align:left;}
+.zhuti_rom li ul.nmjk_po{ position:absolute; left:0; top:40px; white-space: nowrap; background:#f0f0f0; z-index:100; display:none;}
+.zhuti_rom li ul.nmjk_po li{ border:none; padding:0 24px; line-height:30px; height:auto;}
+
+.erdu{ width:260px;  background:#fff; position:fixed; left:50%; margin-left:-150px; top:50%; padding:20px; z-index:522; display:none;
+box-shadow: 0 0 15px 0 rgba(155,143,143,0.6);
+    -webkit-box-shadow: 0 0 15px 0 rgba(155,143,143,0.6);
+    -moz-box-shadow: 0 0 15px 0 rgba(155,143,143,0.6)
+}
+.guanb_op{ width:20px; height:20px; background:url(../../../../Public/img/Admin_modify/delete.png) center center no-repeat; background-size: 100%; position:absolute; right:8px; top:4px;}
+.guanb_op_ul_li_a{ margin:25px 0; border:1px solid #ccc; height:38px; line-height:38px;}
+.guanb_op_ul_li_a .imklj{ width:100%; display: inline-block; text-indent:1em;}
+.guanb_op_ul_li{text-align:center;}
+.guanb_op_ul_li input[type=submit]{ background:none; display:inline-block; padding:0 28px; height:30px; line-height:30px; border-radius: 50px;border:1px solid #ccc; color:#4c4c4c;}
+.guanb_op_h3{ font-weight:normal; color:#333; font-size:15px; text-align:center;}
+.zdvjio{ height:100%; width:100%; position:fixed; left:0px; top:0px;  z-index:511; display:none;}
+.bain_lp{ display:block; line-height:22px; color:#999;}
+.bain_lpc_box{ border: 1px solid #ccc; overflow:hidden; height:70px;}
+.bain_lpc{ display:block; width:100%; height:100%;}
+.guanb_op_ul_li_pp{ margin-bottom:20px;}
+.guanb_op_ul_li_c{ margin:25px 0; font-size:18px; font-weight:500;}
+
+.nbvji input[type=file] {
+    width: 128px; background:red;
+    height: 128px;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.addpic {
+    width: 128px; position:absolute; left:0; top:0;
+    height: 128px;
+    line-height: 128px;
+    text-align: center;
+    color: #8d8d8d;
+   
+}
+.nbvji{ width:128px; height:128px; margin:auto; border-radius: 100%; border: 1px solid #ccc; position:relative; overflow:hidden;}
+#preview img{ width:100%; height:100%; display:block;}
+.mkjui_poi{ margin-top:25px;}
+
+
+/*人员管理*/
+
+
+
+
+
+
+
+
+/*搜搜*/
+
+.clopokc{ text-align:center; margin-bottom:15px;}
+.clopokc a,.clopokc span,.hhbn{ display:inline-block; padding:2px 8px; border: 1px solid #ccc; margin:0 2px; color:#4c4c4c;}
+.clopokc .hhbn{ width:30px; text-align:center;}
+.clopokc span.current{ background:#3e7edb; border-color:#3e7edb; color:#fff;}
+.clopokc div:nth-child(1){ display:inline-block;}
+
+/*搜搜*/
+
+
+
+
+.fdcse {
+    width: 94px;
+    padding: 8px 10px;
+    text-align: center;border-radius: 4px;
+}
+.fdcse.on{ border:1px solid #3e7edb;}
+
+
+
+
+
+
+/*配件管理*/
+
+/*上部tab*/
+.tab_quehu{ width:900px; border-top: 1px solid #e1e3e5; margin:0 auto;}
+.tab_quehu_ul{ padding:20px 60px;}
+.tab_quehu_li{ width:33%; text-align:center;}
+.tab_quehu_li a{ width:160px; height:52px; background:#fff; display:inline-block; line-height:52px; border: 1px solid #e1e3e5; color:#333; border-radius: 4px;}
+.tab_quehu_li a.on{ background:#3e7edb; border-color:#3e7edb; color:#fff;}
+/*上部tab*/
+
+.listy_box{ margin-right:150px;}
+.listy_pk{ border-bottom:1px solid #f1f1f1;}
+.listy_pk:last-child{ border:none;}
+
+.lmbhuopd{ position:relative;}
+.listy_kr{ position:absolute; right:0px; top:0; height:100%; width:140px; line-height:158px;}
+.listy_con{ display:inline-block; vertical-align:middle;}
+.didb{ display:block; width:100px; height:30px; line-height:30px !important; text-align:center; background:#fff;  border: 1px solid #e1e3e5;  border-radius: 4px;}
+.didb.llvcer{ margin-bottom:22px;}
+
+.mlobh{  display:block; margin-left:38px;}
+.aubtgh{ display:inline-block; margin-right:20px; padding:0 12px; }
+.aubtgh.on{ color:#3e7edb;}
+
+/*配件管理*/
+
+
+
+
+
+/*后台地图管理*/
+.tab_quehu_ul .tab_quehu_li{ width:33.3333%;}
+
+.youhuikl{ margin-left:15px; color: rgb(74, 182, 121);}
+.danw{ font-style:normal; color: rgb(227, 91, 92);}
+
+.didbio{
+    display:block; 
+    width: 100px;
+    height: 30px;
+    line-height: 30px !important;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e1e3e5;
+    border-radius: 4px; margin-top:11px; margin-left:20px;
+}
+
+.Return_button_pko{ line-height:38px !important; margin:0 15px;}
+
+/*修改按钮*/
+.chengoos_xg{ width:18px; height:18px; background:url(../../../../Public/img/xiugai_p0.png) center center no-repeat; background-size:14px 14px; display:inline-block; vertical-align:middle; cursor:pointer; margin-left:10px;}
+/*修改按钮*/
+
+/*list dl*/
+.list_dll{ display:block;}
+.list_dll .list_dtt{ display:block; height:30px; line-height:30px;}
+.list_dll .list_ddd{  display:block; height:30px; line-height:30px; margin:0;}
+
+.list_dll .list_dtt span,.list_dll .list_ddd span{ float:left; width:33.3333%; text-align:center;}
+
+/*后台地图管理*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

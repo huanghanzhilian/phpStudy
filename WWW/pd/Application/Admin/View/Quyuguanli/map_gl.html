@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+<title>区域地图管理</title>
+<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+<!--<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=94ca4100199c2f2a8f33300cece2eba2&plugin=AMap.Autocomplete"></script>-->
+<script src="http://webapi.amap.com/maps?v=1.3&key=94ca4100199c2f2a8f33300cece2eba2&plugin=AMap.MouseTool"></script>
+<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/Admin_modify.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/map_houtai.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+<div id="container"></div>
+
+
+    <input type="button" class="polygonml polygonml1" value="创建新的地图" id="polygon"/>
+    
+    
+    <div class="zdvjio"></div>
+    <!--创建新的地图-->
+    <form style="display:inline-block;" method="post" action="__CONTROLLER__/map_qygl">
+    <div class="erdu erdu1 erdu1_c">
+        <i class="guanb_op cursor"></i>
+        <h3 class="guanb_op_h3">创建新的地图</h3>
+        <ul class="guanb_op_ul">
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input class="imklj" type="text" name="xyed" id="xyed" value='' placeholder="请输入城市" autocomplete="off" />
+            </li>
+            <li class="guanb_op_ul_li">
+                <span class="cursorop cursor"  id="cursor">确定/开始画</span>
+            </li>
+        </ul>
+        
+    </div>
+    <input type="hidden" name="city_name" id="city_name" value="">
+    <input type="hidden" name="jingweidu" id="lng_lat" value="">
+    <input type="submit" value="提交" id="polygonml" class="polygonml polygonml2"/>
+    </form>
+    <!--创建新的地图-->
+
+
+<script type="text/javascript">
+    $(function(){
+		//创建新的地图
+		$("#polygon").on('click',function(){
+			$("#xyed").val('');
+			$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+			$('.zdvjio').show();
+			$('.erdu1').show();
+			//$('.erdu1').find("input[name='user_id']").val(user_id)
+			
+			$(".guanb_op").on('click',function(){
+				$('.zdvjio').hide();
+				$('.erdu1').hide();
+				$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+				
+			})
+			
+			
+		});
+		//创建新的地图
+	})
+
+
+
+    var map = new AMap.Map("container", {
+        resizeEnable: true,
+		zoom: 10,
+    });
+	
+	
+	/*//多边形
+	map.plugin(["AMap.MouseTool"],function(){
+		var mousetool = new AMap.MouseTool(map);
+		mousetool.polygon(); //使用鼠标工具，在地图上画标记点
+		AMap.event.addListener(mousetool, "draw", function callback(e) {
+            var eObject = e.obj;//obj属性就是鼠标事件完成所绘制的覆盖物对象。
+			var objl_tg=e.obj.G.path;
+			var zhuang_tg=[]
+			for(var j=0;j<objl_tg.length;j++){
+				//console.log(objl_tg[j].lng)
+				//console.log(objl_tg[j].lat)
+				zhuang_tg[j]=objl_tg[j].lng+','+objl_tg[j].lat;
+			}
+			city_list={'city':'北京','lae':zhuang_tg}
+			console.log(city_list)
+			
+        });
+        mousetool.measureArea()
+		//console.log(mousetool.measureArea());  //调用鼠标工具的面积量测功能
+	});*/
+	
+	var mousetool = new AMap.MouseTool(map);
+	
+	AMap.event.addDomListener(document.getElementById('cursor'), 'click', function() {
+	
+		if($("#xyed").val()==''){
+			$("#xyed").focus().addClass("tips");
+			
+			return false;
+		}else{
+			mousetool.polygon();
+			$('.zdvjio').hide();
+			$('.erdu1').hide();
+			$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+			
+		}
+	}, false);
+		
+    AMap.event.addListener(mousetool, "draw", function callback(e) {
+		var eObject = e.obj;//obj属性就是鼠标事件完成所绘制的覆盖物对象。
+		var objl_tg=e.obj.hi.path;
+		var zhuang_tg=[]
+		for(var j=0;j<objl_tg.length;j++){
+			//console.log(objl_tg[j].lng)
+			//console.log(objl_tg[j].lat)
+			zhuang_tg[j]=objl_tg[j].lng+','+objl_tg[j].lat;
+		}
+		var zhuang_tgpo=zhuang_tg.join('_')
+		var city_name=document.getElementById('xyed').value;
+		city_list={'city':city_name,'lae':zhuang_tgpo}
+		console.log(city_list)
+		document.getElementById('polygonml').style.display='block'
+		document.getElementById('city_name').value=city_name;
+		document.getElementById('lng_lat').value=zhuang_tgpo;
+		//console.log(clickHandle)
+		//AMap.event.removeListener(clickHandle);
+	});
+
+	
+	
+
+	
+	
+	
+	
+    
+</script>
+</body>
+</html>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

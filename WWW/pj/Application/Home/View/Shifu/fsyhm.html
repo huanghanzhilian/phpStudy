@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>维百士-工程师-我的优惠码</title>
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ioc"><!--图标-->
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png"><!--图标-->
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/index.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public_rem.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+<style>
+
+</style>
+</head>
+
+<body  style="background:#f5f5f5">
+<div class="header">
+   <a href="__MODULE__/Shifu/my_wode"><span></span></a>
+    <h1>我的优惠码</h1>
+</div><!--头-->
+
+<div class="content" style=" padding-bottom:0px;">
+    <div class="content_con">
+        <form method="post" action="__CONTROLLER__/fsyhmadd"  onsubmit='return Checked()'>
+            <div class="youhuimm_yhm">
+                <div class="youhuimm_yhm_com">
+                    <span>
+                        <strong>您的优惠码:</strong>
+                        <h1 id="youhuima_nnm">{$yq_name}</h1>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="fs_youj_conm">
+                <input type="hidden" name="youhuima" id="youhuima" value='{$yq_name}'>
+				<input type="hidden" name="user_id" value='{$user_id}'>
+                <input type="tel" class="phone_ing" name="phone" id='phone' placeholder="请输入手机号码" autocomplete="off">
+                <input class="dengr dengr1 dengr1_a" type="submit" value='发送优惠码'>
+                <div class="shuom_su">
+                    <em>优惠码使用说明</em>
+                    <strong>用户下单时，在"请填写个人信息"页面输入优惠码，即可享受对应优惠。</strong>
+                    <img src="../../../../Public/img/shifu_duan/youhuijuan_a_2.png">
+                </div>
+            </div>
+        </form>    
+    </div>
+</div>
+<script>
+$(function(){
+	var youhuima_nnm=$("#youhuima_nnm").text()
+	$("#youhuima").val(youhuima_nnm)
+})
+var checkSubmitFlg = false;
+function Checked(){
+
+	var tel =$("#phone").val();
+	var mobile = /^0{0,1}(14[0-9]|17[0-9]|13[0-9]|15[0-9]|18[0-9]|14[0-9])[0-9]{8}$/;
+	
+	//if(tutle_n.value==''){ alert("请填写您的姓名！"); tutle_n.focus(); return false; }
+	if(!mobile.test(tel)){
+		$("#phone").val('');
+		$("#phone").attr("placeholder", "请输入正确的手机号码");
+		$("#phone").one("blur", function(){
+			$("#phone").attr("placeholder", "请输入能联系到您的手机号");
+		});
+		$("#phone").focus().addClass("tips");
+		return false;
+	}
+
+	
+	 if (!checkSubmitFlg) {
+		   checkSubmitFlg = true;
+		   return true;
+	   }else{
+		   alert("抱歉不能反复提交");
+		   return false;
+	   }
+	
+	//return true;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

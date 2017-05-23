@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<title>维百士-订单管理</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<style>
+
+
+html,body{ height:100%; overflow:hidden;}
+</style>
+<script>
+$(function() {   		
+	var lkj=$(window).height();
+	var cdkd=lkj-91;
+	
+	$("#list_l_box,#cbe_lix_r").height(cdkd);
+})
+</script>
+</head>
+<body class="body1_color">
+<div class="header">
+    <span><a href="__MODULE__/index/index"></a></span>
+    <h1>订单管理</h1>
+    <em class="lsycrd"><a href="__CONTROLLER__/Modelsearch">搜索</a></em>
+</div>
+<div class="content">
+    <div class="content_con">
+        <!--tab头-->
+        <div class="shifudu_top">
+            <ul class="pubcvt shifudu_top_ul shifudu_top_ul_gd">
+                
+                <li class="pubcvt_v shifudu_top_li ">
+                    <a href="__CONTROLLER__/shangmen/ways_id/1">上门</a>
+                </li>
+                <li class="pubcvt_v shifudu_top_li">
+                    <a href="__CONTROLLER__/daodian/ways_id/2">到店</span></a>
+                </li>
+                <li class="pubcvt_v shifudu_top_li shifudu_top_li_1">
+                    <a href="__CONTROLLER__/jixiu/ways_id/3">寄修</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!--tab头-->
+        
+        <div class="clearfix opmhging">
+            <div class="brands fl">
+                <div class="">
+                    <ul id="list_l_box" class="list_l_box">
+                        <li class="aet_list on">
+                            <a href="__CONTROLLER__/dengdai/ways_id/3">待分配</a>
+                        </li>
+                        <li class="aet_list">
+                            <a href="__CONTROLLER__/yizhipai/ways_id/3">已指派</a>
+                        </li>
+                        <li class="aet_list">
+                            <a href="__CONTROLLER__/yijiedan/ways_id/3">已接单</a>
+                        </li>
+                        <li class="aet_list">
+                            <a href="__CONTROLLER__/weixiuzhong/ways_id/3">维修中</a>
+                        </li>
+                        <li class="aet_list">
+                            <a href="__CONTROLLER__/daifukuan/ways_id/3">待付款</a>
+                        </li>
+                        <li class="aet_list">
+                            <a href="__CONTROLLER__/jiaoyiwancheng/ways_id/3">已完成</a>
+                        </li>
+                        <li class="aet_list">
+                            <a href="__CONTROLLER__/quxiaole">已取消</a>
+                        </li>
+                        <li class="aet_list">
+                            <a href="__CONTROLLER__/shouhou">售后</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 操作 -->
+            <div class="models fr">
+                <div id="cbe_lix_r" class="cbe_lix_r">
+                    <ul class="upen_list_r">
+                        <foreach name='arr' item='vv'>
+                        <li class="">
+                            <a class="shifu_aclc" href="__CONTROLLER__/xiangqing/id/{$vv.id}/ways_id/{$ways_id}">
+                                <div class="rnmbur ">
+                                    <ul>
+                                        <li>
+                                            <span class="bimnb ">{$vv.ddh}</span>
+                                        </li>
+                                        <li>
+                                            机型：<span class="chuangmbr">{$vv.model_name}</span>
+                                        </li>
+                                        <li>
+                                            问题：<span class="chuangmbr">{$vv.question_name}</span>
+                                        </li>
+                                        <li>
+                                            姓名：<span class="chuangmbr">{$vv.u_name}</span>
+                                        </li>
+                                        <li>
+                                            电话：<span class="chuangmbr">{$vv.u_phone}</span>
+                                        </li>
+                                        <li>
+                                             <b class="inde_hbre"></b><span data_l="{$vv.dasj}" data_r="{$vv.dasjc}" class="chuangmbr panduan_a"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                       </foreach>
+                    </ul>
+                </div>
+            </div>
+            <!--内容-->
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+</body>
+</html>
+<script>
+$( ".inde_hbre" ).each(function( index ) {
+	$(this).text(index+1);
+});
+function FreshTime(){
+	$(".panduan_a").each(function(index,kku) {
+		var cdata=$(this).attr('data_l')*1000;    //预约时间
+		var ddata=$(this).attr('data_r')*1000;    //停止时间
+		var nowtime = new Date().getTime();    //当前时间
+		var lefttime=parseInt((cdata - nowtime)/1000);    //预约时间-当前
+		var lefttimevv=parseInt((ddata - nowtime)/1000);  //预约结束时间-当前
+		//console.log(lefttime);
+		//console.log(lefttimevv);
+		d=parseInt(lefttime/(60*60*24));//parseInt求整数(lefttime/(60*60*24));剩余时间毫秒除以（24小时*60分钟*60秒）等于天数
+		h=parseInt(lefttime/(60*60)%24);//parseInt求整数(lefttime/(60*60)%24)剩余时间毫秒除以(60*60)%24)求天剩下的小时数
+		m=parseInt(lefttime/60%60);//parseInt求整数(lefttime/60%60);剩余时间毫秒除以60秒再求除60余数
+		s=parseInt(lefttime%60);//求秒余数
+		
+		
+		if(lefttime<=0&&lefttimevv>=0){
+			$(this).text('已到预约时间').css({'color':'#ff830b'});
+		}else if(lefttime<=0 && lefttimevv<=0){
+			$(this).text('订单已超时').css({'color':'#e35b5c'});
+		}else{
+			$(this).text("还剩"+d+"天"+h+"小时"+m+"分"+s+"秒").css({'color':'#4ab679'});
+		}
+		
+		if(cdata==0){
+			$(this).text('到店/寄修订单').css({'color':'#e35b5c'});
+		}
+	});
+}
+FreshTime()
+var sh;
+sh=setInterval(FreshTime,1000);//变动秒数
+</script>
+<script type="text/javascript">
+	function ajax(page){
+		//var sea=document.getElementById("sea").value
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/jixiufenye/page/"+page+"/ways_id/"+3,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('listaa').innerHTML=ajax.responseText
+				}
+			}
+}
+
+</script>

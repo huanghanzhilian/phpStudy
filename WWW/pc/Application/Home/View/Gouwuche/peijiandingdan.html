@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<a href="__CONTROLLER__/goumaichanpin">购买商品</a>
+<center>{$my}</center>
+<center><a href="__CONTROLLER__/cangkua">仓库</a></center>
+	 <center><a href='javascript:void(0)'onclick='wei(0)'>未付款</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href='javascript:void(0)'onclick='yifk(1)'>已付款</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href='javascript:void(0)'onclick='yi(2)'>已完成</a></center>
+	<div id='ff'>
+	<foreach name='arr' key='aa' item='kk'>
+		订单号:{$aa} <br />
+		商品: <br />
+		<foreach name='kk' item='cc'>
+		{$cc.cpk_name} <br />
+		
+		</foreach><br />
+		<a href="__MODULE__/Payy/peijian/id/{$cc.id}/ddh/{$cc.ddh}">去付款</a><br />
+	</foreach><br /> <br />
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	function yifk(fkzt){
+		//alert(ways_id);
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/yifukuan/fkzt/"+fkzt,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('ff').innerHTML=ajax.responseText
+				}
+}
+	}
+function wei(fkzt){
+		//alert(ways_id);
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/wfk/fkzt/"+fkzt,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('ff').innerHTML=ajax.responseText
+				}
+}
+	}
+function yi(fkzt){
+		//alert(ways_id);
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/yiwancheng/fkzt/"+fkzt,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('ff').innerHTML=ajax.responseText
+				}
+}
+	}
+</script>

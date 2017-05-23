@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<div class="Maskc_box">
+    <div class="lili_c_ico">故障解决方案<span></span></div>
+    <div class="tjiao">
+    <ul style="position:relative;">
+    
+        <!--<li>机型：{$model_name}({$color_name})</li>-->
+		<foreach name='arr' item='kk'>
+            <div class="ui_box_a">
+			<li>
+				<span class="udge1">{$question}</span><foreach name="kk['data']" item='ee'><b class="udge2">{$ee.question_name}</b>
+			</foreach>
+            </li>
+			
+			 <li class="">
+            <div class="lanscd1">
+                <span style=" float:left; font-weight:normal;">维修方案：</span>
+                <span class="udge3" style="display:block; margin-left:62px; margin-right:70px;" >{$kk.plan_name}</span>
+                <b style="position: absolute; right: 0px; top: 50%; margin-top: -12px;" class="bbupok_a"><span class="iibuet">{$kk.money}</span><i>.00元</i></b>
+            </div>
+            <div class="lanscd1 lanscd1nn">维修时长：<span>{$kk.m_time}</span><i>(分钟)</i>
+            
+            </div>
+            <div class="lanscd1">维修说明：<span>{$kk.instructions_name}</span></div>
+			
+            </li>
+            </div>
+        </foreach>          
+          
+    </ul>
+    </div>
+     <div class="total">合计总价：<span>{$money}</span><i>.00 元</i><p>维修成功后付款</p></div> 
+<center id="next_step" class="next_step"><form method="post" action="{$lianjie}">
+  <input type="hidden" name="question_id" value='{$question_id}'>
+  <input type="hidden" name="model_name" value='{$model_name}'>
+  <input type="hidden" name="color_name" value='{$color_name}'>
+  <input type="hidden" name="model_id" value='{$model_id}'>
+  <input type="hidden" name="plan_id" value='{$t}'>
+  <input type="hidden" name="color_id" value='{$color_id}'>
+   <input type="hidden" name="money" value='{$money}'>
+   <input type="hidden" name="id" value='{$id}'>
+  <button class="next_step_ys" style="width:100%;height:50px;display:block;background-color:#3e7edb; font-size:15px; font-family:'微软雅黑';" type="submit" >{$queren}</button>
+</form></center>
+    
+</div>
+</body>
+</html>

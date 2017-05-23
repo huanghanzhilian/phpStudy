@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	
+	<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script src="__PUBLIC__/new/script/jquery.scrollbar.js" type="text/javascript"></script>
+	<script type="text/javascript" src="__PUBLIC__/new/script/admin_index.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/new/script/pagetool.js"></script>
+	<style type="text/css">
+		/*top*/
+		.header .logo {
+
+		    float: left;
+		}
+		.commutr{
+			margin-left: 195px;
+			/*background: red;*/
+			height: 99%;
+			box-sizing: border-box;
+		}
+		.main-center{
+			display: inline-block;
+			/*margin-top: 60px;*/
+			width: 100%;
+			/*background: #ccc;*/
+			height: 100%;
+			padding-top: 60px;
+			box-sizing: border-box;
+		}
+		.alerds{
+			padding: 12px 12px;
+			text-align: left;
+			color: #e78424;
+		}
+		.sdcmkj{
+			/*background: red;*/
+			border: solid 1px #ccc;
+		}
+		/*搜索*/
+		.nav form{
+			padding: 8px;
+			position: relative;
+		}
+		.nav form .search-input {
+		    padding: 0 30px 0 10px;
+		    width: 100%;
+		    height: 30px;
+		    font-size: 14px;
+		    border: 1px solid #7080a0;
+		    /*border-radius: 40px;*/
+		    box-sizing: border-box;
+		    background-color: #2d3340;
+		    color: #fff;
+		}
+		.nav form .search-btn {
+			position: absolute;
+			top: 9px;
+			right: 9px;
+			width: 30px;
+			height: 30px !important;
+			line-height: normal !important;
+			padding: 0 !important;
+			color: #969696 !important;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			background: none;
+			border: none;
+			cursor: pointer;
+			background: url(__PUBLIC__/img/search-icons.png) center center no-repeat;
+		}
+		/*占位符search-icons*/
+		.tips::-webkit-input-placeholder{color:#b2ccff;}
+		.tips:-moz-placeholder{color:#b2ccff}
+		.tips::-moz-placeholder{color:#b2ccff;}
+		.tips:-ms-input-placeholder{color:#b2ccff; }
+
+		.tabs1{
+			height: 100%;
+		}
+		.track{
+			position:absolute;
+			top:0;
+			right:0;
+			width:4px;
+			height:100%;
+		}
+		.track div{
+			width:4px;
+			background: rgba(71,81,102,.5);
+			border-radius: 3px;
+		}
+		.shuio{
+			height: 100%;
+		}
+		#tabs {
+		    /*margin-top: 60px;*/
+		    padding-top: 60px;
+		    box-sizing: border-box;
+		}
+		.top_nav{
+			float: left;
+			height: 100%;
+		}
+		.top_nav_list{
+			height: 100%;
+		}
+		.top_nav li{
+			float: left;
+			height: 100%;
+			line-height: 60px;
+			margin-right: 55px;
+		}
+		.top_nav li a{
+			display: inline-block;
+			padding: 8px 25px;
+			line-height: 22px;
+			border-radius: 8px;
+			color: #fff;
+			transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+		}
+		.top_nav li a:hover{
+			background-color: #275fce;
+			box-shadow:0px 0px 10px 4px #71a0ff; 
+		}
+		.top_nav li.active a{
+			background: #275fce;
+			box-shadow:0px 0px 10px 4px #71a0ff; 
+		}
+
+		/*右侧管理员*/
+		.header .head_text {
+		    height: 100%;
+		    color: #FFF;
+		    width: 180px;
+		     padding: 0 0px; 
+		    background: #5381db;
+		}
+		.head_text_li{
+			position: relative;
+			padding: 0 10px;
+		}
+		.head_text_li:hover .dropdown-menu{
+			display: block;
+		}
+		.dropdown-menu {
+		    position: absolute;
+		    top: 100%;
+		    left: 0;
+		    z-index: 1000;
+		    display: none;
+		    float: left;
+		    min-width: 160px;
+		    padding: 5px 0;
+		    /*margin: 2px 0 0;*/
+		    list-style: none;
+		    font-size: 14px;
+		    text-align: left;
+		    background-color: #fff;
+		    border: 1px solid #ccc;
+		    border: 1px solid rgba(0,0,0,.15);
+		    border-radius: 4px;
+		    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		    background-clip: padding-box;
+		    /*background-color: red;*/
+		}
+		.dropdown-menu a {
+		    padding: 10px 20px;
+		    line-height: 40px;
+		    /*-webkit-transition: all .1s .1s;*/
+		    /*transition: all .1s .1s;*/
+
+		}
+		.dropdown-menu > li > a {
+		    display: block;
+		    padding: 3px 20px;
+		    clear: both;
+		    font-weight: 400;
+		    color: #333;
+		    white-space: nowrap;
+		}
+		.dropdown-menu a:hover{
+			background: #5a8bed;
+			color: #fff;
+		}
+		.dropdown-menu a:hover i.iconfont{
+			/*background: url(__PUBLIC__/img/per.png) center center no-repeat;*/
+			background-image: url(__PUBLIC__/img/per.png);
+		}
+		.dropdown-menu a:hover i.iconfonts{
+			background-image: url(__PUBLIC__/img/exit.png);
+		}
+		.iconfont{
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(__PUBLIC__/img/per1.png) center center no-repeat;
+		}
+		.iconfonts{
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(__PUBLIC__/img/exit1.png) center center no-repeat;
+		}
+		/*取消填写信息*/
+		.comtextarea{
+			border: solid 1px #5076e6;
+			width: 500px;
+			height: 50px;
+			margin: auto;
+			display: block;
+		}
+		
+
+
+		/*匹配*/
+		.FlowBut{
+			float: left;
+			line-height: 40px;
+			padding: 0 12px;
+			color: #4d4d4d;
+			cursor: pointer;
+		}
+		.FlowBut.on{
+			color: #517ed6;
+		}
+		.Breadcrumbs-item {
+		    list-style: none;
+		    float: left;
+		    margin: 15px;
+		}
+		.Breadcrumbs-link {
+		    text-decoration: none;
+		    display: block;
+		    line-height: 20px;
+		    color: #5B6675;
+		    font-size: 20px;
+		    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+		}
+		.ChoiceComponent h1{
+			font-weight: normal;
+		    padding-top: 20px;
+		    text-align: center;
+		    font-size: 15px;
+		}
+	</style>
+</head>
+<body class="">
+	<div class="header clearfix">
+		<a href="index.html" class="logo" title="后台管理"></a>
+		<div class="top_nav">
+			<ul class="top_nav_list">
+				<li class="active">
+					<a href="__CONTROLLER__/index.html">订单管理</a>
+				</li>
+				<li>
+					<a href="__CONTROLLER__/pladmin.html">人员管理</a>
+				</li>
+				<li>
+					<a href="__CONTROLLER__/buadmin.html">商家管理</a>
+				</li>
+				<li>
+					<a href="__CONTROLLER__/fiadmin.html">财务管理</a>
+				</li>
+				<li>
+					<a href="__CONTROLLER__/cpsadmin.html">产品管理</a>
+				</li>
+			</ul>
+		</div>
+        <ul class="head_text fr">
+	        <li class="head_text_li">
+	        	<img class="avatar" src="__PUBLIC__/new/image/head portrait.png">
+	        	<span class="dropdown-toggle">{$username}</span>
+	        	<ul class="dropdown-menu">
+	        		<li>
+	        			<a href="__CONTROLLER__/settings.html" target="mainFrame">
+	        				<i class="iconfont"></i>
+	        				<span>个人中心</span>
+	        			</a>
+	        		</li>
+	        		<li>
+	        			<a href="__CONTROLLER__/tuichu">
+	        				<i class="iconfonts"></i>
+	        				<span>退出登入</span>
+	        			</a>
+	        		</li>
+	        	</ul>
+	        </li>
+        </ul>
+	</div>
+	<!-- nav-collapse -->
+	<div class="main-left">
+		<div class="tabs tabs1" id="tabs">
+			<div class="shuio">
+				<ul class="nav">
+					<!-- <h2><span></span>导入订单</h2>
+					<li id="yuyaonh" star="0" data_type="chuli" class="active"><span></span><a href="javascript:;">需处理</a></li>
+					<li data_type="daixia"><a href="javascript:;">待下单</a></li>
+					<li data_type="quanbhu"><a href="javascript:;">全部订单</a></li>
+					<h2><span></span>订单管理 </h2>
+					<li data_type="yixia"><a href="javascript:;">已下单</a></li>
+					<li data_type="daijie"><a href="javascript:;">待接单</a></li>
+					<li data_type="yiquxiao"><a href="javascript:;">已取消</a></li>
+					<li data_type="quanbu2"><a href="javascript:;">全部订单</a></li> -->
+					<form target="mainFrame" action="__CONTROLLER__/searchs" accept-charset="UTF-8" method="get">
+	              		<input type="text" name="q" id="q" value="" placeholder="搜索" class="search-input tips">
+	              		<button class="search-btn"></button>
+	              		<!-- <a class="search-btn" href="javascript:void(null)" style="background-color: rgb(150, 150, 150); border-radius: 50%; color: rgb(255, 255, 255) !important;">
+	              			<i class="iconfont ic-search"></i>
+	              		</a> -->
+					</form>
+					<h2><span></span>导入订单</h2>
+					<li id="yuyaonh" class="active"><span>{$content}</span><a href="__CONTROLLER__/xuchuli.html" target="mainFrame">匹配sku</a></li>
+					<li><a href="__CONTROLLER__/dengdaixiadan.html" target="mainFrame">等待客户下单</a></li>
+					<li><a href="__CONTROLLER__/yixiadanwfh.html" target="mainFrame">已下单未发货</a></li>
+					<li><a href="__CONTROLLER__/ddjiansuo.html" target="mainFrame">订单检索</a></li>
+					<li><a href="__CONTROLLER__/bufuhes.html" target="mainFrame">不符合订单</a></li>
+					<h2><span></span>订单管理</h2>
+					<li id="wuwuliudanhao"><span>{$wuwuliudanhao}</span><a href="__CONTROLLER__/wuwuliudanhao.html" target="mainFrame">无物流单号</a></li>
+					<li id="wuliudanhao_error"><span>{$wuliucuowu}</span><a href="__CONTROLLER__/wuliudanhao_error.html" target="mainFrame">物流单号错误</a></li>
+					<li id="wuliuchaoshi"><span>{$wuliuchaoshi}</span><a href="__CONTROLLER__/wuliuchaoshi.html" target="mainFrame">物流超时</a></li>
+					<li><a href="__CONTROLLER__/yunsuzaitu.html" target="mainFrame">运输在途</a></li>
+					<li><a href="__CONTROLLER__/daijiedan_ok.html" target="mainFrame">待接单正常</a></li>
+					<li id="daijiedan_no"><span>{$daijiedanchaoshi}</span><a href="__CONTROLLER__/daijiedan_no.html" target="mainFrame">待接单超时</a></li>
+					<li id="dingdai_zhipai"><span>{$zhipaizhong}</span><a href="__CONTROLLER__/dingdai_zhipai.html" target="mainFrame">订单指派中</a></li>
+					<li><a href="__CONTROLLER__/fuwu_ok.html" target="mainFrame">服务中正常</a></li>
+					<li id="fuwu_no"><span>{$fuwuchaoshi}</span><a href="__CONTROLLER__/fuwu_no.html" target="mainFrame">服务中超时</a></li>
+					<li id="queren_reason"><span>{$querenquxiaoyuanyin}</span><a href="__CONTROLLER__/queren_reason.html" target="mainFrame">确认订单取消原因</a></li>
+					<li><a href="__CONTROLLER__/cancel_order.html" target="mainFrame">已取消订单</a></li>
+					<li><a href="__CONTROLLER__/success_order.html" target="mainFrame">已完成订单</a></li>
+					<li><a href="__CONTROLLER__/tests.html" target="mainFrame">测试</a></li>
+				</ul>
+			</div>
+			<div class="track"><div></div></div>
+		</div>
+	</div>
+	<!-- 嵌套网页开始 -->         
+    <!-- <iframe src="__CONTROLLER__/assd.html"  frameborder="0" name="mainFrame" width="100%" height="522"></iframe> -->
+    <!-- 嵌套网页结束 -->   
+
+	<div class="commutr">
+		<div class="main-center" id="main-center">
+			<iframe src="__CONTROLLER__/xuchuli"  frameborder="0" name="mainFrame" width="100%" height="99%"></iframe>
+		</div>
+		<!-- <div id="pagecount" ></div> -->
+		
+	</div>
+
+
+
+    <div class="attr-overlay" id="attr-overlay"></div>
+    <div class="attr-content" id="attr-content">
+        <div class="widget-close" id="closed">
+            关闭
+        </div>
+        <div id="widget-title" class="widget-title"></div>
+        <div id="content_sd">
+        	
+        </div>
+    </div>
+    <script type="text/javascript">
+
+    </script>
+</body>
+<script type="text/javascript">
+	$(".tabs1 li span").each(function(i,n){
+		if($(n).text()=="0"){
+			$(n).text("")
+		}
+	})
+
+
+
+	$(".tabs1").scrollbar({contentCls:'nav'});
+
+	var ws = new WebSocket("ws://101.200.219.26:4236");
+
+	ws.onopen = function() {
+		console.log('已连接上');
+	};
+
+	ws.onmessage = function(e) {
+		// console.log(e)
+		var data = JSON.parse(e.data);
+		console.log(data)
+		if (data.weiwc>=0) {
+			// xoanshuas(data.weiwc)
+			$("#yuyaonh").find("span").text(data.weiwc);
+		}
+		if(data.weiwc1>=0){
+			$("#wuwuliudanhao").find("span").text(data.weiwc1);
+		}
+		if(data.weiwc2>=0){
+			$("#wuliudanhao_error").find("span").text(data.weiwc2);
+		}
+		if(data.weiwc3>=0){
+			$("#daijiedan_no").find("span").text(data.weiwc3);
+		}
+		if(data.weiwc4>=0){
+			$("#fuwu_no").find("span").text(data.weiwc4);
+		}
+		if(data.weiwc5>=0){
+			$("#dingdai_zhipai").find("span").text(data.weiwc5);
+		}
+		if(data.weiwc6>=0){
+			$("#queren_reason").find("span").text(data.weiwc6);
+		}
+		if(data.weiwc7>=0){
+			$("#wuliuchaoshi").find("span").text(data.weiwc7);
+		}
+
+	}
+
+	function xoanshuas(er) {
+
+		/*var prompt = $r("#yuyaonh").find("span")[0];
+		//console.log(er)
+		prompt.innerHTML = er;*/
+		switch (n.getAttribute("data")) {
+			case "0":
+				n.innerHTML="条件不足";
+				break;
+			case "1":
+				n.innerHTML="已下单";
+				break;
+			case "2":
+				n.innerHTML="已下单已发货";
+				break;
+			case "5":
+				n.innerHTML="等待下单";
+				break;
+			//default:
+				//alert('case都不是的执行');
+		}
+	}
+	// ws.onclose = function() {
+	// 	// 关闭 websocket
+	// 	alert("连接已关闭...");
+	// };
+
+	// function sendMessage(er) {
+	// 	var type='{"weiwc":"'+er+'"}';
+	// 	ws.send(type);
+	// }
+
+
+
+
+
+	//匹配开始
+	//类目选择
+	function shugts(el, mod, name) {
+		addHtml(el);
+		var num = $(el).attr('num');
+		$('#content_sd>div').css('display','none');
+		$.ajax({
+			type: "POST",
+			async: false,
+			url: "http://d.weibaishi.com/admin/aingdan/brand_list",
+			dataType: 'json',
+			data: {
+				'type_id': num
+			},
+			success: function(data) {
+				$('#a2').css('display', 'block');
+				var navHtml='';
+				$(data).each(function(i, v) {
+					navHtml += '<li class="FlowBut" onclick="jixinglop(this)" content="' + v.brand_name + '" num="' + v.brand_id + '" >' + v.brand_name + '</li>';
+				})
+				$("#a2 .FlowButtons-list").html(navHtml);
+			}
+		});
+	}
+	//品牌选择
+	function jixinglop(el){
+		addHtml(el);
+		var num = $(el).attr('num');
+		$('#content_sd>div').css('display','none');
+		$.ajax({
+			type: "POST",
+			async: false,
+			url: "http://d.weibaishi.com/admin/aingdan/model_list",
+			dataType: 'json',
+			data: {
+				'brand_id': num
+			},
+			success: function(data) {
+				$('#a3').css('display', 'block');
+				var navHtml='';
+				$(data).each(function(i, v) {
+					navHtml += '<li class="FlowBut" onclick="addColora(this)" content="' + v.model_name + '" num="' + v.model_id + '" >' + v.model_name + '</li>';
+				})
+				$("#a3 .FlowButtons-list").html(navHtml);
+			}
+		});
+	}
+	//机型选择
+	function addColora(el){
+		$(".attr-content-button").remove();
+		addHtml(el);
+		var num = $(el).attr('num');
+		$('#content_sd>div').css('display','none');
+		$.ajax({
+			type: "POST",
+			async: false,
+			url: "http://d.weibaishi.com/admin/aingdan/chanpin_list",
+			dataType: 'json',
+			data: {
+				'model_id': num
+			},
+			success: function(data) {
+				var sxbacq;
+				$('#a4').css('display', 'block');
+				var navHtml='';
+				$(data).each(function(i, v) {
+					navHtml += '<li class="FlowBut" content="' + v.sku_name + '" num="' + v.sku_id + '" >' + v.sku_name + '</li>';
+				});
+				$("#a4 .FlowButtons-list").html(navHtml);
+				$("#a4").append('<button class="attr-content-button">匹配</button>');
+				$("#a4 .FlowButtons-list li").on("click",function(){
+					sxbacq=$(this).attr('num');
+					$(this).addClass("on").siblings().removeClass("on")
+				})
+				$(".attr-content-button").on("click",function(){
+					var id=$(".Breadcrumbs").attr('data');
+					if(sxbacq){
+						tijiaoss(id,sxbacq)
+					}
+				})
+			}
+		});
+	}
+
+	//
+	function tijiaoss(id,data){
+		$.ajax({
+			url: "http://d.weibaishi.com/Admin/Aingdan/pipei",
+			data: {
+				'p_id': id,
+				'sku_id': data
+			},
+			dataType: "json",
+			type: 'post',
+			success: function(data) {
+				console.log(data)
+				if (data == "1") {
+					window.location.reload();
+				} else if (data == "8") {
+					alert('订单已被处理')
+					window.location.reload();
+					/*$(_this).parents("tr").prev("tr").remove();
+					$(_this).parents("tr").remove();
+
+					overlay.hide();
+					content.hide();
+					setToast3('<div style="color:#fff;background: rgba(0, 0, 0, 0.6);border-radius: 2px;padding: 2px;text-align: center;width:200px;margin: 0 auto;">此订单已被处理</div>');*/
+				}
+
+			}
+		});
+	}
+
+
+
+	//选择机型添加到目录栏
+	function addHtml(el) {
+		//保存品牌名称
+		var mdId = $(el).attr("content") ? $(el).attr("content") : null;
+
+		$('<li class="Breadcrumbs-item" data-id=' + $(el).parent().parent().attr('id') + ' onclick="step(this)">\
+	        <a href="javascript:;" class="Breadcrumbs-link">' + mdId + '</a>\
+	    </li>').appendTo('.Breadcrumbs');
+		/*if(!serdtwaq){
+			$('<li class="Breadcrumbs-item" data-id='+$(el).parent().parent().attr('id')+' onclick="step(this)">\
+		        <a href="javascript:;" class="Breadcrumbs-link">' + mdId + '</a>\
+		    </li>').appendTo('.Breadcrumbs');
+		}else if(serdtwaq&&!sretfds){
+			$('<li class="Breadcrumbs-item" data-id='+$(el).parent().parent().attr('id')+' onclick="step(this)">\
+		        <a href="javascript:;" class="Breadcrumbs-link">' + mdId + '</a>\
+		    </li>').appendTo('.Breadcrumbs');
+		}*/
+		var num = $(el).attr('num');
+		//判断是手机走这一步请求
+		/*if($(el).hasClass('model')){
+			serdtwaq=el;
+		    //fault(interface_url+'repair/hitch/'+num,num);
+		    fault('http://d.weibaishi.com/admin/aingdan/model_list',num);
+		    //ipad走这一步请求
+		}else if($(el).hasClass('ipad')){
+		    fault(interface_url+'repair/hitch/'+num,num);
+		}*/
+	}
+	//点击上面目录栏，返回到相应那一步
+	function step(el) {
+
+		/*if ($(el).attr("data-id") == "a1") {
+			serdtw = null;
+			serdtwaq = null;
+			sretfds = null;
+		} else if ($(el).attr("data-id") == "a2") {
+			serdtwaq = null;
+			sretfds = null;
+		} else if ($(el).attr("data-id") == "a3") {
+			sretfds = null;
+		}*/
+		/*console.log('serdtw'+serdtw)
+		console.log('serdtwaq'+serdtwaq)
+		console.log('sretfds'+sretfds)*/
+		/*serdtw=null;
+		serdtwaq=null;
+		sretfds=null;*/
+		var id = $(el).attr('data-id');
+		$('#content_sd>div').css('display','none');
+		$(el).nextAll().remove();
+		$(el).remove();
+		$('#' + id).css('display', 'block');
+		/*var id=$(el).attr('data-id');
+		$('.RepairAppContainer-body>div').css('display','none');
+		var shuliang=($(el).nextAll().length+1);
+		$(el).nextAll().remove();
+		$(el).remove();
+		width-=8*shuliang;
+		$('.addwidth').css('width',width+"%");
+		$( '#'+id).css('display','block');
+		if($(el).attr('data-id')<=8){
+		    $('.Breadcrumbs').empty();
+		}*/
+	}
+</script>
+</html>

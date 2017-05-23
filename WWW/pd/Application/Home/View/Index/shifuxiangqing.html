@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<title>维百士-手机维修-订单详情</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+<style>
+body{ background:#f1f1f1;}
+</style>
+</head>
+<body>
+<div class="header">
+    <span onclick="window.history.back()"></span>
+    <h1>订单详情</h1>
+</div><!--头-->
+
+<div class="content">
+    <div class="content_con" >
+    
+    
+    <div class="da_con">
+        <h1>订单编号：{$arr.ddh}</h1>
+        <ul>
+            <li>
+                机型：{$arr.model_name}
+            </li>
+            <li>
+                颜色：{$arr.color_name}
+            </li>
+            <li>
+               问题：<foreach name='question' item='kk'>
+			        	{$kk.question_name},
+		            </foreach>
+            </li>
+            <li>
+                解决方案：<foreach name='plan' item='k'>
+				            {$k.plan_name},
+		                 </foreach>
+            </li>
+            <li>
+                保修期：180天
+            </li>
+            <li>
+                备注：{$arr.u_note}
+            </li>
+        </ul>
+        <div class="da_inte_bun">
+            <span class="fl">优惠：{$arr.amountt}</span>
+            <span class="fr">预计：{$arr.amountd}</span>            
+        </div>
+    </div>
+    
+    <div class="da_con">
+        <ul>
+            <li>
+                产品价格：￥{$arr.amounttt}
+            </li>
+            <li>
+                修前检测：<foreach name='arr8' item='kk'>
+							{$kk.jc_name}
+						  </foreach>
+            </li>
+            <li>
+                产品添加：<foreach name='arr10' item='k'>
+							{$k.cpk_name}
+						  </foreach>
+            </li>
+            <li>
+                修后检测：<foreach name='arr9' item='v'>
+							{$kk.jc_name}
+						  </foreach>
+            </li>
+            <li>
+                服务方式：{$arr.ways_name}
+            </li>
+            <li>
+                维修地点：{$arr.wxzx_name}
+            </li>
+            <li>
+                服务人员：{$arr.user_username}
+            </li>
+        </ul>
+        <div class="da_inte_bun clearfix">
+            <span class="fl"></span>
+            <span class="fr">最终价格：￥{$arr.amount}</span>            
+        </div>
+    </div>
+    
+    
+    <div class="da_con">
+        <ul>
+            <li>
+                姓名：{$arr.u_name}
+            </li>
+            <li>
+                电话：{$arr.u_phone}
+            </li>
+            <li>
+                地址：{$arr.u_address}
+            </li>
+			
+        </ul>
+    </div>
+    
+    
+   
+<!--<a href="__CONTROLLER__/xindingdan">返回</a><br /><br />
+    订单号：{$arr.u_number} <br /><br />
+	机型：{$arr.model_name} <br /><br />
+	颜色：{$arr.color_name} <br /><br />
+	问题：<foreach name='question' item='kk'>
+				{$kk.question_name},
+		  </foreach> <br /><br />
+	解决方案：<foreach name='plan' item='k'>
+				{$k.plan_name},
+		  </foreach> <br /><br />
+    预计价格：{$arr.amountd} <br /><br />
+	已优惠：{$arr.amountt} <br /><br />
+	备注：{$arr.u_note} <br /><br />
+	保修期{}<br /><br />
+	产品价格:{$arr.amounttt}<br /><br />
+	最终价格:{$arr.amount}<br /><br />
+	修前检测：{$arr.xqjc_id} <br /><br />
+	产品添加：{$arr.cpk_name}<br /><br />
+	修后检测：{$arr.xhjc_id} <br /><br />
+	服务方式:{$arr.ways_name}<br /><br />
+	维修地点：{$arr.wxzx_name}<br /><br />
+	服务人员：{$arr.user_username}<br /><br />
+	姓名：{$arr.u_name}<br /><br />
+	电话:{$arr.u_phone}<br /><br />
+	地址:{$arr.u_address}<br /><br />
+{$r} <br />
+
+	<a href="__CONTROLLER__/jiedan/id/{$arr.id}/stau/{$arr.stau}">{$b}</a><br /><br />
+	<a href="__CONTROLLER__/tuidan/id/{$arr.id}/stau/{$arr.stau}">{$c}</a>	-->
+
+    </div>
+</div>
+
+<div class="jiedan">
+    <div class="jiedan_box clearfix">
+        
+	    <a  href="__CONTROLLER__/tuidan/id/{$arr.id}/stau/{$arr.stau}">{$c}</a>
+		 <a  href='javascript:void(0)'onclick='a()'>{$e}</a>
+        <a class="on"  href="__CONTROLLER__/jiedan/id/{$arr.id}/stau/{$arr.stau}">{$b}</a>	
+		<a class="on"  href="__CONTROLLER__/qiangdan/id/{$arr.id}/stau/{$arr.stau}">{$v}</a>
+    </div>
+</div>
+</body>
+</html>

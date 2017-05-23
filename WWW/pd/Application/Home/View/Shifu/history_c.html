@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<title>维百士-工程师-历史订单</title>
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ioc"><!--图标-->
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png"><!--图标-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+</head>
+<body style="background:#f5f5f5">
+<div class="header header1">
+    <span onclick="window.history.back()"></span>
+    <h1>历史订单<!--{$my}--></h1>
+    <!-- <em>去购买</em> -->
+</div><!--头-->
+<div class="content">
+    <div class="content_con">
+        <!--tab头-->
+        <div class="shifudu_top">
+            <ul class="pubcvt shifudu_top_ul">
+                <li class="pubcvt_v shifudu_top_li ">
+                    <a href="__CONTROLLER__/history_a">已完成<span>(4)</span></a>
+                </li>
+                <li class="pubcvt_v shifudu_top_li">
+                    <a href="__CONTROLLER__/history_b">已取消<span>(0)</span></a>
+                </li>
+                <li class="pubcvt_v shifudu_top_li shifudu_top_li_1">
+                    <a href="__CONTROLLER__/history_a ">售后中<span>(2)</span></a>
+                </li>
+            </ul>
+        </div>
+        <!--tab头-->
+        <!--内容-->
+        <div class="ceomer_com">
+            <foreach name='arr' item='vv'>
+                <a class="shifu_aclc" href="__CONTROLLER__/daiwanchengxq/id/{$vv.id}">
+                    <div class="rnmbur">
+                        <ul>
+                            <li>
+                                 方式：<span class="chuangmbr">
+                                          <if condition="strtoupper($vv['ways_id']) eq  1">上门服务
+                                             <elseif condition="strtoupper($vv['ways_id']) eq  2"/> 
+                                             到店服务
+                                             <elseif condition="strtoupper($vv['ways_id']) eq  3"/>
+                                             寄修服务
+                                          </if>
+                                      </span>
+                                      <span class="bimnb fr">{$vv.ddh}</span>
+                            </li>
+                            <li>
+                                 时间：<span class="chuangmbr">{$vv.xo_time}</span>
+                            </li>
+                            <li>
+                                 机型：<span class="chuangmbr">{$vv.model_name}</span>
+                            </li>
+                            <li>
+                                 问题：<span class="chuangmbr">{$vv.model_name}{$vv.question_name}</span>
+                            </li>
+                            <li>
+                                 地址：<span class="chuangmbr">上门维修</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </foreach>
+        </div>
+        <!--内容-->
+        
+        
+
+    </div>
+</div>
+
+<!--底部-->
+<!--<div class="footer footer1">
+    <div class="bot">
+      <ul class=" pubcvt">
+          
+          <li class="pubcvt_v">
+              <a href="#" >
+                  <span class="sh_icon2"></span>
+                  <p>仓库</p>
+              </a>
+          </li>
+          <li class="pubcvt_v">
+              <a href="#" class="on" >
+                  <span class="sh_icon3"></span>
+                  <p>师傅中心</p>
+              </a>
+          </li>
+          <li class="pubcvt_v">
+              <a href="#" >
+                  <span class="sh_icon4"></span>
+                  <p>我的</p>
+              </a>
+          </li>
+         
+      </ul>
+    </div>
+</div>-->
+<!--底部-->
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/new/style/admin_index.css">
+	
+	<script src="__PUBLIC__/new/script/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script src="__PUBLIC__/new/script/jquery.scrollbar.js" type="text/javascript"></script>
+	<script type="text/javascript" src="__PUBLIC__/new/script/admin_index.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/new/script/pagetool.js"></script>
+	<style type="text/css">
+		/*top*/
+		.header .logo {
+
+		    float: left;
+		}
+		.commutr{
+			margin-left: 195px;
+			/*background: red;*/
+			height: 99%;
+			box-sizing: border-box;
+		}
+		.main-center{
+			display: inline-block;
+			/*margin-top: 60px;*/
+			width: 100%;
+			/*background: #ccc;*/
+			height: 100%;
+			padding-top: 60px;
+			box-sizing: border-box;
+		}
+		.alerds{
+			padding: 12px 12px;
+			text-align: left;
+			color: #e78424;
+		}
+		.sdcmkj{
+			/*background: red;*/
+			border: solid 1px #ccc;
+		}
+		/*搜索*/
+		.nav form{
+			padding: 8px;
+			position: relative;
+		}
+		.nav form .search-input {
+		    padding: 0 30px 0 10px;
+		    width: 100%;
+		    height: 30px;
+		    font-size: 14px;
+		    border: 1px solid #7080a0;
+		    /*border-radius: 40px;*/
+		    box-sizing: border-box;
+		    background-color: #2d3340;
+		    color: #fff;
+		}
+		.nav form .search-btn {
+			position: absolute;
+			top: 9px;
+			right: 9px;
+			width: 30px;
+			height: 30px !important;
+			line-height: normal !important;
+			padding: 0 !important;
+			color: #969696 !important;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			background: none;
+			border: none;
+			cursor: pointer;
+			background: url(__PUBLIC__/img/search-icons.png) center center no-repeat;
+		}
+		/*占位符search-icons*/
+		.tips::-webkit-input-placeholder{color:#b2ccff;}
+		.tips:-moz-placeholder{color:#b2ccff}
+		.tips::-moz-placeholder{color:#b2ccff;}
+		.tips:-ms-input-placeholder{color:#b2ccff; }
+
+		.tabs1{
+			height: 100%;
+		}
+		.track{
+			position:absolute;
+			top:0;
+			right:0;
+			width:4px;
+			height:100%;
+		}
+		.track div{
+			width:4px;
+			background: rgba(71,81,102,.5);
+			border-radius: 3px;
+		}
+		.shuio{
+			height: 100%;
+		}
+		#tabs {
+		    /*margin-top: 60px;*/
+		    padding-top: 60px;
+		    box-sizing: border-box;
+		}
+		.top_nav{
+			float: left;
+			height: 100%;
+		}
+		.top_nav_list{
+			height: 100%;
+		}
+		.top_nav li{
+			float: left;
+			height: 100%;
+			line-height: 60px;
+			margin-right: 55px;
+		}
+		.top_nav li a{
+			display: inline-block;
+			padding: 8px 25px;
+			line-height: 22px;
+			border-radius: 8px;
+			color: #fff;
+			transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+		}
+		.top_nav li a:hover{
+			background-color: #275fce;
+			box-shadow:0px 0px 10px 4px #71a0ff; 
+		}
+		.top_nav li.active a{
+			background: #275fce;
+			box-shadow:0px 0px 10px 4px #71a0ff; 
+		}
+
+		/*右侧管理员*/
+		.header .head_text {
+		    height: 100%;
+		    color: #FFF;
+		    width: 180px;
+		     padding: 0 0px; 
+		    background: #5381db;
+		}
+		.head_text_li{
+			position: relative;
+			padding: 0 10px;
+		}
+		.head_text_li:hover .dropdown-menu{
+			display: block;
+		}
+		.dropdown-menu {
+		    position: absolute;
+		    top: 100%;
+		    left: 0;
+		    z-index: 1000;
+		    display: none;
+		    float: left;
+		    min-width: 160px;
+		    padding: 5px 0;
+		    /*margin: 2px 0 0;*/
+		    list-style: none;
+		    font-size: 14px;
+		    text-align: left;
+		    background-color: #fff;
+		    border: 1px solid #ccc;
+		    border: 1px solid rgba(0,0,0,.15);
+		    border-radius: 4px;
+		    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		    background-clip: padding-box;
+		    /*background-color: red;*/
+		}
+		.dropdown-menu a {
+		    padding: 10px 20px;
+		    line-height: 40px;
+		    /*-webkit-transition: all .1s .1s;*/
+		    /*transition: all .1s .1s;*/
+
+		}
+		.dropdown-menu > li > a {
+		    display: block;
+		    padding: 3px 20px;
+		    clear: both;
+		    font-weight: 400;
+		    color: #333;
+		    white-space: nowrap;
+		}
+		.dropdown-menu a:hover{
+			background: #5a8bed;
+			color: #fff;
+		}
+		.dropdown-menu a:hover i.iconfont{
+			/*background: url(__PUBLIC__/img/per.png) center center no-repeat;*/
+			background-image: url(__PUBLIC__/img/per.png);
+		}
+		.dropdown-menu a:hover i.iconfonts{
+			background-image: url(__PUBLIC__/img/exit.png);
+		}
+		.iconfont{
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(__PUBLIC__/img/per1.png) center center no-repeat;
+		}
+		.iconfonts{
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(__PUBLIC__/img/exit1.png) center center no-repeat;
+		}
+
+
+		/* 建立新的邀请 */
+		.attr-content-con li.xghujgse{
+			padding: 0 120px;
+			line-height: normal;
+			height: auto;
+		}
+		.xghujgser{
+			box-sizing: border-box;
+			padding: 0 30px 0 10px;
+			border: 1px solid #7080a0;
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			margin-top: 12px;
+		}
+		.shubxsa{
+			box-sizing: border-box;
+			padding: 8px 30px 8px 10px;
+			border: 1px solid #7080a0;
+			height: 146px;
+			width: 100%;
+			margin-bottom: 20px;
+			margin-top: 12px;
+		}
+
+		.tabs1 h2 span {
+		    vertical-align: middle;
+		    display: inline-block;
+		    width: 36px;
+		    height: 30px;
+		    background: url(__PUBLIC__/new/image/pm.png) left center no-repeat;
+		}
+	</style>
+</head>
+<body class="">
+	<div class="header clearfix">
+		<a href="index.html" class="logo" title="后台管理"></a>
+		<div class="top_nav">
+			<ul class="top_nav_list">
+				<li class="">
+					<a href="__CONTROLLER__/index.html">订单管理</a>
+				</li>
+				<li>
+					<a href="__CONTROLLER__/pladmin.html">人员管理</a>
+				</li>
+				<li>
+					<a href="__CONTROLLER__/buadmin.html">商家管理</a>
+				</li>
+				<li>
+					<a href="__CONTROLLER__/fiadmin.html">财务管理</a>
+				</li>
+				<li class="active">
+					<a href="__CONTROLLER__/cpsadmin.html">产品管理</a>
+				</li>
+			</ul>
+		</div>
+        <ul class="head_text fr">
+	        <li class="head_text_li">
+	        	<img class="avatar" src="__PUBLIC__/new/image/head portrait.png">
+	        	<span class="dropdown-toggle">{$username}</span>
+	        	<ul class="dropdown-menu">
+	        		<li>
+	        			<a href="__CONTROLLER__/settings.html" target="mainFrame">
+	        				<i class="iconfont"></i>
+	        				<span>个人中心</span>
+	        			</a>
+	        		</li>
+	        		<li>
+	        			<a href="__CONTROLLER__/tuichu">
+	        				<i class="iconfonts"></i>
+	        				<span>退出登入</span>
+	        			</a>
+	        		</li>
+	        	</ul>
+	        </li>
+        </ul>
+	</div>
+	<!-- nav-collapse -->
+	<div class="main-left">
+		<div class="tabs tabs1" id="tabs">
+			<div class="shuio">
+				<ul class="nav">
+					<!-- <h2><span></span>导入订单</h2>
+					<li id="yuyaonh" star="0" data_type="chuli" class="active"><span></span><a href="javascript:;">需处理</a></li>
+					<li data_type="daixia"><a href="javascript:;">待下单</a></li>
+					<li data_type="quanbhu"><a href="javascript:;">全部订单</a></li>
+					<h2><span></span>订单管理 </h2>
+					<li data_type="yixia"><a href="javascript:;">已下单</a></li>
+					<li data_type="daijie"><a href="javascript:;">待接单</a></li>
+					<li data_type="yiquxiao"><a href="javascript:;">已取消</a></li>
+					<li data_type="quanbu2"><a href="javascript:;">全部订单</a></li> -->
+					<form target="mainFrame" action="__CONTROLLER__/searchs" accept-charset="UTF-8" method="get">
+	              		<input type="text" name="q" id="q" value="" placeholder="搜索" class="search-input tips">
+	              		<button class="search-btn"></button>
+	              		<!-- <a class="search-btn" href="javascript:void(null)" style="background-color: rgb(150, 150, 150); border-radius: 50%; color: rgb(255, 255, 255) !important;">
+	              			<i class="iconfont ic-search"></i>
+	              		</a> -->
+					</form>
+					<h2><span></span>产品管理</h2>
+					<li class="active"><a href="__CONTROLLER__/cps_smaz.html" target="mainFrame">上门安装</a></li>
+				</ul>
+			</div>
+			<div class="track"><div></div></div>
+		</div>
+	</div>
+	<!-- 嵌套网页开始 -->         
+    <!-- <iframe src="__CONTROLLER__/assd.html"  frameborder="0" name="mainFrame" width="100%" height="522"></iframe> -->
+    <!-- 嵌套网页结束 -->   
+
+	<div class="commutr">
+		<div class="main-center" id="main-center">
+			<iframe src="__CONTROLLER__/cps_smaz.html"  frameborder="0" name="mainFrame" width="100%" height="99%"></iframe>
+		</div>
+		<!-- <div id="pagecount" ></div> -->
+		
+	</div>
+
+
+
+    <div class="attr-overlay" id="attr-overlay"></div>
+    <div class="attr-content" id="attr-content">
+        <div class="widget-close" id="closed">
+            关闭
+        </div>
+        <div id="widget-title" class="widget-title"></div>
+        <div id="content_sd"></div>
+    </div>
+    <script type="text/javascript">
+
+    </script>
+</body>
+<script type="text/javascript">
+	$(".tabs1").scrollbar({contentCls:'nav'});
+
+	var ws = new WebSocket("ws://101.200.219.26:4236");
+
+	ws.onopen = function() {
+		console.log('已连接上');
+	};
+
+	ws.onmessage = function(e) {
+		// console.log(e)
+		var data = JSON.parse(e.data);
+		console.log(data)
+		if (data.weiwc>=0) {
+			// xoanshuas(data.weiwc)
+			$("#yuyaonh").find("span").text(data.weiwc);
+		}
+		if(data.weiwc1>=0){
+			$("#wuwuliudanhao").find("span").text(data.weiwc1);
+		}
+		if(data.weiwc2>=0){
+			$("#wuliudanhao_error").find("span").text(data.weiwc2);
+		}
+		if(data.weiwc3>=0){
+			$("#daijiedan_no").find("span").text(data.weiwc3);
+		}
+		if(data.weiwc4>=0){
+			$("#fuwu_no").find("span").text(data.weiwc4);
+		}
+		if(data.weiwc5>=0){
+			$("#dingdai_zhipai").find("span").text(data.weiwc5);
+		}
+		if(data.weiwc6>=0){
+			$("#queren_reason").find("span").text(data.weiwc6);
+		}
+		if(data.weiwc7>=0){
+			$("#wuliuchaoshi").find("span").text(data.weiwc7);
+		}
+
+	}
+
+	function xoanshuas(er) {
+
+		/*var prompt = $r("#yuyaonh").find("span")[0];
+		//console.log(er)
+		prompt.innerHTML = er;*/
+		switch (n.getAttribute("data")) {
+			case "0":
+				n.innerHTML="条件不足";
+				break;
+			case "1":
+				n.innerHTML="已下单";
+				break;
+			case "2":
+				n.innerHTML="已下单已发货";
+				break;
+			case "5":
+				n.innerHTML="等待下单";
+				break;
+			//default:
+				//alert('case都不是的执行');
+		}
+	}
+	// ws.onclose = function() {
+	// 	// 关闭 websocket
+	// 	alert("连接已关闭...");
+	// };
+
+	// function sendMessage(er) {
+	// 	var type='{"weiwc":"'+er+'"}';
+	// 	ws.send(type);
+	// }
+</script>
+</html>

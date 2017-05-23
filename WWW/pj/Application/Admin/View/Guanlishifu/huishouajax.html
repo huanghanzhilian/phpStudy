@@ -1,0 +1,29 @@
+<foreach name='arr' item='kk'>
+<li class="lmbhu lmbhuopd" >
+   
+   <div class="listy_box">
+       <div class="listy_pk">订单号：{$kk.ddh}</div>
+       
+       <div class="listy_pk">{$kk.user_username}：{$kk.cpk_name}<span class="fr">{$kk.cpk_price}元</span></div>
+   </div>
+   
+   
+   <if condition="strtoupper($zt eq  2)">
+   <div class="listy_kr" style="height:105px; line-height:105px;">
+       <span class="listy_con">
+           <a class="didb llvcer" href="__CONTROLLER__/querenhuishou/huishou_id/{$kk.huishou_id}" onclick="if(confirm('是否确定通过?')==false)return false;">确认回收</a>
+           <a class="didb" href="__CONTROLLER__/bhg/huishou_id/{$kk.huishou_id}" onclick="if(confirm('是否不通过?')==false)return false;">不合格</a>
+       </span>
+   </div>
+   <elseif condition="strtoupper($zt eq 3)"/>
+    <div class="listy_kr" style="height:105px; line-height:105px;">
+       <span class="listy_con">
+           <input data='{$kk.huishou_id}' class="xiubuttce xiubuttce_as1 bvbaw" style="text-align:left; width:80px;" type="text" name="brand_name" value="{$kk.content}" readonly="readonly">
+                <span class="chengoos_xg"></span>
+       </span>
+   </div>
+   <else/>
+   </if>
+   
+</li>
+</foreach>

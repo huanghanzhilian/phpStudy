@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>使用getJSON()方法异步加载JSON格式数据</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            $(function () {
+				
+				
+				
+                
+					
+                    $.getJSON("sport.json",function(data){
+                        //$this.attr("disabled", "true");
+						
+						
+						$.each(data, function (index,shenm) {
+							$("#sheng").append("<li class='com"+index+"'>" +index+""+ shenm.name + "</li>");
+						})
+						
+						
+						$("#sheng>li").click(function(){
+							var selValue = $(this).index();
+							$.each(data, function (index,shenm) {
+								$.each(shenm.city, function (ind,shi) {
+								   
+								   if (index == selValue) {
+									   //console.log(shi.name);
+									   $("#shi").append("<li>"+ shi.name + "</li>");
+								   }
+							    })
+							})
+							
+							
+							$("#shi>li").click(function(){
+								var selValuec = $(this).text();
+								$.each(data, function (index,shenm) {
+									$.each(shenm.city, function (ind,shi) {
+									   $.each(shi.area, function (vdv,qu) {
+										   
+										   if (shi.name == selValuec) {
+											   console.log(qu);
+											   $("#qu").append("<li>"+ qu + "</li>");
+										   }
+									   })
+									})
+								})
+							})
+							
+							
+						})
+						
+						
+							
+							
+						
+					});
+					
+					
+					
+              
+				
+				
+				
+            });
+        </script>
+        
+        
+        
+        <div id="divtest">
+            <div class="title">
+                <span class="fl">我最喜欢的一项运动</span> <br>
+                <span class="fr">
+                    <input id="btnShow" type="button" value="请选择" />
+                </span>
+            </div>
+            <ul id="sheng"></ul>
+            <ul id="shi"></ul>
+            <ul id="qu"></ul>
+        </div>
+        
+        
+    </body>
+</html>

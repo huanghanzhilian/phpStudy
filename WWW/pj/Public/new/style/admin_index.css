@@ -1,0 +1,433 @@
+
+html,body{
+	height: 100%;
+}
+.headers{
+	height: 60px;
+	width: 100%;
+}
+.header{
+	height: 60px;
+    background-color: #5a8bed;
+    padding: 0 0 0 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+}
+.header .logo{
+	width: 500px;
+    height: 100%;
+    background: url(../image/logo.png) left center no-repeat;
+    box-shadow: none;
+	border: none;
+	display: inline-block;
+}
+.header .head_text{
+	height: 100%;
+    color: #FFF;
+    width: 180px;
+    padding: 0 10px;
+    background: #5381db;
+}
+.header .head_text .head_text_li{
+	height: 100%;
+	line-height: 60px;
+	vertical-align: middle;
+}
+.header .head_text .avatar{
+	border-radius: 50px;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 10px;
+}
+.header .head_text .dropdown-toggle{
+	vertical-align: middle;
+	display: inline-block;
+}
+.main-left{
+	width: 195px;
+	background-color: #2d3340;
+	height: 100%;
+    position: fixed;
+    /* background: #2a3542; */
+	/*  height: 100%;  */
+}
+#tabs{
+	margin-top: 60px;
+}
+.main-center{ overflow: auto; }
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    
+}
+.table thead{
+	line-height: 50px;
+	background-color: #99a3bf;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	/* position: fixed;
+	top: 0;
+	width: 100%; */
+}
+.table thead tr{
+	// width: 1700px;
+	/* background: red; */
+}
+.table thead tr th{
+	padding: 0px 25px;
+}
+.table tbody{
+	text-align: center;
+}
+.table tbody tr{
+	
+	line-height: 24px;
+}
+.table2 tbody tr{
+	border-bottom: solid 1px #ccc;
+}
+
+.table tbody tr:nth-child(2n) {
+    border-bottom: solid 1px #ccc;
+    text-align: left;
+}
+
+.table tbody tr td{
+	padding: 15px 25px;
+}
+.anniu{
+	/* margin-top: 12px; */
+}
+.anniu span{
+	display: inline-block;
+	border:solid 1px #517ed6;
+	padding: 0 12px;
+	margin: 0 12px;
+	color: #517ed6;
+	cursor: pointer;
+	
+}
+.xianghu{
+	margin-top: 12px;
+}
+.xianghu span{
+	margin-right: 50px;
+	color: #517ed6;
+	cursor: pointer;
+}
+
+.tabs1{
+	color: #b2ccff
+}
+.tabs1 h2{
+	height: 40px;
+	line-height: 40px;
+	padding-top: 10px;
+	font-size: 15px;
+	font-weight: normal;
+	vertical-align: middle;
+	padding-left: 8px;
+}
+.tabs1 h2 span{
+	vertical-align: middle;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background:url(../image/OrderImport-icon.png) left center no-repeat;
+}
+.tabs1 li{
+	height: 40px;
+	position: relative;
+}
+.tabs1 li span{
+	position: absolute;
+	right: 15px;
+    top: 10px;
+	background-color: red;
+	border-radius: 10px;
+	padding: 0 10px;
+	z-index: 100;
+	color: #fff;
+}
+.tabs1 a{
+	color: #b2ccff;
+	display: block;
+	line-height: 40px;
+	padding-left: 40px;
+	transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.tabs1 a:hover{
+	background-color: #517ed6;
+	color:#fff;
+}
+.tabs1 li.active a{
+	background-color: #517ed6;
+	color:#fff;
+	position: relative;
+}
+.tabs1 li.active a:after {
+    content: "";
+	border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+    height: 0px;
+    width: 0px;
+    display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+.tabsd{
+	height: 55px;
+	background: #475166;
+	color: #fff;
+	line-height: 55px;
+	text-align: center;
+	cursor: pointer;
+}
+.tabsd .active{
+	position: relative;
+	color: #ffa200;
+}
+.tabsd .active:after {
+    content: "";
+	border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffa200;
+    height: 0px;
+    width: 0px;
+    display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+}
+.tabsd .active:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: #ffa200;
+	left: 0;
+	bottom: 0;
+}
+
+.anniu-center{
+	padding: 0 35px 0 0px;
+}
+.anniu_hu span{
+    color: #517ed6;
+    cursor: pointer;
+}
+
+
+.attr-overlay {
+    position: fixed;
+    z-index: 3998;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+     display: none; 
+    background: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+
+.attr-content {
+    position: fixed;
+    z-index: 3999;
+    width: 820px;
+    height: 540px;
+    background: #fff;
+     display: none; 
+}
+
+.widget-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+.widget-title {
+    height: 40px;
+    padding-left: 8px;
+    background: #6d94d4;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-bottom: solid 1px #eaebee;
+}
+
+.widget-buttons {
+    height: 40px;
+    padding: 0 20px;
+    line-height: 40px;
+    text-align: right;
+    color: #999;
+}
+#dfghsa .widget-buttons {
+    border-radius: 30px;
+    border: solid 1px #ccc;
+    width: 130px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+.attr-content-con{
+	height: 380px;
+	overflow: auto;
+	padding: 15px 0;
+}
+.attr-content-con li{
+	height: 48px;
+	line-height: 48px;
+}
+.attr-content-con li span {
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: #fff;
+	border: solid 1px #ccc;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+.attr-content-con li div {
+	height: 100%;
+	line-height: 48px;
+	float: left;
+	text-align: center;
+}
+.attr-content-con li div.left {
+	width: 50%;
+}
+.attr-content-con li div.reft {
+	width: 50%;
+	vertical-align: middle;
+}
+.attr-content-button{
+	display: block;
+	margin: 3px auto;
+	width: 100px;
+	height: 35px;
+	background: #fff;
+	border: solid 1px #5076e6;
+	color: #5076e6;
+	border-radius: 5px;
+}
+
+.bijichu{
+	position: relative;
+}
+.bijichu .tanbuks{
+	position: absolute;
+	width: 270px;
+	height: 115px;
+	background: #7a8399;
+	left: 60px;
+	top: -50px;
+
+}
+.bijichu .tanbuks .shuop{
+	padding: 15px;
+}
+.bijichu .tanbuks textarea{
+	background: #7a8399;
+	color: #fff;
+	width: 100%;
+	height: 80px;
+}
+
+.xghujg{
+	padding: 0 60px;
+}
+.skuvc {
+	width: 40px;
+	height: 16px;
+	line-height: 16px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50px;
+	border: solid 1px #ccc;
+}
+.skuvc.fuhe{
+	color: #41b394;
+	border-color: #41b394;
+}
+.skuvc.bufuhe{
+	color: #cd3e3e;
+	border-color: #cd3e3e;
+}
+
+.skuvcre {
+	width: 40px;
+	height: 16px;
+	line-height: 16px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50px;
+	border: solid 1px #ccc;
+}
+.skuvcre.fuhe{
+	color: #41b394;
+	border-color: #41b394;
+}
+.skuvcre.bufuhe{
+	color: #cd3e3e;
+	border-color: #cd3e3e;
+}
+
+/*笔记按钮*/
+.bijichuav:after {
+    content: "";
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #517ed6;
+    height: 0px;
+    width: 0px;
+    display: inline-block;
+    position: absolute;
+    left: -2px;
+    top: -4px;
+    -webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+}
+
+/*分页*/
+	.clopokc {
+	    text-align: center;
+	    margin-bottom: 15px;
+	    padding: 12px 0;
+	}
+	.clopokc span.current {
+	    background: #3e7edb;
+	    border-color: #3e7edb;
+	    color: #fff;
+	}
+	.clopokc a, .clopokc span, .hhbn {
+	    display: inline-block;
+	    padding: 2px 8px;
+	    border: 1px solid #ccc;
+	    margin: 0 2px;
+	    color: #4c4c4c;
+	}
+
+	.amuhsre{
+		    display: inline-block;
+		    border: solid 1px #517ed6;
+		    padding: 0 12px;
+		    margin: 0 12px;
+		    color: #517ed6;
+		    cursor: pointer;
+	}

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>维百士后台管理-售后管理-型号搜索</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+</head>
+<body>
+<div class="header">
+    <span onclick="window.history.back()"></span>
+    <div class="search_br_fd" id="search_br_fd">
+        <input class="search_br_fd_r_1" type="button" id="sou" value="搜索" onclick="ajax(1)">
+        <div class="search_br_fd_r_2">
+            <i></i>
+            <input type="text" id="sea"  placeholder='搜索订单编号/关联手机'>
+            <b id="vbsyc"></b>
+        </div>
+        
+    </div>
+    
+</div><!--头-->
+<div class="content">
+    <div class="content_con">
+        <div class="ceomer_com" id='ky'>
+        
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+function ajax(){
+		var sea=document.getElementById("sea").value
+		//alert(sea);
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__MODULE__/index/dingdan_list/sea/"+sea,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('ky').innerHTML=ajax.responseText
+                    //var cubugrt=$(".cubugrt").attr("data")
+                    //console.log(cubugrt)
+                    $(".cubugrt").each(function(){
+                        //console.log($(this).attr("data"))
+                        if($(this).attr("data")==1){
+                            $(this).text('待售后')
+                        }else if($(this).attr("data")==2){
+                            $(this).text('售后中')
+                        }else if($(this).attr("data")==3){
+                            $(this).text('售后完成')
+                        }
+                    });
+				}
+			}
+	}
+	
+document.onkeyup=function(event){
+  event = event || window.event;
+  if(event.keyCode==13){
+	 ajax()
+  }
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

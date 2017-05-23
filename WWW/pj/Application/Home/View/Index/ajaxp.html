@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+						<if condition="strtoupper ($tu eq  1)">
+                   
+                        <foreach name='arr' item='kk'>
+                            <li><!--<span><i></i><em></em></span>--><b></b>{$kk.model_name}
+                            <ul>
+                             <foreach name="kk['data']" item='ee'>
+                                    <li>
+                                    <a href="http://m.weibaishi.com/model/{$kk.model_id}/{$ee.color_id}/{$id}">{$ee.color_name}</a>
+                                    </li>
+                            </foreach> 
+                            </ul>
+                            </li>
+                        </foreach>
+						 <else/>
+						<foreach name='arr' item='kk'>
+                            <li><!--<span><i></i><em></em></span>--><b></b>{$kk.model_name}
+                            <ul>
+                             <foreach name="kk['data']" item='ee'>
+                                    <li>
+                                    <a href="__CONTROLLER__/wenti/model_id/{$kk.model_id}/color_id/{$ee.color_id}/id/{$id}">{$ee.color_name}</a>
+                                    </li>
+                            </foreach> 
+                            </ul>
+                            </li>
+                        </foreach>
+						 </if>
+</html>

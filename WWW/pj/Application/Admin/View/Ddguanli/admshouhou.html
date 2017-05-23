@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<title>维百士-手机维修-售后申请</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+<style>
+.rowPP{ width:100%;}
+.chupdn{ padding:0;}
+.tousyna_2_ac{ margin-top:0;}
+.ckder_buede{  padding-top:25px;}
+.ckder_buede li a{ background:#fff; width:90%; margin:auto; display:block; color:#808080; text-align:center; height:42px; line-height:42px; border-radius: 4px; border:1px solid #f0f0f0;}
+.ckder_buede li.on a{ background:#3e7edb; color:#fff; border-color:#3e7edb;}
+.grent_1_pok{ border:none; padding:12px 0;}
+.tjq_zy_mmnre{ margin:0; }
+</style>
+</head>
+<body>
+<div class="header">
+    <span onclick="window.history.back()"></span>
+    <h1>售后申请</h1>
+</div><!--头-->
+
+<div class="content">
+    <div class="content_con">
+        <div class="public_lrcbr">
+            <div id='list_b'>
+                <!--<ul class="pubcvt ckder_buede">
+                    <li id="youh" class="pubcvt_v on">
+                        <a href="javascript:void(0);">邮寄售后</a>
+                    </li>
+                    <li id="daokl" class="pubcvt_v">
+                        <a href="javascript:void(0);">到店售后</a>
+                    </li>
+                </ul>-->
+                <form method="post" action="__CONTROLLER__/shouhouadd" onSubmit="return Checked()">
+                    <div class="form">
+                    <div class="row row_1 rowPP chupdn">
+                        <label class="bqf bqf_1" id="bz">故障描述/备注</label>
+                    </div>
+                    <div class="tousyna_2 tousyna_2_ac" id="tous_dc_2">
+                    <textarea name="contentt" id="contentt" rows="" cols="" placeholder="描述您手机的故障或者其他要求"></textarea>
+                    </div>
+                    <div class="row rowPP">
+                        <label class="bqf">姓名：</label>
+                        <div class="rootu">
+                            <input type="text" class="txt" name="username" id="username"  placeholder="我们怎么称呼您" autocomplete="off" value='{$arr.u_name}'>
+                        </div>
+                    </div>
+                    <div class="row rowPP">
+                        <label class="bqf">电话：</label>
+                        <div class="rootu">
+                            <input type="text" class="txt" name="tell" id="tell"  placeholder="能联系到您的手机号码" autocomplete="off" value='{$arr.u_phone}'>
+                        </div>
+                    </div>
+                    <!--<div class="row rowPP" id="hujbre">
+                        <label class="bqf">邮寄地址：</label>
+                        <div class="rootu">
+                            <input type="text" class="txt" name="addres" id="addres"  placeholder="我们将派快递上门取件" autocomplete="off" value=''>
+                        </div>
+                    </div>
+                    <div class="row rowPP" id="hujbree">
+                        <label class="bqf">回寄地址：</label>
+                        <div class="rootu">
+                            <input type="text" class="txt" name="addre" id="addre"  placeholder="收件人所在的街道及门牌号" autocomplete="off" value=''>
+                        </div>
+                    </div>-->
+                    
+                    <div class="grent_1 grent_1_pok">
+                        <span id="tjq_zy" class="tjq_zy tjq_zy_mmnre"></span>
+                        <input type="checkbox" name="tongy" id="tongy" checked="checked"/>
+                        我已阅读并同意此条款<a href="javascript:void(0);" onclick="tiaok()">《维百士服务条款》</a>
+                    </div>
+                    
+                    
+                    <input type="hidden" name="id" value='{$arr.id}'>
+                    <input class="submit_sd" type="submit" value='提交'>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+			
+	$("#tjq_zy").click(function(){
+		if($(this).hasClass('tjq_zy1')){
+			$(this).removeClass('tjq_zy1')
+			$("#tongy").attr("checked",true);
+		}else{
+			$(this).addClass('tjq_zy1');
+			$("#tongy").attr("checked",false);
+		}
+	});
+	
+	//top
+	$("#list_b li").click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		if($("#daokl").hasClass('on')){
+			$("#addres,#addre").attr("disabled", "true");
+			$("#hujbre,#hujbree").hide();
+		}else{
+			$("#addres,#addre").removeAttr("disabled");
+			$("#hujbre,#hujbree").show();
+		}
+	})
+	
+});
+function tiaok(){
+	$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+	$(window.document.body).append('<div class="f_bz f_bz_2" id="tiaokuan_1"></div><div class="Maskc3" style="display:block"></div>'); 
+	$.ajax({
+		url: "__CONTROLLER__/clause",
+		//data:{'model_id':id},
+		dataType: "html",
+		type:'get',
+		success: function (data) {
+			$("#tiaokuan_1").html( data);
+			$("#tk_gb_1").click(function(){
+				$(".Maskc3").remove();
+				$("#tiaokuan_1").remove();
+				$("html,body").css({"overflow-y": "auto",'height':'auto'});
+			})
+		}
+	});
+}
+
+
+var checkSubmitFlg = false;
+function Checked(){
+	var tutle_n=$("#contentt").val();
+	if(tutle_n =='' || tutle_n == null){
+		$("#contentt").focus().addClass("tips");
+		$("#contentt").attr("placeholder", "描述您手机的故障或者其他要求");
+		return false;
+	}
+	var tutle_n=$("#username").val();
+	if(tutle_n =='' || tutle_n == null){
+		$("#username").focus().addClass("tips");
+		$("#username").attr("placeholder", "请输入您的姓名");
+		return false;
+	}
+	
+	var tel =$("#tell").val();
+	var mobile = /^0{0,1}(14[0-9]|17[0-9]|13[0-9]|15[0-9]|18[0-9]|14[0-9])[0-9]{8}$/;
+	
+	//if(tutle_n.value==''){ alert("请填写您的姓名！"); tutle_n.focus(); return false; }
+	if(!mobile.test(tel)){
+		$("#tell").val('');
+		$("#tell").attr("placeholder", "请输入正确的手机号码");
+		$("#tell").one("blur", function(){
+			$("#tell").attr("placeholder", "请输入能联系到您的手机号");
+		});
+		$("#tell").focus().addClass("tips");
+		return false;
+	}
+	
+	
+	
+	
+	
+	
+	if(!$("#tongy").attr('checked')){
+		$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+		$(window.document.body).append('<div class="f_bz"><div style="text-align: center;" class="f_bz_top">请同意维百士服务条款</div><ul><li data="no确定" id="qberc">确定</li></ul></div><div class="Maskc3" style="display:block"></div>'); 
+		$("#qberc").click(function(){
+			$("html,body").css({"overflow-y": "auto",'height':'auto'});
+			$(".f_bz").remove();
+			$(".Maskc3").remove();
+		})
+		return false;	
+	}
+	
+	
+	
+   if (!checkSubmitFlg) {
+	   checkSubmitFlg = true;
+	   return true;
+   }else{
+	   alert("抱歉不能反复提交");
+	   return false;
+   }
+			
+	
+	//return true;
+	//return false;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

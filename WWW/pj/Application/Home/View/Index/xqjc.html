@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	#t{float:left;}
+	#f{float:left;margin-left:10px;}
+	
+	</style>
+</head>
+<body>
+	修前检测：	
+<form method="post" action="__CONTROLLER__/tj">
+	<div id='t'>
+	<foreach name='arr2' item='kk'>
+	{$kk.jc_name}:&nbsp;&nbsp;&nbsp;{$kk.jc_content}<input type="checkbox" name="jc_id[]" value='{$kk.jc_id}'>正常<br /><br />	
+	</foreach><br /><br />
+	</div>
+	<div id='f'>
+	<foreach name='arr3' item='kk'>
+	<input type="checkbox" name="jc_id[]" value='{$kk.jc_id}'>不正常<br /><br />			
+	</foreach>
+	</div>
+	
+	<input type="hidden" name="id" value='{$id}'>
+	<input type="submit" value='提交确认'>
+</form>
+</body>
+</html>

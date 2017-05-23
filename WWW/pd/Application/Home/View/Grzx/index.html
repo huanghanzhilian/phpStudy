@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<a href="__MODULE__/Gouwuche/peijiandingdan">返回</a><br /><br />
+	<a href="__MODULE__/index/wxlogin">{$yanz}</a><br /><br />
+	<img src="{$avatar}" width=100 height=100 /></a><br />
+	{$wxusername}<br /><br />
+	个人信息<br /><br />
+	已维修了:{$nums}单<br /><br />
+	余额：{$yuemoney}元&nbsp;&nbsp;&nbsp;<a href="__CONTROLLER__/tixian">提现</a><br /><br />
+	负债:{$yue}&nbsp;&nbsp;&nbsp;
+	<if condition="strtoupper($yue) eq  0">
+						无需还款
+					<else />
+					<a href="__CONTROLLER__/huankuan">还款</a>
+			</if> <br /><br />
+	<a href="__CONTROLLER__/peijianhuishou">回收的配件</a><br /><br />
+<span id='gg'><a href='javascript:void(0)'onclick="ko({$sfzt})">{$kongxian}</a></span>
+</body>
+</html><!-- <input type="button" value="" onclick='ko(1)'> -->
+<script type="text/javascript">
+	function ko(id){
+		//id=1;
+		//alert(id);
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/shifuzhuangtai/id/"+id,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('gg').innerHTML=ajax.responseText
+				}
+			}
+	}
+</script>

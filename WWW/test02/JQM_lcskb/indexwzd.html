@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>列车时刻表查询</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.3.css"/>
+</head>
+
+<body>
+
+<div data-role="page" id="index">
+
+    <div data-role="header" data-position="fixed">
+        <h1>列车时刻表查询</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <div class="ui-field-contain">
+            <label>发车站:</label>
+            <input type="text" name="text-basic" id="search-begin" value="">
+        </div>
+        <div class="ui-field-contain">
+            <label>终点站:</label>
+            <input type="text" name="text-basic" id="search-end" value="">
+        </div>
+        <div class="ui-field-contain">
+            <label>车次:</label>
+            <input type="text" name="text-basic" id="search-no" value="">
+        </div>
+        <input type="button" value="搜索" id="search-submit">
+        <ul data-role="listview" data-inset="true" id="list">
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="grid" class="ui-btn-active">查询</a></li>
+                <li><a href="#" data-icon="star">收藏</a></li>
+                <li><a href="#" data-icon="gear">设置</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="detail">
+
+    <div data-role="header" data-position="fixed">
+        <h1>列车时刻表查询</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <h2></h2>
+        <table data-role="table" id="movie-table" data-mode="reflow" class="ui-responsive">
+            <thead>
+            <tr>
+                <th data-priority="1">站名</th>
+                <th data-priority="persist">到站时间</th>
+                <th data-priority="persist">出发时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <a href="#" class="ui-btn ui-corner-all" data-rel="back">返回</a>
+    </div>
+
+    <div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="grid" class="ui-btn-active">查询</a></li>
+                <li><a href="#" data-icon="star">收藏</a></li>
+                <li><a href="#" data-icon="gear">设置</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.mobile-1.4.3.js"></script>
+<script>
+    var urlPre = "http://cors.itxti.net/?"; //跨域中转
+    var url1 = "www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getStationAndTimeByStationName?UserID=";
+    var url2 = "www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getStationAndTimeDataSetByLikeTrainCode?UserID=";
+    var url3 = "www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getDetailInfoByTrainCode?UserID=";
+    var isbind = 0;
+	
+	
+	//获取车次列表
+   var getcclb=function(){
+	   //矫验数据
+	   if($("#search-no").val()||$("#search-begin").val()&&$("#search-end").val()){                              //如果我们的车次填了||或者发车站和&&总电站填了
+		   var searchbutton=$(this)    //获取按钮
+		   searchbutton.button("option","disabled",true)    //搜索按钮不允许点击
+		   $.mobile.loading("show")    //显示加载框
+		   
+		   
+		   
+		   var _data={};    //空对象
+		   var _url=url1    //变量等于url1
+		   
+		   
+		   if(!$("#search-no").val()){    //如果车次没有填，那么其他两项肯定填了
+			   _data.StartStation=$("#search-begin").val();    //对象数组等于发车时间
+			   _data.ArriveStation=$("#search-end").val();     //对象等于总电站
+		   }else{    //否则
+		       _data.TrainCode=$("#search-no").val();          //对象数组等于车次
+			   _url=url2    //用车次url来查询
+		   }
+		   
+		   
+		   $.get(urlPre+_url,_data,function(data){
+		       var list=$("#list");    //获取列表
+			   var timeTables=$(data).find(TimeTable);    //什么获取数据找到标头
+			   var _arr=[];    //声明一个数组用来存放车次
+			   timeTables.each(function(index,obj){    //()里是索引和内容
+		           var i=index;    //用临时变量来保存index
+				   if(i>10)return false;    //只加载十条数据
+				   
+				   var that=$(this);
+				   if(that.find("FirstStation").text()=="数据没有被发现"){
+					   alert("数据没有被发现");
+					   return false;
+				   }
+				   
+				   _arr.push('<li><a href="#" data-no="' + that.find("TrainCode").text() + '">' +
+                                    '<h2>' + that.find("TrainCode").text() + '次</h2>' +
+                                    '<p>' + that.find("FirstStation").text() + ' - ' + that.find("LastStation").text() + '</p>' +
+                                    '<p>用时：' + that.find("UseDate").text() + '</p>' +
+                                    '<p class="ui-li-aside">' + that.find("StartTime").text() + ' 开</p>' +
+                                    '</a></li>');
+									
+									
+			   });
+			   
+			   if (_arr.length > 0) {
+                            list.html(_arr.join(""));
+                            list.listview("refresh");
+                        }
+
+                        $.mobile.loading("hide");
+
+                        searchButton.button("option", "disabled", false);
+			   
+			   
+		   });
+		   
+		   
+		   
+	   }else{  //否则
+		   alert("请输入发车站和终点站。或者输入车次")
+	   }
+         
+   } 
+   
+   
+   //查看车次详细信息
+   var getxinx=function(){
+         
+   } 
+	
+
+   //绑定事件
+   var bindevent=function(){
+       $("#search-submit").on("click",getcclb);                  //绑定当点击搜索按钮时获取车次列表
+	   $("#list").on("click","a",getxinx);                  //在ul地下不管现在有的动态生成的里面的a点击触发车次详细信息
+   }   
+   
+   
+
+    $(document).on("pageshow", "#index", function () {            //页面载入第一屏
+        if (isbind) return
+        isbind = 1;
+        bindevent();                                              //首页载入后先绑定事件
+    });
+
+</script>
+</body>
+</html>

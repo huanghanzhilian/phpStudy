@@ -1,0 +1,12 @@
+[ 2016-06-09T09:10:56+08:00 ] 123.116.114.217 /index.php/HomeIndex//membercentent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+ERR: 无法加载模块:HomeIndex
+
+[ 2016-06-09T09:11:17+08:00 ] 123.116.114.217 /index.php/HomeIndex//membercentent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+ERR: 无法加载模块:HomeIndex
+

@@ -1,0 +1,3051 @@
+[ 2017-01-17T17:48:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2017-01-17T17:49:52+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2017-01-17T17:50:21+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2017-01-17T17:50:22+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2017-01-17T17:50:59+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2017-01-17T17:50:59+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-01-17T17:51:08+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2017-01-17T17:51:33+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2017-01-17T17:52:19+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-01-17T17:52:39+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2017-01-17T17:53:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2017-01-17T17:53:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0024s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2250' ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2250' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='灰旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538369930809' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2017-01-17T17:53:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0027s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2251' ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2251' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='543210580197' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2017-01-17T17:53:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0029s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2249' ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2249' ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='543210580197' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-01-17T17:53:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0029s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2252' ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2252' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538369930809' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2017-01-17T17:53:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2253' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2253' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538369930809' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2017-01-17T17:53:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2256' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2256' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-01-17T17:53:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0025s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2248' ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2248' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538369930809' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2017-01-17T17:53:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2254' ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2254' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2017-01-17T17:53:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2257' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2257' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2017-01-17T17:53:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0026s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2258' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2258' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2255' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2255' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2261' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2261' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='41439953216' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2260' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2260' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='粉旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='539690043623' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2260' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0024s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2259' ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2259' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='粉旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538374482621' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2259' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0026s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2262' ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2262' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='41439953216' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2263' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2263' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2263' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2264' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2264' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2265' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2265' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0030s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2266' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2266' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='41439953216' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0027s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2268' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2268' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0022s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2270' ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2270' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2271' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2271' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2272' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2272' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0877s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2269' ) [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2269' ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538374482621' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2269' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001511s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0037s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2267' ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2267' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2267' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2278' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2278' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2278' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0027s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2274' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2274' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2274' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2273' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2273' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='41439953216' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2276' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2276' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='红旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2275' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2275' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='红旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2281' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2281' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0022s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2280' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2280' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0026s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2277' ) [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2277' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2277' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2283' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2283' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='红旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2285' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2285' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='41439953216' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2279' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2279' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='红旗' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2279' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0028s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2282' ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2282' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='红旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2282' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0028s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2287' ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2287' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0029s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2288' ) [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2288' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538804404645' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2288' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0025s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2284' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2284' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0032s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2289' ) [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2289' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538804404645' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2289' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2290' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2290' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2286' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2286' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2017-01-17T17:53:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2291' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2291' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538369930809' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-01-17T17:53:23+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2017-01-17T17:53:23+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2250' ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2250' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='灰旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538369930809' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2251' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2251' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='543210580197' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2252' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2252' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538369930809' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2249' ) [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2249' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='543210580197' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2248' ) [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2248' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538369930809' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001378s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2253' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2253' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538369930809' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2254' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2254' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2255' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2255' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2256' ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2256' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2258' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2258' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0022s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2259' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2259' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='粉旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538374482621' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2259' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2017-01-17T17:53:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2257' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2257' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2260' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2260' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='粉旗' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='539690043623' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2260' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2262' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2262' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='41439953216' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0022s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2261' ) [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2261' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='41439953216' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2263' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2263' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2263' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2264' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2264' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2265' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2265' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0025s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2266' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2266' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='41439953216' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2267' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2267' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2267' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2268' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2268' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0028s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2269' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2269' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538374482621' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2269' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2270' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2270' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2274' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2274' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2274' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2276' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2276' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='红旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0027s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2271' ) [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2271' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2272' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2272' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2273' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2273' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='41439953216' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2275' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2275' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='红旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0025s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2278' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2278' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2278' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2283' ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2283' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='红旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2277' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2277' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2277' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2281' ) [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2281' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2284' ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2284' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0025s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2279' ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2279' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='红旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2279' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2280' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2280' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2282' ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2282' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='红旗' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='521073786962' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2282' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0029s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2286' ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2286' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2287' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2287' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538650491541' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='2' WHERE ( p_id='2289' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2289' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='蓝旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538804404645' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2289' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2285' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2285' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='41439953216' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0026s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2288' ) [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2288' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538804404645' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2288' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2290' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2290' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='清风亭阁' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='38576556499' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2017-01-17T17:53:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/cont
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0018s ]
+SQL: UPDATE `dingdan` SET `dizhizt`='1' WHERE ( p_id='2291' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2291' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qizi` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `qizi` WHERE ( dianpu='玖零国际数码' and qizi_color='绿旗' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ding` WHERE ( goodid='538369930809' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2017-01-17T17:53:32+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2017-01-17T17:53:33+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2017-01-17T17:53:39+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/skui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `sku` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sku`  [ RunTime:0.0013s ]
+
+[ 2017-01-17T17:53:41+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/pipei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='undefined' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: INSERT INTO `ding` (`ding_name`,`goodid`,`sku_id`,`ding_zt`) VALUES (NULL,NULL,'2','1') [ RunTime:0.0504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2017-01-17T17:53:48+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/skui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `sku` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sku`  [ RunTime:0.0006s ]
+
+[ 2017-01-17T17:53:50+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/pipei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( p_id='2259' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ding` [ RunTime:0.0015s ]
+SQL: INSERT INTO `ding` (`ding_name`,`goodid`,`sku_id`,`ding_zt`) VALUES ('颜色分类:【OPPO R7s】屏碎/显示正常/带框','538374482621','1','1') [ RunTime:0.0516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002306s ]
+
+[ 2017-01-17T17:53:58+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002314s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002106s ]
+
+[ 2017-01-17T17:53:59+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2017-01-17T17:54:00+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2017-01-17T17:54:00+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2017-01-17T17:54:01+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-01-17T17:54:24+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001793s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002496s ]
+
+[ 2017-01-17T17:54:25+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2017-01-17T17:54:27+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2017-01-17T17:55:38+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001187s ]
+
+[ 2017-01-17T17:55:38+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2017-01-17T17:55:46+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2017-01-17T17:56:14+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001552s ]
+
+[ 2017-01-17T17:56:14+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-01-17T17:56:15+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2017-01-17T17:56:16+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-01-17T17:57:01+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2017-01-17T17:57:02+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2017-01-17T17:57:03+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2017-01-17T17:57:03+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2017-01-17T17:57:04+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2017-01-17T17:57:05+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2017-01-17T17:57:06+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2017-01-17T17:57:06+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2017-01-17T17:57:57+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2017-01-17T17:57:57+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-01-17T17:57:58+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2017-01-17T17:57:59+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2017-01-17T17:58:14+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2017-01-17T17:58:15+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2017-01-17T18:00:34+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2017-01-17T18:04:13+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2017-01-17T18:04:14+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2017-01-17T18:04:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2017-01-17T18:04:19+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2017-01-17T18:04:20+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000696s ]
+
+[ 2017-01-17T18:04:20+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2017-01-17T18:04:21+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-01-17T18:04:21+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-01-17T18:04:22+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2017-01-17T18:04:22+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-01-17T18:04:23+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2017-01-17T18:04:24+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2017-01-17T18:04:25+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2017-01-17T18:04:26+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2017-01-17T18:04:28+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2017-01-17T18:04:29+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2017-01-17T18:04:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2017-01-17T18:04:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2017-01-17T18:04:31+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2017-01-17T18:04:51+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2017-01-17T18:04:51+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2017-01-17T18:04:52+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2017-01-17T18:04:52+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2017-01-17T18:04:53+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2017-01-17T18:04:53+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2017-01-17T18:04:55+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2017-01-17T18:04:55+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2017-01-17T18:04:56+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2017-01-17T18:04:56+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2017-01-17T18:04:57+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2017-01-17T18:04:58+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-01-17T18:04:58+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2017-01-17T18:04:59+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2017-01-17T18:05:01+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2017-01-17T18:05:02+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2017-01-17T18:05:02+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2017-01-17T18:05:03+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2017-01-17T18:05:05+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2017-01-17T18:05:16+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001509s ]
+
+[ 2017-01-17T18:05:16+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2017-01-17T18:05:17+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2017-01-17T18:05:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2017-01-17T18:05:18+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-01-17T18:05:19+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-01-17T18:05:22+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2017-01-17T18:05:23+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2017-01-17T18:05:24+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2017-01-17T18:05:24+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2017-01-17T18:05:25+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2017-01-17T18:05:26+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2017-01-17T18:05:32+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/skui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `sku` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sku`  [ RunTime:0.0007s ]
+
+[ 2017-01-17T18:05:55+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-01-17T18:05:58+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/skui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `sku` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sku`  [ RunTime:0.0006s ]
+
+[ 2017-01-17T18:06:00+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2017-01-17T18:06:25+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002338s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001457s ]
+
+[ 2017-01-17T18:06:25+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/h_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='2' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2017-01-17T18:06:27+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2017-01-17T18:06:30+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2017-01-17T18:06:31+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2017-01-17T18:07:08+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/g_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dingdan` WHERE ( ztt='1' )  [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2017-01-17T18:07:08+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `dingdan` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `dingdan` WHERE ( dizhizt='1' and sku_zt='1' and (qizi='1' or qizi='2') )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2017-01-17T18:18:49+08:00 ] 127.0.0.1 /ceshi/think/index.php/home/index/t_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001708s ]
+

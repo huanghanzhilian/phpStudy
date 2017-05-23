@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>维百士-业务覆盖</title>
+	<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+	<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+	<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		html,body{
+			height: 100%;
+		    width: 100%;
+		     min-height: 668px; 
+		    min-width: 1100px;
+		    /* overflow: hidden; */
+		}
+		body{
+			/* background: url(__PUBLIC__/img/index1/address/bg1a1.png) 0 0 no-repeat;
+			background-size: cover; */
+		}
+		.header{
+			width: 100%;
+			height: 95px;
+			background: url(__PUBLIC__/img/index1/address/bg2a2.png);
+			background-size: cover;
+			min-width: 1200px;
+		}
+		.header_com{
+			width: 1200px;
+			margin: 0 auto;
+			height: 100%;
+			position: relative;
+		}
+		.logo_title{
+			width: 458px;
+			height: 42px;
+			background: url(__PUBLIC__/img/index1/address/title.png) 0 0 no-repeat;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+			/*background-size: cover;*/
+		}
+		.number{
+			width: 206px;
+			height: 24px;
+			background: url(__PUBLIC__/img/index1/address/number.png) 0 0 no-repeat;
+			margin-top: 36px;
+		}
+
+		.mainCon{
+			width: 960px;
+			height: 90%;
+			margin: 0 auto;
+			/*background: red;*/
+			position: relative;
+			margin-top: 0px;
+		}
+		.mainbox{
+			/* position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%); */
+		}
+
+		.maintitle{
+			margin: 0 auto;
+			width: 438px;
+			height: 35px;
+			padding: 70px 0 30px 0;
+			background: url(__PUBLIC__/img/index1/address/title2.png) center center no-repeat;
+		}
+		.maincontent{
+			width: 365px;
+			margin: 0 auto;
+		}
+		.minslis a{
+			position: relative;
+		    display: block;
+		    overflow: hidden;
+		    padding: 0 0 0 12px;
+		    height: 45px;
+		    border: 1px solid #aaa;
+		    border-radius: 5px;
+		    background-color: rgba(255,255,255,.1);
+		    /* box-shadow: 0 0 3px white inset, 0 1px 1px rgba(0, 0, 0, 0.1); */
+		    color: #fff !important;
+		    text-decoration: none;
+		    white-space: nowrap;
+		    line-height: 45px;
+		    font-size: 16px;
+		}
+		.minslis{
+			position: relative;
+			margin-bottom:35px
+		}
+		.minslis.chosen-with-drop a {
+			background-color:#3a496a;
+		  border: 1px solid #aaa;
+		  border-bottom: none;
+		  -moz-border-radius-bottomright: 0;
+		  border-bottom-right-radius: 0;
+		  -moz-border-radius-bottomleft: 0;
+		  border-bottom-left-radius: 0;
+		}
+		.minslis a div {
+		    position: absolute;
+		    top: 0;
+		    right: 8px;
+		    display: block;
+		    width: 18px;
+		    height: 100%;
+		}
+		.minslis a div b {
+		    display: block;
+		    width: 100%;
+		    height: 100%;
+		    background: url(__PUBLIC__/img/index1/address/xl.png) no-repeat 0px 20px;
+		}
+		.minslis .chosen-drop{
+			position: absolute;
+			top: 100
+			margin-top: -1px;
+		    border-radius: 0 0 4px 4px;
+		    background-clip: padding-box;
+		    left: -9999px;
+		    z-index: 1010;
+		    width: 100%;
+		    border: 1px solid #aaa;
+		    border-top: 0;
+		    background: #3a496a;
+		    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+		    box-sizing: border-box;
+		    color:#fff;
+		}
+		.minslis.chosen-with-drop .chosen-drop{
+			left:0;
+		}
+		.chosen-results{
+			padding: 0 8px 6px 8px;
+		    position: relative;
+		    overflow-x: hidden;
+		    overflow-y: auto;
+		    max-height: 240px;
+		    -webkit-overflow-scrolling: touch;
+
+		}
+		.active-result{
+			line-height: 34px;
+			padding: 0 8px;
+			
+		}
+		.lspw{
+			background: #1b2337;
+		}
+		.btn{
+			display: inline-block;
+		    padding: 6px 12px;
+		    font-size: 14px;
+		    font-weight: normal;
+		    line-height: 1.3333333;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: middle;
+		    cursor: pointer;
+		    background-image: none;
+		    border: 1px solid transparent;
+		    border-radius: 4px;
+		}
+		.s-btn {
+		    height: 40px;
+		    width: 365px;
+		    vertical-align: middle;
+		    font-size: 18px;
+		    overflow: hidden;
+		        background-color: rgba(255,255,255,.3);
+		    /*border: 1px solid #aaa;*/
+		    color: #FFFFFF;
+		    letter-spacing: 5px;
+		    font-family: "\5FAE\8F6F\96C5\9ED1","Microsoft YaHei","\5B8B\4F53","SimSun";
+		}
+		.avsrrop{
+			background: #2173dd;
+		}
+		/*搜索框*/
+		.chosen-search {
+		    position: relative;
+		    z-index: 1010;
+		    margin: 0;
+		    padding: 3px 4px;
+		    white-space: nowrap;
+		}
+		.chosen-search input[type="text"] {
+		    margin: 1px 0;
+		    padding: 6px 20px 6px 5px;
+		    width: 100%;
+		    height: auto;
+		    outline: 0;
+		    border: 1px solid #aaa;
+		    background: white url(chosen-sprite.png) no-repeat 100% -20px;
+		    background: url(chosen-sprite.png) no-repeat 100% -20px;
+		    font-size: 1em;
+		    font-family: sans-serif;
+		    line-height: normal;
+		    border-radius: 0;
+		    box-sizing: border-box;
+		    color: #fff;
+		}
+		/*搜索框end*/
+
+		/*对话框*/
+		.button{
+				margin-bottom:20px;
+			}
+			.dialog .widget-container{
+				position:relative;
+				width:350px;
+				/* height:200px; */
+				background:#fff;
+			}
+			.dialog .widget-title{
+				color: #4d4d4d !important;
+				/*height:40px;*/
+				padding-left:8px;
+				background: none !important;
+				/* line-height:20px !important; */
+				border: none !important;
+				padding: 12px 0;
+				font-weight: 600;
+				font-size: 18px;
+				text-align: center;
+			}
+			.dialog .widget-close{
+				position:absolute;
+				top:0;
+				right:0;
+				width:40px;
+				height:40px;
+				line-height:40px;
+				text-align:center;
+				cursor:pointer;
+			}
+			.dialog .widget-content{
+				height:75px;
+				padding:0 10px 10px 10px;
+				line-height:22px;
+				text-align:center;
+				color: #4aa54a;
+				font-size: 15px;
+			}
+			.dialog .widget-buttons{
+				height:40px;
+				padding:0 20px;
+				line-height:40px;
+				text-align:right;
+				display: -webkit-box;
+			    display: -webkit-flex;
+			    display: flex;
+			    margin-bottom: 20px;
+			    font-size: 15px;
+			}
+			.dialog .widget-buttons button{
+				width:80px;
+				height:38px;
+				border:none;
+				line-height:38px;
+				background:#6aa8fd;
+				border: solid 1px #6aa8fd;
+				outline:none;
+				cursor:pointer;
+				-webkit-box-flex: 1;
+			    -webkit-flex: 1;
+			    flex: 1;
+			    margin: 0 10px;
+			    color: #fff;
+			}
+			.dialog .widget-buttons button.button-1{
+				background: none;
+				color: #6aa8fd;
+			}
+			.maincontent_list{
+				margin-bottom: 50px;
+			}
+			.maincontent_list p.title{
+				line-height: 30px;
+				border-bottom: solid 1px #fff;
+				color: #bfc8dc;
+			}
+			.minslis_box{
+				padding: 40px 0;
+				border-bottom: dashed 1px #fff;
+			}
+			.widget-close a{
+				display: none;
+			}
+			/*对话框*/
+
+	</style>
+</head>
+<body>
+	<!-- 顶部 -->
+	<!-- <div class="header">
+		<div class="header_com">
+			<div class="logo_title"></div>
+			<div class="number fr"></div>
+		</div>
+	</div> -->
+	<!-- 中部 -->
+	<div class="mainCon">
+		<div class="mainbox">
+			<div class="maintitle"></div>
+			<div class="maincontent" id="maincontent">
+				<!-- chosen-with-drop -->
+				<div class="minslis province">
+					<a href="javascript:;">
+						<span>请选择省...</span>
+						<div><b></b></div>
+					</a>
+					<!-- <div class="chosen-drop">
+						<ul class="chosen-results">
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+						</ul>
+					</div> -->
+				</div>
+				<!-- 市 -->
+				<div class="minslis city">
+					<a href="javascript:;">
+						<span>请选择省...</span>
+						<div><b></b></div>
+					</a>
+					<!-- <div class="chosen-drop">
+						<ul class="chosen-results">
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+						</ul>
+					</div> -->
+				</div>
+				<!-- 市end -->
+				<!-- 区县 -->
+				<div class="minslis area">
+					<a href="javascript:;">
+						<span>请选择省...</span>
+						<div><b></b></div>
+					</a>
+					<!-- <div class="chosen-drop">
+						<ul class="chosen-results">
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+							<li class="active-result">宝宝的</li>
+						</ul>
+					</div> -->
+				</div>
+				<!-- 区县end -->
+				<button onclick="shustr()" class="btn s-btn" id="searchBtn">查询</button>
+
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+
+			<div class="dialog dialog1"></div>
+</body>
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/jquery.citys11.js"></script>
+<script src="__PUBLIC__/js/jquery.dialog.js"></script>
+<script>
+var skslp;
+var serwu=false;
+var dusi;
+$(function(){
+	$('#maincontent').citys({
+        required:false,
+        nodata:'disabled',
+        onChange:function(data){
+
+            //console.log(data)
+            if(data.province&&data.city&&data.area){
+            	skslp=data;
+            	serwu=true;
+            	$(".btn").addClass('avsrrop');
+            	dusi=data;
+            }else{
+            	serwu=false;
+            	skslp=data;
+            	$(".btn").removeClass('avsrrop');
+            }
+            //var text = data['direct']?'(直辖市)':'';
+            //$('#place').text('当前选中地区：'+data['province']+text+' '+data['city']+' '+data['area']);
+        }
+    });
+
+    //
+    $(".dialog1").dialog({
+		'title':'',
+		'content':'sssss',
+		'buttons':{
+			'确定':function(api){
+				api.close();
+			}
+		}
+	},function(api){
+		//console.log(api)
+		$('#btn1').click(function(){
+			api.open();
+			api.setContent();
+			//console.log(api.getButtons())
+			//console.log(api.isOpen())
+		});
+	});
+})
+function shustr(){
+	if(serwu){
+		pohut(dusi,skslp)
+	}
+}
+//判断
+function pohut(datas, skslp) {
+	$.ajax({
+		url: "http://d.weibaishi.com/admin/eingdan/panduan",
+		data: {
+			'bianma': datas.code
+		},
+		dataType: "json",
+		type: 'post',
+		success: function(data) {
+			if (data == "1") {
+				$(".dialog1").dialog({
+						'title': '温馨提示',
+						'content': '可上门服务',
+						'autoOpen': true,
+						'buttons': {
+							'确定': function(api) {
+								api.close();
+							}
+						}
+					})
+					//alert("可上门服务")
+					//$(".places").text("可上门服务").removeClass("on");
+			} else if (data == "2") {
+				$(".dialog1").dialog({
+						'title': '温馨提示',
+						'content': '不可上门服务',
+						'autoOpen': true,
+						'buttons': {
+							'确定': function(api) {
+								api.close();
+								$.ajax({
+									url: "http://d.weibaishi.com/admin/eingdan/action",
+									data: {
+										'shou_name': '{$shou_name}',
+										'address': skslp.province+' '+skslp.city+' '+skslp.area
+									},
+									dataType: "json",
+									type: 'post',
+									success: function(data) {
+
+									}
+								});
+							}
+						}
+					})
+					//alert("不可上门服务")
+					//$(".places").text("不可上门服务").addClass("on");
+			}
+		}
+	});
+}
+</script>
+</html>

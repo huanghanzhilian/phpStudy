@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<select name="wxzx_id" id='wxzx_id'>
+						<foreach name='arr' item='cl' >
+							<option value="{$cl.wxzx_id}">
+								{$cl.wxzx_name}
+							</option>
+						</foreach>
+					</select>
+					 <input type="hidden" name="ways_id" id='ways_id' value='2'> <!---->
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<title>维百士_人员管理</title>
+<meta name="description" content="维百士-专注于手机维修行业的O2O服务类平台。为您提供一键下单、网上诊断、透明报价、免费上门、免费检测、邮寄维修、免费质保等服务方案。半小时快速换屏、全程录像更安心、价格更透明，维百士官网">
+<meta name="Keywords" content="维百士,苹果手机维修,iPhone维修,电脑维修,数码维修,手机上门维修">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ico" type="images/x-icon"/>
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png" type="images/png"/>
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/Admin_modify.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<style type="text/css">
+/*list dl*/
+.list_dll{ display:block;}
+.list_dll .list_dtt{ display:block; height:30px; line-height:30px;}
+.list_dll .list_ddd{  display:block; height:30px; line-height:30px; margin:0;}
+
+.list_dll .list_dtt span,.list_dll .list_ddd span{ float:left; width:33.3333%; text-align:center;}
+</style>
+</head>
+<body class="body1_color">
+<div class="header public_width">
+    <h1 class="header_h1">人员管理
+        <a class="youb_mk" href="__CONTROLLER__/lz">已离职</a>
+    </h1>
+    
+</div>
+
+<div class="container public_width">
+    <!--公共返回-->
+    <div class="Return">
+        <span class="Return_button cursor" onClick="window.history.back()">返回</span>
+        <!--<a class="Return_button" href="__MODULE__/Index/index">返回</a>-->
+    </div>
+    <!--公共返回-->
+    <div class="append_cp">
+        <div class="append_cp_box clearfix append_cp_box_po">
+            <button class="append_cp_anniu_but append_cp_anniu_but_q tuainm5" id="tianco">添加新员工</button>
+        </div>
+    </div>
+    
+    <div class="container_modify" id="xgpinpan">
+        <ul class="zhuti_rom">
+            <foreach name='arr' item='vv'>
+                <li class="lmbhu" id="{$vv.user_id}">
+                   <div class="box_list_pa">
+                       <div class="zhuti_rom_list_r fr" style="width:330px;">
+                           <span class="mlkipop cursor">
+                               <em class="xiaoshu">
+                               <b date="{$vv.sfzt}" class="xiaoshu ced_wid zhuangtt"></b><i class="up_cune"></i>
+                               </em>
+                               <ul class="nmjk_po" >
+                                   <li data="1">工作中</li>
+                                   <li data="2">忙碌中</li>
+                                   <li data="3">休息中</li>
+                               </ul>
+                           </span>
+                           
+                           <span class="up_cune_p_box fr">
+                               <i class="up_cune_p"></i>
+                           </span>
+                       </div>
+                       <img class="img_ionm ced_wid" src="__PUBLIC__/{$vv.img}">
+                       <span class="ced_wid ced_widd" style="display:inline-block; width:50px;">{$vv.user_username}</span>
+                       <form style="display:inline-block;" method="post" action="__CONTROLLER__/phoneup">
+                           <input readonly="true" class="fdcse"  type="text" name="user_name" value='{$vv.user_name}'>
+                        
+                           <input style="display:none; background:#fff;" class=" nnbbbve Return_button_a1" type="submit" value='确定'>
+                           
+                           <input class="nnbbbv Return_button_a1" style=" display:none; background:#fff;" type="reset" value="取消" />
+                           <input type="hidden" name="user_id" value="{$vv.user_id}">
+                       </form>
+                      <span class=" medki_xs" style=" margin-left:25px;">修改</span>
+                   </div>
+                   <ul class="box_list_ul clearfix box_list_ul_po">
+                       <li class="box_list_list fl box_list_list_1">
+                           <div class="">
+                               余额:  ¥ {$vv.yuemoney}.00<a href="__CONTROLLER__/balail_a/user_id/{$vv.user_id}" style="vertical-align:middle; display:inline-block; margin-left:15px; color:#3e7edb;">明细</a>
+                           </div>
+                           <div class="">
+                               <span class="Return_button_a1 pcdef_ghu tuainm2">奖金</span><span class="Return_button_a1 pcdef_ghu tuainm3">罚款</span>
+                           </div>
+                       </li>
+                       <li class="box_list_list fl box_list_list_2">
+                           <div class="">
+                               额度:  ¥ {$vv.xyed}.00    欠款:  ¥ {$vv.yixiaofei}.00<a href="__CONTROLLER__/balail_b/user_id/{$vv.user_id}" style="vertical-align:middle; display:inline-block; margin-left:15px; color:#3e7edb;">明细</a>
+                           </div>
+                           <div class="">
+                               <span class="Return_button_a1 tuainm">调整额度</span>
+                               <span class="Return_button_a1 tuainmcpom">重新调整state</span>
+                           </div>
+                       </li>
+                       <li class="box_list_list fl box_list_list_3">
+                           <span class="Return_button_a1 tuainm4">离职</span>
+                       </li>
+                   </ul>
+                </li>
+            </foreach>
+        </ul>
+    </div>
+   
+    
+</div>
+
+<div class="zdvjio"></div>
+<!--调整额度-->
+<div class="erdu erdu1">
+    <i class="guanb_op cursor"></i>
+    <h3 class="guanb_op_h3">调整额度</h3>
+    <form method="post" action="__CONTROLLER__/tzed">
+        <ul class="guanb_op_ul">
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input class="imklj" type="text" name="xyed" value='' placeholder="直接输入数字即可，例:20000" autocomplete="off" />
+            </li>
+            <li class="guanb_op_ul_li">
+                <input class="cursor" type="submit" value="确定"/>
+            </li>
+        </ul>
+        <input type="hidden" name="user_id" value="">
+   </form>
+</div>
+<!--调整额度-->
+
+<!--员工奖励-->
+<div class="erdu erdu2">
+    <i class="guanb_op cursor"></i>
+    <h3 class="guanb_op_h3">员工奖励</h3>
+    <form method="post" action="__CONTROLLER__/jiangjin">
+        <ul class="guanb_op_ul">
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input class="imklj" type="text" name="money" value='' placeholder="奖励金额，例:20000" autocomplete="off" />
+            </li>
+            <li class="guanb_op_ul_li_pp">
+                <label class="bain_lp">奖励原因:</label>
+				<div class="bain_lpc_box">
+                    <textarea class="bain_lpc" name="content" autocomplete="off" /></textarea>
+                </div>
+            </li>
+            <li class="guanb_op_ul_li">
+                <input class="cursor" type="submit" value="确定"/>
+            </li>
+            
+        </ul>
+        <input type="hidden" name="user_id" value="">
+   </form>
+</div>
+<!--员工奖励-->
+
+<!--员工罚款-->
+<div class="erdu erdu3">
+    <i class="guanb_op cursor"></i>
+    <h3 class="guanb_op_h3">员工罚款</h3>
+    <form method="post" action="__CONTROLLER__/fakuan">
+        <ul class="guanb_op_ul">
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input class="imklj" type="text" name="money" value='' placeholder="罚款金额，例:20000" autocomplete="off" />
+            </li>
+            <li class="guanb_op_ul_li_pp">
+                <label class="bain_lp">罚款原因</label>
+				<div class="bain_lpc_box">
+                    <textarea class="bain_lpc" name="content" autocomplete="off" /></textarea>
+                </div>
+            </li>
+            <li class="guanb_op_ul_li">
+                <input class="cursor" type="submit" value="确定"/>
+            </li>
+            
+        </ul>
+        <input type="hidden" name="user_id" value="">
+   </form>
+</div>
+<!--员工罚款-->
+
+<!--员工离职-->
+<div class="erdu erdu4">
+    <i class="guanb_op cursor"></i>
+    <h3 class="guanb_op_h3">员工离职</h3>
+    <form method="get" action="__CONTROLLER__/lizhi">
+        <ul class="guanb_op_ul">
+            <li class="guanb_op_ul_li guanb_op_ul_li_c">
+               
+            </li>
+           
+            <li class="guanb_op_ul_li">
+                <input class="cursor" type="submit" value="确定"/>
+            </li>
+            
+        </ul>
+        <input type="hidden" name="user_id" value="">
+   </form>
+</div>
+<!--员工离职-->
+
+
+
+
+
+
+<!--添加新员工-->
+<div class="erdu erdu5">
+    <i class="guanb_op cursor"></i>
+    <h3 class="guanb_op_h3">添加新员工</h3>
+    <form method="post" action="__CONTROLLER__/yuangong" enctype="multipart/form-data">
+        <ul class="guanb_op_ul">
+            <li class="guanb_op_ul_li mkjui_poi">
+                <div class="nbvji">
+                    <input type="file" onchange="preview(this)" multiple="multiple" name="img"  accept="image/gif,image/jpeg,image/jpg,image/png" >
+                    <span class="addpic">员工照片</span>
+                    <div class="addpic" id="preview"></div>
+                </div>
+            </li>
+        
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input class="imklj" type="text" name="user_username" value='' placeholder="员工姓名" autocomplete="off" />
+            </li>
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input class="imklj" type="text" name="user_name" value='' placeholder="员工电话" autocomplete="off" />
+            </li>
+            <li class="guanb_op_ul_li guanb_op_ul_li_a">
+                <input class="imklj" type="text" name="pwd" value='' placeholder="初始密码" autocomplete="off" />
+            </li>
+                <dl class="list_dll">
+                   <dt class="list_dtt"><span>上门</span><span>寄修</span><span>到店</span></dt>
+                   <dd class="list_ddd">
+                       <span>
+                           <select name="smwx_id">
+                                   <option value="">-请选择-</option>
+                               <foreach name='arr1' item='vv'>
+                                   <option value="{$vv.smwx_id}">{$vv.smwx_name}</option>
+                               </foreach>
+                           </select>
+                       </span>
+                       <span>
+                           <select name="jxzx_id">
+                                   <option value="">-请选择-</option>
+                               <foreach name='arr3' item='vv'>
+                                   <option value="{$vv.jxzx_id}">{$vv.jxzx_name}</option>
+                               </foreach>
+                           </select>
+                       </span>
+                       <span>
+                           <select name="wxzx_id">
+                                   <option value="">-请选择-</option>
+                               <foreach name='arr2' item='vv'>
+                                   <option value="{$vv.wxzx_id}">{$vv.wxzx_name}</option>
+                               </foreach>
+                           </select>
+                       </span>
+                   </dd>
+                </dl>
+                
+            
+            <li class="guanb_op_ul_li">
+                <input class="cursor" type="submit" value="确定"/>
+            </li>
+            
+        </ul>
+   </form>
+</div>
+<!--添加新员工-->
+
+
+<!--修改状态-->
+<div class="muccb_k" style="display:inline-block;">
+   <form style="display:inline-block;" method="post" action="__CONTROLLER__/xgztt">
+        <input type="hidden" name="sfzt" value="">
+        <input type="hidden" name="user_id" value="">
+        <input id="kkl" style="display:none;" class="cursor" type="submit" value="确定"/>
+   </form>
+</div>
+<!--修改状态-->
+
+
+<!--添加新所在区域-->
+<div class="erdu erduq">
+    <i class="guanb_op cursor"></i>
+    <h3 class="guanb_op_h3">添加新员工</h3>
+    <form method="post" action="__CONTROLLER__/fp" enctype="multipart/form-data">
+        <ul class="guanb_op_ul">
+                <dl class="list_dll">
+                   <dt class="list_dtt"><span>上门</span><span>寄修</span><span>到店</span></dt>
+                   <dd class="list_ddd">
+                       <span>
+                           <select name="smwx_id">
+                                   <option value="">-请选择-</option>
+                               <foreach name='arr1' item='vv'>
+                                   <option value="{$vv.smwx_id}">{$vv.smwx_name}</option>
+                               </foreach>
+                           </select>
+                       </span>
+                       <span>
+                           <select name="jxzx_id">
+                                   <option value="">-请选择-</option>
+                               <foreach name='arr3' item='vv'>
+                                   <option value="{$vv.jxzx_id}">{$vv.jxzx_name}</option>
+                               </foreach>
+                           </select>
+                       </span>
+                       <span>
+                           <select name="wxzx_id">
+                                   <option value="">-请选择-</option>
+                               <foreach name='arr2' item='vv'>
+                                   <option value="{$vv.wxzx_id}">{$vv.wxzx_name}</option>
+                               </foreach>
+                           </select>
+                       </span>
+                   </dd>
+                </dl>
+                
+            <input type="hidden" name="user_id" value="">
+            <li class="guanb_op_ul_li">
+                <input class="cursor" type="submit" value="确定"/>
+            </li>
+            
+        </ul>
+   </form>
+</div>
+<!--添加新所在区域-->
+
+
+<script type="text/javascript">    
+ function preview(file)  
+ {  
+ var prevDiv = document.getElementById('preview');  
+ console.log(file.files) 
+ if (file.files && file.files[0])  
+ {  
+ var reader = new FileReader();  
+ 
+ reader.onload = function(evt){ 
+ //console.log(reader) 
+ prevDiv.innerHTML = '<img src="' + evt.target.result + '" />';  
+}
+ reader.readAsDataURL(file.files[0]);
+
+}  
+ else    
+ {  
+ prevDiv.innerHTML = '<div class="img" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>';  
+ }  
+ }  
+ </script>
+
+
+
+<script>
+$(function(){
+	
+	//修改电话
+	$(".medki_xs").click(function(){
+		$(this).hide().prev().find('input.nnbbbv,input.nnbbbve').show();
+		$(this).parents('.lmbhu').find("input[name='user_name']").removeAttr("disabled").removeAttr("readonly").addClass('on');
+		
+		$(this).parents('.lmbhu').siblings().find("input.Return_button_a1[type='submit']").hide()//.next().show();
+		$(this).parents('.lmbhu').siblings().find("input[type='reset']").hide()
+		$(this).parents('.lmbhu').siblings().find("input[name='user_name']").attr("readonly", "true").removeClass('on');
+		$(this).parents('.lmbhu').siblings().find(".medki_xs").show();
+		
+		$(".nnbbbv").click(function(){
+			$(this).hide().prevAll("input.Return_button_a1[type='submit']").hide();
+		    $(this).parents('.lmbhu').find(".medki_xs").show();
+			$(this).parents('.lmbhu').find("input[name='user_name']").attr("readonly", "true").removeClass('on');
+		})
+		
+	});
+	
+	
+	$(".up_cune_p_box").click(function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on');
+			$(this).parents(".lmbhu").find('ul.box_list_ul_po').slideUp();
+			
+		}
+		else{
+			$(this).addClass('on');
+			$(this).parents(".lmbhu").find('ul.box_list_ul_po').stop(true,false).slideDown();
+			$(this).parents(".lmbhu").siblings().find('ul.box_list_ul_po').slideUp(100);
+			$(this).parents(".lmbhu").siblings().find('.up_cune_p_box').removeClass('on');
+		}
+	});
+	
+	$(".xiaoshu").click(function(event){
+		$(this).parents(".lmbhu").siblings().find('ul.nmjk_po').hide();
+		$(this).parents(".mlkipop ").find('ul.nmjk_po').show();
+		$(".nmjk_po li").hover(function(){
+			$(this).css({'background-color':'#ebedf0'})
+		},function(){
+			$(this).css({'background-color':''})
+		});
+		
+		
+		
+		event.stopPropagation(); 
+	})
+	
+	$(".nmjk_po li").click(function(){
+			$(this).parents(".mlkipop ").find('b').text($.trim($(this).text()));
+			var kkuo=$(this).attr('data');
+			var kkuoc=$(this).parents(".lmbhu").attr('id');
+			$(".muccb_k").find("input[name='sfzt']").val(kkuo);
+			$(".muccb_k").find("input[name='user_id']").val(kkuoc);
+			$("#kkl").click();
+			//alert(kkuo)
+	})
+	
+	$("body").click(function(){
+		$(".nmjk_po").css({'display':'none'})
+	})
+	
+	
+	$(".erdu").each(function(q,w){
+		//console.log()
+	    $(this).css({'margin-top':-($(this).height()/2+40)})
+    });
+	
+	//状态
+	$(".zhuangtt").each(function(q,w){
+		var zhuan=$(this).attr('date');
+		if(zhuan==1){
+			$(this).text('工作中')
+		}else if(zhuan==2){
+			$(this).text('忙碌中')
+		}else{
+			$(this).text('休息中')
+		}
+	})
+	
+	
+	//调整额度
+	$(".tuainm").on('click',function(){
+		var user_id=$(this).parents(".lmbhu").attr('id');
+		console.log(user_id)
+		$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+		$('.zdvjio').show();
+		$('.erdu1').show();
+		$('.erdu1').find("input[name='user_id']").val(user_id)
+		
+		$(".guanb_op").on('click',function(){
+			$('.zdvjio').hide();
+		    $('.erdu1').hide();
+			$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+		})
+	});
+	//调整额度
+	
+	
+	
+	//员工奖励
+	$(".tuainm2").on('click',function(){
+		var user_id=$(this).parents(".lmbhu").attr('id');
+		$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+		$('.zdvjio').show();
+		$('.erdu2').show();
+		$('.erdu2').find("input[name='user_id']").val(user_id)
+		
+		$(".guanb_op").on('click',function(){
+			$('.zdvjio').hide();
+		    $('.erdu2').hide();
+			$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+		})
+	});
+	//员工奖励
+	
+	//员工罚款
+	$(".tuainm3").on('click',function(){
+		var user_id=$(this).parents(".lmbhu").attr('id');
+		$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+		$('.zdvjio').show();
+		$('.erdu3').show();
+		$('.erdu3').find("input[name='user_id']").val(user_id)
+		
+		$(".guanb_op").on('click',function(){
+			$('.zdvjio').hide();
+		    $('.erdu3').hide();
+			$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+		})
+	});
+	//员工罚款
+	
+	//员工离职
+	$(".tuainm4").on('click',function(){
+		var user_id=$(this).parents(".lmbhu").attr('id');
+		var sduo=$(this).parents(".lmbhu").find('.ced_widd').text();
+		$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+		$('.zdvjio').show();
+		$('.erdu4').find('.guanb_op_ul_li_c').text('确定将员工 '+sduo+' 离职？');
+		$('.erdu4').show();
+		$('.erdu4').find("input[name='user_id']").val(user_id)
+		
+		$(".guanb_op").on('click',function(){
+			$('.zdvjio').hide();
+		    $('.erdu4').hide();
+			$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+		})
+	});
+	//员工离职
+	
+	
+	//添加新员工
+	$(".tuainm5").on('click',function(){
+		$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+		$('.zdvjio').show();
+		$('.erdu5').show();
+		
+		$(".guanb_op").on('click',function(){
+			$('.zdvjio').hide();
+		    $('.erdu5').hide();
+			$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+		})
+	});
+	//添加新员工
+	
+	//修改状态
+	$(".tuainmcpom").on('click',function(){
+		var user_id=$(this).parents(".lmbhu").attr('id');
+		$("html,body").height($(window).height()).css({"overflow-y": "hidden"});
+		$('.zdvjio').show();
+		$('.erduq').show();
+		$('.erduq').find("input[name='user_id']").val(user_id)
+		
+		$(".guanb_op").on('click',function(){
+			$('.zdvjio').hide();
+		    $('.erduq').hide();
+			$("html,body").height($(window).height()).css({"overflow-y": "auto"});
+		})
+	});
+	//修改状态
+	
+	
+	
+	
+})
+</script>
+
+
+
+</body>
+</html>

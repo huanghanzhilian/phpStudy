@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>维百士-工程师-订单详情</title>
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ioc"><!--图标-->
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png"><!--图标-->
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link href="__PUBLIC__/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+<style>
+body{ background:#f1f1f1;}
+.form_qangd{ background:red; width:100%; height:100px;}
+.jiedan_box span{ background:#3e7edb}
+
+</style>
+</head>
+<body>
+<div class="header">
+    <span onclick="window.history.back()"></span>
+    <h1>订单详情</h1>
+</div><!--头-->
+
+<div class="content">
+    <div class="content_con" >
+    
+
+    
+    <div class="content_con_one">
+        <h1 class="da_con_ce">订单编号：{$arr.ddh}</h1>
+        <div class="da_con">
+            <ul>
+                <li>
+                    工程师：<span>{$user_username}</span>
+                </li>
+                
+                <li>
+                    维修内容：
+                    <span>
+                        <foreach name='arr10' item='kk'>
+                            {$kk.cpk_name}
+                        </foreach>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="da_con">
+            <ul>
+                <li>
+                    服务方式：<span>{$ways_name}</span>
+                </li>
+                <li>
+                    <strong style=" float:left; font-weight:normal;">上门地址：</strong>
+                    <span id="get_butt"  data="{$fanwei}" style="display:block; margin-left:70px; margin-right:40px;">{$arr.shangmen}</span>
+                    <a id="daohang" style=" float:right;" class="ousc" href="http://m.amap.com/navi/?start=&dest=116.314315,39.982103&destName=北京中关村店&key=94ca4100199c2f2a8f33300cece2eba2">导航</a>
+                </li>
+                <li>
+                    <strong style=" float:left; font-weight:normal;">预约时间：</strong>
+                    <span style="display:block; margin-left:70px; margin-right:40px;">{$dasj} 至 {$dasjc}</span>
+                </li>
+                <li>
+                    剩余时间：<i style="font-style:normal;" data_l="{$arr.dasj}" data_r="{$arr.dasjc}" class="chuangmbr panduan_a"></i>
+                </li>
+                <li>
+                    维修中心：<span>{$jxzx_name}</span>
+                </li>
+                <li>
+                    <strong style=" float:left; font-weight:normal;">邮寄地址：</strong><span style="display:block; margin-left:70px; ">{$jxzx_n}</span>
+                </li>
+                <li>
+                    收件人：<span>{$jxzx_username}</span>
+                </li>
+                <li>
+                    电话：<span>{$jxzx_phone}</span><a class="ousc" href="tel:{$jxzx_phone}">拨打</a>
+                </li>
+                <li>
+                    <strong style=" float:left; font-weight:normal;">回寄地址：</strong><span style="display:block; margin-left:70px; margin-right:40px;">{$arr19.u_address}</span>
+                </li>
+                <li>
+                    维修店铺：<span>{$wxzx_name}</span>
+                </li>
+                <li>
+                    <strong style=" float:left; font-weight:normal;">店铺地址：</strong><span style="display:block; margin-left:70px; margin-right:40px;">{$wxzx_n}</span><a style=" float:right;" class="ousc" href="http://m.amap.com/navi/?start=&dest=116.314315,39.982103&destName=北京中关村店&key=94ca4100199c2f2a8f33300cece2eba2">导航</a>
+                </li>
+                <li>
+                    店铺电话：<span>{$wxzx_phone}</span><a class="ousc" href="tel:{$wxzx_phone}">拨打</a>
+                </li>
+                 </ul>
+            </div>
+            
+            
+           <div class="da_con">
+            <ul>
+                <li>
+                    姓名：<span>{$arr.u_name}</span>
+                </li>
+                <li>
+                    手机：<span>{$arr.u_phone}</span><a class="ousc" href="tel:{$arr.u_phone}">拨打</a>
+                </li>
+                <li>
+                    客户地址：<span>{$arr.u_address}</span>
+                </li>
+            </ul>
+        </div>
+        <div class="da_con">
+            <ul>
+                <li>
+                    机型：<span>{$arr.model_name}{$arr.color_name}</span>
+                </li>
+                <li>
+                   <strong style=" float:left; font-weight:normal;">问题：</strong>
+                   <span style="display:block; margin-left:45px;">
+                       <foreach name='question' item='kk'>
+			        	    {$kk.question_name},
+		                </foreach>
+                   </span>
+                        
+                </li>
+                <li>
+                    方案：
+                     <span>
+                          <foreach name='plan' item='k'>
+                              {$k.plan_name},
+                          </foreach>
+                     </span>
+                </li>
+            </ul>
+        </div>
+        <div class="da_con">
+            <ul>
+                <li>
+                    备注：<span>{$arr.u_note}</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="da_con da_con_cv">
+            <ul>
+                <li>
+                    <strong style=" float:left; font-weight:normal; height: inherit;">修前检测：</strong>
+                    <span class="mnuber">
+                        <foreach name='arr8' item='v'>
+                            {$v.jc_name}{$v.zt} <br />
+                        </foreach>
+                    </span>
+                </li>
+                <li>
+                    <strong style=" float:left; font-weight:normal; height: inherit;">修后检测：</strong>
+                    <span class="mnuber">
+                        <foreach name='arr9' item='vv'>
+                            {$v.jc_name}{$vv.zt} <br />
+                        </foreach>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        
+        <h1 class="da_con_ce da_con_ce_1 da_con_ce_2">订单预估价格：
+        <span class="tf_null">
+        <if condition="strtoupper($arr19['amountd']) eq 需检测">
+        {$arr.amountd}
+        <else/> 
+        {$arr.amountd}
+        </if>
+        </span>
+        <span>元</span>
+        </h1>
+        <h1 class="da_con_ce da_con_ce_1 da_con_ce_2 da_con_ce_3">订单应付价格：<span class="tf_null">{$arr.amount}</span><span>元</span>
+        </h1>
+    
+        
+    </div>
+    
+    </div>
+</div>
+
+<div class="jiedan">
+    <div class="jiedan_box clearfix">
+        
+	    <!--<a  href="__CONTROLLER__/tuidan/id/{$arr.id}/stau/{$arr.stau}">{$c}</a>-->
+		 <!--<a  href='javascript:void(0)'onclick='a()'>{$e}</a>-->
+        <!-- <a  href="__CONTROLLER__/jiedan/id/{$arr.id}/stau/{$arr.stau}"></a> -->
+		<span class="on" >
+        <form  method="post" action="__CONTROLLER__/jiedan">
+			<input type="hidden" name="id" value='{$arr.id}'>
+			<input type="hidden" name="stau" value='{$arr.stau}'>
+			<input class="tijao" type="submit" value='{$b}'>
+		</form>
+        </span>
+		<!-- <a class="on qiangdan"  href="/id//stau/{$arr.stau}"> -->
+		<span class="on"><form method="post" action="__CONTROLLER__/qiangdan">
+			<input type="hidden" name="id" value='{$arr.id}'>
+			<input type="hidden" name="stau" value='{$arr.stau}'>
+			<input class="tijao" type="submit" value='{$v}'>
+		</form></span>
+		
+		
+		
+        
+       
+    </div>
+</div>
+
+<script>
+function FreshTime(){
+	$(".panduan_a").each(function(index,kku) {
+		var cdata=$(this).attr('data_l')*1000;    //预约时间
+		var ddata=$(this).attr('data_r')*1000;    //停止时间
+		var nowtime = new Date().getTime();    //当前时间
+		var lefttime=parseInt((cdata - nowtime)/1000);    //预约时间-当前
+		var lefttimevv=parseInt((ddata - nowtime)/1000);  //预约结束时间-当前
+		//console.log(lefttime);
+		//console.log(lefttimevv);
+		d=parseInt(lefttime/(60*60*24));//parseInt求整数(lefttime/(60*60*24));剩余时间毫秒除以（24小时*60分钟*60秒）等于天数
+		h=parseInt(lefttime/(60*60)%24);//parseInt求整数(lefttime/(60*60)%24)剩余时间毫秒除以(60*60)%24)求天剩下的小时数
+		m=parseInt(lefttime/60%60);//parseInt求整数(lefttime/60%60);剩余时间毫秒除以60秒再求除60余数
+		s=parseInt(lefttime%60);//求秒余数
+		
+		
+		if(lefttime<=0&&lefttimevv>=0){
+			$(this).text('已到预约时间').css({'color':'#ff830b'});
+		}else if(lefttime<0 && lefttimevv<0){
+			$(this).text('订单已超时').css({'color':'#e35b5c'});
+		}else if(lefttime==0 && lefttimevv==0){
+			$(this).text('hah ').css({'color':'#e35b5c'});
+		}else{
+			$(this).text("还剩"+d+"天"+h+"小时"+m+"分"+s+"秒").css({'color':'#4ab679'});
+		}
+		
+		if(cdata==0){
+			$(this).text('到店/寄修订单').css({'color':'#e35b5c'});
+		}
+	});
+}
+FreshTime()
+var sh;
+sh=setInterval(FreshTime,1000);//变动秒数
+
+</script>
+
+<script>
+//报价判断
+		  $(".tijao").each(function() {
+			  if($(this).val()==''){
+				 $(this).parent().parent().remove(); 
+				 /* $(".cdret_1").text('需检测');
+				  $("#amountd").val('需检测');
+				 $(".sxgg>i") .remove();
+				 $(this).text('需检测')
+				 $(this).nextAll().remove();*/
+			  }
+		  })
+		  //报价判断
+</script>
+<script type="text/javascript">
+var jingweo=$("#get_butt").attr('data')
+var dizhixq=$("#get_butt").text()
+$("#daohang").attr('href',"http://m.weibaishi.com/Home/Shifu/map_zgd/?"+jingweo);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>维百士-工程师-我的评价</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link rel="shortcut icon" href="__PUBLIC__/img/ioc/16.ioc"><!--图标-->
+<link rel="icon" href="__PUBLIC__/img/ioc/16.png"><!--图标-->
+<meta name="format-detection" content="telephone=no" />
+<link href="__PUBLIC__/styles/style_jiem.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/styles/public.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+<style>
+/*320px布局*/
+html{font-size: 100px;}
+body{ font-size: 0.12rem;/*实际相当于12px*/ }
+
+/* iphone 6 */
+@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
+    html{font-size: 117.1875px;}
+}
+/* iphone6 plus */
+@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
+    html{font-size: 129.375px; }
+}
+
+
+
+
+</style>
+<script type="text/javascript">
+$(function(){
+	
+	var chenggl= parseFloat($("#chenggl").attr('data'))
+	var chenggl2=chenggl.toFixed(2)
+	
+	var fenshu= parseFloat($("#fenshu").attr('data'))
+	var fenshu2=fenshu.toFixed(2)
+	
+	//console.log(fenshu2);
+	$("#fenshu").text(fenshu2)
+	$("#chenggl").text(chenggl2+'%')
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//$(".taidu_box span").click(function(){
+		//$(this).prev('input').attr("checked",true);
+			$( ".xingjinu" ).each(function(ing,suop){
+			    var punnl= $(this).attr('data');
+				$(this).find('span').eq(punnl).addClass('on').prevAll('span').addClass('on')
+			    //console.log(punnl);
+			})
+			
+			/*if($(this).attr('data')==punnl){
+				$(this).addClass('on').prevAll('span').addClass('on')
+			}else{
+				//$(this).nextAll('span').removeClass('on')
+			}*/
+			
+			
+			$( ".chundup" ).each(function(ing,suop){
+			    var chundupn= $(this).attr('data');
+				//$(this).find('span').eq(punnl).addClass('on').prevAll('span').addClass('on')
+				var wsfgf= chundupn.split(",");
+			    console.log(wsfgf);
+				var mmb1=wsfgf[0]
+		        var mmb2=wsfgf[1]
+		        var mmb3=wsfgf[2]
+				var mmb4=wsfgf[3]
+				$( ".pingjiaxp>span" ).each(function(){
+					//var pucl= $("#xingjinu").attr('data')
+					if($(this).attr('data')==mmb1||$(this).attr('data')==mmb2||$(this).attr('data')==mmb3||$(this).attr('data')==mmb4){
+						$(this).siblings('span').remove();
+					}else{
+						//$(this).nextAll('span').removeClass('on')
+					}
+				})
+						
+			})
+			
+			
+			
+		/*var chuanz=$("#buttcur").text();
+		var wsfgf= chuanz.split(",");
+		
+		var mmb1=wsfgf[0]
+		var mmb2=wsfgf[1]
+		var mmb3=wsfgf[2]
+		//console.log(mmb1);
+		//console.log(wsfgf);
+		
+		$( ".pingjiaxp>span" ).each(function(){
+			//var pucl= $("#xingjinu").attr('data')
+			if($(this).attr('data')==mmb1||$(this).attr('data')==mmb2||$(this).attr('data')==mmb3){
+				$(this).siblings('span').remove();
+			}else{
+				//$(this).nextAll('span').removeClass('on')
+			}
+		})*/
+		
+		
+		
+	//})
+	
+	/*$(".pj_daix>span").click(function(){
+		$(this).prev('input').attr("checked",true);
+		var selValue = $(this).index();
+		
+	    $( ".tijfscc_a" ).each(function(index){
+			if($(this).attr('checked')){
+				$(".pj_daix span").eq(index).addClass('on').prevAll('span').addClass('on')
+				$(".pj_daix span").eq(index).addClass('on').nextAll('span').removeClass('on')
+				var ccl=$(this).attr('data');
+				$("#huikkp").text(ccl)
+			}
+			
+		})
+		
+	})
+	*/
+	    
+	
+})
+</script>
+</head>
+
+<body>
+<div class="header">
+   <a href="__MODULE__/Shifu/index"><span></span></a>
+    <h1>我的评价</h1>
+</div><!--头-->
+
+<div class="content">
+    <div class="content_con">
+    
+    
+    
+    
+        <div class="my_evaluate_top">
+            <div class="my_evaluate_top_com">
+                <img src="__PUBLIC__/{$avatar}" width=50 height=50 />
+                <span class="prohgf">
+                    <strong>{$user_username}</strong>
+                    <em></em>
+                </span>
+            </div>
+        </div> 
+        
+        
+           
+        <div class="combutut_box_top_con pubcvt obbvm">
+            <li class="pubcvt_v">
+                 <span id="chenggl" data="{$lv}">100%</span>
+                <p>维修成功率</p>
+            </li>
+            <li class="pubcvt_v">
+               <span data="{$xingji}" id="fenshu">{$xingji}</span>
+                <p>平均评分</p>
+            </li>
+            <li class="pubcvt_v">
+                <span>--</span>
+                <p>售后率</p>
+            </li>
+        </div>
+        
+        
+            
+        <div class="my_evaluate_com">
+            <foreach name='arr9' item='k'>
+                <div class="my_evaluate_nnu_list">
+                    <div class="my_evaluate_list_top">
+                        
+                        <div class="pingjir fl">
+                            <!--{$k.pjx}-->
+                            <span class="name_mypj">{$k.yonghuname}</span>
+                            <span>
+							<if condition="strtoupper($k['ways_id']) eq  1">
+								上门维修
+							<elseif condition="strtoupper($k['ways_id']) eq  2"/> 
+								 到店维修
+							<elseif condition="strtoupper($k['ways_id']) eq  3"/> 
+								 全国邮寄
+							 <else/>
+	
+							</if>
+							
+							
+							
+							</span>
+                            <span>{$k.time}</span>
+                        </div>
+                        <div class="xingji fr xingjinu" data='{$k.pjx}'>
+                            <span data="1"></span><span data="2"></span><span data="3"></span><span data="4"></span><span data="5"></span>
+                        </div>
+                    </div><!--内容头-->
+                    
+                    <!--<div id="buttcur">{$k.pingjiaa}</div>-->
+                    
+                        <div class="my_evaluate_list_mmuo">
+                            <ul class="chundup" data="{$k.pingjiaa}">
+                                <li>
+                                 {$k.pingjiacontent}
+                                </li>
+                                <li>
+                                <if condition="strtoupper($k['ways_id']) eq  1">
+                                    <div class="pingjiaxp">
+                                        <foreach name='arr' item='kk'>
+                                                <p>{$kk.ping_name}</p>
+                                            <foreach name="kk['data']" item='ee'>
+                                                <span data="{$ee.pingjia_id}">{$ee.pingjia_name}</span>
+                                             </foreach> 
+                                        </foreach> 
+                                    </div>
+                                    
+                                    <div class="pingjiaxp">
+                                        <foreach name='arr1' item='kk'>
+                                                <p>{$kk.ping_name}</p>
+                                            <foreach name="kk['data']" item='ee'>
+                                                <span data="{$ee.pingjia_id}">{$ee.pingjia_name}</span>
+                                             </foreach> 
+                                         </foreach> 
+                                    </div>
+                                    
+                                    
+                                    <div class="pingjiaxp">
+                                        <foreach name='arr2' item='kk'>
+                                                <p>{$kk.ping_name}</p>
+                                            <foreach name="kk['data']" item='ee'>
+                                                <span data="{$ee.pingjia_id}">{$ee.pingjia_name}</span>
+                                             </foreach> 
+                                         </foreach> 
+                                    </div>
+                                    
+                                    
+                                   <div class="pingjiaxp">
+                                        <foreach name='arr3' item='kk'>
+                                                <p>{$kk.ping_name}</p>
+                                            <foreach name="kk['data']" item='ee'>
+                                                <span data="{$ee.pingjia_id}">{$ee.pingjia_name}</span>
+                                             </foreach> 
+                                         </foreach> 
+                                    </div>
+                                    
+                                    
+                                <elseif condition="strtoupper($k['ways_id']) eq  2"/> 
+                                    <div class="pingjiaxp">
+                                        <foreach name='arr' item='kk'>
+                                                <p>{$kk.ping_name}</p>
+                                            <foreach name="kk['data']" item='ee'>
+                                                <span data="{$ee.pingjia_id}">{$ee.pingjia_name}</span>
+                                             </foreach> 
+                                         </foreach> 
+                                    </div>
+                                    
+                                    
+                                   <div class="pingjiaxp">
+                                        <foreach name='arr2' item='kk'>
+                                                <p>{$kk.ping_name}</p>
+                                            <foreach name="kk['data']" item='ee'>
+                                                <span data="{$ee.pingjia_id}">{$ee.pingjia_name}</span>
+                                             </foreach> 
+                                         </foreach> 
+                                   </div>
+                                   
+                                <elseif condition="strtoupper($k['ways_id']) eq  3"/> 
+                                    <div class="pingjiaxp">
+                                        <foreach name='arr4' item='kk'>
+                                                <p>{$kk.ping_name}</p>
+                                            <foreach name="kk['data']" item='ee'>
+                                                <span data="{$ee.pingjia_id}">{$ee.pingjia_name}</span>
+                                             </foreach> 
+                                         </foreach> 
+                                    </div>
+                                    
+                                    <div class="pingjiaxp">
+                                        <foreach name='arr5' item='kk'>
+                                                <p>{$kk.ping_name}</p>
+                                            <foreach name="kk['data']" item='ee'>
+                                                <span data="{$ee.pingjia_id}">{$ee.pingjia_name}</span>
+                                             </foreach> 
+                                         </foreach> 
+                                    </div>
+                                  
+                                   <div class="pingjiaxp">
+                                        <foreach name='arr6' item='kk'>
+                                                <p>{$kk.ping_name}</p>
+                                            <foreach name="kk['data']" item='ee'>
+                                                <span data="{$ee.pingjia_id}" class="nubbr">{$ee.pingjia_name}</span>
+                                             </foreach> 
+                                         </foreach> 
+                                   </div>
+                              </if>
+                              </li>
+                              <li>
+                                <div class="xinghh">
+                                    <span>设备：</span><span>{$k.model_name}</span>
+                                </div>
+                                <div class="xinghh">
+                                    <span>故障：</span><span>{$k.wenti}</span>
+                                </div>
+                             </li>
+                              
+                          </ul>
+                      </div>
+                </div>
+            </foreach>         
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	#gw{float:right;margin-right:300px;}
+	</style>
+</head>
+<body>
+<a href="__CONTROLLER__/goumaichanpin">返回</a>
+<center>{$my}<span id='gw'><a href="__CONTROLLER__/gouwuche">购物车(<span id='fi'>{$nums}</span>)</a></span></center>&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
+	<div id='de'>
+	<table border=1>
+			<th>商品</th>
+			<th>商品名称</th>
+			<th>价格</th>
+			<th>购买数量</th>
+			<th>详情</th>
+			<th>操作</th>
+		<foreach name='arr1' item='vv'>
+			<tr>
+				<td><img src="__PUBLIC__/{$vv.path}" width=70 height=70/></td>
+				<td>{$vv.cpk_name}</td>
+				<td><span id='ddv'>{$vv.gw_pricee}</span></td>
+				<td>
+					<font size=5><a href="javascript:void(0)" onclick="jian({$vv.gw_id});"style="text-decoration:none">-</a>&nbsp&nbsp
+					<span id='first{$vv.gw_id}'>{$vv.nums}</span>&nbsp;&nbsp<a href="javascript:void(0)"onclick="jia({$vv.gw_id});"style="text-decoration:none">+</a></font>
+				</td>
+				<td>开发中....</td>
+				<td><a href="javascript:void(0)" onclick='del({$vv.gw_id})'>删除</a></td>
+			</tr>
+		</foreach>
+	</table><br /><br />
+	<div>{$zjg}<span id='abc'>{$price}</span>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="__CONTROLLER__/querendingdan">{$qr}</a></div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+		/*function jia(id){
+		//var	price=$('#abc').html()
+		
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/jia_number/id/"+id,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+						document.getElementById('first'+id).innerHTML=ajax.responseText
+						//document.getElementById('abc').innerHTML=ajax.responseText
+					
+				}
+			}
+
+	}*/
+			function jia(id){
+			//	alert(id);
+                        $.ajax({
+                            url:"__CONTROLLER__/jia_number",
+                            data:{'id':id},
+                            dataType:'json',
+                            type:'get',
+                            success:function(msg){
+                                $('#first'+id).html(msg.nums);
+								$('#fi').html(msg.gwnums);
+								$('#abc').html(msg.price);		
+                            }
+                        });
+                    }
+			function jian(id){
+                        $.ajax({
+                            url:"__CONTROLLER__/jian_number",
+                            data:{'id':id},
+                            dataType:'json',
+                            type:'get',
+                            success:function(msg){
+                                $('#first'+id).html(msg.nums);
+								$('#fi').html(msg.gwnums);	
+								$('#abc').html(msg.price);		
+                            }
+                        });
+                    }
+function del(id){
+		var ajax=new XMLHttpRequest()
+			ajax.open("get","__CONTROLLER__/gouwucheajax/id/"+id,true)
+			ajax.send()
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					document.getElementById('de').innerHTML=ajax.responseText
+				}
+			}
+	}
+</script>

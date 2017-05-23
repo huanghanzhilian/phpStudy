@@ -1,0 +1,117 @@
+
+
+html,body{
+	height: 100%;
+}
+.header{
+	height: 60px;
+	background-color: #f5f7ff;
+}
+.header .logo {
+    width: 500px;
+    height: 100%;
+    background: url(../image/admin-sys-icon.png) 38px center no-repeat;
+    box-shadow: none;
+    border: none;
+    display: inline-block;
+}
+.content{
+	background: url(../image/sys-bg.png) left center no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.web_qr_login {
+    position: absolute;
+    overflow: hidden;
+    right: 200px;
+    top: 120px;
+    background-color: #fff;
+    width: 340px;
+    height: 360px;
+}
+.tips{
+	height: 95px;
+    background: url(../image/signinlogo.png) center center no-repeat;
+    /* background-size: 180px; */
+}
+.login_form{
+
+}
+.row_dr{
+	height: 42px;
+	line-height: 42px;
+	padding: 0 20px;
+	/* border-bottom: solid 1px #5a8bed; */
+}
+.sgybop{
+	border-bottom: solid 1px #5a8bed;
+	/* padding-bottom: 5px; */
+}
+.row_dr label{
+	display: inline-block;
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-top: 8px;
+}
+.row_dr .rootu{
+	margin-left: 40px;
+	padding-right: 20px;
+}
+.row_dr .rootu input{
+	width: 100%;
+	height: 38px;
+	font-size: 15px;
+}
+.row_dr label.user{
+	background: url(../image/username-icon.png) center center no-repeat;
+}
+.row_dr label.password{
+	background: url(../image/Password-icon.png) center center no-repeat;
+}
+
+.anbhfl{
+	padding: 10px 20px 50px 0;
+	position: relative;
+}
+.low_login{
+	position: absolute;
+    /* bottom: 0; */
+    right: 20px;
+    color: #999;
+}
+.checked{
+	height: 18px;
+    width: 18px;
+    display: inline-block;
+    background: url(../image/RP.png) center center no-repeat;
+        vertical-align: middle;
+}
+.uncheck{
+	height: 18px;
+    width: 18px;
+    display: inline-block;
+    background: url(../image/uRP.png) center center no-repeat;
+        vertical-align: middle;
+}
+.low_login_wording{
+
+}
+
+
+.submit{
+	padding: 0 20px;
+}
+.btnbuts{
+	width: 100%;
+    height: 40px;
+    line-height: 35px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Microsoft Yahei","微软雅黑",SimHei,"黑体","Hiragino Sans GB",STHeiTi,sans-serif;
+    color: #fff;
+    background: #5a8bed;
+    cursor: pointer;
+}

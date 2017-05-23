@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的分页标签</title>
+<link href="./css/styles.css" rel="stylesheet" type="text/css"></link>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<script type="text/javascript" src="js/pagetool.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	var pagetool;
+	function loadData(){
+		$.ajax({ 
+            type: 'POST',
+            url: 'testdata.json',
+            data: {
+              	actions:"list",
+            },
+            dataType:'json',
+            success:function(json){
+                var data = json.result;
+                var pama = ["id1","id2","id3","id4"];
+                pagetool = new Pageglobal(data,pama,"list","pagecount");
+                pagetool.init();
+            },
+            error: function (xhr) {alert("获取数据出错："+xhr.statusText);} 
+        });
+
+	}
+
+	function setTableData(page){
+		pagetool.setTableData(page);
+		console.log(pagetool)
+	}
+</script>
+</head>
+<body >
+<div  align='center' class='divcenter'>
+	<table id="querytable" class='queryTable'>
+		<tr>
+			<td align='left'>
+			<input type="button" onClick="loadData();" value="获取数据"></td>
+	    </tr>
+	    <tr>
+			<td align='left'>
+			<input type="button" onClick="loadData();" value="获取数据"></td>
+	    </tr>
+	</table>
+	<table id='listTable' class='listTable'>
+	<thead>
+		<tr>
+			<th>列1</th>
+			<th>列2</th>
+			<th>列3</th>
+			<th>列4</th>
+		</tr>
+	</thead>
+	<tbody id="list"></tbody>
+	</table>
+	<div id="pagecount" ></div>
+</div>
+</body>
+</html>

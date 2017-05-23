@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<form method="post" action="__CONTROLLER__/cxfpup">
+	<foreach  name='arr' item='kk'>
+		<input type="radio" name="user_id" value='{$kk.user_id}'>{$kk.user_username}
+		
+	</foreach>
+	<input type="hidden" name="id" value='{$id}'>
+	<input type="submit" value='确定修改'>
+</form>
+	
+</body>
+</html>
